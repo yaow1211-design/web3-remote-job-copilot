@@ -68,21 +68,25 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
     const applyUrl = String(form.get("applyUrl") ?? "").trim();
     const roleFamily = String(form.get("roleFamily") ?? "Growth Data Analyst") as RoleFamily;
     const hasJdText = jdText.length > 0;
+    const hasMeaningfulIntake =
+      title.length > 0 || company.length > 0 || hasJdText || originalUrl.length > 0 || applyUrl.length > 0;
 
-    if (!title || !company || (!hasJdText && !originalUrl && !applyUrl)) {
+    if (!hasMeaningfulIntake) {
       return;
     }
 
+    const resolvedTitle = title || "Imported role from URL";
+    const resolvedCompany = company || "Company to verify";
     const jdTextValue = hasJdText
       ? jdText
       : "Manual URL import. Review the original job link before applying.";
     const source = hasJdText ? "Pasted JD" : "Manual URL";
-    const skillText = [title, company, jdText, originalUrl, applyUrl].join(" ");
+    const skillText = [title, company, jdText].join(" ");
 
     onAddJob({
       id: `job-${Date.now()}`,
-      title,
-      company,
+      title: resolvedTitle,
+      company: resolvedCompany,
       source,
       originalUrl,
       applyUrl,

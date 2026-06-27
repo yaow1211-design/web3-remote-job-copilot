@@ -169,3 +169,28 @@ Verification run after the fix:
 - `npm run build`
   - PASS with warning about Node `20.11.0` being below Vite's preferred `20.19+`
   - build output included `✓ built in 706ms`
+
+## Fix verification update 3
+
+Implemented the URL-only intake fix in `src/components/JobInbox.tsx` and updated `src/App.test.tsx` so the URL-only regression now submits without title or company fields and asserts the placeholder heading:
+
+- `Imported role from URL · Company to verify`
+
+Behavior verified after the fix:
+
+- URL-only submissions are accepted when only `Original URL` and `Apply URL` are filled
+- missing title and company fall back to deterministic placeholders
+- `source` stays `Manual URL` when no JD text is entered
+- fallback JD text still appears for URL-only imports
+- required / preferred skill extraction ignores URL strings
+- `web3careers` URL-only imports stay on the fallback risk path with no required-Web3 risk
+
+Verification run after this fix:
+
+- `npm test -- src/App.test.tsx`
+  - PASS: `4` tests passed
+- `npm test`
+  - PASS: `5` test files passed, `29` tests passed
+- `npm run build`
+  - PASS with warning about Node `20.11.0` being below Vite's preferred `20.19+`
+  - build output included `✓ built in 694ms`
