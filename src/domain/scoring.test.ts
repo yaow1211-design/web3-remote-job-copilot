@@ -72,6 +72,27 @@ describe("scoreJob", () => {
     expect(score.risks.join(" ")).not.toContain("Solidity, smart contract engineering, or seniority are core to the role.");
   });
 
+  it("uses broader domain-depth wording when the jd does not explicitly ask for company experience", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "DeFi Research Analyst",
+        company: "Protocol Insights",
+        jdText: "Must have deep DeFi domain knowledge and crypto-native market understanding.",
+        roleFamily: "Research & Due Diligence Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["Research", "DeFi"],
+        preferredSkills: ["Crypto knowledge"],
+        cryptoRequirementLevel: "hard_blocker",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).toBe("Skip");
+    expect(score.risks).toContain("Crypto/Web3 domain depth is a hard requirement for this role.");
+    expect(score.risks.join(" ")).not.toContain("company experience");
+  });
+
   it("uses DM First when outreach opportunity is high but Web3 barrier is medium", () => {
     const score = scoreJob(
       {

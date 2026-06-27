@@ -38,7 +38,7 @@ function countMatches(text: string, terms: string[]): number {
   return terms.filter((term) => text.includes(term)).length;
 }
 
-function hasTechnicalHardBlocker(text: string, job: Job): boolean {
+function hasTechnicalHardBlocker(text: string): boolean {
   return TECHNICAL_HARD_BLOCKER_TERMS.some((term) => text.includes(term));
 }
 
@@ -49,6 +49,10 @@ function hasSeniorityHardBlocker(job: Job): boolean {
 
 function hasGenericCryptoHardBlocker(job: Job, technicalHardBlocker: boolean, seniorityHardBlocker: boolean): boolean {
   return job.cryptoRequirementLevel === "hard_blocker" && !technicalHardBlocker && !seniorityHardBlocker;
+}
+
+function hasExplicitCryptoCompanyExperienceRequirement(text: string): boolean {
+  return text.includes("company experience") || text.includes("full-time crypto company experience") || text.includes("crypto company experience");
 }
 
 function hasRestrictiveLanguageRequirement(text: string): boolean {
@@ -99,7 +103,7 @@ function recommendationFor(
 
 export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   const text = textFor(job);
-  const technicalHardBlocker = hasTechnicalHardBlocker(text, job);
+  const technicalHardBlocker = hasTechnicalHardBlocker(text);
   const seniorityHardBlocker = hasSeniorityHardBlocker(job);
   const genericCryptoHardBlocker = hasGenericCryptoHardBlocker(job, technicalHardBlocker, seniorityHardBlocker);
   const hardBlocked = technicalHardBlocker || seniorityHardBlocker || genericCryptoHardBlocker;
@@ -144,7 +148,13 @@ export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   const risks = [
     ...(technicalHardBlocker ? ["Hard blocker: Solidity, smart contract engineering, or blockchain engineering are core to the role."] : []),
     ...(seniorityHardBlocker ? ["Hard blocker: Head, Director, or Principal seniority is core to the role."] : []),
-    ...(genericCryptoHardBlocker ? ["Crypto/Web3 company experience is a hard requirement for this role."] : []),
+    ...(genericCryptoHardBlocker
+      ? [
+          hasExplicitCryptoCompanyExperienceRequirement(text)
+            ? "Crypto/Web3 company experience is a hard requirement for this role."
+            : "Crypto/Web3 domain depth is a hard requirement for this role.",
+        ]
+      : []),
     ...(job.cryptoRequirementLevel === "required" ? ["Web3 experience is required; use only with strong proof or warm intro."] : []),
     ...(languageFit < 60 ? ["Language requirement may be outside Mia's current positioning."] : []),
   ];

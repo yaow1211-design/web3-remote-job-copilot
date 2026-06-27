@@ -153,6 +153,71 @@ dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
 
 ---
 
+# Task 3 Re-Review Fix Report 2
+
+## What I fixed
+- Kept explicit crypto company-experience language available when the JD actually says it.
+- Changed the generic hard-blocker fallback to the broader `Crypto/Web3 domain depth is a hard requirement for this role.` wording when the JD only signals deep domain knowledge.
+- Removed the unused `job` parameter from `hasTechnicalHardBlocker`.
+- Added a regression test for a DeFi/domain-depth hard blocker that should skip without claiming company experience.
+
+## Verification
+- `npm test -- src/domain/scoring.test.ts`
+- `npm test`
+- `npm run build`
+
+## Exact output summaries
+### `npm test -- src/domain/scoring.test.ts`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run src/domain/scoring.test.ts
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/domain/scoring.test.ts (7 tests) 3ms
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+   Start at  01:36:23
+   Duration  907ms (transform 47ms, setup 44ms, collect 34ms, tests 3ms, environment 380ms, prepare 54ms)
+```
+
+### `npm test`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/domain/scoring.test.ts (7 tests) 3ms
+ ✓ src/storage/localStore.test.ts (4 tests) 3ms
+ ✓ src/App.test.tsx (1 test) 51ms
+
+ Test Files  3 passed (3)
+      Tests  12 passed (12)
+   Start at  01:36:23
+   Duration  1.04s (transform 96ms, setup 140ms, collect 213ms, tests 56ms, environment 1.13s, prepare 178ms)
+```
+
+### `npm run build`
+```text
+> web3-remote-job-copilot@0.1.0 build
+> tsc -b && vite build
+
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1579 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.28 kB
+dist/assets/index-6cxVOiDA.css    1.27 kB │ gzip:  0.68 kB
+dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
+✓ built in 671ms
+```
+
+---
+
 # Task 3 Re-Review Fix Report
 
 ## What I fixed
