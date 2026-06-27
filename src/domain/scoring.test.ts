@@ -51,6 +51,26 @@ describe("scoreJob", () => {
     expect(score.risks).toContain("Hard blocker: Solidity, smart contract engineering, or blockchain engineering are core to the role.");
   });
 
+  it("does not hard-block analyst roles that only mention smart contract activity", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "Research & Due Diligence Analyst",
+        company: "Protocol Insights",
+        jdText: "Analyze smart contract activity, protocol usage, and on-chain risk signals.",
+        roleFamily: "Research & Due Diligence Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["Research", "On-chain Analysis"],
+        preferredSkills: ["Risk Analysis"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).not.toBe("Skip");
+    expect(score.risks).not.toContain("Hard blocker: Solidity, smart contract engineering, or blockchain engineering are core to the role.");
+  });
+
   it("explains generic crypto hard blockers without implying Solidity or seniority", () => {
     const score = scoreJob(
       {
@@ -221,5 +241,24 @@ describe("scoreJob", () => {
     expect(japaneseScore.risks).toContain("Language requirement may be outside Mia's current positioning.");
     expect(germanScore.languageFit).toBeLessThan(60);
     expect(germanScore.risks).toContain("Language requirement may be outside Mia's current positioning.");
+  });
+
+  it("does not flag the German market as a language requirement when German is incidental", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "SQL Analyst",
+        jdText: "SQL required; experience with the German market is a plus.",
+        roleFamily: "Product / Operations Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL"],
+        preferredSkills: ["Market Analysis"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(score.languageFit).toBeGreaterThanOrEqual(60);
+    expect(score.risks).not.toContain("Language requirement may be outside Mia's current positioning.");
   });
 });

@@ -1,6 +1,5 @@
 import type { CandidateAsset, FitRiskScore, Job, Recommendation, RoleFamily } from "./types";
 
-const TECHNICAL_HARD_BLOCKER_TERMS = ["solidity", "smart contract", "blockchain engineering", "blockchain engineer"];
 const SENIORITY_HARD_BLOCKER_TERMS = ["head of growth", "director", "principal"];
 const GROWTH_TERMS = ["lifecycle", "segmentation", "campaign", "growth", "funnel", "activation", "retention", "reactivation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
@@ -38,8 +37,21 @@ function countMatches(text: string, terms: string[]): number {
   return terms.filter((term) => text.includes(term)).length;
 }
 
-function hasTechnicalHardBlocker(text: string): boolean {
-  return TECHNICAL_HARD_BLOCKER_TERMS.some((term) => text.includes(term));
+function hasTechnicalHardBlocker(job: Job): boolean {
+  const titleText = job.title.toLowerCase();
+  const seniorityText = job.seniority.toLowerCase();
+  const requiredSkillsText = job.requiredSkills.join(" ").toLowerCase();
+  const jdText = job.jdText.toLowerCase();
+
+  const engineeringPhrase = /(?:solidity|smart contract|blockchain)\s+(?:engineer|engineering|developer|dev)\b|(?:engineer|engineering|developer|dev)\s+(?:in|for|with|on)\s+(?:solidity|smart contract|blockchain)\b/;
+  const solidityRequiredCoreSkill = /\bsolidity\b.{0,60}\b(required|core skill|core|must have|must know|essential|needed)\b/;
+
+  return (
+    engineeringPhrase.test([titleText, seniorityText].join(" ")) ||
+    engineeringPhrase.test(jdText) ||
+    requiredSkillsText.includes("solidity") ||
+    solidityRequiredCoreSkill.test(jdText)
+  );
 }
 
 function hasSeniorityHardBlocker(job: Job): boolean {
@@ -66,14 +78,14 @@ function hasExplicitCryptoCompanyExperienceRequirement(text: string): boolean {
 }
 
 function hasRestrictiveLanguageRequirement(text: string): boolean {
-  const hasRestrictiveMarker =
-    text.includes("native") ||
-    text.includes("fluent") ||
-    text.includes("business level") ||
-    text.includes("professional level") ||
-    text.includes("required") ||
-    text.includes("must speak");
-  return hasRestrictiveMarker && RESTRICTIVE_LANGUAGE_TERMS.some((term) => text.includes(term));
+  const termPattern = RESTRICTIVE_LANGUAGE_TERMS.join("|");
+  const patterns = [
+    new RegExp(`\\b(?:native|fluent|must speak|speak|speaks|speaking|business level|professional level)\\b.{0,24}\\b(?:${termPattern})\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\b.{0,24}\\b(?:required|mandatory|needed|necessary|must have|must speak|proficiency|fluent|native|business level|professional level)\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+speaker\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+language\\s+(?:required|needed|mandatory)\\b`, "i"),
+  ];
+  return patterns.some((pattern) => pattern.test(text));
 }
 
 function roleFitFor(roleFamily: RoleFamily): number {
@@ -119,7 +131,7 @@ function recommendationFor(
 
 export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   const text = textFor(job);
-  const technicalHardBlocker = hasTechnicalHardBlocker(text);
+  const technicalHardBlocker = hasTechnicalHardBlocker(job);
   const seniorityHardBlocker = hasSeniorityHardBlocker(job);
   const genericCryptoHardBlocker = hasGenericCryptoHardBlocker(job, technicalHardBlocker, seniorityHardBlocker);
   const hardBlocked = technicalHardBlocker || seniorityHardBlocker || genericCryptoHardBlocker;
