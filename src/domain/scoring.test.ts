@@ -93,6 +93,48 @@ describe("scoreJob", () => {
     expect(score.risks.join(" ")).not.toContain("company experience");
   });
 
+  it("uses domain-depth wording for blockchain market experience hard blockers", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "DeFi Research Analyst",
+        company: "Protocol Insights",
+        jdText: "3+ years blockchain market experience required. Must have deep DeFi domain knowledge and crypto-native market understanding.",
+        roleFamily: "Research & Due Diligence Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["Research", "DeFi"],
+        preferredSkills: ["Crypto knowledge"],
+        cryptoRequirementLevel: "hard_blocker",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).toBe("Skip");
+    expect(score.risks).toContain("Crypto/Web3 domain depth is a hard requirement for this role.");
+    expect(score.risks.join(" ")).not.toContain("blockchain engineering");
+  });
+
+  it("does not claim crypto/Web3 company experience from generic startup wording", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "DeFi Research Analyst",
+        company: "Protocol Insights",
+        jdText: "Startup company experience preferred. Deep DeFi domain knowledge and crypto-native market understanding required.",
+        roleFamily: "Research & Due Diligence Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["Research", "DeFi"],
+        preferredSkills: ["Startup company experience"],
+        cryptoRequirementLevel: "hard_blocker",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).toBe("Skip");
+    expect(score.risks).toContain("Crypto/Web3 domain depth is a hard requirement for this role.");
+    expect(score.risks.join(" ")).not.toContain("company experience is a hard requirement");
+  });
+
   it("uses DM First when outreach opportunity is high but Web3 barrier is medium", () => {
     const score = scoreJob(
       {
@@ -146,5 +188,38 @@ describe("scoreJob", () => {
 
     expect(score.languageFit).toBeLessThan(60);
     expect(score.risks).toContain("Language requirement may be outside Mia's current positioning.");
+  });
+
+  it("flags bare Japanese and German language requirements as a language risk", () => {
+    const japaneseScore = scoreJob(
+      {
+        ...baseJob,
+        title: "Growth Data Analyst",
+        jdText: "Japanese required for close collaboration with local stakeholders.",
+        roleFamily: "Growth Data Analyst",
+        seniority: "Mid-level",
+        preferredSkills: ["Japanese"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    const germanScore = scoreJob(
+      {
+        ...baseJob,
+        title: "Product Analyst",
+        jdText: "Must speak German for stakeholder communication.",
+        roleFamily: "Product / Operations Analyst",
+        seniority: "Mid-level",
+        preferredSkills: ["German"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(japaneseScore.languageFit).toBeLessThan(60);
+    expect(japaneseScore.risks).toContain("Language requirement may be outside Mia's current positioning.");
+    expect(germanScore.languageFit).toBeLessThan(60);
+    expect(germanScore.risks).toContain("Language requirement may be outside Mia's current positioning.");
   });
 });

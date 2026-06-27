@@ -1,6 +1,6 @@
 import type { CandidateAsset, FitRiskScore, Job, Recommendation, RoleFamily } from "./types";
 
-const TECHNICAL_HARD_BLOCKER_TERMS = ["solidity", "smart contract", "3+ years blockchain", "5+ years in blockchain"];
+const TECHNICAL_HARD_BLOCKER_TERMS = ["solidity", "smart contract", "blockchain engineering", "blockchain engineer"];
 const SENIORITY_HARD_BLOCKER_TERMS = ["head of growth", "director", "principal"];
 const GROWTH_TERMS = ["lifecycle", "segmentation", "campaign", "growth", "funnel", "activation", "retention", "reactivation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
@@ -52,11 +52,27 @@ function hasGenericCryptoHardBlocker(job: Job, technicalHardBlocker: boolean, se
 }
 
 function hasExplicitCryptoCompanyExperienceRequirement(text: string): boolean {
-  return text.includes("company experience") || text.includes("full-time crypto company experience") || text.includes("crypto company experience");
+  return [
+    /\bcrypto company experience\b/,
+    /\bweb3 company experience\b/,
+    /\bblockchain company experience\b/,
+    /\bfull[-\s]?time crypto company experience\b/,
+    /\bfull[-\s]?time web3 company experience\b/,
+    /\bfull[-\s]?time blockchain company experience\b/,
+    /\bcrypto[-\s]native company experience\b/,
+    /\bweb3[-\s]native company experience\b/,
+    /\bblockchain[-\s]native company experience\b/,
+  ].some((pattern) => pattern.test(text));
 }
 
 function hasRestrictiveLanguageRequirement(text: string): boolean {
-  const hasRestrictiveMarker = text.includes("native") || text.includes("fluent") || text.includes("business level") || text.includes("professional level");
+  const hasRestrictiveMarker =
+    text.includes("native") ||
+    text.includes("fluent") ||
+    text.includes("business level") ||
+    text.includes("professional level") ||
+    text.includes("required") ||
+    text.includes("must speak");
   return hasRestrictiveMarker && RESTRICTIVE_LANGUAGE_TERMS.some((term) => text.includes(term));
 }
 
