@@ -446,4 +446,116 @@ describe("App", () => {
     expect(pipeline).not.toBeNull();
     expect(within(pipeline as HTMLElement).getByText(/Imported Company · new/i)).toBeInTheDocument();
   });
+
+  it("shows due follow-up reminders in Today for contacts with past or current follow-up dates", async () => {
+    const user = userEvent.setup();
+    const today = new Date().toISOString().slice(0, 10);
+
+    saveState({
+      contacts: [
+        {
+          id: "contact-due",
+          jobId: "job-2",
+          name: "Avery Chen",
+          company: "Example Global Fintech",
+          role: "Hiring Manager",
+          channel: "Email",
+          profileUrl: "",
+          relationshipType: "hiring manager",
+          messageStatus: "Follow-up due",
+          followUpDate: today,
+          replyStatus: "",
+          notes: "Due today.",
+        },
+        {
+          id: "contact-future",
+          jobId: "job-3",
+          name: "Jordan Lee",
+          company: "Example Web3 Wallet",
+          role: "Recruiter",
+          channel: "LinkedIn",
+          profileUrl: "",
+          relationshipType: "recruiter",
+          messageStatus: "DM sent",
+          followUpDate: "2099-12-31",
+          replyStatus: "",
+          notes: "Future follow-up.",
+        },
+      ],
+    });
+
+    renderApp();
+
+    await openNav(user, /Today/i);
+
+    expect(screen.getByRole("heading", { name: /Follow-up Reminders/i })).toBeInTheDocument();
+    expect(screen.getByText(/Avery Chen/i)).toBeInTheDocument();
+    expect(screen.getByText(/Example Global Fintech/i)).toBeInTheDocument();
+    expect(screen.getByText(new RegExp(`Follow-up date: ${today}`))).toBeInTheDocument();
+    expect(screen.getByText(/Follow-up due/i)).toBeInTheDocument();
+    expect(screen.queryByText(/Jordan Lee/i)).not.toBeInTheDocument();
+  });
+
+  it("shows an empty state when no follow-ups are due today", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      contacts: [
+        {
+          id: "contact-future",
+          jobId: "job-3",
+          name: "Jordan Lee",
+          company: "Example Web3 Wallet",
+          role: "Recruiter",
+          channel: "LinkedIn",
+          profileUrl: "",
+          relationshipType: "recruiter",
+          messageStatus: "DM sent",
+          followUpDate: "2099-12-31",
+          replyStatus: "",
+          notes: "Future follow-up.",
+        },
+      ],
+    });
+
+    renderApp();
+
+    await openNav(user, /Today/i);
+
+    expect(screen.getByText(/No follow-ups due today\./i)).toBeInTheDocument();
+  });
+
+  it("keeps a follow_up_due job from regressing to dm_sent after manual outreach updates", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: sampleJobs.map((job) => (job.id === "job-2" ? { ...job, status: "follow_up_due" } : job)),
+      contacts: [
+        {
+          id: "contact-1",
+          jobId: "job-2",
+          name: "Hiring Team",
+          company: "Example Global Fintech",
+          role: "Recruiter",
+          channel: "LinkedIn",
+          profileUrl: "",
+          relationshipType: "recruiter",
+          messageStatus: "Follow-up due",
+          followUpDate: "",
+          replyStatus: "",
+          notes: "Manual contact entry only.",
+        },
+      ],
+    });
+
+    renderApp();
+
+    await openNav(user, /Outreach/i);
+    await user.click(screen.getByRole("button", { name: /Record manual DM/i }));
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    expect(screen.getByText(/Example Global Fintech · follow_up_due/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("follow_up_due");
+  });
 });

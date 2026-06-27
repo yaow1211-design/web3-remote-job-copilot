@@ -75,6 +75,13 @@ const OUTREACH_NON_REGRESSING_STATUSES: JobStatus[] = [
   "interview",
   "rejected",
   "archived",
+  "follow_up_due",
+];
+
+const TERMINAL_FOLLOW_UP_MESSAGE_STATUSES: OutreachContact["messageStatus"][] = [
+  "Replied",
+  "Call booked",
+  "Rejected",
 ];
 
 export default function App() {
@@ -104,6 +111,18 @@ export default function App() {
     },
     [selectedJob, state.jobs, state.packs],
   );
+  const followUpReminders = useMemo(() => {
+    const today = new Date().toISOString().slice(0, 10);
+
+    return state.contacts
+      .filter(
+        (contact) =>
+          contact.followUpDate &&
+          contact.followUpDate <= today &&
+          !TERMINAL_FOLLOW_UP_MESSAGE_STATUSES.includes(contact.messageStatus),
+      )
+      .sort((left, right) => left.followUpDate.localeCompare(right.followUpDate));
+  }, [state.contacts]);
 
   useEffect(() => {
     saveAppState(state);
@@ -239,13 +258,37 @@ export default function App() {
 
       <section className="workspace" aria-label="Workspace">
         {view === "today" && (
-          <section className="panel">
-            <p className="eyebrow-dark">Today Command Center</p>
-            <h2>Start with the highest-ROI job action</h2>
-            <p>
-              Open Job Inbox, review a role, generate an application pack, then record manual outreach.
-            </p>
-          </section>
+          <>
+            <section className="panel">
+              <p className="eyebrow-dark">Today Command Center</p>
+              <h2>Start with the highest-ROI job action</h2>
+              <p>
+                Open Job Inbox, review a role, generate an application pack, then record manual outreach.
+              </p>
+            </section>
+
+            <section className="panel">
+              <div className="section-heading">
+                <p className="eyebrow-dark">Follow-up Reminders</p>
+                <h2>Follow-up Reminders</h2>
+              </div>
+              {followUpReminders.length > 0 ? (
+                <ul className="reminder-list">
+                  {followUpReminders.map((contact) => (
+                    <li key={contact.id} className="reminder-item">
+                      <strong>
+                        {contact.name} · {contact.company}
+                      </strong>
+                      <span>Follow-up date: {contact.followUpDate}</span>
+                      <span>Message status: {contact.messageStatus}</span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>No follow-ups due today.</p>
+              )}
+            </section>
+          </>
         )}
 
         {view === "jobs" && (

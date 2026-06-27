@@ -249,6 +249,23 @@ select {
   font-weight: 700;
 }
 
+.reminder-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reminder-item {
+  display: grid;
+  gap: 4px;
+  border: 1px solid #d9ddd2;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcf8;
+}
+
 .pack-grid {
   display: grid;
   gap: 16px;

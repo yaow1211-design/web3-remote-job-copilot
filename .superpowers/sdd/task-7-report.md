@@ -176,6 +176,32 @@ npm run build
 - Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 - Completed with `✓ built in 732ms`
 
+## Task 7 follow-up reminder fix verification (2026-06-28)
+
+- Added a Today view reminder panel in [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) that surfaces due and overdue follow-up contacts from `state.contacts`, showing contact name, company, follow-up date, and message status.
+- Protected `follow_up_due` in outreach-driven status updates so manual DM updates no longer regress a job back to `dm_sent`.
+- Added regression coverage in [src/App.test.tsx](/Users/wangmia/Documents/New%20project/src/App.test.tsx) for due reminders, the empty reminders state, and the `follow_up_due` non-regression path.
+
+### Verification results
+
+`npm test -- src/App.test.tsx`
+
+- Exit code: `0`
+- `Test Files  1 passed (1)`
+- `Tests  20 passed (20)`
+
+`npm test`
+
+- Exit code: `0`
+- `Test Files  5 passed (5)`
+- `Tests  45 passed (45)`
+
+`npm run build`
+
+- Exit code: `0`
+- Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
+- Completed with `✓ built in 724ms`
+
 ## Task 7 manual status and follow-up fix verification (2026-06-28)
 
 - Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so manual status changes in Job Detail append Weekly Review activity records only when the status actually changes, with manual-only wording for reviewed, applied, interview, and rejected states.
