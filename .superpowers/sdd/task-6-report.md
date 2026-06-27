@@ -152,3 +152,20 @@ Verification run after the fix:
 - `npm run build`
   - PASS with warning about Node `20.11.0` being below Vite's preferred `20.19+`
   - build output included `✓ built in 713ms`
+
+## Fix verification update 2
+
+Implemented the Task 6 crypto inference tightening in `src/components/JobInbox.tsx` and added UI regressions in `src/App.test.tsx` for:
+
+- negated requirement language in JD text: `Crypto experience not required.`
+- URL-only imports with `web3careers` in the URL but no crypto signal in title or JD text
+
+Verification run after the fix:
+
+- `npm test -- src/App.test.tsx`
+  - PASS: `4` tests passed
+- `npm test`
+  - PASS: `5` test files passed, `29` tests passed
+- `npm run build`
+  - PASS with warning about Node `20.11.0` being below Vite's preferred `20.19+`
+  - build output included `✓ built in 706ms`

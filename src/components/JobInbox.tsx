@@ -15,17 +15,41 @@ const ROLE_FAMILIES: RoleFamily[] = [
   "Research & Due Diligence Analyst",
 ];
 
-function inferCryptoRequirementLevel(intakeText: string): Job["cryptoRequirementLevel"] {
-  const text = intakeText.toLowerCase();
-  const hasCryptoKeyword = /(crypto|web3|blockchain)/.test(text);
-  const hasPreferredKeyword = /(crypto|web3|defi|blockchain)/.test(text);
-  const hasRequiredCue = /(required|must[- ]have)/.test(text);
+const CRYPTO_TERMS = "(?:crypto|web3|defi|blockchain)";
+const CRYPTO_SIGNAL_TERMS = "(?:experience|knowledge|background|expertise|skills?)";
 
-  if (hasCryptoKeyword && hasRequiredCue) {
+function inferCryptoRequirementLevel(title: string, jdText: string): Job["cryptoRequirementLevel"] {
+  const text = [title, jdText].join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+
+  if (!text) {
+    return "none";
+  }
+
+  const cryptoTermPattern = new RegExp(`\\b${CRYPTO_TERMS}\\b`);
+
+  const negatedRequirementPatterns = [
+    new RegExp(
+      `\\b${CRYPTO_TERMS}\\b.{0,40}\\b${CRYPTO_SIGNAL_TERMS}\\b.{0,20}\\b(?:not required|optional|not needed|not necessary|nice to have|not mandatory)\\b`,
+    ),
+    new RegExp(`\\b(?:no|without)\\s+${CRYPTO_TERMS}(?:\\s+${CRYPTO_SIGNAL_TERMS})?(?:\\s+(?:required|needed|mandatory))?\\b`),
+    new RegExp(`\\b${CRYPTO_TERMS}\\b.{0,20}\\b(?:is|are)?\\s*not\\s+(?:required|needed|mandatory)\\b`),
+  ];
+
+  if (negatedRequirementPatterns.some((pattern) => pattern.test(text))) {
+    return "none";
+  }
+
+  const requiredPatterns = [
+    new RegExp(`\\b${CRYPTO_TERMS}\\b.{0,40}\\b${CRYPTO_SIGNAL_TERMS}\\b.{0,20}\\b(?:required|must have|mandatory|needed|essential)\\b`),
+    new RegExp(`\\b(?:must have|required|mandatory|needed|essential)\\b.{0,40}\\b${CRYPTO_TERMS}\\b.{0,40}\\b${CRYPTO_SIGNAL_TERMS}\\b`),
+    new RegExp(`\\b${CRYPTO_TERMS}\\s+${CRYPTO_SIGNAL_TERMS}\\s+(?:is\\s+)?(?:required|mandatory|needed|essential)\\b`),
+  ];
+
+  if (requiredPatterns.some((pattern) => pattern.test(text))) {
     return "required";
   }
 
-  if (hasPreferredKeyword) {
+  if (cryptoTermPattern.test(text)) {
     return "preferred";
   }
 
@@ -49,7 +73,6 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
       return;
     }
 
-    const intakeText = [title, company, jdText, originalUrl, applyUrl].join(" ").toLowerCase();
     const jdTextValue = hasJdText
       ? jdText
       : "Manual URL import. Review the original job link before applying.";
@@ -70,7 +93,7 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
       seniority: "Manual review needed",
       requiredSkills: skillText.match(/SQL|Python|PRD|UAT|analytics|operations/gi) ?? [],
       preferredSkills: skillText.match(/crypto|Web3|DeFi|fintech|growth/gi) ?? [],
-      cryptoRequirementLevel: inferCryptoRequirementLevel(intakeText),
+      cryptoRequirementLevel: inferCryptoRequirementLevel(title, jdText),
       salaryRange: "",
       postedAt: new Date().toISOString().slice(0, 10),
       status: "new",
