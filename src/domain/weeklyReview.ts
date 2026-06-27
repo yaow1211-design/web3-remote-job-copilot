@@ -37,8 +37,7 @@ export function buildWeeklyReview(jobs: Job[], activities: ApplicationActivity[]
   const topScore = ranked[0]?.score ?? 0;
 
   const bestRoleFamily = topScore > 0 ? ranked[0].roleFamily : "Not enough data";
-  const worstRoleFamily =
-    topScore > 0 && ranked.length > 1 ? ranked[ranked.length - 1].roleFamily : "Not enough data";
+  const worstRoleFamily = ranked.length > 1 ? ranked[ranked.length - 1].roleFamily : "Not enough data";
   const appliedCount = countActivities(activities, "submitted_application");
   const outreachCount = countActivities(activities, "sent_dm") + countActivities(activities, "sent_follow_up");
   const replyCount = countActivities(activities, "received_reply");

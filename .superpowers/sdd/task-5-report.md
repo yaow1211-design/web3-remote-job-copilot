@@ -110,3 +110,44 @@ You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. P
 vite v7.3.6 building client environment for production...
 ✓ built in 701ms
 ```
+
+## Task 5 fix verification
+
+### Focused regression
+Command:
+```text
+npm test -- src/domain/weeklyReview.test.ts
+```
+Result:
+```text
+✓ src/domain/weeklyReview.test.ts (2 tests) 1ms
+```
+
+### Full test suite
+Command:
+```text
+npm test
+```
+Result:
+```text
+✓ src/domain/weeklyReview.test.ts (2 tests) 2ms
+✓ src/storage/localStore.test.ts (4 tests) 4ms
+✓ src/domain/applicationPack.test.ts (3 tests) 6ms
+✓ src/domain/scoring.test.ts (16 tests) 11ms
+✓ src/App.test.tsx (1 test) 53ms
+
+Test Files  5 passed (5)
+Tests       26 passed (26)
+```
+
+### Build
+Command:
+```text
+npm run build
+```
+Result:
+```text
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v7.3.6 building client environment for production...
+✓ built in 677ms
+```

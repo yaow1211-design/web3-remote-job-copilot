@@ -117,10 +117,13 @@ describe("buildWeeklyReview", () => {
     const review = buildWeeklyReview(jobs, activities);
 
     expect(review.reviewedCount).toBe(1);
+    expect(review.shortlistedCount).toBe(1);
     expect(review.appliedCount).toBe(1);
     expect(review.outreachCount).toBe(1);
+    expect(review.replyCount).toBe(0);
     expect(review.interviewCount).toBe(1);
     expect(review.bestRoleFamily).toBe("Growth Data Analyst");
+    expect(review.worstRoleFamily).toBe("Business Analyst");
     expect(review.nextWeekAdjustments.join(" ")).toContain("Keep Growth Data Analyst");
     expect(review.nextWeekAdjustments.join(" ")).toContain("role direction ratio");
     expect(review.nextWeekAdjustments.join(" ")).toContain("Candidate Asset Layer");
@@ -144,6 +147,6 @@ describe("buildWeeklyReview", () => {
     );
 
     expect(review.bestRoleFamily).toBe("Not enough data");
-    expect(review.worstRoleFamily).toBe("Not enough data");
+    expect(review.worstRoleFamily).toBe("Business Analyst");
   });
 });
