@@ -67,3 +67,23 @@
 ### Self-Review
 - The new assertions cover the exact public-source wording called out in review and stay aligned with the source artifact.
 - No additional concerns after verification.
+
+## Mia-First Positioning Follow-up
+
+### What Changed
+- Added two explicit required phrase checks to `tools/prd/validate_prd_docx.py` so the validator now enforces the top-level V1 positioning:
+  - `V1 是一个单用户求职 cockpit，不是通用 SaaS。`
+  - `V1 的成功标准不是“入库多少职位”，而是是否帮助 Mia 更快拿到有效回复、面试机会和 remote offer。`
+- Kept the validator deterministic and substring-based, with no regexes added.
+
+### Verification
+- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_docx.py` -> `PASS: generated PRD docx validates`
+- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_source.py` -> `PASS: PRD source validates`
+
+### Files Changed
+- `/Users/wangmia/Documents/New project/tools/prd/validate_prd_docx.py`
+- `/Users/wangmia/Documents/New project/.superpowers/sdd/task-3-report.md`
+
+### Self-Review
+- The new checks directly encode the reviewer’s missing positioning constraint using exact PRD wording, so the validator now fails if the artifact drifts back toward generic SaaS framing.
+- No new concerns from verification.
