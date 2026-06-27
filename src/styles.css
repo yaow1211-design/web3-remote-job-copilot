@@ -204,6 +204,10 @@ select {
   background: #edf7f3;
 }
 
+.static-card {
+  cursor: default;
+}
+
 .score-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -228,6 +232,62 @@ select {
   font-weight: 800;
 }
 
+.secondary-button {
+  min-height: 38px;
+  width: fit-content;
+  border: 1px solid #1f6b5f;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #ffffff;
+  color: #1f6b5f;
+  cursor: pointer;
+}
+
+.manual-note {
+  margin-top: 14px;
+  color: #1f6b5f;
+  font-weight: 700;
+}
+
+.pack-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.pack-grid section {
+  border-top: 1px solid #e2e7df;
+  padding-top: 14px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.metric-grid span {
+  border: 1px solid #d9ddd2;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcf8;
+  font-weight: 800;
+}
+
+.review-summary {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.backup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
 @media (max-width: 760px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -239,6 +299,10 @@ select {
 
   h1 {
     max-width: none;
+  }
+
+  .metric-grid {
+    grid-template-columns: 1fr;
   }
 }
 

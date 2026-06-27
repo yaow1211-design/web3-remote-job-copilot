@@ -8,10 +8,14 @@ import {
   Target,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { ApplicationPackBuilder } from "./components/ApplicationPackBuilder";
+import { BackupPanel } from "./components/BackupPanel";
 import { CandidateAssets } from "./components/CandidateAssets";
 import { JobDetail } from "./components/JobDetail";
 import { JobInbox } from "./components/JobInbox";
-import type { AppState, Job } from "./domain/types";
+import { OutreachTracker } from "./components/OutreachTracker";
+import { WeeklyReview } from "./components/WeeklyReview";
+import type { AppState, ApplicationActivity, ApplicationPack, Job } from "./domain/types";
 import { loadAppState, saveAppState } from "./storage/localStore";
 import "./styles.css";
 
@@ -35,6 +39,13 @@ export default function App() {
     () => state.jobs.find((job) => job.id === selectedJobId) ?? state.jobs[0],
     [selectedJobId, state.jobs],
   );
+  const selectedPackJob = useMemo(
+    () =>
+      selectedJob && ["shortlisted", "application_pack_ready", "applied"].includes(selectedJob.status)
+        ? selectedJob
+        : state.jobs.find((job) => ["shortlisted", "application_pack_ready", "applied"].includes(job.status)),
+    [selectedJob, state.jobs],
+  );
 
   useEffect(() => {
     saveAppState(state);
@@ -56,6 +67,34 @@ export default function App() {
       ...current,
       jobs: current.jobs.map((item) => (item.id === job.id ? job : item)),
     }));
+  }
+
+  function savePack(pack: ApplicationPack) {
+    setState((current) => ({
+      ...current,
+      jobs: current.jobs.map((job) =>
+        job.id === pack.jobId ? { ...job, status: "application_pack_ready" } : job,
+      ),
+      packs: [pack, ...current.packs.filter((item) => item.jobId !== pack.jobId)],
+      activities: [
+        {
+          id: `activity-${Date.now()}`,
+          jobId: pack.jobId,
+          actionType: "generated_pack",
+          channel: "Application Portal",
+          date: new Date().toISOString().slice(0, 10),
+          contentVersion: pack.generatedAt,
+          result: "Pack generated for human review",
+          nextActionDate: "",
+          notes: "No application was submitted automatically.",
+        },
+        ...current.activities,
+      ],
+    }));
+  }
+
+  function addActivity(activity: ApplicationActivity) {
+    setState((current) => ({ ...current, activities: [activity, ...current.activities] }));
   }
 
   return (
@@ -123,33 +162,32 @@ export default function App() {
           />
         )}
 
-        {view === "pack" && (
-          <section className="panel">
-            <h2>Application Pack</h2>
-            <p>Select a shortlisted job from Job Inbox before generating a pack.</p>
-          </section>
-        )}
+        {view === "pack" &&
+          (selectedPackJob ? (
+            <ApplicationPackBuilder
+              candidate={state.candidate}
+              job={selectedPackJob}
+              pack={state.packs.find((pack) => pack.jobId === selectedPackJob.id)}
+              onSavePack={savePack}
+            />
+          ) : (
+            <section className="panel">
+              <h2>Application Pack</h2>
+              <p>Select a shortlisted job from Job Inbox before generating a pack.</p>
+            </section>
+          ))}
 
         {view === "outreach" && (
-          <section className="panel">
-            <h2>Outreach</h2>
-            <p>Manual outreach tracking will be wired in the next task.</p>
-          </section>
+          <OutreachTracker
+            contacts={state.contacts}
+            activities={state.activities}
+            onAddActivity={addActivity}
+          />
         )}
 
-        {view === "review" && (
-          <section className="panel">
-            <h2>Weekly Review</h2>
-            <p>Weekly review metrics will be wired after activity tracking.</p>
-          </section>
-        )}
+        {view === "review" && <WeeklyReview jobs={state.jobs} activities={state.activities} />}
 
-        {view === "backup" && (
-          <section className="panel">
-            <h2>Backup</h2>
-            <p>Export and import controls will be wired after the core workflow.</p>
-          </section>
-        )}
+        {view === "backup" && <BackupPanel state={state} onImport={setState} />}
       </section>
     </main>
   );

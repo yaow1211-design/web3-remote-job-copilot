@@ -88,4 +88,29 @@ describe("App", () => {
       screen.queryByText(/Web3 experience is required; use only with strong proof or warm intro\./i),
     ).not.toBeInTheDocument();
   });
+
+  it("generates an application pack and keeps sending manual", async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: /Application Pack/i }));
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getByText(/Tailored Summary/i)).toBeInTheDocument();
+    expect(screen.getByText(/I will review and send this manually/i)).toBeInTheDocument();
+  });
+
+  it("shows weekly review guidance and backup controls", async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: /Weekly Review/i }));
+    expect(screen.getByText(/Next Week Adjustments/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Backup/i }));
+    expect(screen.getByRole("button", { name: /Export JSON/i })).toBeInTheDocument();
+    expect(screen.getByLabelText(/Import JSON/i)).toBeInTheDocument();
+  });
 });
