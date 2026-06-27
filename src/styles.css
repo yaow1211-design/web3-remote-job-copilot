@@ -103,6 +103,11 @@ p {
   background: rgba(255, 255, 255, 0.14);
 }
 
+.nav-button.active {
+  background: #f8fbf7;
+  color: #153b3f;
+}
+
 .nav-button:focus-visible {
   outline: 2px solid #d7f1d8;
   outline-offset: 2px;
@@ -110,6 +115,117 @@ p {
 
 .workspace {
   padding: 32px;
+}
+
+.panel {
+  margin-bottom: 20px;
+  border: 1px solid #d9ddd2;
+  border-radius: 8px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.eyebrow-dark {
+  margin: 0 0 6px;
+  color: #52736d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(260px, 0.9fr);
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.span-all {
+  grid-column: 1 / -1;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #34464a;
+  font-weight: 700;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #cbd2ca;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fbfcf8;
+  color: #172026;
+}
+
+.primary-button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #1f6b5f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.item-list {
+  display: grid;
+  gap: 10px;
+}
+
+.list-item {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  border: 1px solid #d9ddd2;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcf8;
+  color: #172026;
+  text-align: left;
+  cursor: pointer;
+}
+
+.list-item.active {
+  border-color: #1f6b5f;
+  background: #edf7f3;
+}
+
+.score-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.score-number {
+  color: #1f6b5f;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.badge {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: #e2efe8;
+  color: #153b3f;
+  font-weight: 800;
 }
 
 @media (max-width: 760px) {
@@ -123,5 +239,12 @@ p {
 
   h1 {
     max-width: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .grid-two,
+  .form-grid {
+    grid-template-columns: 1fr;
   }
 }
