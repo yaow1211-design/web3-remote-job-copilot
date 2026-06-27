@@ -12,6 +12,10 @@ function renderApp() {
   return render(<App />);
 }
 
+async function openNav(user: ReturnType<typeof userEvent.setup>, name: RegExp) {
+  await user.click(screen.getByRole("button", { name }));
+}
+
 function saveState(overrides: Record<string, unknown>) {
   const baseState = {
     version: 1,
@@ -201,11 +205,97 @@ describe("App", () => {
 
     renderApp();
 
-    await user.click(screen.getByRole("button", { name: /Outreach/i }));
+    await openNav(user, /Outreach/i);
     await user.click(screen.getByRole("button", { name: /Record manual DM/i }));
 
     expect(screen.getByText(/sent_dm/i)).toBeInTheDocument();
     expect(screen.getByText(/Sent manually by Mia/i)).toBeInTheDocument();
+  });
+
+  it("adds a manual outreach contact with a visible follow-up date", async () => {
+    const user = userEvent.setup();
+
+    renderApp();
+
+    await openNav(user, /Outreach/i);
+    await user.type(screen.getByLabelText(/Contact name/i), "Avery Chen");
+    await user.type(screen.getByLabelText(/Contact company/i), "Example Global Fintech");
+    await user.type(screen.getByLabelText(/Contact role/i), "Hiring Manager");
+    await user.selectOptions(screen.getByLabelText(/Associated job/i), "job-2");
+    await user.selectOptions(screen.getByLabelText(/^Channel$/i), "Email");
+    await user.selectOptions(screen.getByLabelText(/Relationship type/i), "hiring manager");
+    await user.type(screen.getByLabelText(/Profile URL/i), "https://example.com/avery");
+    await user.type(screen.getByLabelText(/Follow-up date/i), "2026-07-05");
+    await user.type(screen.getByLabelText(/Notes/i), "Met through a shared fintech operator group.");
+    await user.click(screen.getByRole("button", { name: /Add contact/i }));
+
+    const contactCard = screen.getByText(/Avery Chen · Example Global Fintech/i).closest("article");
+    expect(contactCard).not.toBeNull();
+    expect(within(contactCard as HTMLElement).getByText(/Not contacted/i)).toBeInTheDocument();
+    expect(within(contactCard as HTMLElement).getByText(/Follow-up date: 2026-07-05/i)).toBeInTheDocument();
+  });
+
+  it("records manual DM, follow-up, and reply activities from an outreach contact", async () => {
+    const user = userEvent.setup();
+
+    renderApp();
+
+    await openNav(user, /Outreach/i);
+    await user.click(screen.getByRole("button", { name: /Record manual DM/i }));
+    await user.click(screen.getByRole("button", { name: /Record follow-up/i }));
+    await user.click(screen.getByRole("button", { name: /Record reply/i }));
+
+    expect(screen.getByText(/sent_dm/i)).toBeInTheDocument();
+    expect(screen.getByText(/sent_follow_up/i)).toBeInTheDocument();
+    expect(screen.getByText(/received_reply/i)).toBeInTheDocument();
+    expect(screen.getByText(/Sent manually by Mia/i)).toBeInTheDocument();
+    expect(screen.getByText(/Follow-up recorded manually/i)).toBeInTheDocument();
+    expect(screen.getByText(/Reply recorded manually/i)).toBeInTheDocument();
+    expect(screen.getByText(/Replied/i)).toBeInTheDocument();
+  });
+
+  it("shows weekly review metrics and guidance derived from outreach and reply activity", async () => {
+    const user = userEvent.setup();
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+    await openNav(user, /Outreach/i);
+    await user.click(screen.getByRole("button", { name: /Record manual DM/i }));
+    await user.click(screen.getByRole("button", { name: /Record reply/i }));
+    await openNav(user, /Weekly Review/i);
+
+    expect(screen.getByText(/Outreach: 1/i)).toBeInTheDocument();
+    expect(screen.getByText(/Replies: 1/i)).toBeInTheDocument();
+    expect(screen.getByText(/Candidate Asset Layer/i)).toBeInTheDocument();
+    expect(screen.getByText(/Web3 vs Web3-adjacent/i)).toBeInTheDocument();
+  });
+
+  it("keeps a saved pack reachable after the selected job moves to interview", async () => {
+    const user = userEvent.setup();
+    const expectedPack = generateApplicationPack(
+      sampleJobs[1],
+      seedCandidate,
+      scoreJob(sampleJobs[1], seedCandidate),
+    );
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    await user.selectOptions(screen.getByLabelText(/Status/i), "interview");
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("interview");
+
+    await openNav(user, /Application Pack/i);
+
+    expect(
+      screen.getByRole("heading", { name: /Business Analyst, Fintech Operations · Example Global Fintech/i }),
+    ).toBeInTheDocument();
+    expect(screen.getByDisplayValue(expectedPack.recruiterDm)).toBeInTheDocument();
+    expect(screen.getByText("I will review and send this manually.")).toBeInTheDocument();
   });
 
   it("exports and imports backup JSON that updates visible app state", async () => {

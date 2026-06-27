@@ -15,7 +15,7 @@ import { JobDetail } from "./components/JobDetail";
 import { JobInbox } from "./components/JobInbox";
 import { OutreachTracker } from "./components/OutreachTracker";
 import { WeeklyReview } from "./components/WeeklyReview";
-import type { AppState, ApplicationActivity, ApplicationPack, Job } from "./domain/types";
+import type { AppState, ApplicationActivity, ApplicationPack, Job, JobStatus, OutreachContact } from "./domain/types";
 import { loadAppState, saveAppState } from "./storage/localStore";
 import "./styles.css";
 
@@ -40,6 +40,15 @@ const NON_REGRESSING_PACK_STATUSES: Job["status"][] = [
   "archived",
 ];
 
+const PACK_READY_STATUSES: JobStatus[] = [
+  "shortlisted",
+  "application_pack_ready",
+  "applied",
+  "dm_sent",
+  "follow_up_due",
+  "interview",
+];
+
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
@@ -49,11 +58,23 @@ export default function App() {
     [selectedJobId, state.jobs],
   );
   const selectedPackJob = useMemo(
-    () =>
-      selectedJob && ["shortlisted", "application_pack_ready", "applied"].includes(selectedJob.status)
-        ? selectedJob
-        : state.jobs.find((job) => ["shortlisted", "application_pack_ready", "applied"].includes(job.status)),
-    [selectedJob, state.jobs],
+    () => {
+      const selectedJobPack = selectedJob
+        ? state.packs.find((pack) => pack.jobId === selectedJob.id)
+        : undefined;
+
+      if (selectedJob && (selectedJobPack || PACK_READY_STATUSES.includes(selectedJob.status))) {
+        return selectedJob;
+      }
+
+      const savedPackJob = state.jobs.find((job) => state.packs.some((pack) => pack.jobId === job.id));
+      if (savedPackJob) {
+        return savedPackJob;
+      }
+
+      return state.jobs.find((job) => PACK_READY_STATUSES.includes(job.status));
+    },
+    [selectedJob, state.jobs, state.packs],
   );
 
   useEffect(() => {
@@ -111,6 +132,30 @@ export default function App() {
 
   function addActivity(activity: ApplicationActivity) {
     setState((current) => ({ ...current, activities: [activity, ...current.activities] }));
+  }
+
+  function addContact(contact: OutreachContact) {
+    setState((current) => ({ ...current, contacts: [contact, ...current.contacts] }));
+  }
+
+  function updateContact(contact: OutreachContact) {
+    setState((current) => ({
+      ...current,
+      contacts: current.contacts.map((item) => (item.id === contact.id ? contact : item)),
+      jobs: current.jobs.map((job) =>
+        job.id === contact.jobId
+          ? {
+              ...job,
+              status:
+                contact.messageStatus === "Follow-up due"
+                    ? "follow_up_due"
+                    : contact.messageStatus === "DM sent"
+                      ? "dm_sent"
+                      : job.status,
+            }
+          : job,
+      ),
+    }));
   }
 
   return (
@@ -195,8 +240,11 @@ export default function App() {
 
         {view === "outreach" && (
           <OutreachTracker
+            jobs={state.jobs}
             contacts={state.contacts}
             activities={state.activities}
+            onAddContact={addContact}
+            onUpdateContact={updateContact}
             onAddActivity={addActivity}
           />
         )}

@@ -260,6 +260,23 @@ select {
   padding-top: 14px;
 }
 
+.outreach-form {
+  margin-bottom: 20px;
+}
+
+.outreach-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

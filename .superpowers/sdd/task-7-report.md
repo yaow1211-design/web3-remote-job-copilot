@@ -124,3 +124,29 @@ npm run build
 - Exit code: `0`
 - Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 - Completed with `✓ built in 765ms`
+
+## Task 7 follow-up fix verification (2026-06-28)
+
+- Expanded [src/components/OutreachTracker.tsx](/Users/wangmia/Documents/New%20project/src/components/OutreachTracker.tsx) into a local-first manual workflow with contact creation, visible follow-up dates, and manual DM/follow-up/reply recording only.
+- Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) with `addContact` / `updateContact` handlers and pack selection that keeps saved packs reachable after jobs move into advanced statuses such as `dm_sent`, `follow_up_due`, and `interview`.
+- Strengthened [src/App.test.tsx](/Users/wangmia/Documents/New%20project/src/App.test.tsx) to cover manual contact entry, outreach activity progression, weekly review metrics/guidance, and pack reachability after status progression.
+
+### Verification results
+
+`npm test -- src/App.test.tsx`
+
+- Exit code: `0`
+- `Test Files  1 passed (1)`
+- `Tests  13 passed (13)`
+
+`npm test`
+
+- Exit code: `0`
+- `Test Files  5 passed (5)`
+- `Tests  38 passed (38)`
+
+`npm run build`
+
+- Exit code: `0`
+- Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
+- Completed with `✓ built in 720ms`
