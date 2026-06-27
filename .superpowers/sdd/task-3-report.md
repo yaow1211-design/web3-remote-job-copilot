@@ -1,89 +1,83 @@
-# Task 3 Report
+# Task 3 Report: Explainable Fit & Risk Score
 
-## Scope
-- Created the generated-docx validator at `tools/prd/validate_prd_docx.py`.
-- Verified the generated PRD docx artifact.
-- Re-ran the source validator.
-- Committed the change on `codex/web3-remote-prd-refactor`.
+## What I implemented
+- Added `src/domain/scoring.ts` with `scoreJob(job, candidate)` returning a `FitRiskScore`.
+- Implemented explainable scoring inputs for:
+  - `roleFit`
+  - `transferableFinanceFit`
+  - `growthDataFit`
+  - `productOpsFit`
+  - `web3Barrier`
+  - `remoteCompatibility`
+  - `languageFit`
+  - `portfolioProofStrength`
+  - `outreachOpportunity`
+- Added recommendation logic for `Strong Apply`, `DM First`, `Apply with Custom Pack`, `Portfolio Needed`, and `Skip`.
+- Added hard-blocker detection for Solidity / smart contract-heavy roles and explicit risk text.
+- Added `src/domain/scoring.test.ts` with the three brief-specified scenarios:
+  - strong growth analytics fit
+  - Solidity engineering skip
+  - outreach-first DM path
 
-## Implementation
-- The validator reads `artifacts/Web3 Remote Job Copilot 个人求职冲刺版 PRD.docx` with `python-docx`.
-- It checks for all required phrases from the brief, verifies the forbidden primary-positioning phrases are absent, and asserts minimum paragraph/table counts.
-- One check needed a small regex guard so the required phrase `不自动登录 LinkedIn / Indeed` would not false-positive against the forbidden substring `自动登录 LinkedIn`.
+## Test commands and exact results
+### RED
+Command:
+```bash
+npm test -- src/domain/scoring.test.ts
+```
+Result:
+- Failed as expected because `src/domain/scoring.ts` did not exist yet.
+- Key error:
+  - `Error: Failed to resolve import "./scoring" from "src/domain/scoring.test.ts". Does the file exist?`
+  - Exit code: `1`
 
-## Verification
-- `python3 tools/prd/validate_prd_docx.py` -> `PASS: generated PRD docx validates`
-- `python3 tools/prd/validate_prd_source.py` -> `PASS: PRD source validates`
+### GREEN
+Command:
+```bash
+npm test -- src/domain/scoring.test.ts
+```
+Result:
+- Passed.
+- Output summary:
+  - `✓ src/domain/scoring.test.ts (3 tests)`
+  - `Test Files 1 passed (1)`
+  - `Tests 3 passed (3)`
 
-## Commit
-- `d1de5b7 test: validate generated Web3 remote PRD`
+### BROADER VERIFICATION
+Command:
+```bash
+npm test
+```
+Result:
+- Passed.
+- Output summary:
+  - `✓ src/storage/localStore.test.ts (4 tests)`
+  - `✓ src/domain/scoring.test.ts (3 tests)`
+  - `✓ src/App.test.tsx (1 test)`
+  - `Test Files 3 passed (3)`
+  - `Tests 8 passed (8)`
 
-## Notes
-- No remaining concerns after verification.
+Command:
+```bash
+npm run build
+```
+Result:
+- Passed.
+- Build completed successfully.
+- Environment warning observed:
+  - `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 
-## Follow-up Fix
+## Files changed
+- `src/domain/scoring.ts`
+- `src/domain/scoring.test.ts`
+- `.superpowers/sdd/task-3-report.md`
 
-### Scope
-- Hardened `tools/prd/validate_prd_docx.py` so the generated-docx check now covers the missing policy constraints from review.
+## Self-review findings
+- The scorer is explainable and deterministic rather than opaque.
+- The recommendation ordering correctly allows `DM First` to override a high raw score when outreach opportunity is strong and the Web3 barrier is only medium.
+- Hard-blocked Solidity / smart contract roles are consistently marked `Skip` with an explicit risk reason.
+- The behavior matches the three required scenarios in the task brief.
 
-### What Changed
-- Removed the regex-based special case for `自动登录 LinkedIn` and switched to exact forbidden support phrases instead.
-- Added required checks for:
-  - mandatory human review before external actions
-  - non-auto-apply positioning
-  - LinkedIn / Indeed manual or user-assisted handling
-  - Web3-adjacent remote role fallback when it improves landing odds
-- Added explicit forbidden checks for team administration, browser plugins, and broader LinkedIn / Indeed automation support language.
-
-### Verification
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_docx.py` -> `PASS: generated PRD docx validates`
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_source.py` -> `PASS: PRD source validates`
-
-### Files Changed
-- `/Users/wangmia/Documents/New project/tools/prd/validate_prd_docx.py`
-- `/Users/wangmia/Documents/New project/.superpowers/sdd/task-3-report.md`
-
-### Self-Review
-- The validator now uses explicit support phrases, which avoids the previous false positive on negative compliance statements like `不自动登录 LinkedIn / Indeed`.
-- The new required checks match wording already present in the generated PRD/source, so they should stay aligned with the artifact instead of drifting into paraphrase territory.
-
-## Public Source Compliance Follow-up
-
-### What Changed
-- Added literal required checks to `tools/prd/validate_prd_docx.py` for the public-source compliance stance:
-  - `ATS / public sources：`
-  - `优先使用 Greenhouse、Lever、Remotive 等公开 API 或公开职位页。`
-  - `V1 可以先不做自动提交，只生成 Application Pack 和原始申请链接。`
-- Kept the validator deterministic by using direct substring assertions only.
-
-### Verification
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_docx.py` -> `PASS: generated PRD docx validates`
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_source.py` -> `PASS: PRD source validates`
-
-### Files Changed
-- `/Users/wangmia/Documents/New project/tools/prd/validate_prd_docx.py`
-- `/Users/wangmia/Documents/New project/.superpowers/sdd/task-3-report.md`
-
-### Self-Review
-- The new assertions cover the exact public-source wording called out in review and stay aligned with the source artifact.
-- No additional concerns after verification.
-
-## Mia-First Positioning Follow-up
-
-### What Changed
-- Added two explicit required phrase checks to `tools/prd/validate_prd_docx.py` so the validator now enforces the top-level V1 positioning:
-  - `V1 是一个单用户求职 cockpit，不是通用 SaaS。`
-  - `V1 的成功标准不是“入库多少职位”，而是是否帮助 Mia 更快拿到有效回复、面试机会和 remote offer。`
-- Kept the validator deterministic and substring-based, with no regexes added.
-
-### Verification
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_docx.py` -> `PASS: generated PRD docx validates`
-- `/Users/wangmia/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/prd/validate_prd_source.py` -> `PASS: PRD source validates`
-
-### Files Changed
-- `/Users/wangmia/Documents/New project/tools/prd/validate_prd_docx.py`
-- `/Users/wangmia/Documents/New project/.superpowers/sdd/task-3-report.md`
-
-### Self-Review
-- The new checks directly encode the reviewer’s missing positioning constraint using exact PRD wording, so the validator now fails if the artifact drifts back toward generic SaaS framing.
-- No new concerns from verification.
+## Any concerns
+- The scoring model is heuristic and term-based, so it may need threshold tuning as more role families or job sources are added.
+- Vite still emits the Node version warning during build, but the build completes successfully and I did not change tooling versions.
