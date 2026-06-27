@@ -31,6 +31,15 @@ const NAV_ITEMS = [
   { id: "backup", label: "Backup", icon: Database },
 ] as const;
 
+const NON_REGRESSING_PACK_STATUSES: Job["status"][] = [
+  "applied",
+  "dm_sent",
+  "follow_up_due",
+  "interview",
+  "rejected",
+  "archived",
+];
+
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
@@ -73,7 +82,14 @@ export default function App() {
     setState((current) => ({
       ...current,
       jobs: current.jobs.map((job) =>
-        job.id === pack.jobId ? { ...job, status: "application_pack_ready" } : job,
+        job.id === pack.jobId
+          ? {
+              ...job,
+              status: NON_REGRESSING_PACK_STATUSES.includes(job.status)
+                ? job.status
+                : "application_pack_ready",
+            }
+          : job,
       ),
       packs: [pack, ...current.packs.filter((item) => item.jobId !== pack.jobId)],
       activities: [

@@ -15,13 +15,6 @@ export function ApplicationPackBuilder({
   pack,
   onSavePack,
 }: ApplicationPackBuilderProps) {
-  function manualDisplayCopy(value: string): string {
-    return value.replaceAll(
-      "I will review and send this manually",
-      "I will review this manually before sending",
-    );
-  }
-
   function handleGenerate() {
     onSavePack(generateApplicationPack(job, candidate, scoreJob(job, candidate)));
   }
@@ -60,12 +53,12 @@ export function ApplicationPackBuilder({
 
             <section>
               <h3>Recruiter DM</h3>
-              <textarea readOnly rows={5} value={manualDisplayCopy(pack.recruiterDm)} />
+              <textarea readOnly rows={5} value={pack.recruiterDm} />
             </section>
 
             <section>
               <h3>Hiring Manager DM</h3>
-              <textarea readOnly rows={6} value={manualDisplayCopy(pack.hiringManagerDm)} />
+              <textarea readOnly rows={6} value={pack.hiringManagerDm} />
             </section>
 
             <section>
