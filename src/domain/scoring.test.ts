@@ -48,7 +48,7 @@ describe("scoreJob", () => {
 
     expect(score.recommendation).toBe("Skip");
     expect(score.overallScore).toBeLessThan(50);
-    expect(score.risks).toContain("Hard blocker: Solidity or smart contract engineering is core to the role.");
+    expect(score.risks).toContain("Hard blocker: Solidity, smart contract engineering, or seniority are core to the role.");
   });
 
   it("uses DM First when outreach opportunity is high but Web3 barrier is medium", () => {
@@ -66,5 +66,43 @@ describe("scoreJob", () => {
 
     expect(score.recommendation).toBe("DM First");
     expect(score.outreachOpportunity).toBeGreaterThanOrEqual(80);
+  });
+
+  it("does not skip a viable analyst role when Director or Principal appear only in incidental text", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        company: "Principal Signal Labs",
+        jdText:
+          "Mid-level analyst role. You will partner with leadership and report to the Director of Analytics while building lifecycle reporting and SQL dashboards.",
+        roleFamily: "Business Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL", "Reporting", "Dashboards"],
+        preferredSkills: ["Analytics"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).not.toBe("Skip");
+    expect(score.overallScore).toBeGreaterThanOrEqual(50);
+  });
+
+  it("flags native Japanese requirements as a language risk", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "Growth Data Analyst",
+        jdText: "Native Japanese required for close collaboration with local stakeholders. English is a plus.",
+        roleFamily: "Growth Data Analyst",
+        seniority: "Mid-level",
+        preferredSkills: ["Japanese"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(score.languageFit).toBeLessThan(60);
+    expect(score.risks).toContain("Language requirement may be outside Mia's current positioning.");
   });
 });

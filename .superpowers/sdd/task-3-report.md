@@ -81,3 +81,21 @@ Result:
 ## Any concerns
 - The scoring model is heuristic and term-based, so it may need threshold tuning as more role families or job sources are added.
 - Vite still emits the Node version warning during build, but the build completes successfully and I did not change tooling versions.
+
+---
+
+# Task 3 Review Fix Report
+
+## What I fixed
+- Split blocker detection so `director` and `principal` only count as hard blockers when they appear in the role title or seniority text, not when they are incidental company or JD mentions.
+- Kept Solidity, smart contract, and blockchain hard blockers broad across the full role text.
+- Restored language risk handling so restrictive non-English language requirements, including native Japanese, lower `languageFit` below 60 and add the language risk.
+
+## Verification
+- `npm test -- src/domain/scoring.test.ts`
+- `npm test`
+- `npm run build`
+
+## Result
+- All requested tests passed.
+- The build completed successfully, with the same existing Node version warning from Vite.

@@ -1,10 +1,26 @@
 import type { CandidateAsset, FitRiskScore, Job, Recommendation, RoleFamily } from "./types";
 
-const HARD_BLOCKER_TERMS = ["solidity", "smart contract", "3+ years blockchain", "5+ years in blockchain", "head of growth", "director", "principal"];
+const TECHNICAL_HARD_BLOCKER_TERMS = ["solidity", "smart contract", "3+ years blockchain", "5+ years in blockchain"];
+const SENIORITY_HARD_BLOCKER_TERMS = ["head of growth", "director", "principal"];
 const GROWTH_TERMS = ["lifecycle", "segmentation", "campaign", "growth", "funnel", "activation", "retention", "reactivation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
 const FINANCE_TERMS = ["finance", "fintech", "banking", "asset management", "credit", "risk", "trading"];
 const OUTREACH_TERMS = ["founder", "hiring manager", "community", "direct outreach", "telegram", "linkedin", "warm intro"];
+const RESTRICTIVE_LANGUAGE_TERMS = [
+  "japanese",
+  "korean",
+  "german",
+  "french",
+  "spanish",
+  "portuguese",
+  "italian",
+  "dutch",
+  "russian",
+  "arabic",
+  "thai",
+  "vietnamese",
+  "indonesian",
+];
 
 function clamp(value: number): number {
   return Math.max(0, Math.min(100, Math.round(value)));
@@ -14,12 +30,26 @@ function textFor(job: Job): string {
   return [job.title, job.company, job.jdText, job.requiredSkills.join(" "), job.preferredSkills.join(" "), job.notes].join(" ").toLowerCase();
 }
 
+function roleHeaderText(job: Job): string {
+  return [job.title, job.seniority].join(" ").toLowerCase();
+}
+
 function countMatches(text: string, terms: string[]): number {
   return terms.filter((term) => text.includes(term)).length;
 }
 
-function hasHardBlocker(text: string, job: Job): boolean {
-  return job.cryptoRequirementLevel === "hard_blocker" || HARD_BLOCKER_TERMS.some((term) => text.includes(term));
+function hasTechnicalHardBlocker(text: string, job: Job): boolean {
+  return job.cryptoRequirementLevel === "hard_blocker" || TECHNICAL_HARD_BLOCKER_TERMS.some((term) => text.includes(term));
+}
+
+function hasSeniorityHardBlocker(job: Job): boolean {
+  const headerText = roleHeaderText(job);
+  return SENIORITY_HARD_BLOCKER_TERMS.some((term) => headerText.includes(term));
+}
+
+function hasRestrictiveLanguageRequirement(text: string): boolean {
+  const hasRestrictiveMarker = text.includes("native") || text.includes("fluent") || text.includes("business level") || text.includes("professional level");
+  return hasRestrictiveMarker && RESTRICTIVE_LANGUAGE_TERMS.some((term) => text.includes(term));
 }
 
 function roleFitFor(roleFamily: RoleFamily): number {
@@ -65,7 +95,7 @@ function recommendationFor(
 
 export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   const text = textFor(job);
-  const hardBlocked = hasHardBlocker(text, job);
+  const hardBlocked = hasTechnicalHardBlocker(text, job) || hasSeniorityHardBlocker(job);
 
   const roleFit = clamp(roleFitFor(job.roleFamily));
   const transferableFinanceFit = clamp(
@@ -77,7 +107,7 @@ export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   const growthDataFit = clamp(40 + countMatches(text, GROWTH_TERMS) * 14 + (text.includes("sql") ? 12 : 0));
   const productOpsFit = clamp(40 + countMatches(text, PRODUCT_OPS_TERMS) * 12);
   const remoteCompatibility = clamp(job.remoteType === "remote" ? 95 : job.remoteType === "hybrid" ? 55 : 20);
-  const languageFit = clamp(text.includes("english") || text.includes("native") ? 85 : 75);
+  const languageFit = clamp(hasRestrictiveLanguageRequirement(text) ? 45 : text.includes("english") || text.includes("chinese") ? 85 : 75);
   const portfolioProofStrength = clamp(
     55 + countMatches(candidate.portfolioProjects.join(" ").toLowerCase(), ["web3", "analytics", "growth"]) * 15 + (text.includes("portfolio") ? 10 : 0),
   );
@@ -105,7 +135,7 @@ export function scoreJob(job: Job, candidate: CandidateAsset): FitRiskScore {
   ];
 
   const risks = [
-    ...(hardBlocked ? ["Hard blocker: Solidity or smart contract engineering is core to the role."] : []),
+    ...(hardBlocked ? ["Hard blocker: Solidity, smart contract engineering, or seniority are core to the role."] : []),
     ...(job.cryptoRequirementLevel === "required" ? ["Web3 experience is required; use only with strong proof or warm intro."] : []),
     ...(languageFit < 60 ? ["Language requirement may be outside Mia's current positioning."] : []),
   ];
