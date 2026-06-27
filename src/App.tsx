@@ -15,6 +15,7 @@ import { JobDetail } from "./components/JobDetail";
 import { JobInbox } from "./components/JobInbox";
 import { OutreachTracker } from "./components/OutreachTracker";
 import { WeeklyReview } from "./components/WeeklyReview";
+import { formatLocalDate } from "./domain/date";
 import type { AppState, ApplicationActivity, ApplicationPack, Job, JobStatus, OutreachContact } from "./domain/types";
 import { loadAppState, saveAppState } from "./storage/localStore";
 import "./styles.css";
@@ -112,7 +113,7 @@ export default function App() {
     [selectedJob, state.jobs, state.packs],
   );
   const followUpReminders = useMemo(() => {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = formatLocalDate();
 
     return state.contacts
       .filter(
@@ -155,7 +156,7 @@ export default function App() {
                 jobId: job.id,
                 actionType: manualStatusActivity.actionType,
                 channel: "Application Portal",
-                date: new Date().toISOString().slice(0, 10),
+                date: formatLocalDate(),
                 contentVersion: "Manual status update",
                 result: manualStatusActivity.result,
                 nextActionDate: "",
@@ -188,7 +189,7 @@ export default function App() {
           jobId: pack.jobId,
           actionType: "generated_pack",
           channel: "Application Portal",
-          date: new Date().toISOString().slice(0, 10),
+          date: formatLocalDate(),
           contentVersion: pack.generatedAt,
           result: "Pack generated for human review",
           nextActionDate: "",

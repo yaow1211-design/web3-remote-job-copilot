@@ -7,6 +7,7 @@ import type {
   RelationshipType,
 } from "../domain/types";
 import { useState, type FormEvent } from "react";
+import { formatLocalDate } from "../domain/date";
 
 interface OutreachTrackerProps {
   jobs: Job[];
@@ -67,7 +68,7 @@ export function OutreachTracker({
       jobId: contact.jobId,
       actionType: "sent_dm",
       channel: contact.channel,
-      date: new Date().toISOString().slice(0, 10),
+      date: formatLocalDate(),
       contentVersion: "Manual outreach",
       result: "Sent manually by Mia",
       nextActionDate: contact.followUpDate,

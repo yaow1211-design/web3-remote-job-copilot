@@ -202,6 +202,33 @@ npm run build
 - Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 - Completed with `✓ built in 724ms`
 
+## Task 7 local-date fix verification (2026-06-28)
+
+- Added [src/domain/date.ts](/Users/wangmia/Documents/New%20project/src/domain/date.ts) with `formatLocalDate(date = new Date())` so reminders and activity timestamps use local calendar fields instead of UTC ISO slicing.
+- Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so reminder comparisons and manual activity timestamps use the local date helper.
+- Updated [src/components/OutreachTracker.tsx](/Users/wangmia/Documents/New%20project/src/components/OutreachTracker.tsx) so manual outreach activity timestamps use the local date helper.
+- Strengthened [src/App.test.tsx](/Users/wangmia/Documents/New%20project/src/App.test.tsx) with a local-date assertion at the `2026-06-28T00:30:00+08:00` edge and aligned the reminder test to the helper.
+
+### Verification results
+
+`npm test -- src/App.test.tsx`
+
+- Exit code: `0`
+- `Test Files  1 passed (1)`
+- `Tests  21 passed (21)`
+
+`npm test`
+
+- Exit code: `0`
+- `Test Files  5 passed (5)`
+- `Tests  46 passed (46)`
+
+`npm run build`
+
+- Exit code: `0`
+- Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
+- Completed with `✓ built in 741ms`
+
 ## Task 7 manual status and follow-up fix verification (2026-06-28)
 
 - Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so manual status changes in Job Detail append Weekly Review activity records only when the status actually changes, with manual-only wording for reviewed, applied, interview, and rejected states.

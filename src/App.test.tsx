@@ -2,6 +2,7 @@ import { fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import App from "./App";
 import { generateApplicationPack } from "./domain/applicationPack";
+import { formatLocalDate } from "./domain/date";
 import { scoreJob } from "./domain/scoring";
 import { seedCandidate } from "./domain/seedCandidate";
 import { sampleJobs } from "./sampleData";
@@ -449,7 +450,7 @@ describe("App", () => {
 
   it("shows due follow-up reminders in Today for contacts with past or current follow-up dates", async () => {
     const user = userEvent.setup();
-    const today = new Date().toISOString().slice(0, 10);
+    const today = formatLocalDate(new Date("2026-06-28T00:30:00+08:00"));
 
     saveState({
       contacts: [
@@ -494,6 +495,10 @@ describe("App", () => {
     expect(screen.getByText(new RegExp(`Follow-up date: ${today}`))).toBeInTheDocument();
     expect(screen.getByText(/Follow-up due/i)).toBeInTheDocument();
     expect(screen.queryByText(/Jordan Lee/i)).not.toBeInTheDocument();
+  });
+
+  it("formats dates using the local calendar day instead of UTC", () => {
+    expect(formatLocalDate(new Date("2026-06-28T00:30:00+08:00"))).toBe("2026-06-28");
   });
 
   it("shows an empty state when no follow-ups are due today", async () => {
