@@ -15,6 +15,7 @@ Local-first job search cockpit for Mia's Web3 remote transition sprint.
 ## What V1 Does Not Do
 
 - It does not log into LinkedIn or Indeed.
+- It does not store LinkedIn or Indeed login state.
 - It does not scrape logged-in pages.
 - It does not automatically send DMs, connection requests, follow-up messages, or applications.
 - It does not auto-apply.

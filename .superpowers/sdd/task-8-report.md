@@ -38,3 +38,7 @@
 - Local dev-server verification is blocked by the workspace Node version, so the requested `npm run dev` URL check could not be completed here.
 - `git status --short` still shows pre-existing untracked workspace files and directories outside this task's scope; I did not stage them.
 - Commit created: `8a29493` (`docs: add local MVP usage and compliance guide`)
+
+## Fix verification note
+
+- Added the explicit README boundary that V1 does not store LinkedIn or Indeed login state, while leaving the existing Node runtime requirement and non-goals wording in place.
