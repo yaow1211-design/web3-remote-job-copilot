@@ -69,3 +69,44 @@ You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. P
 ## Concerns
 - `bestRoleFamily` uses the brief's `Not enough data` fallback when the top score is zero, which matches the requested behavior but may be stricter than some product expectations.
 - The build warning indicates the local Node version is below Vite's preferred floor, though it did not block tests or the production build.
+
+## Task 5 revisit: review fix verification
+
+### Focused regression
+Command:
+```text
+npm test -- src/domain/weeklyReview.test.ts
+```
+Result:
+```text
+✓ src/domain/weeklyReview.test.ts (2 tests) 1ms
+```
+
+### Full test suite
+Command:
+```text
+npm test
+```
+Result:
+```text
+✓ src/domain/weeklyReview.test.ts (2 tests) 1ms
+✓ src/domain/applicationPack.test.ts (3 tests) 4ms
+✓ src/domain/scoring.test.ts (16 tests) 6ms
+✓ src/storage/localStore.test.ts (4 tests) 4ms
+✓ src/App.test.tsx (1 test) 54ms
+
+Test Files  5 passed (5)
+Tests       26 passed (26)
+```
+
+### Build
+Command:
+```text
+npm run build
+```
+Result:
+```text
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v7.3.6 building client environment for production...
+✓ built in 701ms
+```

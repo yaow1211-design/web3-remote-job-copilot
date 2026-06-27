@@ -122,5 +122,28 @@ describe("buildWeeklyReview", () => {
     expect(review.interviewCount).toBe(1);
     expect(review.bestRoleFamily).toBe("Growth Data Analyst");
     expect(review.nextWeekAdjustments.join(" ")).toContain("Keep Growth Data Analyst");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("role direction ratio");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("Candidate Asset Layer");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("LinkedIn");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("portfolio");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("resume");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("DM templates");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("Web3-adjacent");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("applications");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("outreach");
+    expect(review.nextWeekAdjustments.join(" ")).toContain("replies stay at zero");
+  });
+
+  it("returns not enough data for both role families when the week has no signal", () => {
+    const review = buildWeeklyReview(
+      [
+        { ...jobs[0], id: "j10", roleFamily: "Growth Data Analyst" },
+        { ...jobs[1], id: "j20", roleFamily: "Business Analyst" },
+      ],
+      []
+    );
+
+    expect(review.bestRoleFamily).toBe("Not enough data");
+    expect(review.worstRoleFamily).toBe("Not enough data");
   });
 });
