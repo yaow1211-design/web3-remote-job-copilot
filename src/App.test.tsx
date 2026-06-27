@@ -162,6 +162,8 @@ describe("App", () => {
     const [recruiterDm, hiringManagerDm] = screen.getAllByRole("textbox");
     expect(recruiterDm).toHaveValue(expectedPack.recruiterDm);
     expect(hiringManagerDm).toHaveValue(expectedPack.hiringManagerDm);
+    expect((recruiterDm as HTMLTextAreaElement).value).not.toContain("I will review and send this manually");
+    expect((hiringManagerDm as HTMLTextAreaElement).value).not.toContain("I will review and send this manually");
 
     await user.click(screen.getByRole("button", { name: /Outreach/i }));
     expect(screen.getByText(/generated_pack/i)).toBeInTheDocument();
@@ -309,14 +311,20 @@ describe("App", () => {
     await user.click(screen.getByRole("button", { name: /Record follow-up/i }));
 
     expect(screen.getByText(/Follow-up recorded manually/i)).toBeInTheDocument();
-    expect(screen.getByText(/Follow-up date: 2026-07-10/i)).toBeInTheDocument();
+    expect(screen.getByText(/Follow-up date: Not scheduled/i)).toBeInTheDocument();
+    expect(screen.getByText(/No response/i)).toBeInTheDocument();
 
     const savedState = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}") as {
       activities?: Array<{ actionType: string; nextActionDate: string }>;
+      contacts?: Array<{ followUpDate: string; messageStatus: string }>;
     };
     expect(savedState.activities?.[0]).toMatchObject({
       actionType: "sent_follow_up",
       nextActionDate: "2026-07-10",
+    });
+    expect(savedState.contacts?.[0]).toMatchObject({
+      followUpDate: "",
+      messageStatus: "No response",
     });
   });
 
@@ -410,6 +418,19 @@ describe("App", () => {
     expect(screen.getByText("I will review and send this manually.")).toBeInTheDocument();
   });
 
+  it("does not add a title-only intake without a JD or URL", async () => {
+    const user = userEvent.setup();
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+    await user.type(screen.getByLabelText(/Job title/i), "Lonely Title");
+    await user.click(screen.getByRole("button", { name: /Add job/i }));
+
+    expect(screen.queryByRole("heading", { name: /Lonely Title · Company to verify/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /2 Jobs/i })).toBeInTheDocument();
+  });
+
   it("exports and imports backup JSON that updates visible app state", async () => {
     const user = userEvent.setup();
 
@@ -495,6 +516,42 @@ describe("App", () => {
     expect(screen.getByText(new RegExp(`Follow-up date: ${today}`))).toBeInTheDocument();
     expect(screen.getByText(/Follow-up due/i)).toBeInTheDocument();
     expect(screen.queryByText(/Jordan Lee/i)).not.toBeInTheDocument();
+  });
+
+  it("removes a due reminder from Today after recording the follow-up when no next follow-up is scheduled", async () => {
+    const user = userEvent.setup();
+    const today = formatLocalDate(new Date("2026-06-28T00:30:00+08:00"));
+
+    saveState({
+      contacts: [
+        {
+          id: "contact-due",
+          jobId: "job-2",
+          name: "Avery Chen",
+          company: "Example Global Fintech",
+          role: "Hiring Manager",
+          channel: "Email",
+          profileUrl: "",
+          relationshipType: "hiring manager",
+          messageStatus: "Follow-up due",
+          followUpDate: today,
+          replyStatus: "",
+          notes: "Due today.",
+        },
+      ],
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Outreach/i);
+    await user.click(screen.getByRole("button", { name: /Record follow-up/i }));
+    expect(screen.getByText(/No response/i)).toBeInTheDocument();
+    expect(screen.getByText(/Follow-up date: Not scheduled/i)).toBeInTheDocument();
+
+    await openNav(user, /Today/i);
+    expect(screen.getByText(/No follow-ups due today\./i)).toBeInTheDocument();
+    expect(screen.queryByText(/Avery Chen/i)).not.toBeInTheDocument();
   });
 
   it("formats dates using the local calendar day instead of UTC", () => {

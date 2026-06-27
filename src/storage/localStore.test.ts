@@ -62,4 +62,53 @@ describe("localStore", () => {
       "Backup is missing required app state fields",
     );
   });
+
+  it("rejects malformed nested backup records with clear validation errors", () => {
+    const state = createInitialAppState();
+    const malformedBackup = {
+      ...state,
+      jobs: [
+        {
+          ...state.jobs[0],
+          requiredSkills: "SQL",
+        },
+      ],
+      contacts: [
+        {
+          ...state.contacts[0],
+          messageStatus: "Waiting",
+        },
+      ],
+    };
+
+    expect(() => importAppState(JSON.stringify(malformedBackup))).toThrow(
+      "Backup validation failed: jobs[0].requiredSkills must be a string array; contacts[0].messageStatus must be one of",
+    );
+  });
+
+  it("falls back to initial state when persisted localStorage is structurally invalid", () => {
+    const storage = createMemoryStorage();
+    const invalidPersistedState = {
+      ...createInitialAppState(),
+      activities: [
+        {
+          id: "activity-1",
+          jobId: "job-1",
+          actionType: "sent_dm",
+          channel: "Carrier pigeon",
+          date: "2026-06-28",
+          contentVersion: "Manual DM",
+          result: "Sent",
+          nextActionDate: "",
+          notes: "",
+        },
+      ],
+    };
+
+    storage.setItem("web3-remote-job-copilot:v1", JSON.stringify(invalidPersistedState));
+
+    const loaded = loadAppState(storage);
+
+    expect(loaded).toEqual(createInitialAppState());
+  });
 });

@@ -1,4 +1,5 @@
 import type { FormEvent } from "react";
+import { formatLocalDate } from "../domain/date";
 import type { Job, RoleFamily } from "../domain/types";
 
 interface JobInboxProps {
@@ -68,8 +69,7 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
     const applyUrl = String(form.get("applyUrl") ?? "").trim();
     const roleFamily = String(form.get("roleFamily") ?? "Growth Data Analyst") as RoleFamily;
     const hasJdText = jdText.length > 0;
-    const hasMeaningfulIntake =
-      title.length > 0 || company.length > 0 || hasJdText || originalUrl.length > 0 || applyUrl.length > 0;
+    const hasMeaningfulIntake = hasJdText || originalUrl.length > 0 || applyUrl.length > 0;
 
     if (!hasMeaningfulIntake) {
       return;
@@ -99,7 +99,7 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
       preferredSkills: skillText.match(/crypto|Web3|DeFi|fintech|growth/gi) ?? [],
       cryptoRequirementLevel: inferCryptoRequirementLevel(title, jdText),
       salaryRange: "",
-      postedAt: new Date().toISOString().slice(0, 10),
+      postedAt: formatLocalDate(),
       status: "new",
       notes: "",
     });

@@ -34,8 +34,10 @@ describe("generateApplicationPack", () => {
     expect(pack.roleAngle).toBe("Growth Data Analyst");
     expect(pack.selectedResumeVersion).toBe("Growth Data Analyst resume");
     expect(pack.tailoredSummary).toContain("campaign conversion up to 42%");
-    expect(pack.recruiterDm).toContain("I will review and send this manually");
+    expect(pack.recruiterDm).not.toContain("I will review and send this manually");
+    expect(pack.recruiterDm).toContain("APAC-friendly remote candidates");
     expect(pack.hiringManagerDm).toContain("lifecycle analytics");
+    expect(pack.hiringManagerDm).not.toContain("I will review and send this manually");
     expect(pack.riskHandlingNote).toContain("I have not worked full-time inside a Web3 company yet");
     expect(pack.interviewTalkingPoints.length).toBeGreaterThanOrEqual(3);
   });

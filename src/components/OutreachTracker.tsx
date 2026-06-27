@@ -96,7 +96,7 @@ export function OutreachTracker({
         result: "Follow-up recorded manually",
       }),
     );
-    setContactStatus(contact, "Follow-up due", contact.followUpDate, "");
+    setContactStatus(contact, "No response", "", "");
   }
 
   function recordReply(contact: OutreachContact) {

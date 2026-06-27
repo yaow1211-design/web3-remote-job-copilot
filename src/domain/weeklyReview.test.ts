@@ -137,6 +137,39 @@ describe("buildWeeklyReview", () => {
     expect(review.nextWeekAdjustments.join(" ")).toContain("replies stay at zero");
   });
 
+  it("counts only activities inside the default trailing seven-day window", () => {
+    const review = buildWeeklyReview(jobs, [
+      ...activities,
+      {
+        id: "a-old",
+        jobId: "j2",
+        actionType: "submitted_application",
+        channel: "Application Portal",
+        date: "2026-06-10",
+        contentVersion: "",
+        result: "Submitted",
+        nextActionDate: "",
+        notes: "",
+      },
+    ]);
+
+    expect(review.appliedCount).toBe(1);
+    expect(review.bestRoleFamily).toBe("Growth Data Analyst");
+  });
+
+  it("accepts an explicit review window and excludes activity outside it", () => {
+    const review = buildWeeklyReview(jobs, activities, {
+      startDate: "2026-06-25",
+      endDate: "2026-06-27",
+    });
+
+    expect(review.reviewedCount).toBe(0);
+    expect(review.appliedCount).toBe(0);
+    expect(review.outreachCount).toBe(1);
+    expect(review.interviewCount).toBe(1);
+    expect(review.bestRoleFamily).toBe("Growth Data Analyst");
+  });
+
   it("returns not enough data for both role families when the week has no signal", () => {
     const review = buildWeeklyReview(
       [

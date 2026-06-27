@@ -1,3 +1,4 @@
+import { formatLocalDate } from "./date";
 import type { ApplicationActivity, Job, RoleFamily } from "./types";
 
 export interface WeeklyReviewResult {
@@ -29,19 +30,45 @@ function roleFamilyScore(jobs: Job[], activities: ApplicationActivity[], roleFam
     }, 0);
 }
 
-export function buildWeeklyReview(jobs: Job[], activities: ApplicationActivity[]): WeeklyReviewResult {
+export interface WeeklyReviewWindow {
+  startDate: string;
+  endDate: string;
+}
+
+function buildDefaultWindow(today = new Date()): WeeklyReviewWindow {
+  const endDate = formatLocalDate(today);
+  const start = new Date(today);
+  start.setDate(start.getDate() - 6);
+
+  return {
+    startDate: formatLocalDate(start),
+    endDate,
+  };
+}
+
+function isWithinWindow(activity: ApplicationActivity, window: WeeklyReviewWindow): boolean {
+  return activity.date >= window.startDate && activity.date <= window.endDate;
+}
+
+export function buildWeeklyReview(
+  jobs: Job[],
+  activities: ApplicationActivity[],
+  window: WeeklyReviewWindow = buildDefaultWindow(),
+): WeeklyReviewResult {
+  const windowedActivities = activities.filter((activity) => isWithinWindow(activity, window));
   const roleFamilies = Array.from(new Set(jobs.map((job) => job.roleFamily)));
   const ranked = roleFamilies
-    .map((roleFamily) => ({ roleFamily, score: roleFamilyScore(jobs, activities, roleFamily) }))
+    .map((roleFamily) => ({ roleFamily, score: roleFamilyScore(jobs, windowedActivities, roleFamily) }))
     .sort((a, b) => b.score - a.score);
   const topScore = ranked[0]?.score ?? 0;
 
   const bestRoleFamily = topScore > 0 ? ranked[0].roleFamily : "Not enough data";
   const worstRoleFamily = ranked.length > 1 ? ranked[ranked.length - 1].roleFamily : "Not enough data";
-  const appliedCount = countActivities(activities, "submitted_application");
-  const outreachCount = countActivities(activities, "sent_dm") + countActivities(activities, "sent_follow_up");
-  const replyCount = countActivities(activities, "received_reply");
-  const interviewCount = countActivities(activities, "booked_interview");
+  const appliedCount = countActivities(windowedActivities, "submitted_application");
+  const outreachCount =
+    countActivities(windowedActivities, "sent_dm") + countActivities(windowedActivities, "sent_follow_up");
+  const replyCount = countActivities(windowedActivities, "received_reply");
+  const interviewCount = countActivities(windowedActivities, "booked_interview");
   const nextWeekAdjustments = [
     bestRoleFamily === "Not enough data"
       ? "Review at least 80 roles before changing your role direction ratio."
@@ -57,7 +84,7 @@ export function buildWeeklyReview(jobs: Job[], activities: ApplicationActivity[]
   ];
 
   return {
-    reviewedCount: countActivities(activities, "reviewed_job"),
+    reviewedCount: countActivities(windowedActivities, "reviewed_job"),
     shortlistedCount: jobs.filter((job) => job.status === "shortlisted").length,
     appliedCount,
     outreachCount,
