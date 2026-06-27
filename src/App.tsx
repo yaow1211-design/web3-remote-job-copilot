@@ -70,6 +70,13 @@ const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
   },
 };
 
+const OUTREACH_NON_REGRESSING_STATUSES: JobStatus[] = [
+  "applied",
+  "interview",
+  "rejected",
+  "archived",
+];
+
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
@@ -187,15 +194,17 @@ export default function App() {
       contacts: current.contacts.map((item) => (item.id === contact.id ? contact : item)),
       jobs: current.jobs.map((job) =>
         job.id === contact.jobId
-          ? {
-              ...job,
-              status:
-                contact.messageStatus === "Follow-up due"
+          ? OUTREACH_NON_REGRESSING_STATUSES.includes(job.status)
+            ? job
+            : {
+                ...job,
+                status:
+                  contact.messageStatus === "Follow-up due"
                     ? "follow_up_due"
                     : contact.messageStatus === "DM sent"
                       ? "dm_sent"
                       : job.status,
-            }
+              }
           : job,
       ),
     }));

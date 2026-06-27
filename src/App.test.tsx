@@ -338,6 +338,33 @@ describe("App", () => {
     expect(screen.getByText(/Replied/i)).toBeInTheDocument();
   });
 
+  it("keeps an advanced job status stable when outreach contact status changes", async () => {
+    const user = userEvent.setup();
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    await user.selectOptions(screen.getByLabelText(/Status/i), "interview");
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("interview");
+
+    await openNav(user, /Outreach/i);
+    await user.type(screen.getByLabelText(/Contact name/i), "Mina Patel");
+    await user.type(screen.getByLabelText(/Contact company/i), "Example Global Fintech");
+    await user.type(screen.getByLabelText(/Contact role/i), "Hiring Manager");
+    await user.selectOptions(screen.getByLabelText(/Associated job/i), "job-2");
+    await user.click(screen.getByRole("button", { name: /Add contact/i }));
+
+    const contactCard = screen.getByText(/Mina Patel · Example Global Fintech/i).closest("article");
+    expect(contactCard).not.toBeNull();
+    await user.click(within(contactCard as HTMLElement).getByRole("button", { name: /Record follow-up/i }));
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("interview");
+    expect(screen.getByText(/Example Global Fintech · interview/i)).toBeInTheDocument();
+  });
+
   it("shows weekly review metrics and guidance derived from outreach and reply activity", async () => {
     const user = userEvent.setup();
 

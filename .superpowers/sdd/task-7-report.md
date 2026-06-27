@@ -151,6 +151,31 @@ npm run build
 - Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 - Completed with `✓ built in 720ms`
 
+## Task 7 outreach non-regression fix verification (2026-06-28)
+
+- Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so outreach-driven contact updates keep jobs in advanced statuses (`applied`, `interview`, `rejected`, `archived`) from regressing to `dm_sent` or `follow_up_due`.
+- Added a regression test in [src/App.test.tsx](/Users/wangmia/Documents/New%20project/src/App.test.tsx) that moves the Business Analyst job to `interview`, creates an outreach contact on that job, records manual follow-up activity, and confirms the job stays `interview`.
+
+### Verification results
+
+`npm test -- src/App.test.tsx`
+
+- Exit code: `0`
+- `Test Files  1 passed (1)`
+- `Tests  17 passed (17)`
+
+`npm test`
+
+- Exit code: `0`
+- `Test Files  5 passed (5)`
+- `Tests  42 passed (42)`
+
+`npm run build`
+
+- Exit code: `0`
+- Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
+- Completed with `✓ built in 732ms`
+
 ## Task 7 manual status and follow-up fix verification (2026-06-28)
 
 - Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so manual status changes in Job Detail append Weekly Review activity records only when the status actually changes, with manual-only wording for reviewed, applied, interview, and rejected states.
