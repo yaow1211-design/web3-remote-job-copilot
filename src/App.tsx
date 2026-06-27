@@ -259,37 +259,35 @@ export default function App() {
 
       <section className="workspace" aria-label="Workspace">
         {view === "today" && (
-          <>
-            <section className="panel">
-              <p className="eyebrow-dark">Today Command Center</p>
-              <h2>Start with the highest-ROI job action</h2>
-              <p>
-                Open Job Inbox, review a role, generate an application pack, then record manual outreach.
-              </p>
-            </section>
+          <section className="panel">
+            <p className="eyebrow-dark">Today Command Center</p>
+            <h2>Start with the highest-ROI job action</h2>
+            <p>Open Job Inbox, review a role, generate an application pack, then record manual outreach.</p>
+            <div className="compliance-note">
+              <strong>Human review boundary:</strong> This MVP never logs into LinkedIn or Indeed, never sends DMs,
+              and never submits applications. It only prepares materials for Mia to review and use manually.
+            </div>
 
-            <section className="panel">
-              <div className="section-heading">
-                <p className="eyebrow-dark">Follow-up Reminders</p>
-                <h2>Follow-up Reminders</h2>
-              </div>
-              {followUpReminders.length > 0 ? (
-                <ul className="reminder-list">
-                  {followUpReminders.map((contact) => (
-                    <li key={contact.id} className="reminder-item">
-                      <strong>
-                        {contact.name} · {contact.company}
-                      </strong>
-                      <span>Follow-up date: {contact.followUpDate}</span>
-                      <span>Message status: {contact.messageStatus}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No follow-ups due today.</p>
-              )}
-            </section>
-          </>
+            <div className="section-heading">
+              <p className="eyebrow-dark">Follow-up Reminders</p>
+              <h2>Follow-up Reminders</h2>
+            </div>
+            {followUpReminders.length > 0 ? (
+              <ul className="reminder-list">
+                {followUpReminders.map((contact) => (
+                  <li key={contact.id} className="reminder-item">
+                    <strong>
+                      {contact.name} · {contact.company}
+                    </strong>
+                    <span>Follow-up date: {contact.followUpDate}</span>
+                    <span>Message status: {contact.messageStatus}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>No follow-ups due today.</p>
+            )}
+          </section>
         )}
 
         {view === "jobs" && (

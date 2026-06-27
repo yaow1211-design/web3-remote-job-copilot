@@ -249,6 +249,15 @@ select {
   font-weight: 700;
 }
 
+.compliance-note {
+  border-left: 4px solid #1f6b5f;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: #edf7f3;
+  color: #153b3f;
+}
+
 .reminder-list {
   display: grid;
   gap: 10px;
