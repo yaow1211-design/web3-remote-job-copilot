@@ -237,6 +237,29 @@ describe("App", () => {
     expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
   });
 
+  it("counts a manual shortlisted status change in weekly review and records the manual shortlist activity", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: sampleJobs.map((job) => (job.id === "job-2" ? { ...job, status: "reviewed" } : job)),
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    await user.selectOptions(screen.getByLabelText(/Status/i), "shortlisted");
+    await user.selectOptions(screen.getByLabelText(/Status/i), "applied");
+
+    await openNav(user, /Outreach/i);
+    expect(screen.getByText(/shortlisted_job/i)).toBeInTheDocument();
+    expect(screen.getByText(/Shortlisted manually/i)).toBeInTheDocument();
+
+    await openNav(user, /Weekly Review/i);
+    expect(screen.getByText(/Shortlisted: 1/i)).toBeInTheDocument();
+  });
+
   it("counts a manual interview status change in weekly review", async () => {
     const user = userEvent.setup();
 

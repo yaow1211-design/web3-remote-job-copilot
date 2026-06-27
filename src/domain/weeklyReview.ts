@@ -85,7 +85,7 @@ export function buildWeeklyReview(
 
   return {
     reviewedCount: countActivities(windowedActivities, "reviewed_job"),
-    shortlistedCount: jobs.filter((job) => job.status === "shortlisted").length,
+    shortlistedCount: countActivities(windowedActivities, "shortlisted_job"),
     appliedCount,
     outreachCount,
     replyCount,

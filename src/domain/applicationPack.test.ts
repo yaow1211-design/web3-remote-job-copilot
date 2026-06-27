@@ -37,6 +37,7 @@ describe("generateApplicationPack", () => {
     expect(pack.recruiterDm).not.toContain("I will review and send this manually");
     expect(pack.recruiterDm).toContain("APAC-friendly remote candidates");
     expect(pack.hiringManagerDm).toContain("lifecycle analytics");
+    expect(pack.hiringManagerDm).not.toContain("I am not positioning myself as a smart contract engineer");
     expect(pack.hiringManagerDm).not.toContain("I will review and send this manually");
     expect(pack.riskHandlingNote).toContain("I have not worked full-time inside a Web3 company yet");
     expect(pack.interviewTalkingPoints.length).toBeGreaterThanOrEqual(3);

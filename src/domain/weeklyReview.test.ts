@@ -40,7 +40,7 @@ const jobs: Job[] = [
     cryptoRequirementLevel: "none",
     salaryRange: "",
     postedAt: "2026-06-24",
-    status: "shortlisted",
+    status: "reviewed",
     notes: "",
   },
   {
@@ -110,6 +110,17 @@ const activities: ApplicationActivity[] = [
     nextActionDate: "",
     notes: "",
   },
+  {
+    id: "a5",
+    jobId: "j2",
+    actionType: "shortlisted_job",
+    channel: "Application Portal",
+    date: "2026-06-26",
+    contentVersion: "",
+    result: "Shortlisted manually",
+    nextActionDate: "",
+    notes: "",
+  },
 ];
 
 describe("buildWeeklyReview", () => {
@@ -151,10 +162,35 @@ describe("buildWeeklyReview", () => {
         nextActionDate: "",
         notes: "",
       },
+      {
+        id: "a-old-shortlist",
+        jobId: "j2",
+        actionType: "shortlisted_job",
+        channel: "Application Portal",
+        date: "2026-06-10",
+        contentVersion: "",
+        result: "Shortlisted manually",
+        nextActionDate: "",
+        notes: "",
+      },
     ]);
 
     expect(review.appliedCount).toBe(1);
+    expect(review.shortlistedCount).toBe(1);
     expect(review.bestRoleFamily).toBe("Growth Data Analyst");
+  });
+
+  it("counts shortlisted jobs from shortlisted activity inside the window even after the current status moves on", () => {
+    const review = buildWeeklyReview(
+      jobs.map((job) => (job.id === "j2" ? { ...job, status: "applied" } : job)),
+      activities,
+      {
+        startDate: "2026-06-24",
+        endDate: "2026-06-28",
+      },
+    );
+
+    expect(review.shortlistedCount).toBe(1);
   });
 
   it("accepts an explicit review window and excludes activity outside it", () => {
@@ -165,6 +201,7 @@ describe("buildWeeklyReview", () => {
 
     expect(review.reviewedCount).toBe(0);
     expect(review.appliedCount).toBe(0);
+    expect(review.shortlistedCount).toBe(1);
     expect(review.outreachCount).toBe(1);
     expect(review.interviewCount).toBe(1);
     expect(review.bestRoleFamily).toBe("Growth Data Analyst");

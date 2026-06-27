@@ -57,6 +57,10 @@ const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
     actionType: "reviewed_job",
     result: "Reviewed manually",
   },
+  shortlisted: {
+    actionType: "shortlisted_job",
+    result: "Shortlisted manually",
+  },
   applied: {
     actionType: "submitted_application",
     result: "Application submitted manually",

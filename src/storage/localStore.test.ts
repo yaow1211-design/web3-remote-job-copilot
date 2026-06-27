@@ -6,6 +6,7 @@ import {
   loadAppState,
   saveAppState,
 } from "./localStore";
+import type { AppState } from "../domain/types";
 
 function createMemoryStorage(): Storage {
   const data = new Map<string, string>();
@@ -48,12 +49,22 @@ describe("localStore", () => {
 
   it("exports and imports valid JSON backups", () => {
     const state = createInitialAppState();
-    const json = exportAppState(state);
+    const shortlistActivityState: AppState = {
+      ...state,
+      activities: [
+        {
+          ...state.activities[0],
+          actionType: "shortlisted_job",
+        },
+      ],
+    };
+    const json = exportAppState(shortlistActivityState);
 
     const imported = importAppState(json);
 
     expect(imported.version).toBe(1);
     expect(imported.candidate.portfolioUrl).toContain("github.io");
+    expect(imported.activities[0]?.actionType).toBe("shortlisted_job");
   });
 
   it("rejects malformed backup JSON", () => {

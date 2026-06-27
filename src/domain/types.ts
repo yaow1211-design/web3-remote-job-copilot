@@ -24,6 +24,7 @@ export type MessageStatus = "Not contacted" | "DM drafted" | "DM sent" | "Follow
 export type RelationshipType = "recruiter" | "hiring manager" | "team member" | "founder" | "warm intro" | "community contact";
 export type ActivityType =
   | "reviewed_job"
+  | "shortlisted_job"
   | "generated_pack"
   | "submitted_application"
   | "sent_dm"

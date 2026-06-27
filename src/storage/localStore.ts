@@ -65,6 +65,7 @@ const RELATIONSHIP_TYPES: RelationshipType[] = [
 ];
 const ACTIVITY_TYPES: ActivityType[] = [
   "reviewed_job",
+  "shortlisted_job",
   "generated_pack",
   "submitted_application",
   "sent_dm",
