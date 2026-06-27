@@ -16,12 +16,14 @@ Local-first job search cockpit for Mia's Web3 remote transition sprint.
 
 - It does not log into LinkedIn or Indeed.
 - It does not scrape logged-in pages.
-- It does not send DMs, connection requests, follow-ups, or applications.
+- It does not automatically send DMs, connection requests, follow-up messages, or applications.
 - It does not auto-apply.
 - It does not store third-party account passwords.
 - It does not position Mia as a Solidity or smart contract engineer.
 
 ## Local Development
+
+Requires Node.js 20.19+ or 22.12+.
 
 ```bash
 npm install
