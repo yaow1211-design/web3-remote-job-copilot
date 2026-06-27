@@ -81,7 +81,7 @@ describe("scoreJob", () => {
         roleFamily: "Growth Data Analyst",
         seniority: "Mid-level",
         requiredSkills: ["SQL", "Analytics"],
-        preferredSkills: ["Crypto company experience"],
+        preferredSkills: ["Crypto interest"],
         cryptoRequirementLevel: "hard_blocker",
       },
       seedCandidate,
@@ -260,5 +260,64 @@ describe("scoreJob", () => {
 
     expect(score.languageFit).toBeGreaterThanOrEqual(60);
     expect(score.risks).not.toContain("Language requirement may be outside Mia's current positioning.");
+  });
+
+  it("does not flag market or customer segment requirements as language risks", () => {
+    const germanMarketScore = scoreJob(
+      {
+        ...baseJob,
+        title: "SQL Analyst",
+        jdText: "German market experience required; strong SQL and reporting skills are needed.",
+        roleFamily: "Product / Operations Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL"],
+        preferredSkills: ["Market Analysis"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    const japaneseSegmentScore = scoreJob(
+      {
+        ...baseJob,
+        title: "SQL Analyst",
+        jdText: "Japanese customer segment knowledge required; strong SQL and reporting skills are needed.",
+        roleFamily: "Product / Operations Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL"],
+        preferredSkills: ["Market Analysis"],
+        cryptoRequirementLevel: "preferred",
+      },
+      seedCandidate,
+    );
+
+    expect(germanMarketScore.languageFit).toBeGreaterThanOrEqual(60);
+    expect(germanMarketScore.risks).not.toContain("Language requirement may be outside Mia's current positioning.");
+    expect(japaneseSegmentScore.languageFit).toBeGreaterThanOrEqual(60);
+    expect(japaneseSegmentScore.risks).not.toContain("Language requirement may be outside Mia's current positioning.");
+  });
+
+  it.each([
+    "experience at a crypto company",
+    "worked for a Web3 startup",
+    "background in blockchain firms",
+  ])("treats '%s' as explicit crypto/Web3 company experience", (phrase) => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "Growth Analyst",
+        company: "Crypto Treasury Co",
+        jdText: `Requires ${phrase}. Strong SQL and growth analytics background preferred.`,
+        roleFamily: "Growth Data Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL", "Analytics"],
+        preferredSkills: ["Crypto company experience"],
+        cryptoRequirementLevel: "hard_blocker",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).toBe("Skip");
+    expect(score.risks).toContain("Crypto/Web3 company experience is a hard requirement for this role.");
   });
 });

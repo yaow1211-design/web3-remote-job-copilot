@@ -224,6 +224,73 @@ dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
 # Task 3 Re-Review Fix 4
 
 ## What I fixed
+- Tightened language-risk detection so it only fires on actual language proficiency wording and no longer misreads market or customer-segment requirements as language needs.
+- Expanded explicit crypto/Web3 company-experience detection to cover employment-style variants such as `experience at a crypto company`, `worked for a Web3 startup`, and `background in blockchain firms`.
+- Added regressions for the new false-positive and explicit company-experience cases.
+
+## Verification
+- `npm test -- src/domain/scoring.test.ts`
+- `npm test`
+- `npm run build`
+
+## Exact output summaries
+### `npm test -- src/domain/scoring.test.ts`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run src/domain/scoring.test.ts
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/domain/scoring.test.ts (16 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  16 passed (16)
+   Start at  01:54:06
+   Duration  380ms (transform 31ms, setup 24ms, collect 26ms, tests 6ms, environment 133ms, prepare 29ms)
+```
+
+### `npm test`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/storage/localStore.test.ts (4 tests) 2ms
+ ✓ src/domain/scoring.test.ts (16 tests) 7ms
+ ✓ src/App.test.tsx (1 test) 52ms
+
+ Test Files  3 passed (3)
+      Tests  21 passed (21)
+   Start at  01:54:22
+   Duration  670ms (transform 69ms, setup 116ms, collect 179ms, tests 62ms, environment 674ms, prepare 121ms)
+```
+
+### `npm run build`
+```text
+> web3-remote-job-copilot@0.1.0 build
+> tsc -b && vite build
+
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1579 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.28 kB
+dist/assets/index-6cxVOiDA.css    1.27 kB │ gzip:  0.68 kB
+dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
+✓ built in 680ms
+```
+
+## Concerns
+- The build still emits the existing Node 20.11.0 warning from Vite, but the build completes successfully.
+
+---
+
+# Task 3 Re-Review Fix 4
+
+## What I fixed
 - Narrowed technical hard-block detection so only explicit engineering phrasing or Solidity-as-required/core-skill language blocks a role.
 - Stopped analyst/research roles from being skipped just because they mention smart contract activity, protocol usage, or related on-chain analysis.
 - Reworked language-risk detection to be phrase-level and proximity-based instead of matching a language anywhere plus `required` anywhere.

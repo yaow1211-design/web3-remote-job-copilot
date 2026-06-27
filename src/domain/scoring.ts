@@ -64,7 +64,7 @@ function hasGenericCryptoHardBlocker(job: Job, technicalHardBlocker: boolean, se
 }
 
 function hasExplicitCryptoCompanyExperienceRequirement(text: string): boolean {
-  return [
+  const companyExperiencePatterns = [
     /\bcrypto company experience\b/,
     /\bweb3 company experience\b/,
     /\bblockchain company experience\b/,
@@ -74,16 +74,24 @@ function hasExplicitCryptoCompanyExperienceRequirement(text: string): boolean {
     /\bcrypto[-\s]native company experience\b/,
     /\bweb3[-\s]native company experience\b/,
     /\bblockchain[-\s]native company experience\b/,
-  ].some((pattern) => pattern.test(text));
+    /\b(?:experience|worked|working|background)\s+(?:at|for|in)\s+(?:a|an|the)?\s*(?:crypto|web3|blockchain)\s+(?:company|startup|firm|firms|companies|organization|org|business)\b/,
+    /\b(?:crypto|web3|blockchain)\s+(?:company|startup|firm|firms|companies|organization|org|business)\s+(?:experience|background)\b/,
+    /\b(?:experience|background)\s+in\s+(?:crypto|web3|blockchain)\s+(?:company|startup|firm|firms|companies|organization|org|business)\b/,
+  ];
+
+  return companyExperiencePatterns.some((pattern) => pattern.test(text));
 }
 
 function hasRestrictiveLanguageRequirement(text: string): boolean {
   const termPattern = RESTRICTIVE_LANGUAGE_TERMS.join("|");
   const patterns = [
-    new RegExp(`\\b(?:native|fluent|must speak|speak|speaks|speaking|business level|professional level)\\b.{0,24}\\b(?:${termPattern})\\b`, "i"),
-    new RegExp(`\\b(?:${termPattern})\\b.{0,24}\\b(?:required|mandatory|needed|necessary|must have|must speak|proficiency|fluent|native|business level|professional level)\\b`, "i"),
-    new RegExp(`\\b(?:${termPattern})\\s+speaker\\b`, "i"),
+    new RegExp(`\\b(?:native|fluent|must speak|speak|speaks|speaking|business level|professional level)\\s+(?:in\\s+)?(?:${termPattern})\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+(?:required|needed|mandatory)\\b`, "i"),
     new RegExp(`\\b(?:${termPattern})\\s+language\\s+(?:required|needed|mandatory)\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+language\\s+proficiency\\s+(?:required|needed|mandatory)\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+language\\s+skills?\\s+(?:required|needed|mandatory)\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+proficiency\\s+(?:required|needed|mandatory)\\b`, "i"),
+    new RegExp(`\\b(?:${termPattern})\\s+speaker\\b`, "i"),
   ];
   return patterns.some((pattern) => pattern.test(text));
 }
