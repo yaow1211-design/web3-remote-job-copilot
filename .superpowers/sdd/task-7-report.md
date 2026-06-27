@@ -150,3 +150,29 @@ npm run build
 - Exit code: `0`
 - Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
 - Completed with `✓ built in 720ms`
+
+## Task 7 manual status and follow-up fix verification (2026-06-28)
+
+- Updated [src/App.tsx](/Users/wangmia/Documents/New%20project/src/App.tsx) so manual status changes in Job Detail append Weekly Review activity records only when the status actually changes, with manual-only wording for reviewed, applied, interview, and rejected states.
+- Updated [src/components/OutreachTracker.tsx](/Users/wangmia/Documents/New%20project/src/components/OutreachTracker.tsx) so every existing contact card exposes an editable follow-up date input that persists through `onUpdateContact` and feeds later manual outreach activity.
+- Strengthened [src/App.test.tsx](/Users/wangmia/Documents/New%20project/src/App.test.tsx) to cover manual applied/interview status changes flowing into Weekly Review plus seeded-contact follow-up date editing and persistence into recorded follow-up activity.
+
+### Verification results
+
+`npm test -- src/App.test.tsx`
+
+- Exit code: `0`
+- `Test Files  1 passed (1)`
+- `Tests  16 passed (16)`
+
+`npm test`
+
+- Exit code: `0`
+- `Test Files  5 passed (5)`
+- `Tests  41 passed (41)`
+
+`npm run build`
+
+- Exit code: `0`
+- Warning: `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
+- Completed with `✓ built in 723ms`

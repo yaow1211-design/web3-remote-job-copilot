@@ -49,6 +49,27 @@ const PACK_READY_STATUSES: JobStatus[] = [
   "interview",
 ];
 
+const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
+  Record<JobStatus, Pick<ApplicationActivity, "actionType" | "result">>
+> = {
+  reviewed: {
+    actionType: "reviewed_job",
+    result: "Reviewed manually",
+  },
+  applied: {
+    actionType: "submitted_application",
+    result: "Application submitted manually",
+  },
+  interview: {
+    actionType: "booked_interview",
+    result: "Interview booked manually",
+  },
+  rejected: {
+    actionType: "rejected",
+    result: "Rejected / closed",
+  },
+};
+
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
@@ -93,10 +114,32 @@ export default function App() {
   }
 
   function updateJob(job: Job) {
-    setState((current) => ({
-      ...current,
-      jobs: current.jobs.map((item) => (item.id === job.id ? job : item)),
-    }));
+    setState((current) => {
+      const previousJob = current.jobs.find((item) => item.id === job.id);
+      const statusChanged = previousJob && previousJob.status !== job.status;
+      const manualStatusActivity = statusChanged ? MANUAL_STATUS_ACTIVITY_BY_STATUS[job.status] : undefined;
+
+      return {
+        ...current,
+        jobs: current.jobs.map((item) => (item.id === job.id ? job : item)),
+        activities: manualStatusActivity
+          ? [
+              {
+                id: `activity-${Date.now()}-${job.id}-${job.status}`,
+                jobId: job.id,
+                actionType: manualStatusActivity.actionType,
+                channel: "Application Portal",
+                date: new Date().toISOString().slice(0, 10),
+                contentVersion: "Manual status update",
+                result: manualStatusActivity.result,
+                nextActionDate: "",
+                notes: "Recorded from a manual status change in Job Detail. No automation was used.",
+              },
+              ...current.activities,
+            ]
+          : current.activities,
+      };
+    });
   }
 
   function savePack(pack: ApplicationPack) {

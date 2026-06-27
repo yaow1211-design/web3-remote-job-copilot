@@ -257,6 +257,19 @@ export function OutreachTracker({
             </span>
             <span>{contact.role}</span>
             <span>Follow-up date: {contact.followUpDate || "Not scheduled"}</span>
+            <label>
+              Follow-up date for {contact.name}
+              <input
+                type="date"
+                value={contact.followUpDate}
+                onChange={(event) =>
+                  onUpdateContact({
+                    ...contact,
+                    followUpDate: event.target.value,
+                  })
+                }
+              />
+            </label>
             {contact.profileUrl ? (
               <span>Profile URL: {contact.profileUrl}</span>
             ) : null}

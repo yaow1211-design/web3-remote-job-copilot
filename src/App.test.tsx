@@ -212,6 +212,46 @@ describe("App", () => {
     expect(screen.getByText(/Sent manually by Mia/i)).toBeInTheDocument();
   });
 
+  it("counts a manual applied status change in weekly review and records the manual application activity", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: sampleJobs.map((job) => (job.id === "job-2" ? { ...job, status: "shortlisted" } : job)),
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    await user.selectOptions(screen.getByLabelText(/Status/i), "applied");
+
+    await openNav(user, /Outreach/i);
+    expect(screen.getByText(/submitted_application/i)).toBeInTheDocument();
+    expect(screen.getByText(/Application submitted manually/i)).toBeInTheDocument();
+
+    await openNav(user, /Weekly Review/i);
+    expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
+  });
+
+  it("counts a manual interview status change in weekly review", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: sampleJobs.map((job) => (job.id === "job-2" ? { ...job, status: "shortlisted" } : job)),
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Business Analyst, Fintech Operations/i }));
+    await user.selectOptions(screen.getByLabelText(/Status/i), "interview");
+
+    await openNav(user, /Weekly Review/i);
+    expect(screen.getByText(/Interviews: 1/i)).toBeInTheDocument();
+  });
+
   it("adds a manual outreach contact with a visible follow-up date", async () => {
     const user = userEvent.setup();
 
@@ -225,7 +265,7 @@ describe("App", () => {
     await user.selectOptions(screen.getByLabelText(/^Channel$/i), "Email");
     await user.selectOptions(screen.getByLabelText(/Relationship type/i), "hiring manager");
     await user.type(screen.getByLabelText(/Profile URL/i), "https://example.com/avery");
-    await user.type(screen.getByLabelText(/Follow-up date/i), "2026-07-05");
+    await user.type(screen.getByLabelText(/^Follow-up date$/i), "2026-07-05");
     await user.type(screen.getByLabelText(/Notes/i), "Met through a shared fintech operator group.");
     await user.click(screen.getByRole("button", { name: /Add contact/i }));
 
@@ -233,6 +273,50 @@ describe("App", () => {
     expect(contactCard).not.toBeNull();
     expect(within(contactCard as HTMLElement).getByText(/Not contacted/i)).toBeInTheDocument();
     expect(within(contactCard as HTMLElement).getByText(/Follow-up date: 2026-07-05/i)).toBeInTheDocument();
+  });
+
+  it("updates a seeded contact follow-up date and uses it for manual follow-up activity", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      contacts: [
+        {
+          id: "contact-1",
+          jobId: "job-1",
+          name: "Hiring Team",
+          company: "Example Web3 Wallet",
+          role: "Recruiter",
+          channel: "LinkedIn",
+          profileUrl: "",
+          relationshipType: "recruiter",
+          messageStatus: "Not contacted",
+          followUpDate: "",
+          replyStatus: "",
+          notes: "Manual contact entry only.",
+        },
+      ],
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Outreach/i);
+    const followUpInput = screen.getByLabelText(/Follow-up date for Hiring Team/i);
+    fireEvent.change(followUpInput, { target: { value: "2026-07-10" } });
+    expect(screen.getByText(/Follow-up date: 2026-07-10/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Record follow-up/i }));
+
+    expect(screen.getByText(/Follow-up recorded manually/i)).toBeInTheDocument();
+    expect(screen.getByText(/Follow-up date: 2026-07-10/i)).toBeInTheDocument();
+
+    const savedState = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}") as {
+      activities?: Array<{ actionType: string; nextActionDate: string }>;
+    };
+    expect(savedState.activities?.[0]).toMatchObject({
+      actionType: "sent_follow_up",
+      nextActionDate: "2026-07-10",
+    });
   });
 
   it("records manual DM, follow-up, and reply activities from an outreach contact", async () => {
