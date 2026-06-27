@@ -1,6 +1,5 @@
 from pathlib import Path
 from docx import Document
-import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -31,6 +30,12 @@ REQUIRED_TEXT = [
     "不自动登录 LinkedIn / Indeed",
     "不自动发送连接请求、DM 或申请",
     "不自动提交申请",
+    "所有外部动作都必须人审确认，尤其是申请、DM、follow-up。",
+    "少自动化投递，多提高命中率。",
+    "允许用户手动粘贴职位 URL、联系人 URL、JD 文本。",
+    "不自动抓取登录态页面。",
+    "申请提交默认走人审确认。",
+    "允许提高 Web3-adjacent remote 岗位权重，以增加上岸概率。",
     "Greenhouse",
     "Lever",
     "Remotive",
@@ -38,11 +43,19 @@ REQUIRED_TEXT = [
 
 FORBIDDEN_TEXT = [
     "本产品的核心是自动海投",
-    "自动登录 LinkedIn",
-    "自动发送 LinkedIn DM",
-    "自动提交 Indeed Apply",
+    "支持自动登录 LinkedIn",
+    "支持自动登录 LinkedIn / Indeed",
+    "可自动登录 LinkedIn",
+    "可自动登录 LinkedIn / Indeed",
+    "支持自动发送 LinkedIn DM",
+    "支持自动提交 Indeed Apply",
     "V1 支持多用户账号",
     "V1 支持订阅支付",
+    "V1 支持团队后台",
+    "V1 支持浏览器插件",
+    "V1 支持 LinkedIn 自动化",
+    "V1 支持 Indeed 自动化",
+    "V1 支持自动提交申请",
 ]
 
 
@@ -64,12 +77,6 @@ def extract_text(document: Document) -> str:
     return "\n".join(parts)
 
 
-def contains_forbidden_primary_positioning(text: str, phrase: str) -> bool:
-    if phrase == "自动登录 LinkedIn":
-        return re.search(r"(?<!不)自动登录 LinkedIn(?! / Indeed)", text) is not None
-    return phrase in text
-
-
 def main() -> None:
     if not DOCX.exists():
         fail(f"missing docx: {DOCX}")
@@ -82,7 +89,7 @@ def main() -> None:
             fail(f"missing required text: {phrase}")
 
     for phrase in FORBIDDEN_TEXT:
-        if contains_forbidden_primary_positioning(text, phrase):
+        if phrase in text:
             fail(f"forbidden text present: {phrase}")
 
     if len(document.paragraphs) < 80:
