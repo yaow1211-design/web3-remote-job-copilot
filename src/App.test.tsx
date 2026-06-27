@@ -32,7 +32,31 @@ describe("App", () => {
     await user.click(screen.getByRole("button", { name: /Add job/i }));
 
     expect(screen.getAllByText(/Example DAO Tools/i).length).toBeGreaterThan(0);
+    expect(
+      screen.getByRole("heading", { name: /Product Operations Analyst · Example DAO Tools/i }),
+    ).toBeInTheDocument();
     expect(screen.getByText(/Fit & Risk Score/i)).toBeInTheDocument();
     expect(screen.getByText(/Recommendation/i)).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText(/Status/i), "shortlisted");
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("shortlisted");
+    expect(screen.getByText(/Example DAO Tools · shortlisted/i)).toBeInTheDocument();
+  });
+
+  it("adds a manual URL-only job import", async () => {
+    const user = userEvent.setup();
+
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: /Job Inbox/i }));
+    await user.type(screen.getByLabelText(/Job title/i), "Product Operations Analyst");
+    await user.type(screen.getByLabelText(/Company/i), "Example DAO Tools");
+    await user.type(screen.getByLabelText(/Original URL/i), "https://example.com/job/123");
+    await user.type(screen.getByLabelText(/Apply URL/i), "https://example.com/apply/123");
+    await user.click(screen.getByRole("button", { name: /Add job/i }));
+
+    expect(
+      screen.getByRole("heading", { name: /Product Operations Analyst · Example DAO Tools/i }),
+    ).toBeInTheDocument();
   });
 });

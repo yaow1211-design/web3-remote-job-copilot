@@ -15,6 +15,23 @@ const ROLE_FAMILIES: RoleFamily[] = [
   "Research & Due Diligence Analyst",
 ];
 
+function inferCryptoRequirementLevel(intakeText: string): Job["cryptoRequirementLevel"] {
+  const text = intakeText.toLowerCase();
+  const hasCryptoKeyword = /(crypto|web3|blockchain)/.test(text);
+  const hasPreferredKeyword = /(crypto|web3|defi|blockchain)/.test(text);
+  const hasRequiredCue = /(required|must[- ]have)/.test(text);
+
+  if (hasCryptoKeyword && hasRequiredCue) {
+    return "required";
+  }
+
+  if (hasPreferredKeyword) {
+    return "preferred";
+  }
+
+  return "none";
+}
+
 export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInboxProps) {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -23,30 +40,37 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
     const title = String(form.get("title") ?? "").trim();
     const company = String(form.get("company") ?? "").trim();
     const jdText = String(form.get("jdText") ?? "").trim();
+    const originalUrl = String(form.get("originalUrl") ?? "").trim();
+    const applyUrl = String(form.get("applyUrl") ?? "").trim();
     const roleFamily = String(form.get("roleFamily") ?? "Growth Data Analyst") as RoleFamily;
+    const hasJdText = jdText.length > 0;
 
-    if (!title || !company || !jdText) {
+    if (!title || !company || (!hasJdText && !originalUrl && !applyUrl)) {
       return;
     }
 
-    const lowerJdText = jdText.toLowerCase();
+    const intakeText = [title, company, jdText, originalUrl, applyUrl].join(" ").toLowerCase();
+    const jdTextValue = hasJdText
+      ? jdText
+      : "Manual URL import. Review the original job link before applying.";
+    const source = hasJdText ? "Pasted JD" : "Manual URL";
+    const skillText = [title, company, jdText, originalUrl, applyUrl].join(" ");
 
     onAddJob({
       id: `job-${Date.now()}`,
       title,
       company,
-      source: "Pasted JD",
-      originalUrl: String(form.get("originalUrl") ?? "").trim(),
-      applyUrl: String(form.get("applyUrl") ?? "").trim(),
-      jdText,
+      source,
+      originalUrl,
+      applyUrl,
+      jdText: jdTextValue,
       remoteType: "remote",
       locationConstraints: "Manual review needed",
       roleFamily,
       seniority: "Manual review needed",
-      requiredSkills: jdText.match(/SQL|Python|PRD|UAT|analytics|operations/gi) ?? [],
-      preferredSkills: jdText.match(/crypto|Web3|DeFi|fintech|growth/gi) ?? [],
-      cryptoRequirementLevel:
-        lowerJdText.includes("required") && lowerJdText.includes("crypto") ? "required" : "preferred",
+      requiredSkills: skillText.match(/SQL|Python|PRD|UAT|analytics|operations/gi) ?? [],
+      preferredSkills: skillText.match(/crypto|Web3|DeFi|fintech|growth/gi) ?? [],
+      cryptoRequirementLevel: inferCryptoRequirementLevel(intakeText),
       salaryRange: "",
       postedAt: new Date().toISOString().slice(0, 10),
       status: "new",
