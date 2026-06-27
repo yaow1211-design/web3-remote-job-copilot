@@ -1,11 +1,40 @@
 import type { ApplicationPack, CandidateAsset, FitRiskScore, Job } from "./types";
 
+const ROLE_FAMILY_RESUME_TITLES: Record<Job["roleFamily"], string> = {
+  "Growth Data Analyst": "Growth Data Analyst resume",
+  "Business Analyst": "Business Analyst resume",
+  "Product / Operations Analyst": "Product Operations Analyst resume",
+  "Research & Due Diligence Analyst": "Research and Due Diligence Analyst resume",
+};
+
+function normalizeText(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
 function pickResumeVersion(candidate: CandidateAsset, roleAngle: string): string {
-  const angle = roleAngle.toLowerCase();
+  const preferredResumeTitle = ROLE_FAMILY_RESUME_TITLES[roleAngle as Job["roleFamily"]];
+
+  if (preferredResumeTitle) {
+    const normalizedPreferredResumeTitle = normalizeText(preferredResumeTitle);
+    const preferredResume =
+      candidate.resumeVersions.find((version) => version.toLowerCase() === preferredResumeTitle.toLowerCase()) ??
+      candidate.resumeVersions.find((version) => normalizeText(version) === normalizedPreferredResumeTitle) ??
+      candidate.resumeVersions.find((version) => normalizeText(version).includes(normalizedPreferredResumeTitle));
+
+    if (preferredResume) {
+      return preferredResume;
+    }
+  }
+
+  const normalizedAngle = normalizeText(roleAngle);
 
   return (
-    candidate.resumeVersions.find((version) => version.toLowerCase().includes(angle)) ??
-    candidate.resumeVersions.find((version) => version.toLowerCase().includes("growth")) ??
+    candidate.resumeVersions.find((version) => normalizeText(version).includes(normalizedAngle)) ??
+    candidate.resumeVersions.find((version) => normalizeText(version).includes("growth")) ??
     candidate.resumeVersions[0]
   );
 }

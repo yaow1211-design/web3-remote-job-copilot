@@ -39,4 +39,34 @@ describe("generateApplicationPack", () => {
     expect(pack.riskHandlingNote).toContain("I have not worked full-time inside a Web3 company yet");
     expect(pack.interviewTalkingPoints.length).toBeGreaterThanOrEqual(3);
   });
+
+  it("selects the research and due diligence resume for the research role family", () => {
+    const researchJob: Job = {
+      ...job,
+      id: "job-research",
+      title: "Research & Due Diligence Analyst",
+      roleFamily: "Research & Due Diligence Analyst",
+      jdText: "Remote research and due diligence role focused on crypto analysis and project screening.",
+    };
+    const score = scoreJob(researchJob, seedCandidate);
+    const pack = generateApplicationPack(researchJob, seedCandidate, score, new Date("2026-06-28T10:00:00Z"));
+
+    expect(pack.roleAngle).toBe("Research & Due Diligence Analyst");
+    expect(pack.selectedResumeVersion).toBe("Research and Due Diligence Analyst resume");
+  });
+
+  it("selects the product operations resume for the product or operations analyst family", () => {
+    const productJob: Job = {
+      ...job,
+      id: "job-product",
+      title: "Product / Operations Analyst",
+      roleFamily: "Product / Operations Analyst",
+      jdText: "Remote product and operations analyst role supporting dashboards, UAT, and workflow coordination.",
+    };
+    const score = scoreJob(productJob, seedCandidate);
+    const pack = generateApplicationPack(productJob, seedCandidate, score, new Date("2026-06-28T10:00:00Z"));
+
+    expect(pack.roleAngle).toBe("Product / Operations Analyst");
+    expect(pack.selectedResumeVersion).toBe("Product Operations Analyst resume");
+  });
 });
