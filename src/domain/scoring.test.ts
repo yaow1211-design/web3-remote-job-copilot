@@ -48,7 +48,28 @@ describe("scoreJob", () => {
 
     expect(score.recommendation).toBe("Skip");
     expect(score.overallScore).toBeLessThan(50);
-    expect(score.risks).toContain("Hard blocker: Solidity, smart contract engineering, or seniority are core to the role.");
+    expect(score.risks).toContain("Hard blocker: Solidity, smart contract engineering, or blockchain engineering are core to the role.");
+  });
+
+  it("explains generic crypto hard blockers without implying Solidity or seniority", () => {
+    const score = scoreJob(
+      {
+        ...baseJob,
+        title: "Growth Analyst",
+        company: "Crypto Treasury Co",
+        jdText: "Requires prior full-time crypto company experience. Strong SQL and growth analytics background preferred.",
+        roleFamily: "Growth Data Analyst",
+        seniority: "Mid-level",
+        requiredSkills: ["SQL", "Analytics"],
+        preferredSkills: ["Crypto company experience"],
+        cryptoRequirementLevel: "hard_blocker",
+      },
+      seedCandidate,
+    );
+
+    expect(score.recommendation).toBe("Skip");
+    expect(score.risks).toContain("Crypto/Web3 company experience is a hard requirement for this role.");
+    expect(score.risks.join(" ")).not.toContain("Solidity, smart contract engineering, or seniority are core to the role.");
   });
 
   it("uses DM First when outreach opportunity is high but Web3 barrier is medium", () => {

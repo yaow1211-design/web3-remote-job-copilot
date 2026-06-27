@@ -150,3 +150,69 @@ dist/assets/index-6cxVOiDA.css    1.27 kB │ gzip:  0.68 kB
 dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
 ✓ built in 667ms
 ```
+
+---
+
+# Task 3 Re-Review Fix Report
+
+## What I fixed
+- Split `hard_blocker` explanations into source-accurate blocker classes.
+- Technical blockers now explain Solidity, smart contract, or blockchain engineering requirements.
+- Seniority blockers now explain Head, Director, or Principal title/seniority requirements.
+- Generic crypto hard blockers now say `Crypto/Web3 company experience is a hard requirement for this role.`
+- Added a regression test for a non-Solidity, non-seniority hard blocker that requires prior crypto company experience.
+
+## Verification
+- `npm test -- src/domain/scoring.test.ts`
+- `npm test`
+- `npm run build`
+
+## Exact output summaries
+### `npm test -- src/domain/scoring.test.ts`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run src/domain/scoring.test.ts
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/domain/scoring.test.ts (6 tests) 2ms
+
+ Test Files  1 passed (1)
+ Tests  6 passed (6)
+ Start at  01:32:03
+ Duration  533ms (transform 29ms, setup 36ms, collect 18ms, tests 2ms, environment 270ms, prepare 28ms)
+```
+
+### `npm test`
+```text
+> web3-remote-job-copilot@0.1.0 test
+> vitest run
+
+ RUN  v3.2.6 /Users/wangmia/Documents/New project
+
+ ✓ src/storage/localStore.test.ts (4 tests) 2ms
+ ✓ src/domain/scoring.test.ts (6 tests) 3ms
+ ✓ src/App.test.tsx (1 test) 60ms
+
+ Test Files  3 passed (3)
+ Tests  11 passed (11)
+ Start at  01:32:08
+ Duration  655ms (transform 70ms, setup 93ms, collect 166ms, tests 66ms, environment 634ms, prepare 133ms)
+```
+
+### `npm run build`
+```text
+> web3-remote-job-copilot@0.1.0 build
+> tsc -b && vite build
+
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1579 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.41 kB │ gzip:  0.28 kB
+dist/assets/index-6cxVOiDA.css    1.27 kB │ gzip:  0.68 kB
+dist/assets/index-D0TAAJDq.js   196.61 kB │ gzip: 62.10 kB
+✓ built in 667ms
+```
