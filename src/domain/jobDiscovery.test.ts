@@ -160,6 +160,50 @@ describe("normalizeRemoteOkJobs", () => {
     });
   });
 
+  it.each(["Canada", "Panama", "Japan"])(
+    "filters a Remote OK row with location %s when it has no explicit remote wording",
+    (location) => {
+      const rawItems: unknown[] = [
+        {
+          position: "Growth Data Analyst",
+          company: "Remote OK Geo Co",
+          url: `https://remoteok.com/l/${location.toLowerCase().replace(/\s+/g, "-")}-job`,
+          source: "Remote OK",
+          description: "Growth analytics role for SQL dashboards and user campaigns.",
+          tags: ["SQL", "Growth"],
+          location,
+          date: "2026-06-28",
+        },
+      ];
+
+      expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
+    },
+  );
+
+  it.each(["N/A", "n a"])("keeps a Remote OK row with exact unspecified location %s", (location) => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Remote OK Unspecified Co",
+        url: `https://remoteok.com/l/${location.toLowerCase().replace(/\s+/g, "-")}-job`,
+        source: "Remote OK",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location,
+        date: "2026-06-28",
+      },
+    ];
+
+    const results = normalizeRemoteOkJobs(rawItems);
+
+    expect(results).toHaveLength(1);
+    expect(results[0]).toMatchObject({
+      company: "Remote OK Unspecified Co",
+      source: "Remote OK",
+      location,
+    });
+  });
+
   it.each([
     "United States",
     "USA",

@@ -137,3 +137,22 @@ Output summary:
 
 - focused discovery suite: 17/17 tests passed
 - broader domain suite: 41/41 tests passed
+
+## Review Fix Addendum 6
+
+Fixed the final Task 1 review finding around unspecified-location detection in `src/domain/jobDiscovery.ts`:
+
+- removed `na` as a substring marker
+- changed `hasUnspecifiedLocation` to use exact normalized matching instead of substring matching
+- kept exact normalized `n a` handling so literal `N/A`-style rows can still qualify as unspecified
+- added regression coverage proving `Canada`, `Panama`, and `Japan` do not pass the relaxed Remote OK gate without explicit remote wording
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Output summary:
+
+- focused discovery suite: 22/22 tests passed
+- broader domain suite: 46/46 tests passed

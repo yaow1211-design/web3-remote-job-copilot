@@ -29,7 +29,13 @@ const ONSITE_TERMS = [
 ];
 
 const SOURCE_REMOTE_TERMS = ["remote ok", "remoteok"];
-const UNSPECIFIED_LOCATION_TERMS = ["unknown", "unspecified", "not provided", "not specified", "n/a", "na"];
+const UNSPECIFIED_LOCATION_MARKERS = new Set([
+  "unknown",
+  "unspecified",
+  "not provided",
+  "not specified",
+  "n a",
+]);
 
 const GROWTH_TERMS = ["growth", "user", "campaign", "lifecycle", "activation", "retention", "funnel", "segmentation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
@@ -197,7 +203,7 @@ function hasUnspecifiedLocation(location: string): boolean {
 
   const normalizedLocation = normalizeLookupText(location);
 
-  return includesAny(normalizedLocation, UNSPECIFIED_LOCATION_TERMS);
+  return UNSPECIFIED_LOCATION_MARKERS.has(normalizedLocation);
 }
 
 function isRelevantDiscovery(title: string, description: string, location: string, tags: string[], source: string): boolean {
