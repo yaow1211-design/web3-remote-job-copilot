@@ -1,0 +1,552 @@
+{
+  "id": "briefing-2026-06-28",
+  "date": "2026-06-28",
+  "generatedAt": "2026-06-28T11:21:54.131Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "e067c250",
+        "title": "SVP Operations",
+        "company": "Serverfarm",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-svp-operations-serverfarm-1134052",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-svp-operations-serverfarm-1134052",
+        "jdText": "Serverfarm is a leading developer and operator of data centers with over 750+ locations and key customer relationships in 45 countries. We're revolutionizing how data centers operate across North America, Western Europe, and Israel, serving the world's leading technology and hyperscale companies. With Manulife Investment Management's acquisition in 2023 and our award-winning InCommand platform we're positioned for explosive growth as AI adoption and cloud migration drive unprecedented demand for data center capacity. A career at Serverfarm means being at the forefront of digital infrastructure innovation, where your work directly impacts how the world's data is managed and secured. As we target 4x growth over the next four years, you'll have unprecedented opportunities to take on new challenges, develop cutting-edge skills, and grow your career across our expanding global operations. Join our team of innovators and help shape the future of sustainable data centers while building a career without boundaries. Serverfarm is a leading developer and operator of data centers in North America, and EMEA, and has key customer relationships with rapidly growing hyperscale, technology and enterprise customers. In September 2023, Manulife Investment Management acquired a controlling interest in Serverfarm, which allows the company greater access to capital to accelerate the expansion of its data center portfolio on a worldwide basis. The company is positioned to capture the growing demand for data center capacity that continues to grow globally, fueled by the rapid adoption of artificial intelligence and companiesâ continued transition of data workloads and storage to the cloud. Key Accountabilities Executive Leadership Deputize for the COO, providing leadership across global operations, strategic priorities, and major business initiatives; serve as second-in-command ensuring continuity of decision-making and execution Represent Operations with Executive Leadership, the Board, investors, and key customers; translate corporate strategy into operational plans and long-term growth roadmaps, partnering with Product, Development, Construction, Finance, Legal, Security, and Commercial teams Operational Governance &amp; Performance Establish and govern global operational standards, SOPs, maintenance frameworks, and KPI framework (uptime, SLA, MTTR, energy, safety, staffing, customer experience) Ensure robust compliance frameworks are maintained across all operating regions, including regulatory obligations, customer commitments, certifications, and internal controls Oversee business continuity, disaster recovery, and crisis management processes are maintained, tested, and continuously improved, lead RCA and executive response for major incidents Drive continuous improvement, standardization, and efficiency across regions, embedding best practice and operational discipline Provide executive oversight of the Global Network Operations Centre (GNOC), ensuring 24x7 monitoring, incident response, escalation management and service continuity across the portfolio Safety, Reliability &amp; Engineering Lead the global safety program, ensuring strong safety culture, regulatory compliance, risk management, and consistent standards across all regions Provide executive oversight of critical environment management (electrical, mechanical, cooling, controls) and lifecycle management of in-life critical assets Partner with Development, Construction, and Engineering to embed operational requirements in new designs and retrofits; standardize commissioning, integrated systems testing, and operational handover Customer &amp; Service Delivery Establish executive relationships with key hyperscale, enterprise, and strategic customers; own oversight of escalations and ensure timely resolution and clear communication Lead operational service delivery to consistently achieve SLAs and contractual commitments, drive transparency through reporting, service reviews, and improvement planning Support commercial and sales teams during major customer pursuits, due diligence, and operational solution development Financial Planning &amp; Growth Lead operational OpEx and CapEx planning and delivery, with accountability for forecasting, cost control and financial performance against plan Partner with Finance on cost modelling for new sites, expansions, customer opportunities, and strategic investment plans; supporting commercial decision-making and capital allocation Oversee long-term capacity planning across power, space, cooling, staffing, and infrastructure; lead operational due diligence and integration for acquisitions and expansion Develop hiring and workforce strategies to support new campus openings, expansions, and long-term operational capability; Take a lead in establishing new regional structures to facilitate growth Energy, Sustainability &amp; ESG Own operational energy strategy, including procurement, resilience planning, renewables, efficiency, and utility relationships Ensure compliance with regulatory, environmental, H&amp;S, and industry certification requirements (ISO, SOC, customer-specific programs) Develop resilience strategies addressing grid constraints, utility risks, climate-related impacts, and infrastructure vulnerabilities Technology &amp; Automation Drive adoption of automation, infrastructure technology, and digital tools to improve monitoring, maintenance, reporting, and operational efficiency Manage strategic supplier and vendor relationships, ensuring service quality, resilience, innovation, and value for money People &amp; Organization Lead, coach, and develop operational leaders and teams; build succession planning frameworks Foster a high-performance culture of accountability, collaboration, innovation, and continuous improvement; provide regular reporting on operational performance, talent, safety, risk, and strategic progress Key Qualifications Proven senior leadership experience in colocation, hyperscale, mission-critical facilities, or similarly complex multi-site environments Strong track record of leading large-scale operations with accountability for uptime, safety, customer service, and financial performance Demonstrated success delivering operational growth, new site launches, or capacity expansion programs across multiple locations Strong commercial capability with experience managing significant operational CapEx budgets Knowledge of energy strategy, utilities management, sustainability programs, or infrastructure efficiency initiatives Experience driving operational excellence through automation, technology enablement, and continuous improvement methodologies Strong strategic planning capability, including long-term capacity planning and scaling operations to meet business growth Customer-focused mindset with experience managing escalations, service delivery, and executive stakeholder relationships Proven ability to lead and develop high-performing teams across geographies and functions Honesty and integrity, with excellent communication, influencing, and executive stakeholder management skills Strong analytical and decision-making capability, using data and KPIs to drive performance and prioritization Role involves international travel (approximately 30%) Serverfarm is committed to providing an equal opportunity workplace and offers paid time off, paid holidays, 401k and FULL coverage medical, dental and vision. Our compensation philosophy rewards employees for achieving the values and objectives aligned with the companyâs goals and strategic initiatives. The listed salary range for this position is an estimate based on the competitive job market. Final compensation will be based on your own individual skills, experience, and location. The above statements are intended to describe the general nature and level of work being performed in this role. They are not intended to serve as an exhaustive list of all possible responsibilities and duties. We encourage you to apply even if your experience isn't an exact match to the job description. We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us. Please mention the word **PROSPERITY** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Los Angeles, Los Angeles, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 83,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Serverfarm is hiring for SVP Operations. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "b7097f40",
+        "title": "Collections Manager",
+        "company": "National Service Bureau",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-collections-manager-national-service-bureau-1134155",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-collections-manager-national-service-bureau-1134155",
+        "jdText": "Benefits: 401(k) matching Dental insurance Health insurance Paid time off Vision insurance Benefits: Competitive Salary Employer Paid Medical, Dental, Vision Insurance Company Provides EAP (Employee Assistance Program) Paid Time Off 401(k) plan + employer matching contributions Monday to Friday schedule Must be based out of Sarasota, FL! GROW WITH US! National Service Bureau (NSB) is seeking an experienced Call Center/Collections Manager. NSB is focused on Accounts Receivable Management and Subrogation and has grown exponentially over the last 34 years to become a leading national agency. We are looking to find a leader whom is self-motivated, accountable and engaged in personal growth. Collections Manager Job Description: We are seeking a Collections Manager with experience leading teams, who can empathize with consumers and has the ability to maintain professionalism at all times. This role ensures that all call center, collections, and training goals are met. Other job functions include: Analyzes, evaluates, and reports on performance, service, KPIs and other metrics Makes recommendations for action plans Perform continued training and education Implements call center and collection operational strategies Provides daily personnel management and oversight Conducts regular 1:1âs and annual performance reviews Recommends changes to employee levels based on activity and performance Enforce company policies and hold team members accountable Collections Manager Skills Required: 3-5+ years in a high volume collections management Experience in managing a remote team environment Experience scheduling call center operations and running call campaigns Excellent call center and/or collections management skills Results oriented with the energy and ability to deliver results daily Strong analytical and problem solving skills Understanding of and respect for compliance Positive attitude and approach Ability to drive, encourage, and motivate a team Willingness to exemplify our Core Values Core Values: Follow Through Be Engaged Think First Be Respectful Be Accountable NSB Culture &amp; Environment: Diverse and friendly team Emphasis on work/life balance Guaranteed no nights/weekends Positive environment Performance-based incentives Advancement opportunities NSB is very proud of our team and the environment they are helping to foster here. Weâre excited for you to join us! To stay up to date on our latest postings we invite you to: Like us on FaceBook: https://www.facebook.com/nationalservicebureau/ Follow us on LinkedIn: https://www.linkedin.com/company/national-service-bureau-inc./mycompany/ Visit our careers page: https://national-service-bureau.careerplug.com/account Salary Range: $60,000 - 90,000/yr This is a remote position. Please mention the word **EASYGOING** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Sarasota, Sarasota, Florida, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "National Service Bureau is hiring for Collections Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "40d58cdd",
+        "title": "Common Energy",
+        "company": "Office of Energy &amp; Sustainability",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-common-energy-office-of-energy-amp-sustainability-1134164",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-common-energy-office-of-energy-amp-sustainability-1134164",
+        "jdText": "For BusinessesFor Non-ProfitsFor Consumers Check AvailabilityLogin Check AvailabilityLogin Join us! Help build a brighter, cleaner future with renewable energy our mission Our world is locked into an energy system built on fossil fuels that cause pollution, destroy nature, and support autocracies around the world. Common Energy is reshaping this system with community solar projects that replace fossil fuels with local, clean energy. The result is lower carbon emissions for communities and lower energy costs for our customers. Weâre passionate about energy, impact, and having a little fun along the way! voices of our team voices of our team âThere are no egos here, as we are all passionate about Common Energy, our work, and the difference we are making together as a TEAM.â Suzanne Wollman VP Finance &amp; Senior Controller voices of our team âWorking at Common Energy gives me the freedom to explore new challenges, with full support from a team that truly empowers growth.â Ming Xu Manager, Analytics and Operations voices of our team âItâs a pleasure to work with like-minded people who prioritize teamwork, collaboration, and customer satisfaction. Together, weâre making a positive impact.â David Rodriguez Director of Customer Experience voices of our team âI enjoy the scope and challenges of my role at a company that specializes in a field that is relatively new and growing immensely.â Aditya Sekhar Manager, Operations &amp; Analytics voices of our team âWe have a phenomenal culture where everyone collaborates to solve problems and create impact for our clients, subscribers, and the environment.â Christophe Charpentier Chief Operating Officer Building a better future has benefits! Attractive compensation including stock options Medical, dental, &amp; vision plans with HSA eligible options Generous paid time off Attractive 401(k) plan Flexible / remote work opportunities Professional development and continuous feedback Learn from the bestâOur team has recognized experts Free lunch in the office every day One mission, one team, no politics. Attractive compensation including stock options Medical, dental, &amp; vision plans with HSA eligible options Generous paid time off Attractive 401(k) plan Flexible / remote work opportunities That's just to name a few Help us disrupt the energy sector and create a cleaner future for ourselves and generations to come. Join our team Sorry, we do not have any openings currently but do be on the lookout! Want to support clean energy? See if a community solar project is available in your area. Check Availability Learn More For Businesses For Non-Profits For Consumers Community Solar Our Projects FAQs Company Our TeamCareersLabs Community Giving BackPressBlog Contact hello@commonenergy.us1-844-899-9763 Common Energy LLC Â© 2026 | Privacy Policy Common Energy LLC Â© 2025 Privacy Policy OR: This organization is operating under the Oregon Community Solar Program. The Oregon Community Solar Program is a state-enabled initiative overseen by the Oregon Public Utility Commission and implemented by Energy Solutions, Energy Trust of Oregon, Community Energy Project, and [Portland General Electric / Pacific Power / Idaho Power]. The Program provides resources and Certification for its Project Managers (PMs) but does not promote any individual PM or PM affiliated organization. Please mention the word **PRICELESS** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Salisbury,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Office of Energy &amp; Sustainability is hiring for Common Energy. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4b27ae34",
+        "title": "Continuous Improvement Specialist",
+        "company": "InProduction",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-continuous-improvement-specialist-inproduction-1134071",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-continuous-improvement-specialist-inproduction-1134071",
+        "jdText": "The InProduction team has spent the better part of the last decade combining the best seating and staging companies into a one-stop shop for most of what is needed to produce an event. Starting with SGA Production Services, we added and integrated T&amp;B Equipment, CommuniLux Productions, Nussli U.S., and Seating Solutions to become today's InProduction. These acquisitions have allowed InProduction to evolve into the largest provider of temporary seating, staging, structures, and scenic production for the United States events industry. Central are our people. The Company is backed by ZMC. ZMC is a leading private equity firm comprised of experienced investors and executives who invest in, and manage, a diverse group of media and communications enterprises. Founded in 2001, ZMC's investment philosophy centers on operational value creation driven by targeted investment themes, deep sector expertise, and strong partnerships with industry and operating executives. ZMC approaches its investments in collaboration with management teams and has a successful track record of actively adding value to portfolio companies. As an InProduction employee you are central to our sustained growth and success. We offer a rewarding career in a fast paced and exciting environment. Our employees demonstrate our core values in safety and quality every day while working to provide top notch service to our client partners. Whether working in the field, yard, warehouse, or office, InProduction offers a future with huge growth potential. As an InProduction Continuous Improvement Specialist, you will influence and drive continuous improvement culture throughout the company by setting and documenting process standards. This role collaborates with cross-function teams to identify opportunities to improve processes, document and share best practices and support training of Lean and Continuous Improvement principles such as Standard Work and Kaizen. Come join us! Check out our web page https://inproduction. Essential Duties And Responsibilities Process Standards Collaborate with cross functional departments on operational process Document Standard Work Instructions Maintain and Monitor process standard revisions and communicate updates to the impacted parties Create Process Maps and Value Stream Maps Help maintain Process Documentation Templates, Standard Work Instructions and Process Documentation Repository System Kaizen Events Prepare documentation, A3 worksheet and preparation checklist for Kaizen events Prepare and extract operational and financial data to set process metrics Assist in facilitating and participating in Kaizen events to drive process standards and improvements Assist in developing a rollout project plan and timeline for new processes Follow up for relevant stakeholders before and after Kaizen event to ensure process alignment Operational and Management Support Support the development of quarterly continuous improvement objectives and lean events Lead and support Continuous Improvement projects to drive operational improvements Support presenting key initiatives and project to operation leadership team Support Internal audits to ensure process compliances Support Cross Functional team by teaching and coaching Lean Principles Other duties as assigned Work Skills And Behaviors General knowledge of Continuous Improvement and Lean Principles Passion for Continuous Improvement to meet and exceed both internal and external customer expectations Openness to new ideas, out of the box solutions with a growth mindset Excellent communication and interpersonal skills Proactive in identifying process improvements Ability to influence process changes in a cross-functional team setting Knowledgeable in Microsoft Office 365 Suite including Visio Comfortable participating and / or facilitating Kaizen events Comfortable in leading Continuous Improvement operational projects Accountability for our actions, Quality of our products, Safety of our employees and Service to our customers Education And Experience High School Diploma or equivalent 3+ years of Project Management, Operations, Quality or Continuous Improvement experiences Preferred experience in construction, or equipment rental industry Requirements Travel Requirements and Work Environment Work is primarily done in office or remote The position will require a limited amount of travel (20% to 30%) Will need to travel to outdoor worksites as needed. Compensation: Full-time salaried exempt $ 65 k- $80 K. Benefits Health, Dental, Vision Insurance Life Insurance Vacation Paid Holidays Floating holiday 401 K Match Tuition Reimbursement Please mention the word **FORTITUDE** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Orlando, Orlando, Florida, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 66,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "InProduction is hiring for Continuous Improvement Specialist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "a08292f2",
+        "title": "Customer Support Technician Helpdesk Offboardings &amp; Access",
+        "company": "Pixel Machinery",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-customer-support-technician-helpdesk-offboardings-amp-access-pixel-machinery-1134154",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-customer-support-technician-helpdesk-offboardings-amp-access-pixel-machinery-1134154",
+        "jdText": "Who We Are Pixel Machinery is a Boston-based technology consultancy that helps organizations build efficient, flexible, and scalable IT ecosystems. We believe IT should be intelligently automated to enhance security, productivity, and cost-effectivenessâwithout compromising control or oversight. Achieving this requires deep technical expertise, strategic planning, and precise execution. With experience spanning software development, systems administration, and business operations, we design solutions that empower our clients to operate with confidence and agility. Summary As a Customer Support Technician on our Help Desk team, you will own the technical offboarding and access-deprovisioning lifecycle across our client organizationsânonprofits, tech startups, and small/medium businesses. When someone leaves a company, you are the person who makes sure their access is removed quickly, completely, and accurately. Technical offboardings are time-sensitive, security-critical work, and owning them end to end is the core of this role. Alongside that ownership, you'll provide tier-1 help desk supportâonboardings, access and license requests, and general IT troubleshootingâand help keep our support queues moving at pace. This is a high-volume, fast-moving role built for someone who thrives on operational speed and gets satisfaction from a clean, well-run queue. Who You Are You move fast and stay accurate -- you're comfortable working through high ticket volume (think 30 tickets a day, not 5) without losing precision You have razor-sharp attention to detail, especially where access, security, and data are concerned. You understand that a single missed de-provisioning step is a real risk, not a rounding error You're process-oriented and dependable: you follow checklists and protocols carefully, and you document your work so the next person can trust it You can prioritize under pressure and keep a cool head when the queue fills up and new tickets keep landing You're empathetic, patient, and communicate clearly and gracefully across multiple channels You're early in your IT/support career, technically curious, and eager to grow What you'll own (primary responsibilities) Own the offboarding and termination process end to end: de-provision user accounts and revoke access across IAM platforms (Okta, JumpCloud, and similar) and SaaS tools, reclaim licenses, and confirm that access removal is complete and timely Treat every offboarding as a security and compliance event: meet client SLAs for de-provisioning, keep accurate and auditable records, and ensure nothing is left active behind a departing user Live coordination with client contacts during high-touch or sensitive offboardings: communicate in real time with client HR and security as needed in preparation for and throughout the offboarding process Be the point person for the offboarding queue: monitor it, triage it, and keep it clearâthis queue should never be an afterthought Coordinate handoffs with other teams (for example, hardware return logistics) without owning the hardware/fulfillment queues yourself Improve the playbook: refine and document offboarding workflows, checklists, and best practices as you go Supporting helpdesk work (secondary responsibilities) Process IT onboardings and provision new-user accounts and access Handle systems access and SaaS license requests Provide light tier-1 software/hardware troubleshooting Monitor and triage general support queues during core work hours while meeting client SLAs Build and maintain good professional rapport with end users Diligently uphold client and internal protocols for IT security and access management Collaborate with other internal teams on escalated issues and cross-functional projects Pixel Machinery is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. All employment decisions are based on business needs, job requirements, and individual qualifications, without regard to race, color, religion, sex (including pregnancy, gender identity, and sexual orientation), national origin, age, disability, genetic information, veteran status, or any other status protected by federal, state, or local laws. The base salary range for this position is $60,000-72,000 per year. Requirements Based in Pacific Time Zone 1-2 years in a help desk, IT support, or fast-paced operations role, or strong aptitude and a clear eagerness to grow into one Comfort working at high volume and pace, with strong prioritization and time-management skills A detail-driven, process-oriented mindset, particularly around access and security Excellent written and verbal communication Familiarity with the following, or the ability to ramp quickly: Jira Service Management (or a similar help desk ticketing system) Slack, Teams, or equivalent Google Workspace &amp; Microsoft 365 Mac &amp; Windows OS Okta, JumpCloud, or other IAM/identity solutions MDM and RMM tools (a plus) Commitment to continuous learning, with the ability to quickly absorb and retain new information and apply it to decision-making Benefits Health, Dental, Vision Insurance 401k with company matching Generous Paid Time Off Work From Home Training &amp; Development Please mention the word **SENSATIONS** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "California, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Pixel Machinery is hiring for Customer Support Technician Helpdesk Offboardings &amp; Access. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "17a3a8c6",
+        "title": "Staff Housing Caretaker",
+        "company": "Fairmont Hotels &amp; Resorts",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-staff-housing-caretaker-fairmont-hotels-amp-resorts-1134129",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-staff-housing-caretaker-fairmont-hotels-amp-resorts-1134129",
+        "jdText": "Company Description Fairmont Hotels &amp; Resorts Join a dynamic team and be part of a network of 90 spectacular properties, and 34 more in the pipeline, in 30 countries around the globe. Our properties are located from the beaches of Hawaii to the unspoiled national parks of Canada, to the heart of London, to the deserts of the United Arab Emirates. About Fairmont Southampton Are you ready to join a team that thrives on excellence and embraces limitless potential? Fairmont Southampton, Bermudaâs largest resort, invites exceptional individuals to be part of our award-winning team and shape the future of hospitality. Following a multi-million-dollar renovation, our 593-room resort is Bermuda's largest, featuring nine restaurants, a 30,000-square-foot spa, an 18-hole par three golf course and a captivating Beach Club. Opportunities for growth and success are boundless. Our culture emphasizes respect, teamwork, and professionalism, supported by comprehensive benefits. Join our diverse and inclusive team, where your unique talents and perspectives are celebrated. Dare to go beyond the ordinary, unlock your potential and make a lasting impact at Fairmont Southampton. Together, let's create memories that exceed expectations. #BeLimitless About The Application Process At Fairmont, we want to bring out your highest potential. Shortly after applying, you will receive an email from our partner AssessFirst prompting you to create a profile and complete a questionnaire. This is a mandatory step for your candidacy to be considered as it enables us to explore your compatibility with this role and our culture of luxury excellence. Job Description We invite you to join the world of luxury hospitality at Fairmont Southampton as our new Staff Housing Coordinator. Reporting to the Director, Engineering &amp; Facility Operations, the Staff Housing Caretaker is responsible for the overall maintenance, condition, and operational readiness of residential housing complexes, grounds, and associated facilities. This role ensures that all properties are maintained to the highest standards of safety, functionality, and presentation. The Caretaker performs general maintenance and minor repairs while coordinating and overseeing specialized work (e.g., HVAC, electrical, plumbing) carried out by qualified contractors or certified technicians. The position plays a key role in maintaining a safe, compliant, and high-quality living environment for residents by proactively managing maintenance programs, supporting capital projects, and ensuring efficient response to maintenance issues. What You Will Be Doing Maintenance &amp; Repairs (Generalist/Multi-Skilled) Perform general maintenance and minor repairs across housing units and common areas. Carry out basic troubleshooting and non-specialized repairs related to: Plumbing fixtures (e.g., leaks, blockages, fittings) Electrical fixtures (e.g., light fittings, switches â non-complex work) Air conditioning units (basic checks, cleaning, filter changes) Complete carpentry, painting, masonry, and general upkeep tasks. Repair and maintain door hardware, locks, and minor structural elements. Escalate, coordinate, and oversee all major or certified work (HVAC, electrical, plumbing installations and complex repairs) to qualified vendors or licensed personnel. Ensure all completed work meets required safety and quality standards. Property &amp; Grounds Upkeep Conduct regular inspections of buildings, housing units, and outdoor areas. Maintain cleanliness, safety, and visual appeal of properties and common spaces. Support landscaping standards and general grounds maintenance. Oversee pool maintenance through contractors or service providers, ensuring compliance with safety standards. Identify and address potential maintenance risks proactively. Preventative Maintenance &amp; Asset Care Implement and support preventative maintenance programs for housing facilities. Schedule inspections and servicing of building systems through approved contractors. Maintain detailed maintenance records and logs using the work order system (e.g., Transcendent). Identify trends, risks, and potential failures and recommend solutions. Ensure longevity and proper care of housing assets and equipment. Contractor &amp; Project Coordination Coordinate and supervise external contractors and service providers. Ensure all specialist work (electrical, plumbing, HVAC) is performed by licensed professionals. Monitor contractor performance for safety, quality, timelines, and cost-effectiveness. Support minor capital projects including planning, quotations, and execution. Ensure compliance with all safety standards and company policies during project delivery. Inventory, Materials &amp; Planning Maintain inventory of tools, supplies, and maintenance materials. Plan and order materials proactively to support ongoing maintenance. Ensure safe storage, handling, and use of tools and chemicals. Track material usage and support cost control initiatives. Tenant &amp; Unit Readiness Support Assist People &amp; Culture team, to prepare units for new occupants. Conduct pre- and post-occupancy inspections to ensure readiness and compliance along with People &amp; Culture Team. Respond promptly to maintenance requests and work orders. Support a positive resident experience through timely and effective service delivery. Work Order Management &amp; Operational Support Manage and complete work orders efficiently, prioritizing based on urgency. Maintain accurate documentation of all maintenance activities. Communicate effectively with internal teams regarding work status. Respond to urgent or emergency situations as required. Qualifications What weâre looking for: To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skills, and/or ability required. Reasonable accommodation may be made to enable individuals with disabilities to perform the essential functions. Experience Proven experience in general maintenance, facilities, or caretaker roles. Broad hands-on experience across maintenance disciplines (carpentry, minor plumbing, basic electrical, general repairs). Experience coordinating contractors and overseeing maintenance work. Hospitality or residential property experience preferred. Education High school diploma or equivalent. Technical or vocational training in a trade is an asset. Certifications in HVAC, electrical, plumbing, or similar trades are not required but are a strong asset. Valid driverâs license required. Competencies, Knowledge &amp; Skills Strong working knowledge of general building maintenance and repair practices. Understanding of when to escalate work to certified professionals. Good knowledge of health and safety standards and compliance. Strong troubleshooting and problem-solving skills. Excellent organizational and time-management abilities. Ability to manage contractors and monitor work quality. Proficiency in work order systems and maintenance tracking tools. Effective communication and interpersonal skills. Embrace the Fairmont brand promise and luxury in your role and in all your interactions. Foster an inclusive environment where every individual feels valued and respected. Personal Attributes Reliable, responsible, and detail-oriented. Practical, hands-on, and solutions-driven. Proactive and able to anticipate maintenance needs. Adaptable and responsive in a dynamic environment. Professional and service-oriented when interacting with residents and teams. Circumstances Ability to work flexible hours, including weekends and on-call when required. Ability to perform physically demanding tasks (lifting, climbing, outdoor work). Must be available for emergency response situations. Additional Information Employee Benefits Join our team and enjoy a range of exclusive colleague perks, including complimentary upgrades, extended stays, discounted stays across Fairmont &amp; Raffles properties, special dining and wellness discounts, and added luxuries to enhance your experience. We believe in taking care of our team, ensuring that your hard work is rewarded with exceptional benefits. Add any other benefits relevant to your property. Whatâs in it for you? As part of Accor , a global hospitality leader with over 5,500 hotels worldwide, youâll enjoy: Opportunities for growth and development, mentorship, and international mobility Health insurance, retirement savings plans, and comprehensive wellness programs Worldwide travel discounts and preferred rates across the Accor portfolio A supportive, inclusive culture grounded in respect, teamwork, and professional development Start your journey with us today and explore the possibilities! #BeLimitless Our Values Respect: We value the needs, ideas and individuality of others. We treat everyone with fairness and dignity. Excellence: We make genuine connections, and we cherish every opportunity to make the people around us feel special. Belonging: We celebrate our differences. We support each other and we always stand together. Empowerment: We have authority to take initiative and anticipate moments that create unforgettable experiences. Integrity: We build trust through mutual respect and being authentic. Your Team And Working Environment Fairmont Southampton is a premier luxury resort and regarded as a leader in the hospitality industry. Our mission is to turn moments into memories for our Guests. An exciting hospitality career awaits you if you are committed to providing our Guests with an authentically local experience through providing warm and engaging service. Our Heartists work cohesively as part of the team in a demanding, multi-cultural diverse environment. Our Commitment To Diversity &amp; Inclusion Fairmont is committed to creating an inclusive environment where diverse talent thrives. We welcome candidates from all backgrounds to join our team. Please mention the word **APPROVAL** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Southampton Parish,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Fairmont Hotels &amp; Resorts is hiring for Staff Housing Caretaker. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "a9957cae",
+        "title": "File Clerk",
+        "company": "Recruit Lytics Hiring",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-file-clerk-recruit-lytics-hiring-1134157",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-file-clerk-recruit-lytics-hiring-1134157",
+        "jdText": "As a Remote File Clerk, youâll keep digital and scanned records accurate, organized, searchable, and compliant. Youâll support multiple teams by receiving documents, validating completeness, applying naming conventions, classifying files into the correct repositories, and maintaining an audit-ready trail of what was received, when it was processed, and where it lives. Youâll work in a high-volume environment where speed matters, but accuracy and confidentiality matter more. Â Key responsibilities: Â Intake &amp; indexing: Receive files from shared inboxes, portals, internal ticketing tools, and cloud folders. Confirm document type, required fields, signatures, and attachments. Index each record using standard metadata (client/project ID, date, document category, version, region). Â Document organization: Apply standardized naming conventions and folder structures. Convert formats when needed (PDF merge/split, image-to-PDF, compressing, version labeling). Maintain controlled libraries (final vs draft vs archived), including retention tags. Â Quality control Perform daily spot checks for duplicates, misfiles, missing pages, and unreadable scans. Flag exceptions and route them to the correct owner with clear notes. Maintain error logs and contribute to process improvements that reduce rework. Â Records governance &amp; compliance: Handle sensitive records with strict access controls and confidentiality. Follow retention schedules, legal hold instructions, and deletion/archival rules. Support audits by pulling records quickly and documenting chain-of-custody steps. Â Collaboration &amp; communication: Coordinate with HR, Finance, Operations, Legal, or Customer teams to clarify file requirements. Provide status updates on backlog, turnaround time, and issues found during processing. Â Â Tools you may use: Â Cloud storage (Google Drive/SharePoint/Dropbox), document tools (Adobe Acrobat or equivalents), spreadsheets, ticketing (Jira/Asana/ServiceNow), e-signature platforms, and basic office productivity tools. Â Success metrics (examples): Â Accuracy rate (misfile/metadata error rate) Turnaround time from receipt to filed Backlog size and daily throughput Audit retrieval speed and completeness Compliance adherence (access control, retention tagging) Â Qualifications: Experience in records management, admin support, clerical work, or document control (preferred). Strong attention to detail; able to follow naming/filing rules consistently. Comfortable handling confidential information and following strict procedures. Basic computer proficiency: file systems, spreadsheets, PDFs, and collaboration tools. Â Please mention the word **ENCOURAGINGLY** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Hong Kong, Hong Kong, Hong Kong SAR",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Recruit Lytics Hiring is hiring for File Clerk. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "2b5fdb5a",
+        "title": "Lead Creative Strategist",
+        "company": "New Engen",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-lead-creative-strategist-new-engen-1134063",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-lead-creative-strategist-new-engen-1134063",
+        "jdText": "WHY DONUT STUDIOS? At New Engen, we help brands grow, not just bigger, but smarter. Weâre a digital marketing agency that drives meaningful impact across the entire customer journey by integrating media, creative, analytics, influencer, and retail strategies into performance-driven campaigns. Donut Studios is our in-house creative studio, purpose-built to craft high-performing, platform-native, and digital content for the worldâs most ambitious brands. As a key part of New Engenâs suite of specialized solutions, alongside offerings like the Acorn Creator Suite - Donut Studios helps unlock breakthrough creative that drives results, fast. Weâre a collaborative group of strategists, content creators, copywriters, editors, designers, account strategists, and more who are all in on helping brands, and each other, thrive. We work hard, stay humble, and build with purpose. What You'll Do Develop Performance-Driven Creative Strategy Build creative and messaging strategies that help brands grow across digital channels, including Facebook, Instagram, TikTok, YouTube, and display. Develop clear frameworks that guide concept development, ensuring creative work is grounded in performance insights and designed to resonate with target audiences. Serve as the Creative Strategy Lead for Clients Participate in client meetings as Donut Studiosâ in-house creative strategist for assigned accounts. Provide thoughtful guidance on creative direction, campaign opportunities, and platform-specific best practices while helping clients understand the strategic thinking behind recommendations. Turn Audience Insights into Creative Direction Analyze consumer mindsets, attitudes, and behaviors to inform compelling creative concepts. Translate these insights into actionable direction for internal teams, ensuring creative work connects with audiences and supports campaign objectives across the customer journey. Partner with Media to Drive Creative Performance Work closely with media counterparts to review campaign performance and identify opportunities to improve results. Use performance data, KPIs, and client feedback to refine creative strategies, optimize messaging, and guide future concept development. Manage Creative Launch Pipelines Coordinate closely with media partners to manage launch pipelines for assigned clients, ensuring deliverables are completed, reviewed, and shared on schedule. Maintain visibility into timelines and dependencies to keep campaigns moving forward efficiently. Lead Creative Briefing and Project Management Develop clear creative briefs and manage assignments for internal teams using tools like Asana and Slack. Ensure projects are well-scoped, expectations are clear, and teams have the context they need to produce high-quality creative work. Ensure Quality and Brand Alignment Review scripts, concepts, and final deliverables to ensure creative output meets client expectations, brand guidelines, and campaign goals. Maintain strong quality control across all deliverables before launch. Strengthen Cross-Functional Collaboration Build processes and workflows that support collaboration between creative, media, and client teams. Help ensure ideas, feedback, and performance insights move smoothly across teams so campaigns are executed efficiently and effectively. What You Bring 5+ years of proven experience ideating and developing high-performing direct response and social media creative strategies, ideally at a creative and performance marketing agency. Management experience of direct reports and junior team members. A background in creating UGC to enhance engagement and reach is a plus. Digitally savvy, creative, and knowledgeable about who and what is trending in the digital space on platforms including YouTube, Instagram/Facebook, TikTok, etc. A growth mindset, always thinking about how our clients can develop resonant, insightful advertising and what makes content engaging across audiences. Strong grasp on culture, with a keen understanding of what is relevant and an eye for upcoming digital trends. Excellent performance marketing and creative instincts with a track record of driving new concepts and pioneering new approaches within your company. Strong team player, with a passion for collaboration. Entrepreneurial spirit with a self-starting attitude and an ability to persuasively communicate strategic insights to the department and to stakeholders. Ability to navigate and influence within a fast-paced start-up organization. Fluency in Adobe Creative Suite or Figma is a plus. Proficiency in Asana and Google Sheets experience is a plus. Perks &amp; Benefits Remote or hybrid work environment with flexible hours Unlimited PTO + company holidays Comprehensive medical, dental, vision, and disability coverage Life &amp; AD&amp;D insurance 401(k) with company match Paid parental leave &amp; family support Pet care perks &amp; insurance Learning &amp; career development programs Commuter &amp; transit benefits Exclusive employee discounts Salary Range: $80,000 - $90,000 annually The range is applicable for the labor market where the role is intended to be hired. Final base salary is directly related to each candidate's qualifications and experience uniquely. New Engen is proud to have offices in Seattle, New York, and Northwest Arkansas, each one anchoring teams that drive creativity, collaboration, and culture. But great work isnât limited to those zip codes. We also support a distributed team of remote employees across the country, giving people the flexibility to do their best work wherever they are. We currently hire full-time employees in the following states: Arkansas, California, Colorado, Florida, Georgia, Illinois, Michigan, Missouri, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Virginia, Washington, and Wisconsin Letâs Build Whatâs Next Together â If youâre passionate about media and eager to make a meaningful impact with a team thatâs all in, weâd love to hear from you. Important Notice About Job Openings Please be aware of fraudulent job postings, consulting engagements, solicitations, or employment offers from suspicious sources. These attempts are often designed to steal your personal information or trick you into paying fees for recruitment or training services. New Engen does NOT charge any application, processing, or training fees at any stage of the recruitment or hiring process. All legitimate job openings will be posted directly on our careers page, and all communication about these roles will come exclusively from Recruitment outreach, conducted via email through our ATS, Greenhouse, and never through unsolicited text messages or the @newengen.online domain. If you have any concerns about the authenticity of any message claiming to be from New Engen, please contact us immediately at peopleteam@newengen.com before taking any further action. We take your security seriously and are here to support you, ensuring your job search is a safe, positive experience. Please mention the word **ABOUND** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "New Engen is hiring for Lead Creative Strategist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c8d7f618",
+        "title": "People Operations Specialist",
+        "company": "VulnCheck",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-people-operations-specialist-vulncheck-1134172",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-people-operations-specialist-vulncheck-1134172",
+        "jdText": "People Operations Specialist Location: (Greater) Boston, MA Team: People Employment Type: Full-Time About VulnCheck VulnCheck is transforming vulnerability intelligence by helping security teams act faster and with more confidence. Our platform delivers early, high-quality exploit intelligence, deep asset correlation, and contextual insights to help organizations stay ahead of emerging threats. About the Role VulnCheck is scaling fast globally, and we're excited to be growing our People function to match. This is a newly created role designed to bring operational rigor to the systems and processes that power our team globally. We're looking for someone who thrives in a fast-paced environment and is energized by driving a top-notch employee experience. You'll lead the global HRIS implementation in partnership with the Director of Talent, help build out compliance and benefits infrastructure across multiple jurisdictions, and be the connective tissue between People strategy and day-to-day execution. This role sits on a lean People team and reports directly to the Director of Talent. You'll have real ownership from day one, and your work will be visible across the entire organization. This is a 100% remote role with preference for candidates located in Greater Boston, MA What Youâll Do Onboarding &amp; Offboarding: Build and own the full employee lifecycle experience â from onboarding playbook and I-9 compliance to exit interviews and jurisdiction-specific offboarding requirements. Benefits &amp; Compliance: Stand up benefits administration across US, UK, and Singapore; build a multi-jurisdiction compliance calendar; support EOR-to-direct employment transitions. Performance Cycles: Build and administer review scheduling, calibration logistics, and template infrastructure; ensure performance data flows into HRIS to inform comp planning. People Insights: Establish reporting on new hire feedback, exit themes, and attrition data to surface actionable insights for leadership. What Youâll Bring 3+ years in People Operations, HR, Recruiting Operations, Benefits Coordinator or a closely related role, ideally within a startup or fast-growing environment Hands-on experience with modern people tools Self-starter mentality that loves finding solutions to problems before they surface, and ability to prioritize various projects Demonstrated experience managing HR compliance across multiple jurisdictions or countries Strong process orientation â you build systems, document them, and maintain them over time High attention to detail and data accuracy, and ability to handle confidential information with discretion and professionalism Roll up your sleeves attitude with drive to close gaps when and where needed Preferred Qualifications Experience supporting remote and globally distributed teams building scalable programs that promote connection, engagement, and exceptional employee experience AI savvy or interest to learn and utilize AI to automate, optimize and shape the future of People Operations What We Offer We believe people do their best work when they feel supported, trusted, and valued. VulnCheck offers benefits designed to meet a wide range of needs and lifestyles: Benefits and Perks Unlimited PTO 401k plan with company match Comprehensive healthcare coverage Generous paid parental leave Remote friendly environment with flexibility Expense reimbursement for Cell Phone &amp; InternetÂ Ongoing professional development, coaching, and learning resources Opportunities for career advancement within a fast-growing team CompensationÂ We offer competitive compensation packages commensurate with experience, including salary, equity, and where applicable, performance-based pay. Our Talent Team can answer questions around VulnCheckâs total rewards during your interview process. Why Join Us Built on over two decades of cybersecurity experience, our team of experts understands the intricacies of vulnerabilities, their exploitation in the wild, and how to leverage this data to build more effective cybersecurity products that produce better outcomes for organizations. VulnCheck gives organizations a tactical advantage by providing best-in-class exploit &amp; vulnerability intelligence information. We have a sense of duty to protect the critical infrastructure we rely on including medical devices, power grids and telecommunication networks. We were founded in 2021 in Lexington, Massachusetts. VulnCheck has a transparent, collaborative, and supportive culture - we are looking for people who have a growth mindset, are curious and innovative. Our team is smart, but humble, hardworking, and supportive. VulnCheck is proud to be an Equal Employer Opportunity employer. We do not discriminate based upon race, religion, color, national origin, gender (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. VulnCheck is committed to working with and providing reasonable accommodations to applicants with physical and mental disabilities. *Even if your experience doesnât perfectly align with the job description, we encourage you to applyâwe value potential just as much as a perfect resume. Please mention the word **TALENTS** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Boston, Boston, Massachusetts, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "VulnCheck is hiring for People Operations Specialist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "63003644",
+        "title": "SOCIAL MEDIA MANAGER â",
+        "company": "OnlineJobs.PH",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-social-media-manager-ae-onlinejobs-ph-1134150",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-social-media-manager-ae-onlinejobs-ph-1134150",
+        "jdText": "Platforms: Instagram, TikTok, LinkedIn &amp; YouTube Budget: â¬300â500/month Hours: ~15â20hrs/week, flexible schedule Comment âCalamariâ if you are real pesron. Who I Am: I am Chef Nikolas Laios â Chef of the Year 2026, Executive Chef at Bio-Hotel Stanglwirt in Austria, founder of TableCanvas, and creator of Laios Olive Oil, an ultra-premium extra virgin olive oil from my familyâs estate in the Mani Peninsula, Greece, with heritage dating back to 1938. I have been featured on BBC and I am building one of the most ambitious and purposeful culinary personal brands in the world. My Instagram grew from 1,000 to 20,000 followers in six months. The next phase is aggressive global growth with a clear mission â bringing Mediterranean culture, longevity, and world-class gastronomy to the world. My vision goes beyond food. It is about longevity, healing, Blue Zone principles, and the Mediterranean way of life as a philosophy. This is not a standard chef profile. This is a global movement. SOCIAL MEDIA MANAGER â Part-Time Remote Platforms: Instagram, TikTok, LinkedIn &amp; YouTube Budget: â¬300â500/month Hours: ~15â20hrs/week, flexible schedule Who I Am: I am Chef Nikolas Laios â Chef of the Year 2026, Executive Chef at Bio-Hotel Stanglwirt in Austria, founder of TableCanvas, and creator of Laios Olive Oil, an ultra-premium extra virgin olive oil from my familyâs estate in the Mani Peninsula, Greece, with heritage dating back to 1938. I have been featured on BBC and I am building one of the most ambitious and purposeful culinary personal brands in the world. My Instagram grew from 1,000 to 20,000 followers in six months. The next phase is aggressive global growth with a clear mission â bringing Mediterranean culture, longevity, and world-class gastronomy to the world. My vision goes beyond food. It is about longevity, healing, Blue Zone principles, and the Mediterranean way of life as a philosophy. This is not a standard chef profile. This is a global movement. What You Will Manage: Daily posting across Instagram, TikTok, LinkedIn, and YouTube Reels, Stories, Shorts, and long-form video publishing Scheduling and publishing high-volume content (2+ videos per day) Managing two brand identities simultaneously â personal brand (Chef Nikolas) and product brand (Laios Olive Oil) Writing captions that reflect the voice of a world-class chef â deep, authentic, and culturally rich Communicating complex themes â longevity, Mediterranean nutrition, food as medicine â in an engaging and accessible way Hashtag research, engagement, and community management Monthly growth reporting and strategy updates across all platforms. SOCIAL MEDIA MANAGER â Part-Time Remote Platforms: Instagram, TikTok, LinkedIn &amp; YouTube Budget: â¬300â500/month Hours: ~15â20hrs/week, flexible schedule What You Will Manage: Daily posting across Instagram, TikTok, LinkedIn, and YouTube Reels, Stories, Shorts, and long-form video publishing Scheduling and publishing high-volume content (2+ videos per day) Managing two brand identities simultaneously â personal brand (Chef Nikolas) and product brand (Laios Olive Oil) Writing captions that reflect the voice of a world-class chef â deep, authentic, and culturally rich Communicating complex themes â longevity, Mediterranean nutrition, food as medicine â in an engaging and accessible way Hashtag research, engagement, and community management Monthly growth reporting and strategy updates across all platforms You Must Have: Proven growth results across Instagram, TikTok, LinkedIn, and YouTube â show me real numbers Experience managing multiple brand identities simultaneously â personal brand and product brand Experience with luxury, hospitality, wellness, or high-profile chef and food brands Strong Reels and short-form video publishing skills Excellent English copywriting â this is the most critical skill for this role A genuine and deep understanding of Mediterranean culture, cuisine, and lifestyle Knowledge of longevity principles, Blue Zones, and food as medicine â you will write about these topics every single day Passion for health, wellness, and nutrition â not as a trend but as a way of life The ability to write with depth, soul, and authenticity â not surface-level food content A portfolio or active accounts you currently manage â results must be proven You Will NOT Be Right For This Role If: You only repost content without strategy or creative thinking You have never managed a personal brand at scale Your English writing needs heavy correction You treat this as a side task â full commitment during working hours is required You cannot handle fast-paced, high-volume content publishing You see this as just another food account â it is not You have no knowledge of Mediterranean food culture, longevity, or wellness You cannot write with substance, emotion, and cultural understanding about health and nutrition You are looking for an easy, routine job â this brand moves fast and thinks big Here it is â the complete, final job post. Everything included: SOCIAL MEDIA MANAGER â Part-Time Remote Platforms: Instagram, TikTok, LinkedIn &amp; YouTube Budget: â¬300â500/month Hours: ~15â20hrs/week, flexible schedule You Will NOT Be Right For This Role If: You only repost content without strategy or creative thinking You have never managed a personal brand at scale Your English writing needs heavy correction You treat this as a side task â full commitment during working hours is required You cannot handle fast-paced, high-volume content publishing You see this as just another food account â it is not You have no knowledge of Mediterranean food culture, longevity, or wellness You cannot write with substance, emotion, and cultural understanding about health and nutrition You are looking for an easy, routine job â this brand moves fast and thinks big The Person We Are Looking For: You are not just a scheduler. You are a storyteller. You understand that behind this brand is a world-class chef carrying decades of Mediterranean heritage, a philosophy of longevity, and a global vision that goes far beyond the kitchen. You will be the voice that communicates that vision to the world every single day. You take pride in your work. You are proactive, strategic, and deeply passionate about what this brand stands for. You do not need to be told what to do â you bring ideas, initiative, and excellence to every piece of content you touch. To Apply, Please Send: Your portfolio or examples of accounts you currently manage Your best result â one account, the numbers, and exactly what you did to achieve it A short paragraph explaining why you are the right person to manage a brand at this level Briefly describe your knowledge of Mediterranean culture and longevity â this is mandatory This is a long-term remote position with real room to grow as the brand scales globally. I am not looking for someone to fill a role. I am looking for someone who understands that they will be part of something extraordinary. Only serious applicants will receive a response. This is the complete version. It positions you exactly at the level you are â world-class â and it will attract only the candidates who are serious, knowledgeable, and genuinely capable of handling your brand. Sincerely, Nikolas Laios Please mention the word **INFLUENTIAL** and tag RMTMuMjIzLjE4NS4xNzI= when applying to show you read the job post completely (#RMTMuMjIzLjE4NS4xNzI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Media,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-06-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 99,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "OnlineJobs.PH is hiring for SOCIAL MEDIA MANAGER â. Role angle: Growth Data Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
