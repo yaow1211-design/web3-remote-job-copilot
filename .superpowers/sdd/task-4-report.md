@@ -1,97 +1,71 @@
-# Task 4 Report: Application Pack Generator
+Task 4 Report: Daily Briefing And Local Archive
 
-## What I implemented
-- Added `src/domain/applicationPack.ts` with `generateApplicationPack(job, candidate, score, now?)`.
-- Added `src/domain/applicationPack.test.ts` to cover the main pack contract and the Mia-positioning guardrails.
-- Kept the generator deterministic, local, and manual-review friendly. It uses the reviewed `scoreJob(job, candidate): FitRiskScore` interface only and does not call any external AI/API services.
-- The generated pack:
-  - selects a resume version from `candidate.resumeVersions`
-  - sets the role angle from `score.suggestedAngle`
-  - produces tailored summary, cover note, recruiter DM, hiring manager DM, portfolio highlight, interview talking points, risk handling note, and ISO timestamp
-  - avoids fabricating Web3 company experience or positioning Mia as a Solidity / smart-contract engineer
+Implemented
+- Added `src/domain/dailyBriefing.ts` with:
+  - `shouldGenerateDailyBriefing(now, existingArchives)` using `Intl.DateTimeFormat` with `timeZone: "Asia/Shanghai"`.
+  - `createDailyBriefing(discoveredJobs, candidate, existingJobs, now)` that:
+    - dedupes against the current Job Inbox using existing discovery helpers,
+    - converts discovered jobs with `toJobFromDiscoveredJob`,
+    - scores them with `scoreJob`,
+    - sorts by descending `score.overallScore`,
+    - limits the archive to 10 items,
+    - sets `windowLabel` to `Past 24 hours`,
+    - uses the first two score reasons as `fitReasons`,
+    - uses `score.risks` or `["No hard blocker detected. Human review still required."]`,
+    - generates concise company/title-aware summaries.
+- Extended `src/domain/types.ts` with `DailyBriefingItem`, `DailyBriefingArchive`, and `AppState.briefings`.
+- Extended `src/storage/localStore.ts` so:
+  - initial state includes `briefings: []`,
+  - legacy persisted state and imports without `briefings` normalize to `[]`,
+  - imported/exported state supports validated briefing archives while remaining backward-compatible.
+- Updated `src/App.tsx` so Today:
+  - auto-generates a briefing only when Today is opened, the Asia/Shanghai local time gate passes, and no current local-day archive exists,
+  - fetches discovered jobs with `fetchDiscoveredJobs`,
+  - prepends the generated archive to local state,
+  - avoids repeat generation with local `briefingStatus`,
+  - shows the current archive first and older archives below,
+  - renders item link, title/company, summary, score, recommendation, fit reasons, risks, and `Add to Job Inbox`,
+  - shows `Daily briefing could not refresh. Manual Fetch in Job Inbox is still available.` on failure.
+- Updated `src/styles.css` for the Today briefing archive layout.
 
-## Test commands and exact results
+TDD Evidence
+1. Created `src/domain/dailyBriefing.test.ts` first.
+2. Ran `npm test -- src/domain/dailyBriefing.test.ts` and observed RED:
+   - failed import for missing `./dailyBriefing` module.
+3. Added storage tests in `src/storage/localStore.test.ts` before storage implementation.
+4. Added Today-view app tests in `src/App.test.tsx` before wiring the feature.
+5. Implemented domain/storage/app code.
+6. Re-ran the target suite and got GREEN.
 
-### RED
-Command:
-```bash
-npm test -- src/domain/applicationPack.test.ts
-```
-Result:
-- Failed as expected because `src/domain/applicationPack.ts` did not exist yet.
-- Vitest error:
-  - `Failed to resolve import "./applicationPack" from "src/domain/applicationPack.test.ts". Does the file exist?`
+Tests Run And Results
+- `npm test -- src/domain/dailyBriefing.test.ts`
+  - PASS after implementation.
+- `npm test -- src/domain/dailyBriefing.test.ts src/storage/localStore.test.ts`
+  - PASS after domain + storage implementation.
+- `npm test -- src/App.test.tsx`
+  - PASS after fixing Today generation wiring.
+- `npm test -- src/domain/dailyBriefing.test.ts src/storage/localStore.test.ts src/App.test.tsx`
+  - PASS, 3 files / 45 tests green.
 
-### GREEN
-Command:
-```bash
-npm test -- src/domain/applicationPack.test.ts
-```
-Result:
-- Passed
-- `Test Files  1 passed (1)`
-- `Tests  1 passed (1)`
+Files Changed
+- `src/domain/dailyBriefing.ts`
+- `src/domain/dailyBriefing.test.ts`
+- `src/domain/types.ts`
+- `src/storage/localStore.ts`
+- `src/storage/localStore.test.ts`
+- `src/App.tsx`
+- `src/App.test.tsx`
+- `src/styles.css`
 
-### Broader verification
-Command:
-```bash
-npm test
-```
-Result:
-- Passed
-- `Test Files  4 passed (4)`
-- `Tests  22 passed (22)`
+Self-Review Findings
+- Fixed an integration bug during implementation: the Today auto-generation effect was cancelling its own in-flight request because the effect re-ran when `briefingStatus` changed to `loading`.
+- Kept the free local archive rule explicit in both domain logic and app wiring:
+  - generation is gated by Asia/Shanghai 08:00+,
+  - generation only occurs when Mia opens Today,
+  - generation is skipped when a same-local-day archive already exists.
+- Kept local-store compatibility intact for older saved state and imports.
+- Left unrelated tracked and untracked workspace changes untouched.
 
-Command:
-```bash
-npm run build
-```
-Result:
-- Passed
-- Vite emitted the expected local Node warning:
-  - `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
-- Build still completed successfully.
-
-## Files changed
-- `src/domain/applicationPack.ts`
-- `src/domain/applicationPack.test.ts`
-- `.superpowers/sdd/task-4-report.md`
-
-## Self-review findings
-- The pack output is deterministic and uses only local inputs.
-- The wording keeps Mia in an analyst/operator lane and avoids implying Solidity or smart-contract engineering experience.
-- The pack content is human-review oriented and includes the required manual-send language.
-- The fallback logic for resume selection is simple but stable for the current candidate asset set.
-
-## Concerns
-- The local build environment still shows the Node/Vite version warning, although the build succeeds.
-- I did not wire the new pack generator into the UI or persistence layer because Task 4 only requested the generator and its tests.
-
-## Task 4 fix run
-Command:
-```bash
-npm test -- src/domain/applicationPack.test.ts
-```
-Result:
-- Passed
-- `Test Files  1 passed (1)`
-- `Tests  3 passed (3)`
-
-Command:
-```bash
-npm test
-```
-Result:
-- Passed
-- `Test Files  4 passed (4)`
-- `Tests  24 passed (24)`
-
-Command:
-```bash
-npm run build
-```
-Result:
-- Passed
-- Vite warning during build:
-  - `You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.`
-- Build completed successfully
+Concerns
+- App-level time-gating is primarily asserted in the domain tests. The app tests focus on Today wiring/rendering and use module seams for the gating branch to avoid brittle clock-driven UI tests.
+- No broader full-project test suite was run beyond the task-specified target tests.

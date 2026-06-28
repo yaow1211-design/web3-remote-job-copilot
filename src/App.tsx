@@ -2,6 +2,7 @@ import {
   BriefcaseBusiness,
   CalendarCheck,
   Database,
+  ExternalLink,
   FileText,
   MessageSquare,
   Sparkles,
@@ -15,8 +16,19 @@ import { JobDetail } from "./components/JobDetail";
 import { JobInbox } from "./components/JobInbox";
 import { OutreachTracker } from "./components/OutreachTracker";
 import { WeeklyReview } from "./components/WeeklyReview";
+import { createDailyBriefing, shouldGenerateDailyBriefing } from "./domain/dailyBriefing";
 import { formatLocalDate } from "./domain/date";
-import type { AppState, ApplicationActivity, ApplicationPack, Job, JobStatus, OutreachContact } from "./domain/types";
+import type {
+  AppState,
+  ApplicationActivity,
+  ApplicationPack,
+  DailyBriefingArchive,
+  DailyBriefingItem,
+  Job,
+  JobStatus,
+  OutreachContact,
+} from "./domain/types";
+import { fetchDiscoveredJobs } from "./services/jobDiscoveryClient";
 import { loadAppState, saveAppState } from "./storage/localStore";
 import "./styles.css";
 
@@ -88,11 +100,79 @@ const TERMINAL_FOLLOW_UP_MESSAGE_STATUSES: OutreachContact["messageStatus"][] = 
   "Call booked",
   "Rejected",
 ];
+const DAILY_BRIEFING_ERROR_MESSAGE =
+  "Daily briefing could not refresh. Manual Fetch in Job Inbox is still available.";
+
+type BriefingStatus = "idle" | "loading" | "done" | "error";
+
+function DailyBriefingItemCard({
+  item,
+  jobs,
+  onAddJob,
+}: {
+  item: DailyBriefingItem;
+  jobs: Job[];
+  onAddJob: (job: Job) => void;
+}) {
+  const alreadyInInbox = jobs.some(
+    (job) =>
+      job.originalUrl.toLowerCase() === item.job.originalUrl.toLowerCase() ||
+      `${job.title.toLowerCase()}|${job.company.toLowerCase()}` ===
+        `${item.job.title.toLowerCase()}|${item.job.company.toLowerCase()}`,
+  );
+
+  return (
+    <article className="match-card" aria-label={`${item.job.title} ${item.job.company}`}>
+      <div className="match-meta">
+        <div>
+          <h3>{item.job.title}</h3>
+          <p>
+            {item.job.company} · {item.job.source}
+          </p>
+        </div>
+        <span className="score-pill">{item.score.overallScore}</span>
+      </div>
+
+      <p>{item.summary}</p>
+      <p>
+        <strong>Recommendation:</strong> {item.score.recommendation}
+      </p>
+      <p>
+        <strong>Why it fits:</strong>
+      </p>
+      <ul className="archive-list">
+        {item.fitReasons.map((reason) => (
+          <li key={reason}>{reason}</li>
+        ))}
+      </ul>
+      <p>
+        <strong>Risks:</strong>
+      </p>
+      <ul className="archive-list">
+        {item.risks.map((risk) => (
+          <li key={risk}>{risk}</li>
+        ))}
+      </ul>
+
+      <div className="outreach-actions">
+        <a className="secondary-button link-button" href={item.job.originalUrl} target="_blank" rel="noreferrer">
+          <ExternalLink aria-hidden="true" size={16} />
+          <span>Open original link</span>
+        </a>
+        <button className="primary-button" type="button" onClick={() => onAddJob(item.job)} disabled={alreadyInInbox}>
+          {alreadyInInbox ? "Already in inbox" : "Add to Job Inbox"}
+        </button>
+      </div>
+    </article>
+  );
+}
 
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
   const [selectedJobId, setSelectedJobId] = useState(() => state.jobs[0]?.id ?? "");
+  const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
+  const [briefingError, setBriefingError] = useState("");
   const selectedJob = useMemo(
     () => state.jobs.find((job) => job.id === selectedJobId) ?? state.jobs[0],
     [selectedJobId, state.jobs],
@@ -128,6 +208,7 @@ export default function App() {
       )
       .sort((left, right) => left.followUpDate.localeCompare(right.followUpDate));
   }, [state.contacts]);
+  const dailyBriefings = useMemo(() => state.briefings, [state.briefings]);
 
   useEffect(() => {
     saveAppState(state);
@@ -138,6 +219,62 @@ export default function App() {
       setSelectedJobId(state.jobs[0].id);
     }
   }, [selectedJob, state.jobs]);
+
+  useEffect(() => {
+    if (view !== "today") {
+      return;
+    }
+
+    if (!shouldGenerateDailyBriefing(new Date(), state.briefings)) {
+      return;
+    }
+
+    if (briefingStatus !== "idle") {
+      return;
+    }
+
+    let cancelled = false;
+
+    async function generateBriefing() {
+      setBriefingStatus("loading");
+      setBriefingError("");
+
+      try {
+        const discoveredJobs = await fetchDiscoveredJobs();
+        const now = new Date();
+        const archive = createDailyBriefing(discoveredJobs, state.candidate, state.jobs, now);
+
+        if (cancelled) {
+          return;
+        }
+
+        setState((current) => {
+          if (!shouldGenerateDailyBriefing(now, current.briefings)) {
+            return current;
+          }
+
+          return {
+            ...current,
+            briefings: [archive, ...current.briefings],
+          };
+        });
+        setBriefingStatus("done");
+      } catch {
+        if (cancelled) {
+          return;
+        }
+
+        setBriefingError(DAILY_BRIEFING_ERROR_MESSAGE);
+        setBriefingStatus("error");
+      }
+    }
+
+    void generateBriefing();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [state.briefings, state.candidate, state.jobs, view]);
 
   function addJob(job: Job) {
     setState((current) => ({ ...current, jobs: [job, ...current.jobs] }));
@@ -290,6 +427,46 @@ export default function App() {
               </ul>
             ) : (
               <p>No follow-ups due today.</p>
+            )}
+
+            <div className="section-heading daily-briefing-heading">
+              <p className="eyebrow-dark">Daily briefing</p>
+              <h2>Daily Web3 Job Briefing</h2>
+              <p>Mia opens Today after 08:00 Asia/Shanghai to generate one local archive for the day.</p>
+            </div>
+
+            {briefingError ? <p className="error-note">{briefingError}</p> : null}
+            {briefingStatus === "loading" ? <p>Refreshing today&apos;s briefing...</p> : null}
+
+            {dailyBriefings.length > 0 ? (
+              <div className="briefing-stack">
+                {dailyBriefings.map((archive, index) => (
+                  <section key={archive.id} className="briefing-block" aria-label={`Daily briefing ${archive.date}`}>
+                    <div className="section-heading">
+                      <p className="eyebrow-dark">{index === 0 ? "Current archive" : "Older archive"}</p>
+                      <h2>{archive.date}</h2>
+                      <p>{archive.windowLabel}</p>
+                    </div>
+
+                    {archive.items.length > 0 ? (
+                      <div className="match-list">
+                        {archive.items.map((item) => (
+                          <DailyBriefingItemCard
+                            key={`${archive.id}-${item.job.id}`}
+                            item={item}
+                            jobs={state.jobs}
+                            onAddJob={addJob}
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <p>No new briefing items made the top match list for this archive.</p>
+                    )}
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <p>No daily briefing archive yet for the current local cycle.</p>
             )}
           </section>
         )}

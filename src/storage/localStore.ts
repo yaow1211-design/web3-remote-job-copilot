@@ -7,10 +7,14 @@ import type {
   CandidateAsset,
   ContactChannel,
   CryptoRequirementLevel,
+  DailyBriefingArchive,
+  DailyBriefingItem,
+  FitRiskScore,
   Job,
   JobStatus,
   MessageStatus,
   OutreachContact,
+  Recommendation,
   RelationshipType,
   RemoteType,
   RoleFamily,
@@ -19,7 +23,7 @@ import { sampleActivities, sampleContacts, sampleJobs } from "../sampleData";
 
 const STORAGE_KEY = "web3-remote-job-copilot:v1";
 
-type AppStateShape = Pick<AppState, "version" | "candidate" | "jobs" | "packs" | "contacts" | "activities">;
+type AppStateShape = Pick<AppState, "version" | "candidate" | "jobs" | "briefings" | "packs" | "contacts" | "activities">;
 type ValidationContext = {
   errors: string[];
 };
@@ -75,6 +79,13 @@ const ACTIVITY_TYPES: ActivityType[] = [
   "rejected",
 ];
 const ACTIVITY_CHANNELS = [...CONTACT_CHANNELS, "Application Portal"] as const;
+const RECOMMENDATIONS: Recommendation[] = [
+  "Strong Apply",
+  "Apply with Custom Pack",
+  "DM First",
+  "Portfolio Needed",
+  "Skip",
+];
 
 function getDefaultStorage(): Storage {
   return window.localStorage;
@@ -85,6 +96,7 @@ export function createInitialAppState(): AppState {
     version: 1,
     candidate: seedCandidate,
     jobs: sampleJobs,
+    briefings: [],
     packs: [],
     contacts: sampleContacts,
     activities: sampleActivities,
@@ -201,6 +213,64 @@ function validateApplicationPack(value: unknown, path: string, context: Validati
   return true;
 }
 
+function validateFitRiskScore(value: unknown, path: string, context: ValidationContext): value is FitRiskScore {
+  if (!isRecord(value)) {
+    appendError(context, `${path} must be an object`);
+    return false;
+  }
+
+  validateNumber(value.overallScore, `${path}.overallScore`, context);
+  validateNumber(value.roleFit, `${path}.roleFit`, context);
+  validateNumber(value.transferableFinanceFit, `${path}.transferableFinanceFit`, context);
+  validateNumber(value.growthDataFit, `${path}.growthDataFit`, context);
+  validateNumber(value.productOpsFit, `${path}.productOpsFit`, context);
+  validateNumber(value.web3Barrier, `${path}.web3Barrier`, context);
+  validateNumber(value.remoteCompatibility, `${path}.remoteCompatibility`, context);
+  validateNumber(value.languageFit, `${path}.languageFit`, context);
+  validateNumber(value.portfolioProofStrength, `${path}.portfolioProofStrength`, context);
+  validateNumber(value.outreachOpportunity, `${path}.outreachOpportunity`, context);
+  validateEnum(value.recommendation, RECOMMENDATIONS, `${path}.recommendation`, context);
+  validateStringArray(value.reasons, `${path}.reasons`, context);
+  validateStringArray(value.risks, `${path}.risks`, context);
+  validateEnum(value.suggestedAngle, ROLE_FAMILIES, `${path}.suggestedAngle`, context);
+
+  return true;
+}
+
+function validateDailyBriefingItem(value: unknown, path: string, context: ValidationContext): value is DailyBriefingItem {
+  if (!isRecord(value)) {
+    appendError(context, `${path} must be an object`);
+    return false;
+  }
+
+  validateJob(value.job, `${path}.job`, context);
+  validateFitRiskScore(value.score, `${path}.score`, context);
+  validateString(value.summary, `${path}.summary`, context);
+  validateStringArray(value.fitReasons, `${path}.fitReasons`, context);
+  validateStringArray(value.risks, `${path}.risks`, context);
+
+  return true;
+}
+
+function validateDailyBriefingArchive(
+  value: unknown,
+  path: string,
+  context: ValidationContext,
+): value is DailyBriefingArchive {
+  if (!isRecord(value)) {
+    appendError(context, `${path} must be an object`);
+    return false;
+  }
+
+  validateString(value.id, `${path}.id`, context);
+  validateString(value.date, `${path}.date`, context);
+  validateString(value.generatedAt, `${path}.generatedAt`, context);
+  validateString(value.windowLabel, `${path}.windowLabel`, context);
+  validateArray(value.items, `${path}.items`, context, validateDailyBriefingItem);
+
+  return true;
+}
+
 function validateOutreachContact(value: unknown, path: string, context: ValidationContext): value is OutreachContact {
   if (!isRecord(value)) {
     appendError(context, `${path} must be an object`);
@@ -264,6 +334,15 @@ function validateArray<T>(
   return true;
 }
 
+function validateNumber(value: unknown, path: string, context: ValidationContext): value is number {
+  if (typeof value !== "number" || Number.isNaN(value)) {
+    appendError(context, `${path} must be a number`);
+    return false;
+  }
+
+  return true;
+}
+
 function validateAppState(value: unknown): { state?: AppState; errors: string[] } {
   const context: ValidationContext = { errors: [] };
 
@@ -286,11 +365,23 @@ function validateAppState(value: unknown): { state?: AppState; errors: string[] 
 
   validateCandidateAsset(value.candidate, "candidate", context);
   validateArray(value.jobs, "jobs", context, validateJob);
+  if ("briefings" in value && value.briefings !== undefined) {
+    validateArray(value.briefings, "briefings", context, validateDailyBriefingArchive);
+  }
   validateArray(value.packs, "packs", context, validateApplicationPack);
   validateArray(value.contacts, "contacts", context, validateOutreachContact);
   validateArray(value.activities, "activities", context, validateApplicationActivity);
 
-  return context.errors.length === 0 ? { state: value as unknown as AppState, errors: [] } : context;
+  if (context.errors.length > 0) {
+    return context;
+  }
+
+  const normalizedState: AppState = {
+    ...(value as AppStateShape),
+    briefings: Array.isArray(value.briefings) ? (value.briefings as DailyBriefingArchive[]) : [],
+  };
+
+  return { state: normalizedState, errors: [] };
 }
 
 export function loadAppState(storage: Storage = getDefaultStorage()): AppState {

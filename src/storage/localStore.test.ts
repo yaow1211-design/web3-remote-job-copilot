@@ -67,6 +67,65 @@ describe("localStore", () => {
     expect(imported.activities[0]?.actionType).toBe("shortlisted_job");
   });
 
+  it("defaults briefings to an empty array when loading an older backup without briefings", () => {
+    const legacyBackup = {
+      ...createInitialAppState(),
+    };
+
+    const imported = importAppState(JSON.stringify(legacyBackup)) as AppState & {
+      briefings?: unknown[];
+    };
+
+    expect(imported.briefings).toEqual([]);
+  });
+
+  it("exports and imports a backup with one daily briefing archive", () => {
+    const stateWithBriefing = {
+      ...createInitialAppState(),
+      briefings: [
+        {
+          id: "briefing-2026-06-28",
+          date: "2026-06-28",
+          generatedAt: "2026-06-28T08:15:00.000Z",
+          windowLabel: "Past 24 hours",
+          items: [
+            {
+              job: createInitialAppState().jobs[0],
+              score: {
+                overallScore: 88,
+                roleFit: 92,
+                transferableFinanceFit: 80,
+                growthDataFit: 84,
+                productOpsFit: 72,
+                web3Barrier: -5,
+                remoteCompatibility: 95,
+                languageFit: 75,
+                portfolioProofStrength: 70,
+                outreachOpportunity: 63,
+                recommendation: "Strong Apply",
+                reasons: ["Role angle: Growth Data Analyst.", "Strong lifecycle analytics and growth data overlap."],
+                risks: ["No hard blocker detected. Human review still required."],
+                suggestedAngle: "Growth Data Analyst",
+              },
+              summary: "Orbit Wallet is hiring a Growth Data Analyst role with remote lifecycle analytics scope.",
+              fitReasons: ["Role angle: Growth Data Analyst.", "Strong lifecycle analytics and growth data overlap."],
+              risks: ["No hard blocker detected. Human review still required."],
+            },
+          ],
+        },
+      ],
+    } as AppState & { briefings: unknown[] };
+
+    const json = exportAppState(stateWithBriefing as AppState);
+    const imported = importAppState(json) as AppState & { briefings?: Array<{ id: string; items: unknown[] }> };
+
+    expect(imported.briefings).toHaveLength(1);
+    expect(imported.briefings?.[0]).toMatchObject({
+      id: "briefing-2026-06-28",
+    });
+    expect(imported.briefings?.[0]?.items).toHaveLength(1);
+  });
+
   it("rejects malformed backup JSON", () => {
     expect(() => importAppState("{bad json")).toThrow("Backup is not valid JSON");
     expect(() => importAppState(JSON.stringify({ version: 1 }))).toThrow(

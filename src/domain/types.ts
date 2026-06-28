@@ -98,6 +98,22 @@ export interface FitRiskScore {
   suggestedAngle: RoleFamily;
 }
 
+export interface DailyBriefingItem {
+  job: Job;
+  score: FitRiskScore;
+  summary: string;
+  fitReasons: string[];
+  risks: string[];
+}
+
+export interface DailyBriefingArchive {
+  id: string;
+  date: string;
+  generatedAt: string;
+  windowLabel: string;
+  items: DailyBriefingItem[];
+}
+
 export interface ApplicationPack {
   jobId: string;
   selectedResumeVersion: string;
@@ -143,6 +159,7 @@ export interface AppState {
   version: 1;
   candidate: CandidateAsset;
   jobs: Job[];
+  briefings: DailyBriefingArchive[];
   packs: ApplicationPack[];
   contacts: OutreachContact[];
   activities: ApplicationActivity[];
