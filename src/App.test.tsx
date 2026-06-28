@@ -220,6 +220,22 @@ describe("App", () => {
     expect(await screen.findByText(DISCOVERY_ERROR_MESSAGE)).toBeInTheDocument();
   });
 
+  it("shows a clear error state when job discovery returns ok with an error payload", async () => {
+    const user = userEvent.setup();
+
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      json: async () => ({ jobs: [], error: "Job discovery failed" }),
+    } as Response);
+
+    render(<App />);
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Fetch Web3 remote jobs/i }));
+
+    expect(await screen.findByText(DISCOVERY_ERROR_MESSAGE)).toBeInTheDocument();
+  });
+
   it("adds a pasted JD job and shows an explainable fit review", async () => {
     const user = userEvent.setup();
 
@@ -884,6 +900,44 @@ describe("App", () => {
 
     expect(await screen.findByText(/Past 24 hours/i)).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledTimes(2);
+  });
+
+  it("shows a Today error for an ok plus error payload, does not persist an empty archive, and retries on revisit", async () => {
+    const user = userEvent.setup();
+
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ jobs: [], error: "Job discovery failed" }),
+      } as Response)
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ jobs: discoveredJobsFixture }),
+      } as Response);
+
+    renderApp();
+
+    expect(
+      await screen.findByText(/Daily briefing could not refresh\. Manual Fetch in Job Inbox is still available\./i),
+    ).toBeInTheDocument();
+
+    const savedAfterFailure = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}") as {
+      briefings?: Array<{ date: string; items: unknown[] }>;
+    };
+    expect(savedAfterFailure.briefings ?? []).toEqual([]);
+
+    await openNav(user, /Job Inbox/i);
+    await openNav(user, /Today/i);
+
+    expect(await screen.findByText(/Past 24 hours/i)).toBeInTheDocument();
+    expect(globalThis.fetch).toHaveBeenCalledTimes(2);
+
+    const savedAfterRetry = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}") as {
+      briefings?: Array<{ date: string; items: unknown[] }>;
+    };
+    expect(savedAfterRetry.briefings?.[0]?.date).toBe("2026-06-28");
+    expect(savedAfterRetry.briefings?.[0]?.items.length).toBeGreaterThan(0);
   });
 
   it("regenerates today's briefing after backup import replaces state without today's archive", async () => {

@@ -16,7 +16,7 @@ const briefingDateFormatter = new Intl.DateTimeFormat("en-CA", {
 
 const briefingHourFormatter = new Intl.DateTimeFormat("en-US", {
   timeZone: DAILY_BRIEFING_TIME_ZONE,
-  hour: "numeric",
+  hour: "2-digit",
   hour12: false,
 });
 
@@ -29,7 +29,16 @@ export function getDailyBriefingDateKey(now: Date): string {
 }
 
 function getLocalBriefingHour(now: Date): number {
-  return Number.parseInt(briefingHourFormatter.format(now), 10);
+  const hourPart = briefingHourFormatter
+    .formatToParts(now)
+    .find((part) => part.type === "hour")?.value;
+  const hour = Number.parseInt(hourPart ?? "", 10);
+
+  if (Number.isNaN(hour) || hour === 24) {
+    return 0;
+  }
+
+  return hour;
 }
 
 function normalizeBriefingText(value: string): string {

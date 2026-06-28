@@ -5,6 +5,7 @@ const JOB_DISCOVERY_ERROR = "Job discovery failed";
 
 interface JobDiscoveryResponse {
   jobs: DiscoveredJob[];
+  error?: string;
 }
 
 function isJobDiscoveryResponse(value: unknown): value is JobDiscoveryResponse {
@@ -26,6 +27,10 @@ export async function fetchDiscoveredJobs(fetcher: typeof fetch = fetch): Promis
     const payload: unknown = await response.json();
 
     if (!isJobDiscoveryResponse(payload)) {
+      throw new Error(JOB_DISCOVERY_ERROR);
+    }
+
+    if (typeof payload.error === "string" && payload.error.length > 0) {
       throw new Error(JOB_DISCOVERY_ERROR);
     }
 

@@ -34,7 +34,25 @@ function createArchive(date: string): DailyBriefingArchive {
 }
 
 describe("shouldGenerateDailyBriefing", () => {
-  it("returns false before 08:00 Asia/Shanghai", () => {
+  it("returns false at 00:00 Asia/Shanghai", () => {
+    const now = new Date("2026-06-28T00:00:00+08:00");
+
+    expect(shouldGenerateDailyBriefing(now, [])).toBe(false);
+  });
+
+  it("returns false at 00:30 Asia/Shanghai", () => {
+    const now = new Date("2026-06-28T00:30:00+08:00");
+
+    expect(shouldGenerateDailyBriefing(now, [])).toBe(false);
+  });
+
+  it("returns false at 00:59 Asia/Shanghai", () => {
+    const now = new Date("2026-06-28T00:59:00+08:00");
+
+    expect(shouldGenerateDailyBriefing(now, [])).toBe(false);
+  });
+
+  it("returns false before 08:00 Asia/Shanghai later in the morning", () => {
     const now = new Date("2026-06-28T07:59:00+08:00");
 
     expect(shouldGenerateDailyBriefing(now, [])).toBe(false);

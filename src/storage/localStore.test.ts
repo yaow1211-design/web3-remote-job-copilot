@@ -68,9 +68,7 @@ describe("localStore", () => {
   });
 
   it("defaults briefings to an empty array when loading an older backup without briefings", () => {
-    const legacyBackup = {
-      ...createInitialAppState(),
-    };
+    const { briefings: _briefings, ...legacyBackup } = createInitialAppState();
 
     const imported = importAppState(JSON.stringify(legacyBackup)) as AppState & {
       briefings?: unknown[];

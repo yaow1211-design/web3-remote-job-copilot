@@ -63,6 +63,17 @@ describe("fetchDiscoveredJobs", () => {
     await expect(fetchDiscoveredJobs(fetcher as typeof fetch)).rejects.toThrow("Job discovery failed");
   });
 
+  it("throws Job discovery failed when the response is ok but the payload includes an error", async () => {
+    const fetcher = vi.fn(async () => {
+      return {
+        ok: true,
+        json: async () => ({ jobs: [], error: "Job discovery failed" }),
+      } as Response;
+    });
+
+    await expect(fetchDiscoveredJobs(fetcher as typeof fetch)).rejects.toThrow("Job discovery failed");
+  });
+
   it("throws Job discovery failed when response.json rejects", async () => {
     const fetcher = vi.fn(async () => {
       return {
