@@ -886,6 +886,66 @@ describe("App", () => {
     expect(globalThis.fetch).toHaveBeenCalledTimes(2);
   });
 
+  it("regenerates today's briefing after backup import replaces state without today's archive", async () => {
+    const user = userEvent.setup();
+    let archiveCount = 0;
+
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockImplementation(
+      (_now, briefings) => briefings.length === 0,
+    );
+    vi.spyOn(dailyBriefingModule, "createDailyBriefing").mockImplementation(() => {
+      archiveCount += 1;
+
+      return {
+        id: `briefing-2026-06-28-${archiveCount}`,
+        date: "2026-06-28",
+        generatedAt: `2026-06-28T0${archiveCount}:30:00.000Z`,
+        windowLabel: "Past 24 hours",
+        items: [
+          {
+            job: toJobFromDiscoveredJob(discoveredJobsFixture[0]),
+            score: scoreJob(toJobFromDiscoveredJob(discoveredJobsFixture[0]), seedCandidate),
+            summary: `Generated briefing ${archiveCount}`,
+            fitReasons: ["Reason one", "Reason two"],
+            risks: ["No hard blocker detected. Human review still required."],
+          },
+        ],
+      };
+    });
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      json: async () => ({ jobs: discoveredJobsFixture }),
+    } as Response);
+
+    renderApp();
+
+    expect(await screen.findByText("Generated briefing 1")).toBeInTheDocument();
+
+    await openNav(user, /Backup/i);
+    const backupInput = screen.getByLabelText(/Import JSON/i);
+
+    await user.click(screen.getByRole("button", { name: /Export JSON/i }));
+
+    const importedState = JSON.parse((backupInput as HTMLTextAreaElement).value) as {
+      version: number;
+      candidate: typeof seedCandidate;
+      jobs: typeof sampleJobs;
+      briefings: unknown[];
+      packs: unknown[];
+      contacts: unknown[];
+      activities: unknown[];
+    };
+    importedState.briefings = [];
+
+    fireEvent.change(backupInput, { target: { value: JSON.stringify(importedState, null, 2) } });
+    await user.click(screen.getByRole("button", { name: /Import backup/i }));
+
+    await openNav(user, /Today/i);
+
+    expect(await screen.findByText("Generated briefing 2")).toBeInTheDocument();
+    expect(globalThis.fetch).toHaveBeenCalledTimes(2);
+  });
+
   it("excludes jobs added while the daily briefing fetch is in flight", async () => {
     const user = userEvent.setup();
     const deferredResponse = createDeferredPromise<Response>();

@@ -86,3 +86,22 @@ Verification
 
 Commit
 - Created commit with message: `Fix daily briefing review findings`
+
+Review Fix Follow-Up 2
+- Fixed the remaining Task 4 review finding in `src/App.tsx` by removing the stale `completedBriefingDateRef` completion guard.
+- Daily briefing regeneration now derives completion solely from persisted `state.briefings` through `shouldGenerateDailyBriefing(now, state.briefings)`.
+- Kept the existing request/in-flight refs so the app still avoids duplicate concurrent fetches during a single Today visit.
+- Added a regression test in `src/App.test.tsx` that:
+  - generates today's briefing,
+  - imports backup state with no today briefing through the Backup panel,
+  - returns to Today,
+  - verifies today's briefing generates again without a full reload.
+
+Verification
+- Command: `npm test -- src/App.test.tsx -t "regenerates today's briefing after backup import replaces state without today's archive"`
+- Result: PASS, targeted regression reproduced RED before the fix and GREEN after the fix.
+- Command: `npm test -- src/domain/dailyBriefing.test.ts src/storage/localStore.test.ts src/App.test.tsx`
+- Result: PASS, `3` files and `49` tests green.
+
+Notes
+- Test output still includes one pre-existing React warning in `src/App.test.tsx > App > excludes jobs added while the daily briefing fetch is in flight` about duplicate `briefing-2026-06-28` keys created by that test's mock archive IDs. This warning did not affect pass/fail for the required suite.

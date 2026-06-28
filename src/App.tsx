@@ -176,7 +176,6 @@ export default function App() {
   const [todayVisitKey, setTodayVisitKey] = useState(1);
   const briefingRequestKeyRef = useRef("");
   const briefingInFlightDateRef = useRef("");
-  const completedBriefingDateRef = useRef("");
   const selectedJob = useMemo(
     () => state.jobs.find((job) => job.id === selectedJobId) ?? state.jobs[0],
     [selectedJobId, state.jobs],
@@ -247,10 +246,6 @@ export default function App() {
       return;
     }
 
-    if (completedBriefingDateRef.current === localDate) {
-      return;
-    }
-
     if (briefingRequestKeyRef.current === currentRequestKey) {
       return;
     }
@@ -275,7 +270,6 @@ export default function App() {
           }
 
           const archive = createDailyBriefing(discoveredJobs, current.candidate, current.jobs, resolvedAt);
-          completedBriefingDateRef.current = archive.date;
 
           return {
             ...current,
