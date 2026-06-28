@@ -24,6 +24,10 @@ function getLocalBriefingDate(now: Date): string {
   return briefingDateFormatter.format(now);
 }
 
+export function getDailyBriefingDateKey(now: Date): string {
+  return getLocalBriefingDate(now);
+}
+
 function getLocalBriefingHour(now: Date): number {
   return Number.parseInt(briefingHourFormatter.format(now), 10);
 }
@@ -37,7 +41,7 @@ function buildSummary(company: string, title: string, reason: string, recommenda
 }
 
 export function shouldGenerateDailyBriefing(now: Date, existingArchives: DailyBriefingArchive[]): boolean {
-  const localDate = getLocalBriefingDate(now);
+  const localDate = getDailyBriefingDateKey(now);
 
   if (getLocalBriefingHour(now) < DAILY_BRIEFING_READY_HOUR) {
     return false;
@@ -78,8 +82,8 @@ export function createDailyBriefing(
     .slice(0, 10);
 
   return {
-    id: `briefing-${getLocalBriefingDate(now)}`,
-    date: getLocalBriefingDate(now),
+    id: `briefing-${getDailyBriefingDateKey(now)}`,
+    date: getDailyBriefingDateKey(now),
     generatedAt: now.toISOString(),
     windowLabel: DAILY_BRIEFING_WINDOW_LABEL,
     items,

@@ -69,3 +69,20 @@ Self-Review Findings
 Concerns
 - App-level time-gating is primarily asserted in the domain tests. The app tests focus on Today wiring/rendering and use module seams for the gating branch to avoid brittle clock-driven UI tests.
 - No broader full-project test suite was run beyond the task-specified target tests.
+
+Review Fix Follow-Up
+- Fixed the three review findings in the owned Today briefing flow:
+  - Replaced the sticky one-shot session behavior with per-day/per-visit request tracking so a failed refresh can retry on a later Today visit and a new local day can generate again.
+  - Moved briefing archive creation into the `setState(current => ...)` path so resolved fetches use the latest `current.jobs`, `current.candidate`, and `current.briefings`, with a same-day gate re-check before prepend.
+  - Sorted rendered briefing archives by `date` then `generatedAt` descending so `Current archive` points at the newest archive even when backups load in arbitrary order.
+- Added focused App tests for:
+  - retrying after a failed Today refresh,
+  - excluding a job added while briefing fetch is in flight,
+  - labeling the newest archive as current when persisted order is older-first.
+
+Verification
+- Command: `npm test -- src/domain/dailyBriefing.test.ts src/storage/localStore.test.ts src/App.test.tsx`
+- Result: PASS, `3` files and `48` tests green.
+
+Commit
+- Created commit with message: `Fix daily briefing review findings`

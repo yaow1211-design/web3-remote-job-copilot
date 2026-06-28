@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, within } from "@testing-library/react";
+import { fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { vi } from "vitest";
 import App from "./App";
@@ -51,6 +51,18 @@ const discoveredJobsFixture: DiscoveredJob[] = [
     postedAt: "2026-06-26",
   },
 ];
+
+function createDeferredPromise<T>() {
+  let resolve!: (value: T | PromiseLike<T>) => void;
+  let reject!: (reason?: unknown) => void;
+
+  const promise = new Promise<T>((res, rej) => {
+    resolve = res;
+    reject = rej;
+  });
+
+  return { promise, resolve, reject };
+}
 
 function renderApp() {
   return render(<App />);
@@ -781,7 +793,9 @@ describe("App", () => {
   });
 
   it("generates a daily briefing in Today after 08:00 Asia/Shanghai when no local-day archive exists", async () => {
-    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockImplementation(
+      (_now, briefings) => briefings.length === 0,
+    );
     vi.spyOn(dailyBriefingModule, "createDailyBriefing").mockReturnValue({
       id: "briefing-2026-06-28",
       date: "2026-06-28",
@@ -830,7 +844,9 @@ describe("App", () => {
   });
 
   it("shows a Today error note when daily briefing generation fails", async () => {
-    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockImplementation(
+      (_now, briefings) => briefings.length === 0,
+    );
     vi.spyOn(globalThis, "fetch").mockResolvedValue({
       ok: false,
       json: async () => ({ jobs: [] }),
@@ -841,5 +857,133 @@ describe("App", () => {
     expect(
       await screen.findByText(/Daily briefing could not refresh\. Manual Fetch in Job Inbox is still available\./i),
     ).toBeInTheDocument();
+  });
+
+  it("retries daily briefing generation when Mia revisits Today after a failure", async () => {
+    const user = userEvent.setup();
+
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(globalThis, "fetch")
+      .mockResolvedValueOnce({
+        ok: false,
+        json: async () => ({ jobs: [] }),
+      } as Response)
+      .mockResolvedValueOnce({
+        ok: true,
+        json: async () => ({ jobs: discoveredJobsFixture }),
+      } as Response);
+
+    renderApp();
+
+    expect(
+      await screen.findByText(/Daily briefing could not refresh\. Manual Fetch in Job Inbox is still available\./i),
+    ).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await openNav(user, /Today/i);
+
+    expect(await screen.findByText(/Past 24 hours/i)).toBeInTheDocument();
+    expect(globalThis.fetch).toHaveBeenCalledTimes(2);
+  });
+
+  it("excludes jobs added while the daily briefing fetch is in flight", async () => {
+    const user = userEvent.setup();
+    const deferredResponse = createDeferredPromise<Response>();
+    const inflightJob = discoveredJobsFixture[0];
+
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(globalThis, "fetch").mockReturnValue(deferredResponse.promise);
+    const createDailyBriefingSpy = vi
+      .spyOn(dailyBriefingModule, "createDailyBriefing")
+      .mockImplementation((discoveredJobs, candidate, existingJobs, now) => {
+        const hasAddedJob = existingJobs.some((job) => job.originalUrl === inflightJob.originalUrl);
+
+        if (hasAddedJob) {
+          return {
+            id: "briefing-2026-06-28",
+            date: "2026-06-28",
+            generatedAt: now.toISOString(),
+            windowLabel: "Past 24 hours",
+            items: [],
+          };
+        }
+
+        return {
+          id: "briefing-2026-06-28",
+          date: "2026-06-28",
+          generatedAt: now.toISOString(),
+          windowLabel: "Past 24 hours",
+          items: [
+            {
+              job: toJobFromDiscoveredJob(discoveredJobs[0], now),
+              score: scoreJob(toJobFromDiscoveredJob(discoveredJobs[0], now), candidate),
+              summary: "Orbit Wallet is hiring for Growth Data Analyst, Lifecycle.",
+              fitReasons: ["Good fit"],
+              risks: ["No hard blocker detected. Human review still required."],
+            },
+          ],
+        };
+      });
+
+    renderApp();
+
+    expect(await screen.findByText(/Refreshing today's briefing/i)).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await user.type(screen.getByLabelText(/Job title/i), inflightJob.title);
+    await user.type(screen.getByLabelText(/Company/i), inflightJob.company);
+    await user.type(screen.getByLabelText(/Original URL/i), inflightJob.originalUrl);
+    await user.type(screen.getByLabelText(/Apply URL/i), inflightJob.applyUrl);
+    await user.type(screen.getByLabelText(/JD text/i), inflightJob.description);
+    await user.click(screen.getByRole("button", { name: /Add job/i }));
+
+    deferredResponse.resolve({
+      ok: true,
+      json: async () => ({ jobs: discoveredJobsFixture }),
+    } as Response);
+
+    await waitFor(() => {
+      expect(createDailyBriefingSpy).toHaveBeenCalled();
+    });
+
+    await openNav(user, /Today/i);
+
+    expect(
+      await screen.findAllByText(/No new briefing items made the top match list for this archive\./i),
+    ).not.toHaveLength(0);
+    expect(createDailyBriefingSpy).toHaveBeenCalled();
+    expect(screen.queryByRole("button", { name: /Add to Job Inbox/i })).not.toBeInTheDocument();
+    expect(createDailyBriefingSpy.mock.calls[0]?.[2]).toEqual(
+      expect.arrayContaining([expect.objectContaining({ originalUrl: inflightJob.originalUrl })]),
+    );
+  });
+
+  it("labels the newest briefing archive as current even when saved order is older-first", async () => {
+    saveState({
+      briefings: [
+        {
+          id: "briefing-older",
+          date: "2026-06-27",
+          generatedAt: "2026-06-27T01:00:00.000Z",
+          windowLabel: "Past 24 hours",
+          items: [],
+        },
+        {
+          id: "briefing-newer",
+          date: "2026-06-28",
+          generatedAt: "2026-06-28T02:00:00.000Z",
+          windowLabel: "Past 24 hours",
+          items: [],
+        },
+      ],
+    });
+    vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(false);
+
+    renderApp();
+
+    const currentArchiveSection = screen.getByRole("heading", { name: "2026-06-28" }).closest("section");
+
+    expect(currentArchiveSection).not.toBeNull();
+    expect(within(currentArchiveSection as HTMLElement).getByText(/Current archive/i)).toBeInTheDocument();
   });
 });

@@ -8,7 +8,7 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ApplicationPackBuilder } from "./components/ApplicationPackBuilder";
 import { BackupPanel } from "./components/BackupPanel";
 import { CandidateAssets } from "./components/CandidateAssets";
@@ -16,7 +16,7 @@ import { JobDetail } from "./components/JobDetail";
 import { JobInbox } from "./components/JobInbox";
 import { OutreachTracker } from "./components/OutreachTracker";
 import { WeeklyReview } from "./components/WeeklyReview";
-import { createDailyBriefing, shouldGenerateDailyBriefing } from "./domain/dailyBriefing";
+import { createDailyBriefing, getDailyBriefingDateKey, shouldGenerateDailyBriefing } from "./domain/dailyBriefing";
 import { formatLocalDate } from "./domain/date";
 import type {
   AppState,
@@ -103,7 +103,7 @@ const TERMINAL_FOLLOW_UP_MESSAGE_STATUSES: OutreachContact["messageStatus"][] = 
 const DAILY_BRIEFING_ERROR_MESSAGE =
   "Daily briefing could not refresh. Manual Fetch in Job Inbox is still available.";
 
-type BriefingStatus = "idle" | "loading" | "done" | "error";
+type BriefingStatus = "idle" | "loading";
 
 function DailyBriefingItemCard({
   item,
@@ -173,6 +173,10 @@ export default function App() {
   const [selectedJobId, setSelectedJobId] = useState(() => state.jobs[0]?.id ?? "");
   const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
   const [briefingError, setBriefingError] = useState("");
+  const [todayVisitKey, setTodayVisitKey] = useState(1);
+  const briefingRequestKeyRef = useRef("");
+  const briefingInFlightDateRef = useRef("");
+  const completedBriefingDateRef = useRef("");
   const selectedJob = useMemo(
     () => state.jobs.find((job) => job.id === selectedJobId) ?? state.jobs[0],
     [selectedJobId, state.jobs],
@@ -208,7 +212,17 @@ export default function App() {
       )
       .sort((left, right) => left.followUpDate.localeCompare(right.followUpDate));
   }, [state.contacts]);
-  const dailyBriefings = useMemo(() => state.briefings, [state.briefings]);
+  const dailyBriefings = useMemo(
+    () =>
+      [...state.briefings].sort((left, right) => {
+        if (left.date !== right.date) {
+          return right.date.localeCompare(left.date);
+        }
+
+        return right.generatedAt.localeCompare(left.generatedAt);
+      }),
+    [state.briefings],
+  );
 
   useEffect(() => {
     saveAppState(state);
@@ -225,56 +239,60 @@ export default function App() {
       return;
     }
 
-    if (!shouldGenerateDailyBriefing(new Date(), state.briefings)) {
+    const now = new Date();
+    const localDate = getDailyBriefingDateKey(now);
+    const currentRequestKey = `${localDate}:${todayVisitKey}`;
+
+    if (!shouldGenerateDailyBriefing(now, state.briefings)) {
       return;
     }
 
-    if (briefingStatus !== "idle") {
+    if (completedBriefingDateRef.current === localDate) {
       return;
     }
 
-    let cancelled = false;
+    if (briefingRequestKeyRef.current === currentRequestKey) {
+      return;
+    }
+
+    if (briefingInFlightDateRef.current === localDate) {
+      return;
+    }
 
     async function generateBriefing() {
+      briefingRequestKeyRef.current = currentRequestKey;
+      briefingInFlightDateRef.current = localDate;
       setBriefingStatus("loading");
       setBriefingError("");
 
       try {
         const discoveredJobs = await fetchDiscoveredJobs();
-        const now = new Date();
-        const archive = createDailyBriefing(discoveredJobs, state.candidate, state.jobs, now);
-
-        if (cancelled) {
-          return;
-        }
+        const resolvedAt = new Date();
 
         setState((current) => {
-          if (!shouldGenerateDailyBriefing(now, current.briefings)) {
+          if (!shouldGenerateDailyBriefing(resolvedAt, current.briefings)) {
             return current;
           }
+
+          const archive = createDailyBriefing(discoveredJobs, current.candidate, current.jobs, resolvedAt);
+          completedBriefingDateRef.current = archive.date;
 
           return {
             ...current,
             briefings: [archive, ...current.briefings],
           };
         });
-        setBriefingStatus("done");
+        briefingInFlightDateRef.current = "";
+        setBriefingStatus("idle");
       } catch {
-        if (cancelled) {
-          return;
-        }
-
         setBriefingError(DAILY_BRIEFING_ERROR_MESSAGE);
-        setBriefingStatus("error");
+        briefingInFlightDateRef.current = "";
+        setBriefingStatus("idle");
       }
     }
 
     void generateBriefing();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [state.briefings, state.candidate, state.jobs, view]);
+  }, [state.briefings, todayVisitKey, view]);
 
   function addJob(job: Job) {
     setState((current) => ({ ...current, jobs: [job, ...current.jobs] }));
@@ -388,7 +406,13 @@ export default function App() {
                 key={item.id}
                 className={view === item.id ? "nav-button active" : "nav-button"}
                 type="button"
-                onClick={() => setView(item.id)}
+                onClick={() => {
+                  if (item.id === "today") {
+                    setTodayVisitKey((current) => current + 1);
+                  }
+
+                  setView(item.id);
+                }}
               >
                 <Icon aria-hidden="true" size={18} />
                 <span>{item.label}</span>
