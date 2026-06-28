@@ -39,3 +39,13 @@ jobs:
             echo "No new daily briefing archive to commit."
           fi
 
+      - name: Send daily briefing email
+        env:
+          BRIEFING_SMTP_HOST: ${{ secrets.BRIEFING_SMTP_HOST }}
+          BRIEFING_SMTP_PORT: ${{ secrets.BRIEFING_SMTP_PORT }}
+          BRIEFING_SMTP_USER: ${{ secrets.BRIEFING_SMTP_USER }}
+          BRIEFING_SMTP_PASS: ${{ secrets.BRIEFING_SMTP_PASS }}
+          BRIEFING_EMAIL_FROM: yaow1211@gmail.com
+          BRIEFING_EMAIL_TO: 627822708@qq.com
+          BRIEFING_APP_URL: https://web3-remote-job-copilot.vercel.app/
+        run: npm run send:daily-briefing
