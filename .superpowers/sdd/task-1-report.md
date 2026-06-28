@@ -1,87 +1,59 @@
-# Task 1 Report
+# Task 1 Report: Discovery Domain
 
-## What I implemented
+## Implemented
 
-- Created the local Vite + React + Vitest scaffold for the Web3 Remote Job Copilot MVP.
-- Added the exact app shell requested by the brief: a sidebar command center with the `Mia Web3 Remote Application Command Center` heading and navigation buttons for `Today`, `Job Inbox`, `Assets`, `Application Pack`, `Outreach`, and `Weekly Review`.
-- Wired up the entrypoint, test setup, and stylesheet so the app runs locally and the smoke test has a stable target.
-- Added TypeScript support for the build and test flow, including Node typings for `vite.config.ts` and Vitest globals for the test file.
-- Installed dependencies and generated `package-lock.json`.
+I implemented the Web3 Remote Job Copilot V1.1 discovery domain in:
 
-## Test commands and exact results
+- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.ts`
+- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.test.ts`
+- `/Users/wangmia/Documents/New project/src/domain/types.ts`
 
-### RED
+What changed:
 
-Command:
+- Added `DiscoveredJob` to the shared domain types.
+- Added pure discovery helpers:
+  - `normalizeRemoteOkJobs(rawItems: unknown[], now?: Date): DiscoveredJob[]`
+  - `inferRoleFamilyFromText(text: string): RoleFamily`
+  - `toJobFromDiscoveredJob(discoveredJob: DiscoveredJob, now?: Date): Job`
+  - `dedupeDiscoveredJobs(discoveredJobs: DiscoveredJob[], existingJobs: Job[]): DiscoveredJob[]`
+- Built Remote OK normalization with:
+  - HTML stripping from descriptions
+  - deterministic hash IDs from `source + originalUrl + title + company`
+  - remote/web3 relevance filtering
+  - required/preferred skill extraction
+  - crypto requirement inference
+  - `Job` conversion with `status: "new"` and `remoteType: "remote"`
 
-```bash
-npm test -- src/App.test.tsx
-```
+## TDD Evidence
 
-Result:
+Red step:
 
-- Failed as expected because `src/App.tsx` did not exist yet.
-- Key error:
+- Ran `npm test -- src/domain/jobDiscovery.test.ts`
+- Result: failed as expected because `./jobDiscovery` did not exist yet
 
-```text
-Error: Failed to resolve import "./App" from "src/App.test.tsx". Does the file exist?
-```
+Green steps:
 
-### GREEN
+- Implemented the module after the failing test
+- Re-ran `npm test -- src/domain/jobDiscovery.test.ts`
+- Result: passed
 
-Command:
+Regression verification:
 
-```bash
-npm test -- src/App.test.tsx
-```
+- Ran `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+- Result: all 4 test files passed, 30 tests passed total
 
-Result:
+## Files Changed
 
-```text
-✓ src/App.test.tsx (1 test) 45ms
-Test Files  1 passed (1)
-Tests       1 passed (1)
-```
+- `/Users/wangmia/Documents/New project/src/domain/types.ts`
+- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.ts`
+- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.test.ts`
 
-Command:
+## Self-Review Findings
 
-```bash
-npm run build
-```
-
-Result:
-
-```text
-✓ built in 670ms
-```
-
-Notes:
-
-- `npm install` completed successfully after escalation and produced `package-lock.json`.
-- `npm run build` emitted a Vite engine warning because the environment is on Node `20.11.0` while Vite 7 asks for `20.19+`, but the build still completed successfully.
-
-## Files changed
-
-- `package.json`
-- `package-lock.json`
-- `index.html`
-- `tsconfig.json`
-- `tsconfig.node.json`
-- `vite.config.ts`
-- `src/main.tsx`
-- `src/App.tsx`
-- `src/styles.css`
-- `src/test/setup.ts`
-- `src/vitest-env.d.ts`
-- `src/App.test.tsx`
-
-## Self-review findings
-
-- The scaffold is runnable and the smoke test checks the requested command-center heading plus two navigation buttons.
-- The TypeScript setup needed a small follow-up beyond the brief: `@types/node` and Vitest global declarations were necessary for `tsc -b` to pass cleanly.
-- The UI matches the brief’s structure and uses the requested lucide icon set for the primary nav.
+- I first used a prefixed discovery ID, then removed the prefix so the ID is the raw deterministic hash required by the brief.
+- I tightened the relevance filter so clearly onsite rows do not slip through just because the source is Remote OK.
+- I normalized title/company comparisons for dedupe so same-job matches are more reliable.
 
 ## Concerns
 
-- The local Node runtime is older than the version Vite 7 prefers, so future CI or local runs on the same Node version may keep showing the engine warning.
-- The build process generated transient artifacts in the workspace (`dist/`, `vite.config.js`, `vite.config.d.ts`, and `tsconfig*.tsbuildinfo`); they were not part of the scaffold commit.
+- The discovery heuristics are intentionally tuned to the Remote OK-style payload shape described in the brief. If later discovery sources use different field names or require broader normalization rules, this module will need source-specific expansion.

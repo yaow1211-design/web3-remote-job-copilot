@@ -47,6 +47,19 @@ export interface CandidateAsset {
   riskDisclaimers: string[];
 }
 
+export interface DiscoveredJob {
+  id: string;
+  title: string;
+  company: string;
+  source: string;
+  originalUrl: string;
+  applyUrl: string;
+  description: string;
+  tags: string[];
+  location: string;
+  postedAt: string;
+}
+
 export interface Job {
   id: string;
   title: string;
