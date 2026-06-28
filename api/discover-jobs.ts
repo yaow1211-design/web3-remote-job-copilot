@@ -19,9 +19,23 @@ const SOURCES = ["Remote OK"];
 const USER_AGENT = "Mia Web3 Remote Job Copilot (https://miaweb3job.vercel.app)";
 const ACCEPT = "application/json";
 const MAX_JOBS = 50;
+const FETCH_ERROR_MESSAGE = "Job discovery failed";
+const NORMALIZATION_ERROR_MESSAGE = "Job discovery source could not be normalized";
+const JOB_LIKE_FIELDS = ["title", "position", "company", "url", "originalUrl", "applyUrl", "apply_url"];
 
 function setJsonHeaders(res: ApiResponse): ApiResponse {
   return res.setHeader("Cache-Control", CACHE_CONTROL).setHeader("Content-Type", "application/json");
+}
+
+function isCandidateLookingRow(item: unknown): item is Record<string, unknown> {
+  if (typeof item !== "object" || item === null || Array.isArray(item)) {
+    return false;
+  }
+
+  return JOB_LIKE_FIELDS.some((field) => {
+    const value = item[field];
+    return typeof value === "string" ? value.trim().length > 0 : value !== undefined && value !== null;
+  });
 }
 
 function buildSuccessfulPayload(rawItems: unknown[]): DiscoverJobsResponse {
@@ -37,20 +51,25 @@ function buildSuccessfulPayload(rawItems: unknown[]): DiscoverJobsResponse {
     !("originalUrl" in metadataRow)
       ? rawItems.slice(1)
       : rawItems;
+  const jobs = normalizeRemoteOkJobs(dataRows).slice(0, MAX_JOBS);
+
+  if (jobs.length === 0 && dataRows.some(isCandidateLookingRow)) {
+    throw new Error(NORMALIZATION_ERROR_MESSAGE);
+  }
 
   return {
-    jobs: normalizeRemoteOkJobs(dataRows).slice(0, MAX_JOBS),
+    jobs,
     fetchedAt: new Date().toISOString(),
     sources: SOURCES,
   };
 }
 
-function buildErrorPayload(error: unknown): DiscoverJobsResponse {
+function buildErrorPayload(message: string = FETCH_ERROR_MESSAGE): DiscoverJobsResponse {
   return {
     jobs: [],
     fetchedAt: new Date().toISOString(),
     sources: SOURCES,
-    error: error instanceof Error && error.message.trim() ? error.message : "Remote OK fetch failed",
+    error: message,
   };
 }
 
@@ -64,17 +83,18 @@ export default async function handler(_req: unknown, res: ApiResponse): Promise<
     });
 
     if (!response.ok) {
-      throw new Error("Remote OK fetch failed");
+      throw new Error(FETCH_ERROR_MESSAGE);
     }
 
     const payload: unknown = await response.json();
 
     if (!Array.isArray(payload)) {
-      throw new Error("Remote OK fetch failed");
+      throw new Error(FETCH_ERROR_MESSAGE);
     }
 
     setJsonHeaders(res).status(200).json(buildSuccessfulPayload(payload));
   } catch (error) {
-    setJsonHeaders(res).status(200).json(buildErrorPayload(error));
+    const message = error instanceof Error && error.message === NORMALIZATION_ERROR_MESSAGE ? NORMALIZATION_ERROR_MESSAGE : FETCH_ERROR_MESSAGE;
+    setJsonHeaders(res).status(200).json(buildErrorPayload(message));
   }
 }
