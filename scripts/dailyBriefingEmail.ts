@@ -4,6 +4,9 @@ import nodemailer from "nodemailer";
 
 const DEFAULT_EMAIL_TO = "627822708@qq.com";
 const DEFAULT_APP_URL = "https://web3-remote-job-copilot.vercel.app/";
+const DEFAULT_EMAIL_FROM = "yaow1211@gmail.com";
+const DEFAULT_SMTP_HOST = "smtp.gmail.com";
+const DEFAULT_SMTP_PORT = 465;
 
 export interface DailyBriefingEmailConfig {
   host: string;
@@ -36,11 +39,7 @@ export interface SendDailyBriefingEmailInput {
 type Env = Record<string, string | undefined>;
 
 const REQUIRED_ENV_KEYS = [
-  "BRIEFING_SMTP_HOST",
-  "BRIEFING_SMTP_PORT",
-  "BRIEFING_SMTP_USER",
   "BRIEFING_SMTP_PASS",
-  "BRIEFING_EMAIL_FROM",
 ];
 
 function readRequiredEnv(env: Env, key: string): string {
@@ -58,18 +57,20 @@ export function buildDailyBriefingEmailConfig(env: Env = process.env): DailyBrie
     throw new Error(`Missing required email configuration: ${missingKeys.join(", ")}`);
   }
 
-  const port = Number.parseInt(readRequiredEnv(env, "BRIEFING_SMTP_PORT"), 10);
+  const port = Number.parseInt(env.BRIEFING_SMTP_PORT?.trim() || `${DEFAULT_SMTP_PORT}`, 10);
   if (Number.isNaN(port)) {
     throw new Error("BRIEFING_SMTP_PORT must be a number");
   }
 
+  const user = env.BRIEFING_SMTP_USER?.trim() || DEFAULT_EMAIL_FROM;
+
   return {
-    host: readRequiredEnv(env, "BRIEFING_SMTP_HOST"),
+    host: env.BRIEFING_SMTP_HOST?.trim() || DEFAULT_SMTP_HOST,
     port,
     secure: port === 465,
-    user: readRequiredEnv(env, "BRIEFING_SMTP_USER"),
+    user,
     pass: readRequiredEnv(env, "BRIEFING_SMTP_PASS"),
-    from: readRequiredEnv(env, "BRIEFING_EMAIL_FROM"),
+    from: env.BRIEFING_EMAIL_FROM?.trim() || user,
     to: env.BRIEFING_EMAIL_TO?.trim() || DEFAULT_EMAIL_TO,
     appUrl: env.BRIEFING_APP_URL?.trim() || DEFAULT_APP_URL,
   };

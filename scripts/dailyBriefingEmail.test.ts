@@ -10,13 +10,9 @@ import {
 } from "./dailyBriefingEmail";
 
 describe("daily briefing email", () => {
-  it("builds SMTP config from environment variables and defaults the recipient to Mia's QQ mailbox", () => {
+  it("builds Gmail SMTP config from a single app-password secret and defaults Mia's mailboxes", () => {
     const config = buildDailyBriefingEmailConfig({
-      BRIEFING_SMTP_HOST: "smtp.gmail.com",
-      BRIEFING_SMTP_PORT: "465",
-      BRIEFING_SMTP_USER: "yaow1211@gmail.com",
       BRIEFING_SMTP_PASS: "app-password",
-      BRIEFING_EMAIL_FROM: "yaow1211@gmail.com",
     });
 
     expect(config).toEqual({
@@ -33,7 +29,7 @@ describe("daily briefing email", () => {
 
   it("fails fast when SMTP credentials are missing", () => {
     expect(() => buildDailyBriefingEmailConfig({})).toThrow(
-      "Missing required email configuration: BRIEFING_SMTP_HOST, BRIEFING_SMTP_PORT, BRIEFING_SMTP_USER, BRIEFING_SMTP_PASS, BRIEFING_EMAIL_FROM",
+      "Missing required email configuration: BRIEFING_SMTP_PASS",
     );
   });
 
