@@ -10,6 +10,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "generate:daily-briefing": "tsx scripts/generate-daily-briefing.ts",
+    "send:daily-briefing": "tsx scripts/send-daily-briefing-email.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -26,9 +27,11 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/node": "^22.10.2",
+    "@types/nodemailer": "^8.0.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "jsdom": "^25.0.0",
+    "nodemailer": "^9.0.1",
     "tsx": "^4.22.4",
     "vitest": "^3.0.0"
   }

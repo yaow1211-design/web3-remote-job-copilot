@@ -14,6 +14,11 @@ describe("daily briefing GitHub Actions workflow", () => {
     expect(workflow).toContain("npm run generate:daily-briefing");
     expect(workflow).toContain("data/daily-briefings/");
     expect(workflow).toContain("git commit -m \"chore: add daily briefing archive\"");
+    expect(workflow).toContain("BRIEFING_SMTP_HOST: ${{ secrets.BRIEFING_SMTP_HOST }}");
+    expect(workflow).toContain("BRIEFING_SMTP_USER: ${{ secrets.BRIEFING_SMTP_USER }}");
+    expect(workflow).toContain("BRIEFING_EMAIL_FROM: yaow1211@gmail.com");
+    expect(workflow).toContain("BRIEFING_EMAIL_TO: 627822708@qq.com");
+    expect(workflow).toContain("BRIEFING_APP_URL: https://web3-remote-job-copilot.vercel.app/");
+    expect(workflow).toContain("npm run send:daily-briefing");
   });
 });
-
