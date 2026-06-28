@@ -103,6 +103,22 @@ describe("normalizeRemoteOkJobs", () => {
     expect(results.map((job) => job.company)).toEqual(["Remote Title Co", "Worldwide Co", "Remote Description Co"]);
   });
 
+  it("does not treat distributed team wording as remote evidence for a concrete location row", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Distributed Team Growth Data Analyst",
+        company: "Distributed Team Co",
+        url: "https://remoteok.com/l/distributed-team-job",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
+  });
+
   it("does not let a remote-containing source text pass by itself", () => {
     const rawItems: unknown[] = [
       {
@@ -142,6 +158,28 @@ describe("normalizeRemoteOkJobs", () => {
       source: "Remote OK",
       location: "",
     });
+  });
+
+  it.each([
+    "United States",
+    "USA",
+    "Europe",
+    "UK",
+  ])("filters a Remote OK row with location %s when it has no explicit remote wording", (location) => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Remote OK Geo Co",
+        url: `https://remoteok.com/l/${location.toLowerCase().replace(/\s+/g, "-")}-job`,
+        source: "Remote OK",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location,
+        date: "2026-06-28",
+      },
+    ];
+
+    expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
   });
 
   it("filters a Remote OK row with a concrete location when it has no remote wording", () => {

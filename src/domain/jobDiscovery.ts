@@ -8,8 +8,14 @@ const REMOTE_TERMS = [
   "worldwide",
   "work from anywhere",
   "anywhere",
+  "work from home",
+  "wfh",
   "remote-first",
   "remote friendly",
+  "async",
+  "async-first",
+  "global remote",
+  "apac-friendly remote",
 ];
 
 const ONSITE_TERMS = [
@@ -23,18 +29,7 @@ const ONSITE_TERMS = [
 ];
 
 const SOURCE_REMOTE_TERMS = ["remote ok", "remoteok"];
-const GENERIC_LOCATION_TERMS = [
-  "remote",
-  "worldwide",
-  "anywhere",
-  "global",
-  "europe",
-  "usa",
-  "united states",
-  "united kingdom",
-  "uk",
-  "european union",
-];
+const UNSPECIFIED_LOCATION_TERMS = ["unknown", "unspecified", "not provided", "not specified", "n/a", "na"];
 
 const GROWTH_TERMS = ["growth", "user", "campaign", "lifecycle", "activation", "retention", "funnel", "segmentation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
@@ -182,9 +177,8 @@ function buildSearchText(values: Array<string | null | undefined>): string {
 
 function hasExplicitRemoteSignal(title: string, description: string, location: string, tags: string[]): boolean {
   const searchText = buildSearchText([title, description, location, ...tags]);
-  const distributedRemoteSignal = /\bdistributed\b.{0,30}\b(team|teams|workforce|organization|org|company|people)\b|\b(team|teams|workforce|organization|org|company|people)\b.{0,30}\bdistributed\b/.test(searchText);
 
-  return includesAny(searchText, REMOTE_TERMS) || distributedRemoteSignal;
+  return includesAny(searchText, REMOTE_TERMS);
 }
 
 function hasOnsiteSignal(title: string, description: string, location: string, tags: string[]): boolean {
@@ -196,21 +190,21 @@ function hasSourceRemoteSignal(source: string): boolean {
   return SOURCE_REMOTE_TERMS.includes(normalizedSource);
 }
 
-function hasGenericRemoteFriendlyLocation(location: string): boolean {
+function hasUnspecifiedLocation(location: string): boolean {
   if (!location.trim()) {
     return true;
   }
 
   const normalizedLocation = normalizeLookupText(location);
 
-  return includesAny(normalizedLocation, GENERIC_LOCATION_TERMS);
+  return includesAny(normalizedLocation, UNSPECIFIED_LOCATION_TERMS);
 }
 
 function isRelevantDiscovery(title: string, description: string, location: string, tags: string[], source: string): boolean {
   const searchText = buildSearchText([title, description, location, source, ...tags]);
   const explicitRemoteSignal = hasExplicitRemoteSignal(title, description, location, tags);
   const sourceRemoteSignal = hasSourceRemoteSignal(source);
-  const sourceLocationEligible = sourceRemoteSignal && hasGenericRemoteFriendlyLocation(location);
+  const sourceLocationEligible = sourceRemoteSignal && hasUnspecifiedLocation(location);
   const onsiteSignal = hasOnsiteSignal(title, description, location, tags);
   const targetRelevanceSignal = includesAny(searchText, TARGET_RELEVANCE_TERMS);
   const web3Signal = includesAny(searchText, WEB3_RELEVANCE_TERMS);

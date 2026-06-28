@@ -119,3 +119,21 @@ Output summary:
 
 - focused discovery suite: 12/12 tests passed
 - broader domain suite: 36/36 tests passed
+
+## Review Fix Addendum 5
+
+Closed the last discovery review findings by tightening the remote-compatibility gate in `src/domain/jobDiscovery.ts`:
+
+- removed `distributed` + team/org/company/people from explicit remote detection
+- removed generic geographic labels from the Remote OK source gate so `United States`, `USA`, `Europe`, and `UK` no longer count as remote-compatible without explicit remote wording
+- kept blank/unspecified Remote OK source inference and the existing negated crypto requirement behavior
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Output summary:
+
+- focused discovery suite: 17/17 tests passed
+- broader domain suite: 41/41 tests passed
