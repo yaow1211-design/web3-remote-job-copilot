@@ -1,0 +1,20 @@
+.DS_Store
+.env*
+.git
+.vercel
+coverage
+dist
+node_modules
+tsconfig*.tsbuildinfo
+**/*.test.ts
+
+# Unrelated local workspaces and cached projects.
+OpenClaw
+PortfolioPages
+portfolio
+skills
+vcpkg
+
+# Local artifacts are not needed for the deployed app.
+artifacts
+docs/superpowers

@@ -1,4 +1,4 @@
-import { formatLocalDate } from "./date";
+import { formatLocalDate } from "./date.js";
 import type { DiscoveredJob, Job, CryptoRequirementLevel, RoleFamily } from "./types";
 
 const DISCOVERY_SOURCE = "Remote OK";

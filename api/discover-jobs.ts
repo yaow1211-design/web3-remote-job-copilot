@@ -1,4 +1,4 @@
-import { normalizeRemoteOkJobs } from "../src/domain/jobDiscovery";
+import { normalizeRemoteOkJobs } from "../src/domain/jobDiscovery.js";
 
 type DiscoverJobsResponse = {
   jobs: ReturnType<typeof normalizeRemoteOkJobs>;
