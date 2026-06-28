@@ -2,48 +2,55 @@
 
 ## What I implemented
 
-- Added the domain model in `src/domain/types.ts` with the exact app state interfaces and union types required by the brief.
-- Added the seed candidate asset in `src/domain/seedCandidate.ts` with Mia's positioning, headline, about section, proof points, risk disclaimers, and portfolio URL.
-- Added sample jobs, contacts, and activity data in `src/sampleData.ts`.
-- Added local persistence helpers in `src/storage/localStore.ts`:
-  - `createInitialAppState()`
-  - `loadAppState(storage?: Storage)`
-  - `saveAppState(state, storage?: Storage)`
-  - `exportAppState(state)`
-  - `importAppState(json)`
-- Added focused persistence tests in `src/storage/localStore.test.ts` covering initial seed data, save/load round-trip, export/import round-trip, and malformed backup rejection.
+- Added `src/services/jobDiscoveryClient.ts` with `fetchDiscoveredJobs(fetcher?: typeof fetch)`.
+- Added `api/discover-jobs.ts` as a Vercel-style serverless handler for `GET /api/discover-jobs`.
+- Added `src/services/jobDiscoveryClient.test.ts` to cover the client success and failure paths.
 
-## Test commands and exact results
+## TDD evidence
 
-### RED evidence
+### RED
 
 Command:
 
 ```bash
-npm test -- src/storage/localStore.test.ts
+npm test -- src/services/jobDiscoveryClient.test.ts
 ```
 
 Result:
 
 ```text
-FAIL src/storage/localStore.test.ts [ src/storage/localStore.test.ts ]
-Error: Failed to resolve import "./localStore" from "src/storage/localStore.test.ts". Does the file exist?
+FAIL src/services/jobDiscoveryClient.test.ts [ src/services/jobDiscoveryClient.test.ts ]
+Error: Failed to resolve import "./jobDiscoveryClient" from "src/services/jobDiscoveryClient.test.ts". Does the file exist?
 ```
 
-### GREEN evidence
+### GREEN
 
 Command:
 
 ```bash
-npm test -- src/storage/localStore.test.ts
+npm test -- src/services/jobDiscoveryClient.test.ts
 ```
 
 Result:
 
 ```text
-✓ src/storage/localStore.test.ts (4 tests) 2ms
-Test Files  1 passed (1)
-Tests  4 passed (4)
+✓ src/services/jobDiscoveryClient.test.ts (3 tests) 2ms
+```
+
+## Test results
+
+Command:
+
+```bash
+npm test -- src/services/jobDiscoveryClient.test.ts src/domain/jobDiscovery.test.ts
+```
+
+Result:
+
+```text
+✓ src/services/jobDiscoveryClient.test.ts (3 tests) 2ms
+✓ src/domain/jobDiscovery.test.ts (22 tests) 6ms
+Tests  25 passed (25)
 ```
 
 Command:
@@ -55,10 +62,14 @@ npm test
 Result:
 
 ```text
-✓ src/storage/localStore.test.ts (4 tests) 2ms
-✓ src/App.test.tsx (1 test) 46ms
-Test Files  2 passed (2)
-Tests  5 passed (5)
+✓ src/services/jobDiscoveryClient.test.ts (3 tests)
+✓ src/domain/weeklyReview.test.ts (5 tests)
+✓ src/domain/jobDiscovery.test.ts (22 tests)
+✓ src/storage/localStore.test.ts (6 tests)
+✓ src/domain/applicationPack.test.ts (3 tests)
+✓ src/domain/scoring.test.ts (16 tests)
+✓ src/App.test.tsx (24 tests)
+Tests  79 passed (79)
 ```
 
 Command:
@@ -70,24 +81,24 @@ npm run build
 Result:
 
 ```text
-You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+. Please upgrade your Node.js version.
-✓ built in 699ms
+You are using Node.js 20.11.0. Vite requires Node.js version 20.19+ or 22.12+.
+✓ built in 738ms
 ```
 
 ## Files changed
 
-- `src/domain/types.ts`
-- `src/domain/seedCandidate.ts`
-- `src/sampleData.ts`
-- `src/storage/localStore.ts`
-- `src/storage/localStore.test.ts`
+- `api/discover-jobs.ts`
+- `src/services/jobDiscoveryClient.ts`
+- `src/services/jobDiscoveryClient.test.ts`
+- `.superpowers/sdd/task-2-report.md`
 
 ## Self-review findings
 
-- The persistence guard is intentionally shallow: it verifies the top-level app-state structure and required arrays, which is enough for this MVP brief but not a full schema validator.
-- The seed data uses the exact brief-specified content, including the portfolio URL and the sample job dates.
-- The build completed successfully even though Vite emitted a Node version warning.
+- The client is intentionally strict: anything other than `response.ok === true` or a payload with an array at `jobs` collapses to `Job discovery failed`.
+- The API handler preserves usability by returning HTTP 200 with an empty job list and short error text whenever fetch or normalization work fails.
+- The handler strips the usual Remote OK metadata row when it does not carry job-like fields, which keeps the normalizer focused on real postings.
 
 ## Concerns
 
-- Vite warns that Node.js 20.11.0 is below its supported minimum of 20.19+, so local developer builds may keep showing that message until the Node runtime is upgraded.
+- The API handler is covered by build-time typing and the client tests, but it does not yet have a dedicated endpoint test file.
+- The repo still emits the existing Vite Node version warning during `npm run build` because the local runtime is `20.11.0`, below Vite's preferred minimum.
