@@ -24,7 +24,6 @@ const NORMALIZATION_ERROR_MESSAGE = "Job discovery source could not be normalize
 const JOB_TITLE_FIELDS = ["title", "position"];
 const JOB_COMPANY_FIELDS = ["company"];
 const JOB_URL_FIELDS = ["url", "apply_url", "applyUrl", "slug"];
-const METADATA_HINT_FIELDS = ["id", "date", "epoch", "timestamp", "slug"];
 
 function setJsonHeaders(res: ApiResponse): ApiResponse {
   return res.setHeader("Cache-Control", CACHE_CONTROL).setHeader("Content-Type", "application/json");
@@ -53,24 +52,12 @@ function hasRecognizableRemoteOkJobKeys(item: unknown): item is Record<string, u
   return hasAnyFields(item, JOB_TITLE_FIELDS) && hasAnyFields(item, JOB_COMPANY_FIELDS) && hasAnyFields(item, JOB_URL_FIELDS);
 }
 
-function looksLikeRemoteOkMetadataRow(item: unknown): item is Record<string, unknown> {
-  if (!isRecord(item)) {
-    return false;
-  }
-
-  return hasAnyFields(item, METADATA_HINT_FIELDS) && !hasAnyFields(item, [...JOB_TITLE_FIELDS, ...JOB_COMPANY_FIELDS, ...JOB_URL_FIELDS]);
-}
-
 function isStructurallyHealthyRemoteOkPayload(rawItems: unknown[]): boolean {
   if (rawItems.length === 0) {
     return true;
   }
 
-  if (looksLikeRemoteOkMetadataRow(rawItems[0])) {
-    return true;
-  }
-
-  return rawItems.slice(1).some(hasRecognizableRemoteOkJobKeys);
+  return rawItems.some(hasRecognizableRemoteOkJobKeys);
 }
 
 function buildSuccessfulPayload(rawItems: unknown[]): DiscoverJobsResponse {

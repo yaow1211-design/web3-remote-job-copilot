@@ -89,6 +89,50 @@ describe("discover-jobs handler", () => {
     expect(res.body).not.toHaveProperty("error");
   });
 
+  it("returns a normalized job for a single real Remote OK row without metadata", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        json: async () => [
+          {
+            position: "Growth Data Analyst",
+            company: "Example Web3",
+            url: "https://remoteok.com/l/example-job",
+            description: "Remote role for SQL and growth analytics.",
+            tags: ["SQL", "Growth"],
+            location: "Worldwide",
+            date: "2026-06-28",
+          },
+        ],
+      })) as typeof fetch,
+    );
+
+    const res = createMockResponse();
+
+    await handler({}, res as never);
+
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toMatchObject({
+      jobs: [
+        {
+          title: "Growth Data Analyst",
+          company: "Example Web3",
+          source: "Remote OK",
+          originalUrl: "https://remoteok.com/l/example-job",
+          applyUrl: "https://remoteok.com/l/example-job",
+          description: "Remote role for SQL and growth analytics.",
+          tags: ["SQL", "Growth"],
+          location: "Worldwide",
+          postedAt: "2026-06-28",
+        },
+      ],
+      fetchedAt: expect.any(String),
+      sources: ["Remote OK"],
+    });
+    expect(res.body).not.toHaveProperty("error");
+  });
+
   it("returns a stable short error string when fetch throws", async () => {
     vi.stubGlobal(
       "fetch",

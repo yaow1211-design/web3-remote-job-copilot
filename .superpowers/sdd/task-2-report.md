@@ -189,3 +189,41 @@ Result:
 Vite warned about Node.js 20.11.0 being below its preferred minimum of 20.19+.
 ✓ built in 736ms
 ```
+
+## Review follow-up
+
+### Fixes applied
+
+- Relaxed the Remote OK structural health check so any recognizable job row now counts as healthy, even when the payload starts directly with a real job row and has no metadata/header row.
+- Kept empty arrays on the success path as `{ jobs: [] }`.
+- Added a regression test for a single real Remote OK job row with no metadata row to prove the handler still normalizes and returns the job.
+
+### Verification
+
+Command:
+
+```bash
+npm test -- api/discover-jobs.test.ts src/services/jobDiscoveryClient.test.ts src/domain/jobDiscovery.test.ts
+```
+
+Result:
+
+```text
+✓ src/services/jobDiscoveryClient.test.ts (4 tests) 3ms
+✓ api/discover-jobs.test.ts (4 tests) 4ms
+✓ src/domain/jobDiscovery.test.ts (22 tests) 7ms
+Tests  30 passed (30)
+```
+
+Command:
+
+```bash
+npm run build
+```
+
+Result:
+
+```text
+Vite warned about Node.js 20.11.0 being below its preferred minimum of 20.19+.
+✓ built in 706ms
+```
