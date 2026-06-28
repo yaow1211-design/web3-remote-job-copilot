@@ -8,7 +8,6 @@ const REMOTE_TERMS = [
   "worldwide",
   "work from anywhere",
   "anywhere",
-  "distributed",
   "remote-first",
   "remote friendly",
 ];
@@ -23,7 +22,7 @@ const ONSITE_TERMS = [
   "fully in person",
 ];
 
-const SOURCE_REMOTE_TERMS = ["remote ok", "remoteok", "remote"];
+const SOURCE_REMOTE_TERMS = ["remote ok", "remoteok"];
 const GENERIC_LOCATION_TERMS = [
   "remote",
   "worldwide",
@@ -31,7 +30,6 @@ const GENERIC_LOCATION_TERMS = [
   "global",
   "europe",
   "usa",
-  "us",
   "united states",
   "united kingdom",
   "uk",
@@ -91,6 +89,12 @@ const PREFERRED_SKILL_TERMS: Array<[string, string]> = [
   ["on-chain", "on-chain"],
   ["on chain", "on-chain"],
   ["fintech", "fintech"],
+];
+
+const NEGATED_CRYPTO_REQUIREMENT_PATTERNS = [
+  /\b(?:crypto|web3|blockchain|defi)\b.{0,40}\b(?:not required|not mandatory|optional|nice to have|nice-to-have|not essential|not needed|not necessary)\b/,
+  /\b(?:not required|not mandatory|optional|nice to have|nice-to-have|not essential|not needed|not necessary)\b.{0,40}\b(?:crypto|web3|blockchain|defi)\b/,
+  /\bno\b.{0,20}\b(?:crypto|web3|blockchain|defi)\b.{0,40}\b(?:required|mandatory|needed|necessary)\b/,
 ];
 
 function normalizeWhitespace(value: string): string {
@@ -177,7 +181,10 @@ function buildSearchText(values: Array<string | null | undefined>): string {
 }
 
 function hasExplicitRemoteSignal(title: string, description: string, location: string, tags: string[]): boolean {
-  return includesAny(buildSearchText([title, description, location, ...tags]), REMOTE_TERMS);
+  const searchText = buildSearchText([title, description, location, ...tags]);
+  const distributedRemoteSignal = /\bdistributed\b.{0,30}\b(team|teams|workforce|organization|org|company|people)\b|\b(team|teams|workforce|organization|org|company|people)\b.{0,30}\bdistributed\b/.test(searchText);
+
+  return includesAny(searchText, REMOTE_TERMS) || distributedRemoteSignal;
 }
 
 function hasOnsiteSignal(title: string, description: string, location: string, tags: string[]): boolean {
@@ -185,7 +192,8 @@ function hasOnsiteSignal(title: string, description: string, location: string, t
 }
 
 function hasSourceRemoteSignal(source: string): boolean {
-  return includesAny(normalizeLookupText(source), SOURCE_REMOTE_TERMS);
+  const normalizedSource = normalizeLookupText(source);
+  return SOURCE_REMOTE_TERMS.includes(normalizedSource);
 }
 
 function hasGenericRemoteFriendlyLocation(location: string): boolean {
@@ -242,6 +250,10 @@ function extractPreferredSkills(text: string): string[] {
 
 function inferCryptoRequirementLevelFromText(text: string): CryptoRequirementLevel {
   const lower = text.toLowerCase();
+  if (NEGATED_CRYPTO_REQUIREMENT_PATTERNS.some((pattern) => pattern.test(lower))) {
+    return "none";
+  }
+
   const preferredSignal = ["web3", "crypto", "blockchain", "defi"].some((term) => lower.includes(term));
 
   if (

@@ -101,3 +101,21 @@ Output summary:
 
 - focused discovery suite: 10/10 tests passed
 - broader domain suite: 34/34 tests passed
+
+## Review Fix Addendum 4
+
+Addressed the remaining review findings in `src/domain/jobDiscovery.ts`:
+
+- crypto requirement inference now treats negated phrases like `not required`, `not mandatory`, `optional`, and `nice to have` as `none`, so phrases such as `crypto experience not required` no longer collapse to `required`
+- remote eligibility no longer treats generic `distributed` or arbitrary source text containing `remote` as remote-compatible
+- `us` was removed as a generic location cue so source-based inference stays bounded
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Output summary:
+
+- focused discovery suite: 12/12 tests passed
+- broader domain suite: 36/36 tests passed

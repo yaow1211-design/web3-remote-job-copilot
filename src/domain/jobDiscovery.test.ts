@@ -70,6 +70,15 @@ describe("normalizeRemoteOkJobs", () => {
         date: "2026-06-28",
       },
       {
+        position: "Distributed Systems Analyst",
+        company: "Distributed Systems Co",
+        url: "https://remoteok.com/l/distributed-systems-job",
+        description: "Distributed systems work with SQL dashboards and user campaigns.",
+        tags: ["SQL"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+      {
         position: "Growth Data Analyst",
         company: "Worldwide Co",
         url: "https://remoteok.com/l/worldwide",
@@ -92,6 +101,23 @@ describe("normalizeRemoteOkJobs", () => {
     const results = normalizeRemoteOkJobs(rawItems);
 
     expect(results.map((job) => job.company)).toEqual(["Remote Title Co", "Worldwide Co", "Remote Description Co"]);
+  });
+
+  it("does not let a remote-containing source text pass by itself", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Remote Blog Co",
+        url: "https://example.com/remote-blog-job",
+        source: "Remote Engineering Blog",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
   });
 
   it("keeps a Remote OK source row when location is blank and the text is relevant even without explicit remote wording", () => {
@@ -215,6 +241,35 @@ describe("toJobFromDiscoveredJob", () => {
       notes: "",
       postedAt: formatLocalDate(new Date("2026-06-28T10:00:00Z")),
     });
+  });
+
+  it("keeps crypto experience not required from becoming required", () => {
+    const phrases = [
+      "Crypto experience not required.",
+      "Web3 experience is not mandatory.",
+      "No crypto background required.",
+      "Crypto knowledge optional.",
+      "Web3 is nice to have.",
+    ];
+
+    for (const phrase of phrases) {
+      const discovered = normalizeRemoteOkJobs([
+        {
+          position: "Web3 Growth Analyst",
+          company: "Example Web3",
+          url: `https://remoteok.com/l/example-negated-job-${phrase.length}`,
+          description: `Remote role for SQL dashboards. ${phrase}`,
+          tags: ["Web3", "SQL"],
+          location: "Worldwide",
+          date: "2026-06-28",
+        },
+      ])[0];
+
+      expect(discovered).toBeDefined();
+      const job = toJobFromDiscoveredJob(discovered!, new Date("2026-06-28T10:00:00Z"));
+
+      expect(job.cryptoRequirementLevel).toBe("none");
+    }
   });
 });
 
