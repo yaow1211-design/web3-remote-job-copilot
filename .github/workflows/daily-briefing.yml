@@ -1,0 +1,41 @@
+name: Daily Web3 Job Briefing
+
+on:
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-daily-briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate daily briefing archive
+        run: npm run generate:daily-briefing
+
+      - name: Commit daily briefing archive
+        run: |
+          if [ -n "$(git status --porcelain data/daily-briefings/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/daily-briefings/
+            git commit -m "chore: add daily briefing archive"
+            git push
+          else
+            echo "No new daily briefing archive to commit."
+          fi
+
