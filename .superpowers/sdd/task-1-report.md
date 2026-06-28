@@ -82,3 +82,22 @@ Verification:
 - `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
 
 Both commands passed again after the fix. The focused discovery suite passed 9/9 tests, and the broader domain run passed 33/33 tests.
+
+## Review Fix Addendum 3
+
+Closed the remaining discovery review finding by splitting discovery eligibility into two gates in `src/domain/jobDiscovery.ts`:
+
+- remote-compatible evidence must come from explicit remote/worldwide wording or the bounded Remote OK source inference
+- Mia-relevant evidence must come from Web3 terms or target-role terms such as growth, analyst, data, PRD, UAT, research, and due diligence
+
+This prevents a crypto-heavy row with `Lisbon, Portugal` from being normalized just because it contains Web3 wording, while still allowing the blank-location Remote OK source path and the Microsoft Office incidental-wording regression case.
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Output summary:
+
+- focused discovery suite: 10/10 tests passed
+- broader domain suite: 34/34 tests passed

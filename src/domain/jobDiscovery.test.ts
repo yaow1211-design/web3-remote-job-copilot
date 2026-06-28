@@ -135,6 +135,23 @@ describe("normalizeRemoteOkJobs", () => {
     expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
   });
 
+  it("filters a crypto-heavy Remote OK row with a concrete location when it has no remote wording", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Web3 Growth Analyst",
+        company: "Remote OK Lisbon Web3 Co",
+        url: "https://remoteok.com/l/lisbon-web3-job",
+        source: "Remote OK",
+        description: "Web3 and crypto growth role for on-chain analytics and token research.",
+        tags: ["Web3", "Crypto", "Analytics"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
+  });
+
   it("does not treat Microsoft Office as an onsite signal", () => {
     const rawItems: unknown[] = [
       {
@@ -142,7 +159,7 @@ describe("normalizeRemoteOkJobs", () => {
         company: "Public Source Co",
         url: "https://remoteok.com/l/public-source-job",
         source: "Remote OK",
-        description: "Web3 growth analytics role using Microsoft Office, SQL dashboards, and user campaigns.",
+        description: "Remote web3 growth analytics role using Microsoft Office, SQL dashboards, and user campaigns.",
         tags: ["SQL", "Growth", "Web3"],
         location: "Lisbon, Portugal",
         date: "2026-06-28",

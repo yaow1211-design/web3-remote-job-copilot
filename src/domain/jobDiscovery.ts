@@ -41,6 +41,35 @@ const GENERIC_LOCATION_TERMS = [
 const GROWTH_TERMS = ["growth", "user", "campaign", "lifecycle", "activation", "retention", "funnel", "segmentation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
 const RESEARCH_TERMS = ["research", "due diligence", "on-chain", "on chain", "diligence", "screening", "protocol", "risk"];
+const TARGET_RELEVANCE_TERMS = [
+  "growth",
+  "user",
+  "campaign",
+  "lifecycle",
+  "activation",
+  "retention",
+  "funnel",
+  "segmentation",
+  "analyst",
+  "analytics",
+  "data",
+  "business analyst",
+  "product operations",
+  "prd",
+  "uat",
+  "operations",
+  "dashboard",
+  "workflow",
+  "requirements",
+  "stakeholder",
+  "research",
+  "due diligence",
+  "diligence",
+  "screening",
+  "protocol",
+  "risk",
+];
+const WEB3_RELEVANCE_TERMS = ["web3", "crypto", "blockchain", "defi", "on-chain", "on chain"];
 
 const REQUIRED_SKILL_TERMS: Array<[string, string]> = [
   ["sql", "SQL"],
@@ -175,13 +204,14 @@ function isRelevantDiscovery(title: string, description: string, location: strin
   const sourceRemoteSignal = hasSourceRemoteSignal(source);
   const sourceLocationEligible = sourceRemoteSignal && hasGenericRemoteFriendlyLocation(location);
   const onsiteSignal = hasOnsiteSignal(title, description, location, tags);
-  const web3Signal = includesAny(searchText, ["web3", "crypto", "blockchain", "defi", "on-chain", "on chain"]);
+  const targetRelevanceSignal = includesAny(searchText, TARGET_RELEVANCE_TERMS);
+  const web3Signal = includesAny(searchText, WEB3_RELEVANCE_TERMS);
 
   if (onsiteSignal && !explicitRemoteSignal) {
     return false;
   }
 
-  return explicitRemoteSignal || sourceLocationEligible || web3Signal;
+  return (explicitRemoteSignal || sourceLocationEligible) && (targetRelevanceSignal || web3Signal);
 }
 
 function extractRequiredSkills(text: string): string[] {
