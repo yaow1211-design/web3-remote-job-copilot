@@ -297,6 +297,7 @@ export default function App() {
         {view === "jobs" && (
           <>
             <JobInbox
+              candidate={state.candidate}
               jobs={state.jobs}
               selectedJobId={selectedJob?.id ?? ""}
               onSelectJob={setSelectedJobId}

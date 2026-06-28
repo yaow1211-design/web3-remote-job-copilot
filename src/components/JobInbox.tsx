@@ -1,8 +1,10 @@
 import type { FormEvent } from "react";
 import { formatLocalDate } from "../domain/date";
-import type { Job, RoleFamily } from "../domain/types";
+import type { CandidateAsset, Job, RoleFamily } from "../domain/types";
+import { JobDiscoveryPanel } from "./JobDiscoveryPanel";
 
 interface JobInboxProps {
+  candidate: CandidateAsset;
   jobs: Job[];
   selectedJobId: string;
   onSelectJob: (jobId: string) => void;
@@ -57,7 +59,7 @@ function inferCryptoRequirementLevel(title: string, jdText: string): Job["crypto
   return "none";
 }
 
-export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInboxProps) {
+export function JobInbox({ candidate, jobs, selectedJobId, onSelectJob, onAddJob }: JobInboxProps) {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -108,76 +110,80 @@ export function JobInbox({ jobs, selectedJobId, onSelectJob, onAddJob }: JobInbo
   }
 
   return (
-    <section className="grid-two">
-      <div className="panel">
-        <div className="section-heading">
-          <p className="eyebrow-dark">Job Inbox</p>
-          <h2>Manual Job Intake</h2>
-        </div>
+    <>
+      <JobDiscoveryPanel candidate={candidate} jobs={jobs} onAddJob={onAddJob} />
 
-        <form className="form-grid" onSubmit={handleSubmit}>
-          <label>
-            Job title
-            <input name="title" />
-          </label>
+      <section className="grid-two">
+        <div className="panel">
+          <div className="section-heading">
+            <p className="eyebrow-dark">Job Inbox</p>
+            <h2>Manual Job Intake</h2>
+          </div>
 
-          <label>
-            Company
-            <input name="company" />
-          </label>
+          <form className="form-grid" onSubmit={handleSubmit}>
+            <label>
+              Job title
+              <input name="title" />
+            </label>
 
-          <label>
-            Role family
-            <select name="roleFamily" defaultValue="Growth Data Analyst">
-              {ROLE_FAMILIES.map((roleFamily) => (
-                <option key={roleFamily}>{roleFamily}</option>
-              ))}
-            </select>
-          </label>
+            <label>
+              Company
+              <input name="company" />
+            </label>
 
-          <label>
-            Original URL
-            <input name="originalUrl" />
-          </label>
+            <label>
+              Role family
+              <select name="roleFamily" defaultValue="Growth Data Analyst">
+                {ROLE_FAMILIES.map((roleFamily) => (
+                  <option key={roleFamily}>{roleFamily}</option>
+                ))}
+              </select>
+            </label>
 
-          <label>
-            Apply URL
-            <input name="applyUrl" />
-          </label>
+            <label>
+              Original URL
+              <input name="originalUrl" />
+            </label>
 
-          <label className="span-all">
-            JD text
-            <textarea name="jdText" rows={7} />
-          </label>
+            <label>
+              Apply URL
+              <input name="applyUrl" />
+            </label>
 
-          <button className="primary-button" type="submit">
-            Add job
-          </button>
-        </form>
-      </div>
+            <label className="span-all">
+              JD text
+              <textarea name="jdText" rows={7} />
+            </label>
 
-      <div className="panel">
-        <div className="section-heading">
-          <p className="eyebrow-dark">Pipeline</p>
-          <h2>{jobs.length} Jobs</h2>
-        </div>
-
-        <div className="item-list">
-          {jobs.map((job) => (
-            <button
-              key={job.id}
-              className={job.id === selectedJobId ? "list-item active" : "list-item"}
-              type="button"
-              onClick={() => onSelectJob(job.id)}
-            >
-              <strong>{job.title}</strong>
-              <span>
-                {job.company} · {job.status}
-              </span>
+            <button className="primary-button" type="submit">
+              Add job
             </button>
-          ))}
+          </form>
         </div>
-      </div>
-    </section>
+
+        <div className="panel">
+          <div className="section-heading">
+            <p className="eyebrow-dark">Pipeline</p>
+            <h2>{jobs.length} Jobs</h2>
+          </div>
+
+          <div className="item-list">
+            {jobs.map((job) => (
+              <button
+                key={job.id}
+                className={job.id === selectedJobId ? "list-item active" : "list-item"}
+                type="button"
+                onClick={() => onSelectJob(job.id)}
+              >
+                <strong>{job.title}</strong>
+                <span>
+                  {job.company} · {job.status}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

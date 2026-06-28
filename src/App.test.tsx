@@ -1,13 +1,55 @@
 import { fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { vi } from "vitest";
 import App from "./App";
 import { generateApplicationPack } from "./domain/applicationPack";
 import { formatLocalDate } from "./domain/date";
+import { toJobFromDiscoveredJob, type DiscoveredJob } from "./domain/jobDiscovery";
 import { scoreJob } from "./domain/scoring";
 import { seedCandidate } from "./domain/seedCandidate";
 import { sampleJobs } from "./sampleData";
 
 const STORAGE_KEY = "web3-remote-job-copilot:v1";
+const DISCOVERY_ERROR_MESSAGE = "Job discovery failed. Manual intake is still available.";
+
+const discoveredJobsFixture: DiscoveredJob[] = [
+  {
+    id: "discover-1",
+    title: "Growth Data Analyst, Lifecycle",
+    company: "Orbit Wallet",
+    source: "Remote OK",
+    originalUrl: "https://jobs.example.com/orbit-growth-data",
+    applyUrl: "https://jobs.example.com/orbit-growth-data/apply",
+    description: "Remote lifecycle analytics role with SQL, campaign analysis, retention, and Web3 product exposure.",
+    tags: ["remote", "analytics", "web3"],
+    location: "Worldwide",
+    postedAt: "2026-06-28",
+  },
+  {
+    id: "discover-2",
+    title: "Research Analyst, Protocol Due Diligence",
+    company: "Northstar Research",
+    source: "Remote OK",
+    originalUrl: "https://jobs.example.com/northstar-research",
+    applyUrl: "https://jobs.example.com/northstar-research/apply",
+    description: "Remote due diligence and protocol research role for crypto markets with screening and risk analysis.",
+    tags: ["remote", "research", "crypto"],
+    location: "APAC friendly",
+    postedAt: "2026-06-27",
+  },
+  {
+    id: "discover-3",
+    title: "Product Operations Analyst",
+    company: "Atlas Fintech",
+    source: "Remote OK",
+    originalUrl: "https://jobs.example.com/atlas-product-ops",
+    applyUrl: "https://jobs.example.com/atlas-product-ops/apply",
+    description: "Remote product operations role with PRD, UAT, stakeholder workflows, dashboards, and SQL.",
+    tags: ["remote", "operations", "sql"],
+    location: "Remote",
+    postedAt: "2026-06-26",
+  },
+];
 
 function renderApp() {
   return render(<App />);
@@ -60,6 +102,7 @@ function saveState(overrides: Record<string, unknown>) {
 describe("App", () => {
   beforeEach(() => {
     window.localStorage.clear();
+    vi.restoreAllMocks();
   });
 
   it("renders the main command center navigation", () => {
@@ -70,6 +113,93 @@ describe("App", () => {
     ).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Today/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Job Inbox/i })).toBeInTheDocument();
+  });
+
+  it("fetches discovered jobs, ranks top matches, and imports the highest score into the inbox", async () => {
+    const user = userEvent.setup();
+    const rankedJobs = [...discoveredJobsFixture].sort((left, right) => {
+      const leftScore = scoreJob(toJobFromDiscoveredJob(left), seedCandidate).overallScore;
+      const rightScore = scoreJob(toJobFromDiscoveredJob(right), seedCandidate).overallScore;
+      return rightScore - leftScore;
+    });
+    const topJob = rankedJobs[0];
+
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      json: async () => ({ jobs: discoveredJobsFixture }),
+    } as Response);
+
+    render(<App />);
+
+    await openNav(user, /Job Inbox/i);
+    expect(screen.getByRole("heading", { name: /2 Jobs/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Fetch Web3 remote jobs/i }));
+
+    const resultsRegion = await screen.findByRole("region", { name: /Top matches for Mia/i });
+    const matchCards = within(resultsRegion).getAllByRole("article");
+
+    expect(within(matchCards[0]).getByRole("heading", { name: new RegExp(topJob.title, "i") })).toBeInTheDocument();
+    expect(within(matchCards[0]).getByText(new RegExp(topJob.company, "i"))).toBeInTheDocument();
+
+    await user.click(within(matchCards[0]).getByRole("button", { name: /Add to Job Inbox/i }));
+
+    expect(screen.getByRole("heading", { name: /3 Jobs/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: new RegExp(`${topJob.title} · ${topJob.company}`, "i") }),
+    ).toBeInTheDocument();
+  });
+
+  it("marks discovered duplicates as already in inbox", async () => {
+    const user = userEvent.setup();
+    const duplicateJob = discoveredJobsFixture[0];
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-duplicate",
+          title: duplicateJob.title,
+          company: duplicateJob.company,
+          originalUrl: duplicateJob.originalUrl,
+        },
+        ...sampleJobs.slice(1),
+      ],
+    });
+
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      json: async () => ({ jobs: discoveredJobsFixture }),
+    } as Response);
+
+    render(<App />);
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Fetch Web3 remote jobs/i }));
+
+    const resultsRegion = await screen.findByRole("region", { name: /Top matches for Mia/i });
+    const duplicateCard = within(resultsRegion).getByRole("article", {
+      name: new RegExp(`${duplicateJob.title} ${duplicateJob.company}`, "i"),
+    });
+    const duplicateButton = within(duplicateCard).getByRole("button", { name: /Already in inbox/i });
+
+    expect(duplicateButton).toBeDisabled();
+  });
+
+  it("shows a clear error state when job discovery fails", async () => {
+    const user = userEvent.setup();
+
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: false,
+      json: async () => ({ jobs: [] }),
+    } as Response);
+
+    render(<App />);
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Fetch Web3 remote jobs/i }));
+
+    expect(await screen.findByText(DISCOVERY_ERROR_MESSAGE)).toBeInTheDocument();
   });
 
   it("adds a pasted JD job and shows an explainable fit review", async () => {
