@@ -71,3 +71,14 @@ Verification:
 - `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
 
 Both commands passed. The focused discovery suite passed 8/8 tests, and the broader domain run passed 32/32 tests.
+
+## Review Fix Addendum 2
+
+Tightened `isRelevantDiscovery` so source-based remote relevance from `Remote OK` only applies when the row's location is blank or remote-friendly. This keeps relevant blank-location Remote OK rows, but filters a concrete onsite-looking location like `Lisbon, Portugal` unless the row also has explicit remote wording.
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Both commands passed again after the fix. The focused discovery suite passed 9/9 tests, and the broader domain run passed 33/33 tests.

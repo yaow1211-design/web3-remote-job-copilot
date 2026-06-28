@@ -94,7 +94,7 @@ describe("normalizeRemoteOkJobs", () => {
     expect(results.map((job) => job.company)).toEqual(["Remote Title Co", "Worldwide Co", "Remote Description Co"]);
   });
 
-  it("keeps a Remote OK source row when source contributes remote relevance even without explicit remote wording", () => {
+  it("keeps a Remote OK source row when location is blank and the text is relevant even without explicit remote wording", () => {
     const rawItems: unknown[] = [
       {
         position: "Growth Data Analyst",
@@ -103,7 +103,7 @@ describe("normalizeRemoteOkJobs", () => {
         source: "Remote OK",
         description: "Growth analytics role for SQL dashboards and user campaigns.",
         tags: ["SQL", "Growth"],
-        location: "Lisbon, Portugal",
+        location: "",
         date: "2026-06-28",
       },
     ];
@@ -114,8 +114,25 @@ describe("normalizeRemoteOkJobs", () => {
     expect(results[0]).toMatchObject({
       company: "Remote OK Source Co",
       source: "Remote OK",
-      location: "Lisbon, Portugal",
+      location: "",
     });
+  });
+
+  it("filters a Remote OK row with a concrete location when it has no remote wording", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Remote OK Lisbon Co",
+        url: "https://remoteok.com/l/lisbon-job",
+        source: "Remote OK",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    expect(normalizeRemoteOkJobs(rawItems)).toEqual([]);
   });
 
   it("does not treat Microsoft Office as an onsite signal", () => {
