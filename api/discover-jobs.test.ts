@@ -34,17 +34,41 @@ afterEach(() => {
 });
 
 describe("discover-jobs handler", () => {
-  it("returns an error when candidate-looking rows normalize to zero jobs", async () => {
+  it("returns a normalization error for structurally unhealthy array payloads", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({
+        ok: true,
+        json: async () => [{ foo: "bar", baz: "qux" }],
+      })) as typeof fetch,
+    );
+
+    const res = createMockResponse();
+
+    await handler({}, res as never);
+
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toMatchObject({
+      jobs: [],
+      error: "Job discovery source could not be normalized",
+    });
+  });
+
+  it("returns empty success without error when healthy Remote OK data has no Mia matches", async () => {
     vi.stubGlobal(
       "fetch",
       vi.fn(async () => ({
         ok: true,
         json: async () => [
           {
-            title: "Growth Data Analyst",
-            company: "Example Web3",
+            id: 1,
+            date: "2026-06-28",
+          },
+          {
+            position: "Office Operations Coordinator",
+            company: "Example Corp",
             url: "https://remoteok.com/l/example-job",
-            description: "Office role in Lisbon with SQL dashboards.",
+            description: "On-site role in Lisbon with local coordination and admin support.",
             location: "Lisbon, Portugal",
             date: "2026-06-28",
           },
@@ -59,8 +83,10 @@ describe("discover-jobs handler", () => {
     expect(res.statusCode).toBe(200);
     expect(res.body).toMatchObject({
       jobs: [],
-      error: "Job discovery source could not be normalized",
+      fetchedAt: expect.any(String),
+      sources: ["Remote OK"],
     });
+    expect(res.body).not.toHaveProperty("error");
   });
 
   it("returns a stable short error string when fetch throws", async () => {

@@ -21,41 +21,60 @@ const ACCEPT = "application/json";
 const MAX_JOBS = 50;
 const FETCH_ERROR_MESSAGE = "Job discovery failed";
 const NORMALIZATION_ERROR_MESSAGE = "Job discovery source could not be normalized";
-const JOB_LIKE_FIELDS = ["title", "position", "company", "url", "originalUrl", "applyUrl", "apply_url"];
+const JOB_TITLE_FIELDS = ["title", "position"];
+const JOB_COMPANY_FIELDS = ["company"];
+const JOB_URL_FIELDS = ["url", "apply_url", "applyUrl", "slug"];
+const METADATA_HINT_FIELDS = ["id", "date", "epoch", "timestamp", "slug"];
 
 function setJsonHeaders(res: ApiResponse): ApiResponse {
   return res.setHeader("Cache-Control", CACHE_CONTROL).setHeader("Content-Type", "application/json");
 }
 
-function isCandidateLookingRow(item: unknown): item is Record<string, unknown> {
+function isRecord(item: unknown): item is Record<string, unknown> {
   if (typeof item !== "object" || item === null || Array.isArray(item)) {
     return false;
   }
 
-  return JOB_LIKE_FIELDS.some((field) => {
+  return true;
+}
+
+function hasAnyFields(item: Record<string, unknown>, fields: string[]): boolean {
+  return fields.some((field) => {
     const value = item[field];
     return typeof value === "string" ? value.trim().length > 0 : value !== undefined && value !== null;
   });
 }
 
-function buildSuccessfulPayload(rawItems: unknown[]): DiscoverJobsResponse {
-  const metadataRow = rawItems[0];
-  const dataRows =
-    typeof metadataRow === "object" &&
-    metadataRow !== null &&
-    !Array.isArray(metadataRow) &&
-    !("position" in metadataRow) &&
-    !("title" in metadataRow) &&
-    !("company" in metadataRow) &&
-    !("url" in metadataRow) &&
-    !("originalUrl" in metadataRow)
-      ? rawItems.slice(1)
-      : rawItems;
-  const jobs = normalizeRemoteOkJobs(dataRows).slice(0, MAX_JOBS);
-
-  if (jobs.length === 0 && dataRows.some(isCandidateLookingRow)) {
-    throw new Error(NORMALIZATION_ERROR_MESSAGE);
+function hasRecognizableRemoteOkJobKeys(item: unknown): item is Record<string, unknown> {
+  if (!isRecord(item)) {
+    return false;
   }
+
+  return hasAnyFields(item, JOB_TITLE_FIELDS) && hasAnyFields(item, JOB_COMPANY_FIELDS) && hasAnyFields(item, JOB_URL_FIELDS);
+}
+
+function looksLikeRemoteOkMetadataRow(item: unknown): item is Record<string, unknown> {
+  if (!isRecord(item)) {
+    return false;
+  }
+
+  return hasAnyFields(item, METADATA_HINT_FIELDS) && !hasAnyFields(item, [...JOB_TITLE_FIELDS, ...JOB_COMPANY_FIELDS, ...JOB_URL_FIELDS]);
+}
+
+function isStructurallyHealthyRemoteOkPayload(rawItems: unknown[]): boolean {
+  if (rawItems.length === 0) {
+    return true;
+  }
+
+  if (looksLikeRemoteOkMetadataRow(rawItems[0])) {
+    return true;
+  }
+
+  return rawItems.slice(1).some(hasRecognizableRemoteOkJobKeys);
+}
+
+function buildSuccessfulPayload(rawItems: unknown[]): DiscoverJobsResponse {
+  const jobs = normalizeRemoteOkJobs(rawItems).slice(0, MAX_JOBS);
 
   return {
     jobs,
@@ -90,6 +109,10 @@ export default async function handler(_req: unknown, res: ApiResponse): Promise<
 
     if (!Array.isArray(payload)) {
       throw new Error(FETCH_ERROR_MESSAGE);
+    }
+
+    if (!isStructurallyHealthyRemoteOkPayload(payload)) {
+      throw new Error(NORMALIZATION_ERROR_MESSAGE);
     }
 
     setJsonHeaders(res).status(200).json(buildSuccessfulPayload(payload));

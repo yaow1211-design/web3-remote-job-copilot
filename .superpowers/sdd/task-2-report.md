@@ -150,3 +150,42 @@ Result:
 ```text
 ✓ built in 734ms
 ```
+
+## Review follow-up
+
+### Fixes applied
+
+- Tightened `api/discover-jobs.ts` so Remote OK payloads are only treated as structurally healthy when the array is non-empty and either the first row looks like a metadata/header row or a later row has recognizable job keys.
+- Changed the handler so structurally healthy payloads with zero Mia matches return `{ jobs: [] }` without an `error`.
+- Kept malformed or non-array upstream payloads on the stable `Job discovery failed` path, while structurally unhealthy arrays now return `Job discovery source could not be normalized`.
+- Added a real `response.json()` rejection test to `src/services/jobDiscoveryClient.test.ts`.
+
+### Verification
+
+Command:
+
+```bash
+npm test -- src/services/jobDiscoveryClient.test.ts src/domain/jobDiscovery.test.ts api/discover-jobs.test.ts
+```
+
+Result:
+
+```text
+✓ src/services/jobDiscoveryClient.test.ts (4 tests) 3ms
+✓ api/discover-jobs.test.ts (3 tests) 3ms
+✓ src/domain/jobDiscovery.test.ts (22 tests) 6ms
+Tests  29 passed (29)
+```
+
+Command:
+
+```bash
+npm run build
+```
+
+Result:
+
+```text
+Vite warned about Node.js 20.11.0 being below its preferred minimum of 20.19+.
+✓ built in 736ms
+```
