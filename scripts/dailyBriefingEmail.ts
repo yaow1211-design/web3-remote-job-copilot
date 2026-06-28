@@ -24,6 +24,11 @@ export interface RenderDailyBriefingEmailTextInput {
   markdown: string;
 }
 
+export interface RenderDailyBriefingEmailHtmlInput {
+  appUrl: string;
+  markdown: string;
+}
+
 export interface ResolveDailyBriefingMarkdownPathInput {
   outputDir: string;
   date: string;
@@ -80,6 +85,69 @@ export function renderDailyBriefingEmailText({ appUrl, markdown }: RenderDailyBr
   return `${appUrl}\n\nWeb3 Remote Job Copilot\n\n${markdown}`;
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function linkify(value: string): string {
+  return escapeHtml(value).replace(
+    /(https:\/\/[^\s<]+)/g,
+    '<a href="$1">$1</a>',
+  );
+}
+
+export function renderDailyBriefingEmailHtml({ appUrl, markdown }: RenderDailyBriefingEmailHtmlInput): string {
+  const body: string[] = [
+    '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;line-height:1.55;color:#111827;max-width:760px;">',
+    `<p><a href="${escapeHtml(appUrl)}">${escapeHtml(appUrl)}</a></p>`,
+    "<p><strong>Web3 Remote Job Copilot</strong></p>",
+  ];
+  let listItems: string[] = [];
+
+  const flushList = () => {
+    if (listItems.length === 0) {
+      return;
+    }
+
+    body.push(`<ul>${listItems.join("")}</ul>`);
+    listItems = [];
+  };
+
+  for (const line of markdown.split("\n")) {
+    const trimmed = line.trim();
+
+    if (!trimmed) {
+      flushList();
+      continue;
+    }
+
+    if (trimmed.startsWith("- ")) {
+      listItems.push(`<li>${linkify(trimmed.slice(2))}</li>`);
+      continue;
+    }
+
+    flushList();
+
+    if (trimmed.startsWith("### ")) {
+      body.push(`<h3>${linkify(trimmed.slice(4))}</h3>`);
+    } else if (trimmed.startsWith("## ")) {
+      body.push(`<h2>${linkify(trimmed.slice(3))}</h2>`);
+    } else if (trimmed.startsWith("# ")) {
+      body.push(`<h1>${linkify(trimmed.slice(2))}</h1>`);
+    } else {
+      body.push(`<p>${linkify(trimmed)}</p>`);
+    }
+  }
+
+  flushList();
+  body.push("</div>");
+  return body.join("\n");
+}
+
 export async function resolveDailyBriefingMarkdownPath({
   outputDir,
   date,
@@ -109,6 +177,10 @@ export async function sendDailyBriefingEmail({
     to: config.to,
     subject: `Web3 Remote Job Briefing - ${date}`,
     text: renderDailyBriefingEmailText({
+      appUrl: config.appUrl,
+      markdown,
+    }),
+    html: renderDailyBriefingEmailHtml({
       appUrl: config.appUrl,
       markdown,
     }),

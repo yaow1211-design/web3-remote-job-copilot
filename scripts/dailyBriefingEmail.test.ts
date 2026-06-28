@@ -4,6 +4,7 @@ import { tmpdir } from "node:os";
 import { describe, expect, it, vi } from "vitest";
 import {
   buildDailyBriefingEmailConfig,
+  renderDailyBriefingEmailHtml,
   renderDailyBriefingEmailText,
   resolveDailyBriefingMarkdownPath,
   sendDailyBriefingEmail,
@@ -42,6 +43,34 @@ describe("daily briefing email", () => {
     expect(text).toBe(
       "https://web3-remote-job-copilot.vercel.app/\n\nWeb3 Remote Job Copilot\n\n# Web3 Remote Job Briefing - 2026-06-29",
     );
+  });
+
+  it("renders markdown headings and links as HTML for email clients", () => {
+    const html = renderDailyBriefingEmailHtml({
+      appUrl: "https://web3-remote-job-copilot.vercel.app/",
+      markdown: [
+        "# Web3 Remote Job Briefing - 2026-06-29",
+        "",
+        "## Top 10 Matches",
+        "",
+        "### 1. Growth Analyst - Web3 Company",
+        "",
+        "Score: 83",
+        "Recommendation: Strong Apply",
+        "Link: https://example.com/job",
+        "",
+        "Why it fits:",
+        "- Strong lifecycle analytics overlap.",
+      ].join("\n"),
+    });
+
+    expect(html).toContain('<a href="https://web3-remote-job-copilot.vercel.app/">https://web3-remote-job-copilot.vercel.app/</a>');
+    expect(html).toContain("<h1>Web3 Remote Job Briefing - 2026-06-29</h1>");
+    expect(html).toContain("<h2>Top 10 Matches</h2>");
+    expect(html).toContain("<h3>1. Growth Analyst - Web3 Company</h3>");
+    expect(html).toContain('<a href="https://example.com/job">https://example.com/job</a>');
+    expect(html).toContain("<li>Strong lifecycle analytics overlap.</li>");
+    expect(html).not.toContain("### 1. Growth Analyst");
   });
 
   it("resolves the markdown path for the requested date", async () => {
@@ -100,6 +129,7 @@ describe("daily briefing email", () => {
         to: "627822708@qq.com",
         subject: "Web3 Remote Job Briefing - 2026-06-29",
         text: "https://web3-remote-job-copilot.vercel.app/\n\nWeb3 Remote Job Copilot\n\n# Web3 Remote Job Briefing - 2026-06-29",
+        html: expect.stringContaining("<h1>Web3 Remote Job Briefing - 2026-06-29</h1>"),
       });
     } finally {
       await rm(outputDir, { recursive: true, force: true });
