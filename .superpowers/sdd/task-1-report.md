@@ -57,3 +57,17 @@ Regression verification:
 ## Concerns
 
 - The discovery heuristics are intentionally tuned to the Remote OK-style payload shape described in the brief. If later discovery sources use different field names or require broader normalization rules, this module will need source-specific expansion.
+
+## Review Fix Addendum
+
+Fixed the two review findings in `src/domain/jobDiscovery.ts`:
+
+- Source now contributes to remote relevance, so Remote OK rows can stay relevant even when title/description/location do not spell out "remote".
+- Onsite detection is less overbroad by dropping generic `office` and `in person` matches, while still filtering clear onsite language.
+
+Verification:
+
+- `npm test -- src/domain/jobDiscovery.test.ts`
+- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+
+Both commands passed. The focused discovery suite passed 8/8 tests, and the broader domain run passed 32/32 tests.

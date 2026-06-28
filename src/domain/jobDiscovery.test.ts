@@ -93,6 +93,50 @@ describe("normalizeRemoteOkJobs", () => {
 
     expect(results.map((job) => job.company)).toEqual(["Remote Title Co", "Worldwide Co", "Remote Description Co"]);
   });
+
+  it("keeps a Remote OK source row when source contributes remote relevance even without explicit remote wording", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Remote OK Source Co",
+        url: "https://remoteok.com/l/source-driven-job",
+        source: "Remote OK",
+        description: "Growth analytics role for SQL dashboards and user campaigns.",
+        tags: ["SQL", "Growth"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    const results = normalizeRemoteOkJobs(rawItems);
+
+    expect(results).toHaveLength(1);
+    expect(results[0]).toMatchObject({
+      company: "Remote OK Source Co",
+      source: "Remote OK",
+      location: "Lisbon, Portugal",
+    });
+  });
+
+  it("does not treat Microsoft Office as an onsite signal", () => {
+    const rawItems: unknown[] = [
+      {
+        position: "Growth Data Analyst",
+        company: "Public Source Co",
+        url: "https://remoteok.com/l/public-source-job",
+        source: "Remote OK",
+        description: "Web3 growth analytics role using Microsoft Office, SQL dashboards, and user campaigns.",
+        tags: ["SQL", "Growth", "Web3"],
+        location: "Lisbon, Portugal",
+        date: "2026-06-28",
+      },
+    ];
+
+    const results = normalizeRemoteOkJobs(rawItems);
+
+    expect(results).toHaveLength(1);
+    expect(results[0]?.description).toContain("Microsoft Office");
+  });
 });
 
 describe("inferRoleFamilyFromText", () => {

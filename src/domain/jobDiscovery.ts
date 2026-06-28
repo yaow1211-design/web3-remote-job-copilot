@@ -16,14 +16,14 @@ const REMOTE_TERMS = [
 const ONSITE_TERMS = [
   "onsite",
   "on-site",
-  "office",
   "in office",
   "in-office",
   "hybrid",
   "relocation",
   "fully in person",
-  "in person",
 ];
+
+const SOURCE_REMOTE_TERMS = ["remote ok", "remoteok", "remote"];
 
 const GROWTH_TERMS = ["growth", "user", "campaign", "lifecycle", "activation", "retention", "funnel", "segmentation"];
 const PRODUCT_OPS_TERMS = ["prd", "uat", "operations", "dashboard", "workflow", "requirements", "stakeholder"];
@@ -142,9 +142,14 @@ function hasOnsiteSignal(title: string, description: string, location: string, t
   return includesAny(buildSearchText([title, description, location, ...tags]), ONSITE_TERMS);
 }
 
+function hasSourceRemoteSignal(source: string): boolean {
+  return includesAny(normalizeLookupText(source), SOURCE_REMOTE_TERMS);
+}
+
 function isRelevantDiscovery(title: string, description: string, location: string, tags: string[], source: string): boolean {
   const searchText = buildSearchText([title, description, location, source, ...tags]);
   const explicitRemoteSignal = hasExplicitRemoteSignal(title, description, location, tags);
+  const sourceRemoteSignal = hasSourceRemoteSignal(source);
   const onsiteSignal = hasOnsiteSignal(title, description, location, tags);
   const web3Signal = includesAny(searchText, ["web3", "crypto", "blockchain", "defi", "on-chain", "on chain"]);
 
@@ -152,7 +157,7 @@ function isRelevantDiscovery(title: string, description: string, location: strin
     return false;
   }
 
-  return explicitRemoteSignal || web3Signal;
+  return explicitRemoteSignal || sourceRemoteSignal || web3Signal;
 }
 
 function extractRequiredSkills(text: string): string[] {
