@@ -438,6 +438,77 @@ describe("App", () => {
     expect(screen.getAllByText(/Northstar Research's Protocol Research Analyst role/i).length).toBeGreaterThan(0);
   });
 
+  it("falls back to the first visible pack job after filtering hides the previous selection and disables generate on no match", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-growth",
+          title: "Web3 Growth Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+          originalUrl: "https://remoteok.com/orbit-growth",
+          applyUrl: "https://remoteok.com/orbit-growth/apply",
+          jdText: "Remote lifecycle analytics role with retention, SQL, campaign analysis, and Web3 wallet context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-research",
+          title: "Protocol Research Analyst",
+          company: "Northstar Research",
+          status: "shortlisted",
+          originalUrl: "https://remoteok.com/northstar-research",
+          applyUrl: "https://remoteok.com/northstar-research/apply",
+          jdText: "Remote protocol research role with due diligence, risk analysis, market research, and crypto context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ops",
+          title: "Product Operations Analyst",
+          company: "Atlas Fintech",
+          status: "applied",
+          originalUrl: "https://remoteok.com/atlas-ops",
+          applyUrl: "https://remoteok.com/atlas-ops/apply",
+          jdText: "Remote product operations role with PRD, UAT, SQL, and dashboard delivery.",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+
+    await user.click(screen.getByRole("button", { name: /Product Operations Analyst Atlas Fintech applied/i }));
+    expect(
+      screen.getByRole("heading", { name: /Product Operations Analyst · Atlas Fintech/i }),
+    ).toBeInTheDocument();
+
+    await user.type(screen.getByLabelText(/Search jobs/i), "research");
+
+    expect(
+      screen.getByRole("heading", { name: /Protocol Research Analyst · Northstar Research/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: /Product Operations Analyst · Atlas Fintech/i }),
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getAllByText(/Northstar Research's Protocol Research Analyst role/i).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/Atlas Fintech's Product Operations Analyst role/i)).not.toBeInTheDocument();
+
+    const searchInput = screen.getByLabelText(/Search jobs/i);
+    await user.clear(searchInput);
+    await user.type(searchInput, "no matches here");
+
+    expect(screen.getByText(/No jobs match this search and filter\./i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Select a job/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Generate pack/i })).toBeDisabled();
+  });
+
   it("records manual outreach activity as sent manually by Mia", async () => {
     const user = userEvent.setup();
 

@@ -1,158 +1,125 @@
-# Task 1 Report: Discovery Domain
+## Task 1 Report: Application Pack Job Selector With Search And Status Filter
 
-## Implemented
+### What Changed
 
-I implemented the Web3 Remote Job Copilot V1.1 discovery domain in:
+- Added the prescribed failing integration test in `src/App.test.tsx` covering search, role selection, and pack generation from Application Pack.
+- Reworked `src/components/ApplicationPackBuilder.tsx` to:
+  - export `PackStatusFilter`
+  - export `isAppliedForFilter`, `matchesPackStatusFilter`, and `matchesPackSearch`
+  - accept local selector/search/filter props from `App.tsx`
+  - render search input, status filter, and selectable job list
+  - derive the selected pack from the chosen job
+- Updated `src/App.tsx` to keep Application Pack selector state local in App:
+  - `selectedPackJobId`
+  - `packJobSearch`
+  - `packStatusFilter`
+  - new-pack selection now follows newly added jobs
+  - missing selected pack job now falls back to the default selected job
+  - pack view now renders the selector-based `ApplicationPackBuilder`
+- Added `pack-selector` and `pack-job-list` layout styles in `src/styles.css`.
 
-- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.ts`
-- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.test.ts`
-- `/Users/wangmia/Documents/New project/src/domain/types.ts`
+### TDD RED/GREEN Evidence
 
-What changed:
+#### RED
 
-- Added `DiscoveredJob` to the shared domain types.
-- Added pure discovery helpers:
-  - `normalizeRemoteOkJobs(rawItems: unknown[], now?: Date): DiscoveredJob[]`
-  - `inferRoleFamilyFromText(text: string): RoleFamily`
-  - `toJobFromDiscoveredJob(discoveredJob: DiscoveredJob, now?: Date): Job`
-  - `dedupeDiscoveredJobs(discoveredJobs: DiscoveredJob[], existingJobs: Job[]): DiscoveredJob[]`
-- Built Remote OK normalization with:
-  - HTML stripping from descriptions
-  - deterministic hash IDs from `source + originalUrl + title + company`
-  - remote/web3 relevance filtering
-  - required/preferred skill extraction
-  - crypto requirement inference
-  - `Job` conversion with `status: "new"` and `remoteType: "remote"`
+Command:
 
-## TDD Evidence
+```bash
+npm test -- src/App.test.tsx -t "lets Mia search Job Inbox"
+```
 
-Red step:
+Result:
 
-- Ran `npm test -- src/domain/jobDiscovery.test.ts`
-- Result: failed as expected because `./jobDiscovery` did not exist yet
+- FAIL
+- Failure reason: `Unable to find a label with the text of: /Search jobs/i`
+- This confirmed the Application Pack selector UI did not exist yet.
 
-Green steps:
+#### GREEN
 
-- Implemented the module after the failing test
-- Re-ran `npm test -- src/domain/jobDiscovery.test.ts`
-- Result: passed
+Command:
 
-Regression verification:
+```bash
+npm test -- src/App.test.tsx -t "lets Mia search Job Inbox"
+```
 
-- Ran `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
-- Result: all 4 test files passed, 30 tests passed total
+Result:
 
-## Files Changed
+```text
+✓ src/App.test.tsx (38 tests | 37 skipped) 119ms
 
-- `/Users/wangmia/Documents/New project/src/domain/types.ts`
-- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.ts`
-- `/Users/wangmia/Documents/New project/src/domain/jobDiscovery.test.ts`
+Test Files  1 passed (1)
+     Tests  1 passed | 37 skipped (38)
+```
 
-## Self-Review Findings
+### Tests And Output
 
-- I first used a prefixed discovery ID, then removed the prefix so the ID is the raw deterministic hash required by the brief.
-- I tightened the relevance filter so clearly onsite rows do not slip through just because the source is Remote OK.
-- I normalized title/company comparisons for dedupe so same-job matches are more reliable.
+Focused verification command:
 
-## Concerns
-
-- The discovery heuristics are intentionally tuned to the Remote OK-style payload shape described in the brief. If later discovery sources use different field names or require broader normalization rules, this module will need source-specific expansion.
-
-## Review Fix Addendum
-
-Fixed the two review findings in `src/domain/jobDiscovery.ts`:
-
-- Source now contributes to remote relevance, so Remote OK rows can stay relevant even when title/description/location do not spell out "remote".
-- Onsite detection is less overbroad by dropping generic `office` and `in person` matches, while still filtering clear onsite language.
-
-Verification:
-
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
-
-Both commands passed. The focused discovery suite passed 8/8 tests, and the broader domain run passed 32/32 tests.
-
-## Review Fix Addendum 2
-
-Tightened `isRelevantDiscovery` so source-based remote relevance from `Remote OK` only applies when the row's location is blank or remote-friendly. This keeps relevant blank-location Remote OK rows, but filters a concrete onsite-looking location like `Lisbon, Portugal` unless the row also has explicit remote wording.
-
-Verification:
-
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
-
-Both commands passed again after the fix. The focused discovery suite passed 9/9 tests, and the broader domain run passed 33/33 tests.
-
-## Review Fix Addendum 3
-
-Closed the remaining discovery review finding by splitting discovery eligibility into two gates in `src/domain/jobDiscovery.ts`:
-
-- remote-compatible evidence must come from explicit remote/worldwide wording or the bounded Remote OK source inference
-- Mia-relevant evidence must come from Web3 terms or target-role terms such as growth, analyst, data, PRD, UAT, research, and due diligence
-
-This prevents a crypto-heavy row with `Lisbon, Portugal` from being normalized just because it contains Web3 wording, while still allowing the blank-location Remote OK source path and the Microsoft Office incidental-wording regression case.
-
-Verification:
-
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+```bash
+npm test -- src/App.test.tsx -t "lets Mia search Job Inbox"
+```
 
 Output summary:
 
-- focused discovery suite: 10/10 tests passed
-- broader domain suite: 34/34 tests passed
+- PASS
+- `1 passed | 37 skipped`
 
-## Review Fix Addendum 4
+### Files Changed
 
-Addressed the remaining review findings in `src/domain/jobDiscovery.ts`:
+- `src/components/ApplicationPackBuilder.tsx`
+- `src/App.tsx`
+- `src/App.test.tsx`
+- `src/styles.css`
 
-- crypto requirement inference now treats negated phrases like `not required`, `not mandatory`, `optional`, and `nice to have` as `none`, so phrases such as `crypto experience not required` no longer collapse to `required`
-- remote eligibility no longer treats generic `distributed` or arbitrary source text containing `remote` as remote-compatible
-- `us` was removed as a generic location cue so source-based inference stays bounded
+### Commit
 
-Verification:
+- `47b7a1b` - `feat: add application pack job selector`
 
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+### Self-Review Findings
 
-Output summary:
+- Confirmed the new selector behavior is state-local in `App.tsx`, matching the task brief.
+- Confirmed search and status filter logic is encapsulated in exported helpers from `ApplicationPackBuilder.tsx`.
+- Confirmed the pack page still preserves generated pack rendering and manual-review messaging.
+- Added an explicit `aria-label` to each pack selector button so the required accessibility-facing test names match the task brief while leaving visible UI text unchanged.
+- No unrelated files were modified.
 
-- focused discovery suite: 12/12 tests passed
-- broader domain suite: 36/36 tests passed
+### Concerns
 
-## Review Fix Addendum 5
+- No functional concerns from the scoped task implementation.
+- Verification was limited to the focused test required by the brief; I did not run the broader app test suite in this task.
 
-Closed the last discovery review findings by tightening the remote-compatibility gate in `src/domain/jobDiscovery.ts`:
+---
 
-- removed `distributed` + team/org/company/people from explicit remote detection
-- removed generic geographic labels from the Remote OK source gate so `United States`, `USA`, `Europe`, and `UK` no longer count as remote-compatible without explicit remote wording
-- kept blank/unspecified Remote OK source inference and the existing negated crypto requirement behavior
+## Review Fix Follow-Up
 
-Verification:
+### Reviewer Finding Addressed
 
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+- Fixed the Application Pack selector so it now resolves the active job from `filteredJobs` first. When search or status filtering hides the previously selected job, the heading and `Generate pack` action now fall back to the first visible filtered job. When no jobs match, the view shows no selected job and disables `Generate pack`.
 
-Output summary:
+### Additional Test Coverage
 
-- focused discovery suite: 17/17 tests passed
-- broader domain suite: 41/41 tests passed
+- Added a focused regression test in `src/App.test.tsx` that:
+  - selects a visible job,
+  - filters it out with search,
+  - verifies the heading and generated pack switch to the remaining visible job,
+  - verifies the no-match state clears the selected job and disables `Generate pack`.
 
-## Review Fix Addendum 6
+### Focused Test Results
 
-Fixed the final Task 1 review finding around unspecified-location detection in `src/domain/jobDiscovery.ts`:
+RED:
 
-- removed `na` as a substring marker
-- changed `hasUnspecifiedLocation` to use exact normalized matching instead of substring matching
-- kept exact normalized `n a` handling so literal `N/A`-style rows can still qualify as unspecified
-- added regression coverage proving `Canada`, `Panama`, and `Japan` do not pass the relaxed Remote OK gate without explicit remote wording
+```bash
+npm test -- src/App.test.tsx -t "falls back to the first visible pack job after filtering hides the previous selection and disables generate on no match"
+```
 
-Verification:
+- FAIL
+- Failure reason: the heading stayed on the hidden `Product Operations Analyst · Atlas Fintech` selection after filtering to `research`.
 
-- `npm test -- src/domain/jobDiscovery.test.ts`
-- `npm test -- src/domain/scoring.test.ts src/domain/applicationPack.test.ts src/domain/weeklyReview.test.ts src/domain/jobDiscovery.test.ts`
+GREEN:
 
-Output summary:
+```bash
+npm test -- src/App.test.tsx -t "(lets Mia search Job Inbox, choose a role, and generate that role's application pack|falls back to the first visible pack job after filtering hides the previous selection and disables generate on no match)"
+```
 
-- focused discovery suite: 22/22 tests passed
-- broader domain suite: 46/46 tests passed
+- PASS
+- `2 passed | 37 skipped`

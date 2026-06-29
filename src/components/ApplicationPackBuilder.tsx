@@ -95,7 +95,7 @@ export function ApplicationPackBuilder({
   const filteredJobs = jobs.filter(
     (job) => matchesPackStatusFilter(job, statusFilter) && matchesPackSearch(job, searchQuery),
   );
-  const selectedJob = jobs.find((job) => job.id === selectedJobId) ?? filteredJobs[0] ?? jobs[0];
+  const selectedJob = filteredJobs.find((job) => job.id === selectedJobId) ?? filteredJobs[0];
   const pack = selectedJob ? packs.find((item) => item.jobId === selectedJob.id) : undefined;
 
   function handleGenerate() {
