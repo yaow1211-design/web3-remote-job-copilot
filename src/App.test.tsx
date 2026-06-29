@@ -845,6 +845,67 @@ describe("App", () => {
     expect(savedState.briefings?.[0]?.items.length).toBeGreaterThan(0);
   });
 
+  it("keeps a Today briefing job linkable in Job Inbox and selected for Application Pack", async () => {
+    const user = userEvent.setup();
+    const briefingJob = toJobFromDiscoveredJob({
+      id: "discover-briefing-role",
+      title: "Remote Web3 Growth Analyst",
+      company: "Orbit Wallet",
+      source: "Remote OK",
+      originalUrl: "https://remoteok.com/remote-jobs/orbit-wallet-growth",
+      applyUrl: "https://remoteok.com/remote-jobs/orbit-wallet-growth/apply",
+      description: "Remote Web3 growth analytics role with lifecycle analysis, retention, SQL, and campaigns.",
+      tags: ["remote", "web3", "growth"],
+      location: "Worldwide",
+      postedAt: "2026-06-29",
+    });
+
+    saveState({
+      briefings: [
+        {
+          id: "briefing-2026-06-29",
+          date: "2026-06-29",
+          generatedAt: "2026-06-29T00:30:00.000Z",
+          windowLabel: "Past 24 hours",
+          items: [
+            {
+              job: briefingJob,
+              score: scoreJob(briefingJob, seedCandidate),
+              summary: "Orbit Wallet is hiring for Remote Web3 Growth Analyst.",
+              fitReasons: ["Strong lifecycle analytics overlap."],
+              risks: ["No hard blocker detected. Human review still required."],
+            },
+          ],
+        },
+      ],
+    });
+
+    renderApp();
+
+    await user.click(screen.getByRole("button", { name: /Add to Job Inbox/i }));
+    await openNav(user, /Job Inbox/i);
+
+    expect(
+      screen.getByRole("heading", { name: /Remote Web3 Growth Analyst · Orbit Wallet/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: /Open original job/i }),
+    ).toHaveAttribute("href", "https://remoteok.com/remote-jobs/orbit-wallet-growth");
+    expect(
+      screen.getByRole("link", { name: /Open application link/i }),
+    ).toHaveAttribute("href", "https://remoteok.com/remote-jobs/orbit-wallet-growth/apply");
+
+    await openNav(user, /Application Pack/i);
+
+    expect(
+      screen.getByRole("heading", { name: /Remote Web3 Growth Analyst · Orbit Wallet/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getAllByText(/Orbit Wallet's Remote Web3 Growth Analyst role/i).length).toBeGreaterThan(0);
+  });
+
   it("does not generate a daily briefing before 08:00 Asia/Shanghai", async () => {
     vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(false);
     const fetchSpy = vi.spyOn(globalThis, "fetch").mockResolvedValue({

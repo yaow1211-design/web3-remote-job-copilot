@@ -62,6 +62,10 @@ const PACK_READY_STATUSES: JobStatus[] = [
   "interview",
 ];
 
+function getDefaultSelectedJob(jobs: Job[]): Job | undefined {
+  return jobs.find((job) => PACK_READY_STATUSES.includes(job.status)) ?? jobs[0];
+}
+
 const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
   Record<JobStatus, Pick<ApplicationActivity, "actionType" | "result">>
 > = {
@@ -170,23 +174,19 @@ function DailyBriefingItemCard({
 export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
-  const [selectedJobId, setSelectedJobId] = useState(() => state.jobs[0]?.id ?? "");
+  const [selectedJobId, setSelectedJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
   const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
   const [briefingError, setBriefingError] = useState("");
   const [todayVisitKey, setTodayVisitKey] = useState(1);
   const briefingRequestKeyRef = useRef("");
   const briefingInFlightDateRef = useRef("");
   const selectedJob = useMemo(
-    () => state.jobs.find((job) => job.id === selectedJobId) ?? state.jobs[0],
+    () => state.jobs.find((job) => job.id === selectedJobId) ?? getDefaultSelectedJob(state.jobs),
     [selectedJobId, state.jobs],
   );
   const selectedPackJob = useMemo(
     () => {
-      const selectedJobPack = selectedJob
-        ? state.packs.find((pack) => pack.jobId === selectedJob.id)
-        : undefined;
-
-      if (selectedJob && (selectedJobPack || PACK_READY_STATUSES.includes(selectedJob.status))) {
+      if (selectedJob) {
         return selectedJob;
       }
 
@@ -228,8 +228,9 @@ export default function App() {
   }, [state]);
 
   useEffect(() => {
-    if (!selectedJob && state.jobs[0]) {
-      setSelectedJobId(state.jobs[0].id);
+    const defaultSelectedJob = getDefaultSelectedJob(state.jobs);
+    if (!selectedJob && defaultSelectedJob) {
+      setSelectedJobId(defaultSelectedJob.id);
     }
   }, [selectedJob, state.jobs]);
 
