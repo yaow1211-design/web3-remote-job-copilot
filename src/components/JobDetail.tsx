@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import { scoreJob } from "../domain/scoring";
 import type { CandidateAsset, Job, JobStatus } from "../domain/types";
 
@@ -22,6 +23,7 @@ const STATUSES: JobStatus[] = [
 
 export function JobDetail({ candidate, job, onUpdateJob }: JobDetailProps) {
   const score = scoreJob(job, candidate);
+  const hasApplyUrl = job.applyUrl && job.applyUrl !== job.originalUrl;
 
   return (
     <section className="panel">
@@ -31,6 +33,24 @@ export function JobDetail({ candidate, job, onUpdateJob }: JobDetailProps) {
           {job.title} · {job.company}
         </h2>
       </div>
+
+      {(job.originalUrl || hasApplyUrl) ? (
+        <div className="outreach-actions">
+          {job.originalUrl ? (
+            <a className="secondary-button link-button" href={job.originalUrl} target="_blank" rel="noreferrer">
+              <ExternalLink aria-hidden="true" size={16} />
+              <span>Open original job</span>
+            </a>
+          ) : null}
+
+          {hasApplyUrl ? (
+            <a className="secondary-button link-button" href={job.applyUrl} target="_blank" rel="noreferrer">
+              <ExternalLink aria-hidden="true" size={16} />
+              <span>Open application link</span>
+            </a>
+          ) : null}
+        </div>
+      ) : null}
 
       <div className="score-row">
         <div>
