@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import nodemailer from "nodemailer";
 
@@ -21,15 +21,22 @@ export interface DailyBriefingEmailConfig {
 
 export interface RenderDailyBriefingEmailTextInput {
   appUrl: string;
+  generatedAtLabel?: string;
   markdown: string;
 }
 
 export interface RenderDailyBriefingEmailHtmlInput {
   appUrl: string;
+  generatedAtLabel?: string;
   markdown: string;
 }
 
 export interface ResolveDailyBriefingMarkdownPathInput {
+  outputDir: string;
+  date: string;
+}
+
+export interface ResolveDailyBriefingSentMarkerPathInput {
   outputDir: string;
   date: string;
 }
@@ -39,6 +46,19 @@ export interface SendDailyBriefingEmailInput {
   date: string;
   config: DailyBriefingEmailConfig;
   createTransport?: typeof nodemailer.createTransport;
+}
+
+export interface SendDailyBriefingEmailOnceInput {
+  outputDir: string;
+  date: string;
+  config: DailyBriefingEmailConfig;
+  createTransport?: typeof nodemailer.createTransport;
+  sentAt?: Date;
+}
+
+export interface SendDailyBriefingEmailOnceResult {
+  sent: boolean;
+  markerPath: string;
 }
 
 type Env = Record<string, string | undefined>;
@@ -81,8 +101,13 @@ export function buildDailyBriefingEmailConfig(env: Env = process.env): DailyBrie
   };
 }
 
-export function renderDailyBriefingEmailText({ appUrl, markdown }: RenderDailyBriefingEmailTextInput): string {
-  return `${appUrl}\n\nWeb3 Remote Job Copilot\n\n${markdown}`;
+export function renderDailyBriefingEmailText({
+  appUrl,
+  generatedAtLabel,
+  markdown,
+}: RenderDailyBriefingEmailTextInput): string {
+  const generatedLine = generatedAtLabel ? `\nGenerated: ${generatedAtLabel}` : "";
+  return `${appUrl}${generatedLine}\n\nWeb3 Remote Job Copilot\n\n${markdown}`;
 }
 
 function escapeHtml(value: string): string {
@@ -100,12 +125,21 @@ function linkify(value: string): string {
   );
 }
 
-export function renderDailyBriefingEmailHtml({ appUrl, markdown }: RenderDailyBriefingEmailHtmlInput): string {
+export function renderDailyBriefingEmailHtml({
+  appUrl,
+  generatedAtLabel,
+  markdown,
+}: RenderDailyBriefingEmailHtmlInput): string {
   const body: string[] = [
     '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif;line-height:1.55;color:#111827;max-width:760px;">',
     `<p><a href="${escapeHtml(appUrl)}">${escapeHtml(appUrl)}</a></p>`,
-    "<p><strong>Web3 Remote Job Copilot</strong></p>",
   ];
+
+  if (generatedAtLabel) {
+    body.push(`<p>Generated: ${escapeHtml(generatedAtLabel)}</p>`);
+  }
+
+  body.push("<p><strong>Web3 Remote Job Copilot</strong></p>");
   let listItems: string[] = [];
 
   const flushList = () => {
@@ -155,6 +189,56 @@ export async function resolveDailyBriefingMarkdownPath({
   return join(outputDir, `${date}.md`);
 }
 
+export async function resolveDailyBriefingSentMarkerPath({
+  outputDir,
+  date,
+}: ResolveDailyBriefingSentMarkerPathInput): Promise<string> {
+  return join(outputDir, `${date}.email-sent.json`);
+}
+
+export async function hasDailyBriefingEmailBeenSent({
+  outputDir,
+  date,
+}: ResolveDailyBriefingSentMarkerPathInput): Promise<boolean> {
+  const markerPath = await resolveDailyBriefingSentMarkerPath({ outputDir, date });
+
+  try {
+    await access(markerPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function formatShanghaiDateTimeLabel(date: Date): string {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+
+  return `${values.year}-${values.month}-${values.day} ${values.hour}:${values.minute} CST`;
+}
+
+function extractGeneratedAtLabel(markdown: string): string | undefined {
+  const match = markdown.match(/^Generated at:\s*(.+)$/m);
+  if (!match) {
+    return undefined;
+  }
+
+  const generatedAt = new Date(match[1].trim());
+  if (Number.isNaN(generatedAt.valueOf())) {
+    return undefined;
+  }
+
+  return formatShanghaiDateTimeLabel(generatedAt);
+}
+
 export async function sendDailyBriefingEmail({
   markdownPath,
   date,
@@ -162,6 +246,7 @@ export async function sendDailyBriefingEmail({
   createTransport = nodemailer.createTransport,
 }: SendDailyBriefingEmailInput): Promise<void> {
   const markdown = await readFile(markdownPath, "utf8");
+  const generatedAtLabel = extractGeneratedAtLabel(markdown);
   const transport = createTransport({
     host: config.host,
     port: config.port,
@@ -175,14 +260,52 @@ export async function sendDailyBriefingEmail({
   await transport.sendMail({
     from: config.from,
     to: config.to,
-    subject: `Web3 Remote Job Briefing - ${date}`,
+    subject: generatedAtLabel
+      ? `Web3 Remote Job Briefing - ${date} (generated ${generatedAtLabel})`
+      : `Web3 Remote Job Briefing - ${date}`,
     text: renderDailyBriefingEmailText({
       appUrl: config.appUrl,
+      generatedAtLabel,
       markdown,
     }),
     html: renderDailyBriefingEmailHtml({
       appUrl: config.appUrl,
+      generatedAtLabel,
       markdown,
     }),
   });
+}
+
+export async function sendDailyBriefingEmailOnce({
+  outputDir,
+  date,
+  config,
+  createTransport = nodemailer.createTransport,
+  sentAt = new Date(),
+}: SendDailyBriefingEmailOnceInput): Promise<SendDailyBriefingEmailOnceResult> {
+  const markerPath = await resolveDailyBriefingSentMarkerPath({ outputDir, date });
+  if (await hasDailyBriefingEmailBeenSent({ outputDir, date })) {
+    return { sent: false, markerPath };
+  }
+
+  const markdownPath = await resolveDailyBriefingMarkdownPath({ outputDir, date });
+  await sendDailyBriefingEmail({
+    markdownPath,
+    date,
+    config,
+    createTransport,
+  });
+
+  await mkdir(outputDir, { recursive: true });
+  await writeFile(
+    markerPath,
+    `${JSON.stringify({
+      date,
+      sentAt: sentAt.toISOString(),
+      to: config.to,
+    }, null, 2)}\n`,
+    "utf8",
+  );
+
+  return { sent: true, markerPath };
 }

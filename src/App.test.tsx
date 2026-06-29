@@ -906,6 +906,23 @@ describe("App", () => {
     const user = userEvent.setup();
 
     vi.spyOn(dailyBriefingModule, "shouldGenerateDailyBriefing").mockReturnValue(true);
+    vi.spyOn(dailyBriefingModule, "createDailyBriefing").mockImplementation((discoveredJobs) => ({
+      id: "briefing-2026-06-28",
+      date: "2026-06-28",
+      generatedAt: "2026-06-28T00:30:00.000Z",
+      windowLabel: "Past 24 hours",
+      items: discoveredJobs.map((discoveredJob) => {
+        const job = toJobFromDiscoveredJob(discoveredJob);
+
+        return {
+          job,
+          score: scoreJob(job, seedCandidate),
+          summary: `${discoveredJob.company} is hiring for ${discoveredJob.title}.`,
+          fitReasons: ["Reason one", "Reason two"],
+          risks: ["No hard blocker detected. Human review still required."],
+        };
+      }),
+    }));
     vi.spyOn(globalThis, "fetch")
       .mockResolvedValueOnce({
         ok: true,
