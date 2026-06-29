@@ -576,6 +576,92 @@ describe("App", () => {
     ).toBeInTheDocument();
   });
 
+  it("keeps the selected Application Pack job stable after Mia marks it applied", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-stable-pack",
+          title: "Stable Pack Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-pack",
+          title: "Other Pack Analyst",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet new/i }));
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet · new/i }));
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i })).toBeInTheDocument();
+  });
+
+  it("honors an explicit Application Pack filter change after a selected job status changes", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-stable-pack",
+          title: "Stable Pack Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-pack",
+          title: "Other Pack Analyst",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "not_applied");
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet new/i }));
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet · new/i }));
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i })).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+
+    expect(screen.getByRole("heading", { name: /Other Pack Analyst · Atlas Fintech/i })).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i }),
+    ).not.toBeInTheDocument();
+  });
+
   it("records manual outreach activity as sent manually by Mia", async () => {
     const user = userEvent.setup();
 

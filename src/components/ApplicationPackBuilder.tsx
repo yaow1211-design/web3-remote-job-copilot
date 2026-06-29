@@ -17,6 +17,7 @@ interface ApplicationPackBuilderProps {
   selectedJobId: string;
   searchQuery: string;
   statusFilter: PackStatusFilter;
+  keepSelectedJobVisible: boolean;
   packs: ApplicationPack[];
   onSelectJob: (jobId: string) => void;
   onSearchChange: (query: string) => void;
@@ -86,16 +87,27 @@ export function ApplicationPackBuilder({
   selectedJobId,
   searchQuery,
   statusFilter,
+  keepSelectedJobVisible,
   packs,
   onSelectJob,
   onSearchChange,
   onStatusFilterChange,
   onSavePack,
 }: ApplicationPackBuilderProps) {
-  const filteredJobs = jobs.filter(
-    (job) => matchesPackStatusFilter(job, statusFilter) && matchesPackSearch(job, searchQuery),
-  );
-  const selectedJob = filteredJobs.find((job) => job.id === selectedJobId) ?? filteredJobs[0];
+  const searchMatchedJobs = jobs.filter((job) => matchesPackSearch(job, searchQuery));
+  const filteredJobs = searchMatchedJobs.filter((job) => matchesPackStatusFilter(job, statusFilter));
+  const selectedSearchMatch = searchMatchedJobs.find((job) => job.id === selectedJobId);
+  const shouldKeepSelectedJobVisible =
+    keepSelectedJobVisible &&
+    selectedSearchMatch &&
+    !filteredJobs.some((job) => job.id === selectedSearchMatch.id);
+  const selectedJob = shouldKeepSelectedJobVisible
+    ? selectedSearchMatch
+    : (filteredJobs.find((job) => job.id === selectedJobId) ?? filteredJobs[0]);
+  const visibleJobs =
+    shouldKeepSelectedJobVisible && selectedSearchMatch
+      ? [selectedSearchMatch, ...filteredJobs]
+      : filteredJobs;
   const pack = selectedJob ? packs.find((item) => item.jobId === selectedJob.id) : undefined;
 
   function handleGenerate() {
@@ -139,8 +151,8 @@ export function ApplicationPackBuilder({
         </label>
 
         <div className="pack-job-list" aria-label="Application pack job choices">
-          {filteredJobs.length > 0 ? (
-            filteredJobs.map((job) => (
+          {visibleJobs.length > 0 ? (
+            visibleJobs.map((job) => (
               <button
                 key={job.id}
                 aria-label={`${job.title} ${job.company} ${job.status}`}

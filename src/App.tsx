@@ -11,6 +11,7 @@ import {
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ApplicationPackBuilder } from "./components/ApplicationPackBuilder";
 import type { PackStatusFilter } from "./components/ApplicationPackBuilder";
+import { matchesPackSearch, matchesPackStatusFilter } from "./components/ApplicationPackBuilder";
 import { BackupPanel } from "./components/BackupPanel";
 import { CandidateAssets } from "./components/CandidateAssets";
 import { JobDetail } from "./components/JobDetail";
@@ -179,6 +180,7 @@ export default function App() {
   const [selectedPackJobId, setSelectedPackJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
   const [packJobSearch, setPackJobSearch] = useState("");
   const [packStatusFilter, setPackStatusFilter] = useState<PackStatusFilter>("all");
+  const [keepSelectedPackJobVisible, setKeepSelectedPackJobVisible] = useState(false);
   const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
   const [briefingError, setBriefingError] = useState("");
   const [todayVisitKey, setTodayVisitKey] = useState(1);
@@ -286,9 +288,16 @@ export default function App() {
     setState((current) => ({ ...current, jobs: [job, ...current.jobs] }));
     setSelectedJobId(job.id);
     setSelectedPackJobId(job.id);
+    setKeepSelectedPackJobVisible(false);
   }
 
   function updateJob(job: Job) {
+    if (job.id === selectedPackJobId) {
+      const staysSearchVisible = matchesPackSearch(job, packJobSearch);
+      const staysFilterVisible = matchesPackStatusFilter(job, packStatusFilter);
+      setKeepSelectedPackJobVisible(staysSearchVisible && !staysFilterVisible);
+    }
+
     setState((current) => {
       const previousJob = current.jobs.find((item) => item.id === job.id);
       const statusChanged = previousJob && previousJob.status !== job.status;
@@ -520,10 +529,20 @@ export default function App() {
               selectedJobId={selectedPackJobId}
               searchQuery={packJobSearch}
               statusFilter={packStatusFilter}
+              keepSelectedJobVisible={keepSelectedPackJobVisible}
               packs={state.packs}
-              onSelectJob={setSelectedPackJobId}
-              onSearchChange={setPackJobSearch}
-              onStatusFilterChange={setPackStatusFilter}
+              onSelectJob={(jobId) => {
+                setSelectedPackJobId(jobId);
+                setKeepSelectedPackJobVisible(false);
+              }}
+              onSearchChange={(query) => {
+                setPackJobSearch(query);
+                setKeepSelectedPackJobVisible(false);
+              }}
+              onStatusFilterChange={(filter) => {
+                setPackStatusFilter(filter);
+                setKeepSelectedPackJobVisible(false);
+              }}
               onSavePack={savePack}
             />
           ) : (
