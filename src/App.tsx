@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ApplicationPackBuilder } from "./components/ApplicationPackBuilder";
+import type { PackStatusFilter } from "./components/ApplicationPackBuilder";
 import { BackupPanel } from "./components/BackupPanel";
 import { CandidateAssets } from "./components/CandidateAssets";
 import { JobDetail } from "./components/JobDetail";
@@ -175,6 +176,9 @@ export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
   const [selectedJobId, setSelectedJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
+  const [selectedPackJobId, setSelectedPackJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
+  const [packJobSearch, setPackJobSearch] = useState("");
+  const [packStatusFilter, setPackStatusFilter] = useState<PackStatusFilter>("all");
   const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
   const [briefingError, setBriefingError] = useState("");
   const [todayVisitKey, setTodayVisitKey] = useState(1);
@@ -183,21 +187,6 @@ export default function App() {
   const selectedJob = useMemo(
     () => state.jobs.find((job) => job.id === selectedJobId) ?? getDefaultSelectedJob(state.jobs),
     [selectedJobId, state.jobs],
-  );
-  const selectedPackJob = useMemo(
-    () => {
-      if (selectedJob) {
-        return selectedJob;
-      }
-
-      const savedPackJob = state.jobs.find((job) => state.packs.some((pack) => pack.jobId === job.id));
-      if (savedPackJob) {
-        return savedPackJob;
-      }
-
-      return state.jobs.find((job) => PACK_READY_STATUSES.includes(job.status));
-    },
-    [selectedJob, state.jobs, state.packs],
   );
   const followUpReminders = useMemo(() => {
     const today = formatLocalDate();
@@ -232,7 +221,11 @@ export default function App() {
     if (!selectedJob && defaultSelectedJob) {
       setSelectedJobId(defaultSelectedJob.id);
     }
-  }, [selectedJob, state.jobs]);
+
+    if (!state.jobs.some((job) => job.id === selectedPackJobId) && defaultSelectedJob) {
+      setSelectedPackJobId(defaultSelectedJob.id);
+    }
+  }, [selectedJob, selectedPackJobId, state.jobs]);
 
   useEffect(() => {
     if (view !== "today") {
@@ -292,6 +285,7 @@ export default function App() {
   function addJob(job: Job) {
     setState((current) => ({ ...current, jobs: [job, ...current.jobs] }));
     setSelectedJobId(job.id);
+    setSelectedPackJobId(job.id);
   }
 
   function updateJob(job: Job) {
@@ -519,17 +513,23 @@ export default function App() {
         )}
 
         {view === "pack" &&
-          (selectedPackJob ? (
+          (state.jobs.length > 0 ? (
             <ApplicationPackBuilder
               candidate={state.candidate}
-              job={selectedPackJob}
-              pack={state.packs.find((pack) => pack.jobId === selectedPackJob.id)}
+              jobs={state.jobs}
+              selectedJobId={selectedPackJobId}
+              searchQuery={packJobSearch}
+              statusFilter={packStatusFilter}
+              packs={state.packs}
+              onSelectJob={setSelectedPackJobId}
+              onSearchChange={setPackJobSearch}
+              onStatusFilterChange={setPackStatusFilter}
               onSavePack={savePack}
             />
           ) : (
             <section className="panel">
               <h2>Application Pack</h2>
-              <p>Select a shortlisted job from Job Inbox before generating a pack.</p>
+              <p>Add a job to Job Inbox before generating a pack.</p>
             </section>
           ))}
 

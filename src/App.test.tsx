@@ -367,6 +367,77 @@ describe("App", () => {
     expect(screen.getByLabelText(/Status/i)).toHaveValue("applied");
   });
 
+  it("lets Mia search Job Inbox, choose a role, and generate that role's application pack", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-growth",
+          title: "Web3 Growth Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+          originalUrl: "https://remoteok.com/orbit-growth",
+          applyUrl: "https://remoteok.com/orbit-growth/apply",
+          jdText: "Remote lifecycle analytics role with retention, SQL, campaign analysis, and Web3 wallet context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-research",
+          title: "Protocol Research Analyst",
+          company: "Northstar Research",
+          status: "shortlisted",
+          originalUrl: "https://remoteok.com/northstar-research",
+          applyUrl: "https://remoteok.com/northstar-research/apply",
+          jdText: "Remote protocol research role with due diligence, risk analysis, market research, and crypto context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ops",
+          title: "Product Operations Analyst",
+          company: "Atlas Fintech",
+          status: "applied",
+          originalUrl: "https://remoteok.com/atlas-ops",
+          applyUrl: "https://remoteok.com/atlas-ops/apply",
+          jdText: "Remote product operations role with PRD, UAT, SQL, and dashboard delivery.",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByLabelText(/Search jobs/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Filter jobs/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Web3 Growth Analyst Orbit Wallet new/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Product Operations Analyst Atlas Fintech applied/i }),
+    ).toBeInTheDocument();
+
+    await user.type(screen.getByLabelText(/Search jobs/i), "research");
+
+    expect(screen.queryByRole("button", { name: /Web3 Growth Analyst Orbit Wallet new/i })).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }));
+
+    expect(
+      screen.getByRole("heading", { name: /Protocol Research Analyst · Northstar Research/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getAllByText(/Northstar Research's Protocol Research Analyst role/i).length).toBeGreaterThan(0);
+  });
+
   it("records manual outreach activity as sent manually by Mia", async () => {
     const user = userEvent.setup();
 
