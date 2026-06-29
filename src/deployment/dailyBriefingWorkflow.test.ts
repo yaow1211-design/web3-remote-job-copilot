@@ -2,10 +2,12 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
 describe("daily briefing GitHub Actions workflow", () => {
-  it("runs the daily briefing generator every day at 08:05 Asia/Shanghai and commits generated files", () => {
+  it("runs fallback morning schedules, commits generated files, and skips duplicate daily emails", () => {
     const workflow = readFileSync(".github/workflows/daily-briefing.yml", "utf8");
 
-    expect(workflow).toContain("cron: \"5 0 * * *\"");
+    expect(workflow).toContain("cron: \"23 0 * * *\"");
+    expect(workflow).toContain("cron: \"50 0 * * *\"");
+    expect(workflow).toContain("cron: \"20 1 * * *\"");
     expect(workflow).toContain("workflow_dispatch:");
     expect(workflow).toContain("contents: write");
     expect(workflow).toContain("actions/setup-node");
@@ -22,5 +24,7 @@ describe("daily briefing GitHub Actions workflow", () => {
     expect(workflow).toContain("BRIEFING_EMAIL_TO: 627822708@qq.com");
     expect(workflow).toContain("BRIEFING_APP_URL: https://web3-remote-job-copilot.vercel.app/");
     expect(workflow).toContain("npm run send:daily-briefing");
+    expect(workflow).toContain("data/daily-briefings/*.email-sent.json");
+    expect(workflow).toContain("git commit -m \"chore: mark daily briefing email sent\"");
   });
 });
