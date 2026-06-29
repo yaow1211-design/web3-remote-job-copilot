@@ -1,5 +1,6 @@
 import type { FormEvent } from "react";
 import { formatLocalDate } from "../domain/date";
+import { isAppliedStatus } from "../domain/jobStatus";
 import type { CandidateAsset, Job, RoleFamily } from "../domain/types";
 import { JobDiscoveryPanel } from "./JobDiscoveryPanel";
 
@@ -60,6 +61,9 @@ function inferCryptoRequirementLevel(title: string, jdText: string): Job["crypto
 }
 
 export function JobInbox({ candidate, jobs, selectedJobId, onSelectJob, onAddJob }: JobInboxProps) {
+  const notAppliedJobs = jobs.filter((job) => !isAppliedStatus(job.status));
+  const appliedJobs = jobs.filter((job) => isAppliedStatus(job.status));
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -167,23 +171,49 @@ export function JobInbox({ candidate, jobs, selectedJobId, onSelectJob, onAddJob
             <h2>{jobs.length} Jobs</h2>
           </div>
 
-          <div className="item-list">
-            {jobs.map((job) => (
-              <button
-                key={job.id}
-                className={job.id === selectedJobId ? "list-item active" : "list-item"}
-                type="button"
-                onClick={() => onSelectJob(job.id)}
-              >
-                <strong>{job.title}</strong>
-                <span>
-                  {job.company} · {job.status}
-                </span>
-              </button>
-            ))}
+          <div className="pipeline-groups">
+            <section className="pipeline-group" aria-labelledby="not-applied-jobs-heading">
+              <h3 id="not-applied-jobs-heading">Not applied ({notAppliedJobs.length})</h3>
+              <JobList jobs={notAppliedJobs} selectedJobId={selectedJobId} onSelectJob={onSelectJob} />
+            </section>
+
+            <section className="pipeline-group" aria-labelledby="applied-jobs-heading">
+              <h3 id="applied-jobs-heading">Applied ({appliedJobs.length})</h3>
+              <JobList jobs={appliedJobs} selectedJobId={selectedJobId} onSelectJob={onSelectJob} />
+            </section>
           </div>
         </div>
       </section>
     </>
+  );
+}
+
+interface JobListProps {
+  jobs: Job[];
+  selectedJobId: string;
+  onSelectJob: (jobId: string) => void;
+}
+
+function JobList({ jobs, selectedJobId, onSelectJob }: JobListProps) {
+  if (jobs.length === 0) {
+    return <p>No jobs in this group.</p>;
+  }
+
+  return (
+    <div className="item-list">
+      {jobs.map((job) => (
+        <button
+          key={job.id}
+          className={job.id === selectedJobId ? "list-item active" : "list-item"}
+          type="button"
+          onClick={() => onSelectJob(job.id)}
+        >
+          <strong>{job.title}</strong>
+          <span>
+            {job.company} · {job.status}
+          </span>
+        </button>
+      ))}
+    </div>
   );
 }

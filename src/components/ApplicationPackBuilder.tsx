@@ -1,38 +1,179 @@
 import { generateApplicationPack } from "../domain/applicationPack";
+import { isAppliedStatus } from "../domain/jobStatus";
 import { scoreJob } from "../domain/scoring";
 import type { ApplicationPack, CandidateAsset, Job } from "../domain/types";
 
+export type PackStatusFilter =
+  | "all"
+  | "not_applied"
+  | "applied"
+  | "shortlisted"
+  | "pack_ready"
+  | "interview"
+  | "rejected";
+
 interface ApplicationPackBuilderProps {
   candidate: CandidateAsset;
-  job: Job;
-  pack: ApplicationPack | undefined;
+  jobs: Job[];
+  selectedJobId: string;
+  searchQuery: string;
+  statusFilter: PackStatusFilter;
+  keepSelectedJobVisible: boolean;
+  packs: ApplicationPack[];
+  onSelectJob: (jobId: string) => void;
+  onSearchChange: (query: string) => void;
+  onStatusFilterChange: (filter: PackStatusFilter) => void;
   onSavePack: (pack: ApplicationPack) => void;
+}
+
+const FILTER_LABELS: Record<PackStatusFilter, string> = {
+  all: "All",
+  not_applied: "Not applied",
+  applied: "Applied",
+  shortlisted: "Shortlisted",
+  pack_ready: "Pack ready",
+  interview: "Interview",
+  rejected: "Rejected",
+};
+
+export function isAppliedForFilter(job: Job): boolean {
+  return isAppliedStatus(job.status);
+}
+
+export function matchesPackStatusFilter(job: Job, filter: PackStatusFilter): boolean {
+  if (filter === "all") {
+    return true;
+  }
+
+  if (filter === "not_applied") {
+    return !isAppliedForFilter(job);
+  }
+
+  if (filter === "applied") {
+    return isAppliedForFilter(job);
+  }
+
+  if (filter === "pack_ready") {
+    return job.status === "application_pack_ready";
+  }
+
+  return job.status === filter;
+}
+
+export function matchesPackSearch(job: Job, query: string): boolean {
+  const normalizedQuery = query.trim().toLowerCase();
+  if (!normalizedQuery) {
+    return true;
+  }
+
+  return [
+    job.title,
+    job.company,
+    job.roleFamily,
+    job.status,
+    job.originalUrl,
+    job.applyUrl,
+    job.jdText,
+    job.requiredSkills.join(" "),
+    job.preferredSkills.join(" "),
+  ]
+    .join(" ")
+    .toLowerCase()
+    .includes(normalizedQuery);
 }
 
 export function ApplicationPackBuilder({
   candidate,
-  job,
-  pack,
+  jobs,
+  selectedJobId,
+  searchQuery,
+  statusFilter,
+  keepSelectedJobVisible,
+  packs,
+  onSelectJob,
+  onSearchChange,
+  onStatusFilterChange,
   onSavePack,
 }: ApplicationPackBuilderProps) {
+  const searchMatchedJobs = jobs.filter((job) => matchesPackSearch(job, searchQuery));
+  const filteredJobs = searchMatchedJobs.filter((job) => matchesPackStatusFilter(job, statusFilter));
+  const selectedSearchMatch = searchMatchedJobs.find((job) => job.id === selectedJobId);
+  const shouldKeepSelectedJobVisible =
+    keepSelectedJobVisible &&
+    selectedSearchMatch &&
+    !filteredJobs.some((job) => job.id === selectedSearchMatch.id);
+  const selectedJob = shouldKeepSelectedJobVisible
+    ? selectedSearchMatch
+    : (filteredJobs.find((job) => job.id === selectedJobId) ?? filteredJobs[0]);
+  const visibleJobs =
+    shouldKeepSelectedJobVisible && selectedSearchMatch
+      ? [selectedSearchMatch, ...filteredJobs]
+      : filteredJobs;
+  const pack = selectedJob ? packs.find((item) => item.jobId === selectedJob.id) : undefined;
+
   function handleGenerate() {
-    onSavePack(generateApplicationPack(job, candidate, scoreJob(job, candidate)));
+    if (!selectedJob) {
+      return;
+    }
+
+    onSavePack(generateApplicationPack(selectedJob, candidate, scoreJob(selectedJob, candidate)));
   }
 
   return (
     <section className="panel">
       <div className="section-heading">
         <p className="eyebrow-dark">Application Pack Builder</p>
-        <h2>
-          {job.title} · {job.company}
-        </h2>
-        <p>
-          Generate tailored materials for review. No application or message will be sent
-          automatically.
-        </p>
+        <h2>{selectedJob ? `${selectedJob.title} · ${selectedJob.company}` : "Select a job"}</h2>
+        <p>Generate tailored materials for review. No application or message will be sent automatically.</p>
       </div>
 
-      <button className="primary-button" type="button" onClick={handleGenerate}>
+      <div className="pack-selector">
+        <label>
+          Search jobs
+          <input
+            value={searchQuery}
+            onChange={(event) => onSearchChange(event.target.value)}
+            placeholder="Search title, company, URL, JD, skills"
+          />
+        </label>
+
+        <label>
+          Filter jobs
+          <select
+            value={statusFilter}
+            onChange={(event) => onStatusFilterChange(event.target.value as PackStatusFilter)}
+          >
+            {(Object.keys(FILTER_LABELS) as PackStatusFilter[]).map((filter) => (
+              <option key={filter} value={filter}>
+                {FILTER_LABELS[filter]}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <div className="pack-job-list" aria-label="Application pack job choices">
+          {visibleJobs.length > 0 ? (
+            visibleJobs.map((job) => (
+              <button
+                key={job.id}
+                aria-label={`${job.title} ${job.company} ${job.status}`}
+                className={job.id === selectedJob?.id ? "list-item active" : "list-item"}
+                type="button"
+                onClick={() => onSelectJob(job.id)}
+              >
+                <strong>{job.title}</strong>
+                <span>
+                  {job.company} · {job.status}
+                </span>
+              </button>
+            ))
+          ) : (
+            <p>No jobs match this search and filter.</p>
+          )}
+        </div>
+      </div>
+
+      <button className="primary-button" type="button" onClick={handleGenerate} disabled={!selectedJob}>
         Generate pack
       </button>
 

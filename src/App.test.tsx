@@ -72,6 +72,12 @@ async function openNav(user: ReturnType<typeof userEvent.setup>, name: RegExp) {
   await user.click(screen.getByRole("button", { name }));
 }
 
+function getPackTextareas() {
+  return screen
+    .getAllByRole("textbox")
+    .filter((element): element is HTMLTextAreaElement => element.tagName.toLowerCase() === "textarea");
+}
+
 function saveState(overrides: Record<string, unknown>) {
   const baseState = {
     version: 1,
@@ -323,7 +329,7 @@ describe("App", () => {
 
     expect(screen.getByText(/Tailored Summary/i)).toBeInTheDocument();
     expect(screen.getByText("I will review and send this manually.")).toBeInTheDocument();
-    const [recruiterDm, hiringManagerDm] = screen.getAllByRole("textbox");
+    const [recruiterDm, hiringManagerDm] = getPackTextareas();
     expect(recruiterDm).toHaveValue(expectedPack.recruiterDm);
     expect(hiringManagerDm).toHaveValue(expectedPack.hiringManagerDm);
     expect((recruiterDm as HTMLTextAreaElement).value).not.toContain("I will review and send this manually");
@@ -334,7 +340,7 @@ describe("App", () => {
     expect(screen.getByText(/Pack generated for human review/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /Application Pack/i }));
-    expect(screen.getAllByRole("textbox")[0]).toHaveValue(expectedPack.recruiterDm);
+    expect(getPackTextareas()[0]).toHaveValue(expectedPack.recruiterDm);
   });
 
   it("marks a non-applied pack job as application_pack_ready after generating a pack", async () => {
@@ -347,6 +353,83 @@ describe("App", () => {
     await user.click(screen.getByRole("button", { name: /Job Inbox/i }));
 
     expect(screen.getByText(/Example Global Fintech · application_pack_ready/i)).toBeInTheDocument();
+  });
+
+  it("keeps a generated pack visible when its job leaves the active status filter", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-shortlisted-pack",
+          title: "Shortlisted Pack Role",
+          company: "Orbit Wallet",
+          status: "shortlisted",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-shortlisted-pack",
+          title: "Other Shortlisted Role",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+    await user.click(screen.getByRole("button", { name: /Shortlisted Pack Role Orbit Wallet shortlisted/i }));
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getByRole("heading", { name: /Shortlisted Pack Role · Orbit Wallet/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Shortlisted Pack Role Orbit Wallet application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/Orbit Wallet's Shortlisted Pack Role role/i).length).toBeGreaterThan(0);
+  });
+
+  it("keeps a generated fallback-selected pack visible when its job leaves the active status filter", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-new-hidden",
+          title: "Previously Selected Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-fallback-shortlisted-pack",
+          title: "Fallback Shortlisted Role",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Previously Selected Growth Role Orbit Wallet new/i }));
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+
+    expect(screen.getByRole("heading", { name: /Fallback Shortlisted Role · Atlas Fintech/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getByRole("heading", { name: /Fallback Shortlisted Role · Atlas Fintech/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Fallback Shortlisted Role Atlas Fintech application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/Atlas Fintech's Fallback Shortlisted Role role/i).length).toBeGreaterThan(0);
   });
 
   it("does not regress an applied job when generating a pack", async () => {
@@ -365,6 +448,301 @@ describe("App", () => {
 
     expect(screen.getByText(/Example Global Fintech · applied/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Status/i)).toHaveValue("applied");
+  });
+
+  it("lets Mia search Job Inbox, choose a role, and generate that role's application pack", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-growth",
+          title: "Web3 Growth Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+          originalUrl: "https://remoteok.com/orbit-growth",
+          applyUrl: "https://remoteok.com/orbit-growth/apply",
+          jdText: "Remote lifecycle analytics role with retention, SQL, campaign analysis, and Web3 wallet context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-research",
+          title: "Protocol Research Analyst",
+          company: "Northstar Research",
+          status: "shortlisted",
+          originalUrl: "https://remoteok.com/northstar-research",
+          applyUrl: "https://remoteok.com/northstar-research/apply",
+          jdText: "Remote protocol research role with due diligence, risk analysis, market research, and crypto context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ops",
+          title: "Product Operations Analyst",
+          company: "Atlas Fintech",
+          status: "applied",
+          originalUrl: "https://remoteok.com/atlas-ops",
+          applyUrl: "https://remoteok.com/atlas-ops/apply",
+          jdText: "Remote product operations role with PRD, UAT, SQL, and dashboard delivery.",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByLabelText(/Search jobs/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Filter jobs/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Web3 Growth Analyst Orbit Wallet new/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Product Operations Analyst Atlas Fintech applied/i }),
+    ).toBeInTheDocument();
+
+    await user.type(screen.getByLabelText(/Search jobs/i), "research");
+
+    expect(screen.queryByRole("button", { name: /Web3 Growth Analyst Orbit Wallet new/i })).not.toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Protocol Research Analyst Northstar Research shortlisted/i }));
+
+    expect(
+      screen.getByRole("heading", { name: /Protocol Research Analyst · Northstar Research/i }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getAllByText(/Northstar Research's Protocol Research Analyst role/i).length).toBeGreaterThan(0);
+  });
+
+  it("falls back to the first visible pack job after filtering hides the previous selection and disables generate on no match", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-growth",
+          title: "Web3 Growth Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+          originalUrl: "https://remoteok.com/orbit-growth",
+          applyUrl: "https://remoteok.com/orbit-growth/apply",
+          jdText: "Remote lifecycle analytics role with retention, SQL, campaign analysis, and Web3 wallet context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-research",
+          title: "Protocol Research Analyst",
+          company: "Northstar Research",
+          status: "shortlisted",
+          originalUrl: "https://remoteok.com/northstar-research",
+          applyUrl: "https://remoteok.com/northstar-research/apply",
+          jdText: "Remote protocol research role with due diligence, risk analysis, market research, and crypto context.",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ops",
+          title: "Product Operations Analyst",
+          company: "Atlas Fintech",
+          status: "applied",
+          originalUrl: "https://remoteok.com/atlas-ops",
+          applyUrl: "https://remoteok.com/atlas-ops/apply",
+          jdText: "Remote product operations role with PRD, UAT, SQL, and dashboard delivery.",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+
+    await user.click(screen.getByRole("button", { name: /Product Operations Analyst Atlas Fintech applied/i }));
+    expect(
+      screen.getByRole("heading", { name: /Product Operations Analyst · Atlas Fintech/i }),
+    ).toBeInTheDocument();
+
+    await user.type(screen.getByLabelText(/Search jobs/i), "research");
+
+    expect(
+      screen.getByRole("heading", { name: /Protocol Research Analyst · Northstar Research/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: /Product Operations Analyst · Atlas Fintech/i }),
+    ).not.toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getAllByText(/Northstar Research's Protocol Research Analyst role/i).length).toBeGreaterThan(0);
+    expect(screen.queryByText(/Atlas Fintech's Product Operations Analyst role/i)).not.toBeInTheDocument();
+
+    const searchInput = screen.getByLabelText(/Search jobs/i);
+    await user.clear(searchInput);
+    await user.type(searchInput, "no matches here");
+
+    expect(screen.getByText(/No jobs match this search and filter\./i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Select a job/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Generate pack/i })).toBeDisabled();
+  });
+
+  it("filters Application Pack jobs by applied and not-applied groups", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-not-applied",
+          title: "Not Applied Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-pack-ready",
+          title: "Pack Ready Analyst",
+          company: "Northstar Research",
+          status: "application_pack_ready",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-applied",
+          title: "Applied Product Ops",
+          company: "Atlas Fintech",
+          status: "applied",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-interview",
+          title: "Interview Stage Analyst",
+          company: "Protocol Labs",
+          status: "interview",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "not_applied");
+
+    expect(screen.getByRole("button", { name: /Not Applied Growth Role Orbit Wallet new/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Pack Ready Analyst Northstar Research application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Applied Product Ops Atlas Fintech applied/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Interview Stage Analyst Protocol Labs interview/i }),
+    ).not.toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "applied");
+
+    expect(
+      screen.queryByRole("button", { name: /Not Applied Growth Role Orbit Wallet new/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Pack Ready Analyst Northstar Research application_pack_ready/i }),
+    ).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Applied Product Ops Atlas Fintech applied/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Interview Stage Analyst Protocol Labs interview/i }),
+    ).toBeInTheDocument();
+  });
+
+  it("keeps the selected Application Pack job stable after Mia marks it applied", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-stable-pack",
+          title: "Stable Pack Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-pack",
+          title: "Other Pack Analyst",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet new/i }));
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet · new/i }));
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i })).toBeInTheDocument();
+  });
+
+  it("honors an explicit Application Pack filter change after a selected job status changes", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-stable-pack",
+          title: "Stable Pack Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-pack",
+          title: "Other Pack Analyst",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "not_applied");
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet new/i }));
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet · new/i }));
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    await openNav(user, /Application Pack/i);
+
+    expect(screen.getByRole("heading", { name: /Stable Pack Analyst · Orbit Wallet/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i })).toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+
+    expect(screen.getByRole("heading", { name: /Other Pack Analyst · Atlas Fintech/i })).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Stable Pack Analyst Orbit Wallet applied/i }),
+    ).not.toBeInTheDocument();
   });
 
   it("records manual outreach activity as sent manually by Mia", async () => {
@@ -399,6 +777,110 @@ describe("App", () => {
 
     await openNav(user, /Weekly Review/i);
     expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
+  });
+
+  it("groups Job Inbox roles by not-applied and applied status", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-new-group",
+          title: "New Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ready-group",
+          title: "Ready Analyst Role",
+          company: "Northstar Research",
+          status: "application_pack_ready",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-applied-group",
+          title: "Applied Ops Role",
+          company: "Atlas Fintech",
+          status: "applied",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-interview-group",
+          title: "Interview Research Role",
+          company: "Protocol Labs",
+          status: "interview",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-rejected-group",
+          title: "Rejected Analyst Role",
+          company: "Nova DAO",
+          status: "rejected",
+        },
+      ],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+
+    const notAppliedSection = screen.getByRole("heading", { name: /Not applied \(2\)/i }).closest("section");
+    const appliedSection = screen.getByRole("heading", { name: /Applied \(3\)/i }).closest("section");
+
+    expect(notAppliedSection).not.toBeNull();
+    expect(appliedSection).not.toBeNull();
+    expect(within(notAppliedSection as HTMLElement).getByRole("button", { name: /New Growth Role/i })).toBeInTheDocument();
+    expect(
+      within(notAppliedSection as HTMLElement).getByRole("button", { name: /Ready Analyst Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Applied Ops Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Interview Research Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Rejected Analyst Role/i }),
+    ).toBeInTheDocument();
+  });
+
+  it("lets Mia mark a Job Inbox role applied and not applied with quick actions", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-quick-status",
+          title: "Quick Status Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+      ],
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+
+    expect(screen.getByText(/Orbit Wallet · new/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    expect(screen.getByText(/Orbit Wallet · applied/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("applied");
+
+    await openNav(user, /Weekly Review/i);
+    expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Mark not applied/i }));
+
+    expect(screen.getByText(/Orbit Wallet · reviewed/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("reviewed");
   });
 
   it("counts a manual shortlisted status change in weekly review and records the manual shortlist activity", async () => {

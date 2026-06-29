@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ApplicationPackBuilder } from "./components/ApplicationPackBuilder";
+import type { PackStatusFilter } from "./components/ApplicationPackBuilder";
+import { matchesPackSearch, matchesPackStatusFilter } from "./components/ApplicationPackBuilder";
 import { BackupPanel } from "./components/BackupPanel";
 import { CandidateAssets } from "./components/CandidateAssets";
 import { JobDetail } from "./components/JobDetail";
@@ -64,6 +66,10 @@ const PACK_READY_STATUSES: JobStatus[] = [
 
 function getDefaultSelectedJob(jobs: Job[]): Job | undefined {
   return jobs.find((job) => PACK_READY_STATUSES.includes(job.status)) ?? jobs[0];
+}
+
+function getStatusAfterPackGeneration(status: JobStatus): JobStatus {
+  return NON_REGRESSING_PACK_STATUSES.includes(status) ? status : "application_pack_ready";
 }
 
 const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
@@ -175,6 +181,10 @@ export default function App() {
   const [state, setState] = useState<AppState>(() => loadAppState());
   const [view, setView] = useState<ViewId>("today");
   const [selectedJobId, setSelectedJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
+  const [selectedPackJobId, setSelectedPackJobId] = useState(() => getDefaultSelectedJob(state.jobs)?.id ?? "");
+  const [packJobSearch, setPackJobSearch] = useState("");
+  const [packStatusFilter, setPackStatusFilter] = useState<PackStatusFilter>("all");
+  const [keepSelectedPackJobVisible, setKeepSelectedPackJobVisible] = useState(false);
   const [briefingStatus, setBriefingStatus] = useState<BriefingStatus>("idle");
   const [briefingError, setBriefingError] = useState("");
   const [todayVisitKey, setTodayVisitKey] = useState(1);
@@ -183,21 +193,6 @@ export default function App() {
   const selectedJob = useMemo(
     () => state.jobs.find((job) => job.id === selectedJobId) ?? getDefaultSelectedJob(state.jobs),
     [selectedJobId, state.jobs],
-  );
-  const selectedPackJob = useMemo(
-    () => {
-      if (selectedJob) {
-        return selectedJob;
-      }
-
-      const savedPackJob = state.jobs.find((job) => state.packs.some((pack) => pack.jobId === job.id));
-      if (savedPackJob) {
-        return savedPackJob;
-      }
-
-      return state.jobs.find((job) => PACK_READY_STATUSES.includes(job.status));
-    },
-    [selectedJob, state.jobs, state.packs],
   );
   const followUpReminders = useMemo(() => {
     const today = formatLocalDate();
@@ -232,7 +227,11 @@ export default function App() {
     if (!selectedJob && defaultSelectedJob) {
       setSelectedJobId(defaultSelectedJob.id);
     }
-  }, [selectedJob, state.jobs]);
+
+    if (!state.jobs.some((job) => job.id === selectedPackJobId) && defaultSelectedJob) {
+      setSelectedPackJobId(defaultSelectedJob.id);
+    }
+  }, [selectedJob, selectedPackJobId, state.jobs]);
 
   useEffect(() => {
     if (view !== "today") {
@@ -292,9 +291,17 @@ export default function App() {
   function addJob(job: Job) {
     setState((current) => ({ ...current, jobs: [job, ...current.jobs] }));
     setSelectedJobId(job.id);
+    setSelectedPackJobId(job.id);
+    setKeepSelectedPackJobVisible(false);
   }
 
   function updateJob(job: Job) {
+    if (job.id === selectedPackJobId) {
+      const staysSearchVisible = matchesPackSearch(job, packJobSearch);
+      const staysFilterVisible = matchesPackStatusFilter(job, packStatusFilter);
+      setKeepSelectedPackJobVisible(staysSearchVisible && !staysFilterVisible);
+    }
+
     setState((current) => {
       const previousJob = current.jobs.find((item) => item.id === job.id);
       const statusChanged = previousJob && previousJob.status !== job.status;
@@ -324,15 +331,25 @@ export default function App() {
   }
 
   function savePack(pack: ApplicationPack) {
+    const selectedPackJob = state.jobs.find((job) => job.id === pack.jobId);
+    if (selectedPackJob) {
+      const nextJob = {
+        ...selectedPackJob,
+        status: getStatusAfterPackGeneration(selectedPackJob.status),
+      };
+      const staysSearchVisible = matchesPackSearch(nextJob, packJobSearch);
+      const staysFilterVisible = matchesPackStatusFilter(nextJob, packStatusFilter);
+      setSelectedPackJobId(pack.jobId);
+      setKeepSelectedPackJobVisible(staysSearchVisible && !staysFilterVisible);
+    }
+
     setState((current) => ({
       ...current,
       jobs: current.jobs.map((job) =>
         job.id === pack.jobId
           ? {
               ...job,
-              status: NON_REGRESSING_PACK_STATUSES.includes(job.status)
-                ? job.status
-                : "application_pack_ready",
+              status: getStatusAfterPackGeneration(job.status),
             }
           : job,
       ),
@@ -519,17 +536,33 @@ export default function App() {
         )}
 
         {view === "pack" &&
-          (selectedPackJob ? (
+          (state.jobs.length > 0 ? (
             <ApplicationPackBuilder
               candidate={state.candidate}
-              job={selectedPackJob}
-              pack={state.packs.find((pack) => pack.jobId === selectedPackJob.id)}
+              jobs={state.jobs}
+              selectedJobId={selectedPackJobId}
+              searchQuery={packJobSearch}
+              statusFilter={packStatusFilter}
+              keepSelectedJobVisible={keepSelectedPackJobVisible}
+              packs={state.packs}
+              onSelectJob={(jobId) => {
+                setSelectedPackJobId(jobId);
+                setKeepSelectedPackJobVisible(false);
+              }}
+              onSearchChange={(query) => {
+                setPackJobSearch(query);
+                setKeepSelectedPackJobVisible(false);
+              }}
+              onStatusFilterChange={(filter) => {
+                setPackStatusFilter(filter);
+                setKeepSelectedPackJobVisible(false);
+              }}
               onSavePack={savePack}
             />
           ) : (
             <section className="panel">
               <h2>Application Pack</h2>
-              <p>Select a shortlisted job from Job Inbox before generating a pack.</p>
+              <p>Add a job to Job Inbox before generating a pack.</p>
             </section>
           ))}
 

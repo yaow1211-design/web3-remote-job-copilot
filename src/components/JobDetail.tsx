@@ -52,6 +52,41 @@ export function JobDetail({ candidate, job, onUpdateJob }: JobDetailProps) {
         </div>
       ) : null}
 
+      <div className="status-action-row" aria-label="Job quick actions">
+        <button
+          className="secondary-button"
+          type="button"
+          onClick={() => onUpdateJob({ ...job, status: "applied" })}
+          disabled={job.status === "applied"}
+        >
+          Mark applied
+        </button>
+        <button
+          className="secondary-button"
+          type="button"
+          onClick={() => onUpdateJob({ ...job, status: "reviewed" })}
+          disabled={job.status === "reviewed"}
+        >
+          Mark not applied
+        </button>
+        <button
+          className="secondary-button"
+          type="button"
+          onClick={() => onUpdateJob({ ...job, status: "shortlisted" })}
+          disabled={job.status === "shortlisted"}
+        >
+          Shortlist
+        </button>
+        <button
+          className="secondary-button"
+          type="button"
+          onClick={() => onUpdateJob({ ...job, status: "archived" })}
+          disabled={job.status === "archived"}
+        >
+          Archive
+        </button>
+      </div>
+
       <div className="score-row">
         <div>
           <span className="score-number">{score.overallScore}</span>
