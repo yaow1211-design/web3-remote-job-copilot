@@ -72,6 +72,12 @@ async function openNav(user: ReturnType<typeof userEvent.setup>, name: RegExp) {
   await user.click(screen.getByRole("button", { name }));
 }
 
+function getPackTextareas() {
+  return screen
+    .getAllByRole("textbox")
+    .filter((element): element is HTMLTextAreaElement => element.tagName.toLowerCase() === "textarea");
+}
+
 function saveState(overrides: Record<string, unknown>) {
   const baseState = {
     version: 1,
@@ -323,7 +329,7 @@ describe("App", () => {
 
     expect(screen.getByText(/Tailored Summary/i)).toBeInTheDocument();
     expect(screen.getByText("I will review and send this manually.")).toBeInTheDocument();
-    const [recruiterDm, hiringManagerDm] = screen.getAllByRole("textbox");
+    const [recruiterDm, hiringManagerDm] = getPackTextareas();
     expect(recruiterDm).toHaveValue(expectedPack.recruiterDm);
     expect(hiringManagerDm).toHaveValue(expectedPack.hiringManagerDm);
     expect((recruiterDm as HTMLTextAreaElement).value).not.toContain("I will review and send this manually");
@@ -334,7 +340,7 @@ describe("App", () => {
     expect(screen.getByText(/Pack generated for human review/i)).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: /Application Pack/i }));
-    expect(screen.getAllByRole("textbox")[0]).toHaveValue(expectedPack.recruiterDm);
+    expect(getPackTextareas()[0]).toHaveValue(expectedPack.recruiterDm);
   });
 
   it("marks a non-applied pack job as application_pack_ready after generating a pack", async () => {
