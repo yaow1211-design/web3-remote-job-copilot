@@ -392,6 +392,46 @@ describe("App", () => {
     expect(screen.getAllByText(/Orbit Wallet's Shortlisted Pack Role role/i).length).toBeGreaterThan(0);
   });
 
+  it("keeps a generated fallback-selected pack visible when its job leaves the active status filter", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-new-hidden",
+          title: "Previously Selected Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-fallback-shortlisted-pack",
+          title: "Fallback Shortlisted Role",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.click(screen.getByRole("button", { name: /Previously Selected Growth Role Orbit Wallet new/i }));
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+
+    expect(screen.getByRole("heading", { name: /Fallback Shortlisted Role · Atlas Fintech/i })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getByRole("heading", { name: /Fallback Shortlisted Role · Atlas Fintech/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Fallback Shortlisted Role Atlas Fintech application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/Atlas Fintech's Fallback Shortlisted Role role/i).length).toBeGreaterThan(0);
+  });
+
   it("does not regress an applied job when generating a pack", async () => {
     const user = userEvent.setup();
 

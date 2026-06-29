@@ -332,13 +332,14 @@ export default function App() {
 
   function savePack(pack: ApplicationPack) {
     const selectedPackJob = state.jobs.find((job) => job.id === pack.jobId);
-    if (selectedPackJob && selectedPackJob.id === selectedPackJobId) {
+    if (selectedPackJob) {
       const nextJob = {
         ...selectedPackJob,
         status: getStatusAfterPackGeneration(selectedPackJob.status),
       };
       const staysSearchVisible = matchesPackSearch(nextJob, packJobSearch);
       const staysFilterVisible = matchesPackStatusFilter(nextJob, packStatusFilter);
+      setSelectedPackJobId(pack.jobId);
       setKeepSelectedPackJobVisible(staysSearchVisible && !staysFilterVisible);
     }
 
