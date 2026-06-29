@@ -325,6 +325,13 @@ select {
   gap: 12px;
 }
 
+.status-action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
 .contact-actions {
   display: flex;
   flex-wrap: wrap;

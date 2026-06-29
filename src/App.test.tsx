@@ -610,6 +610,43 @@ describe("App", () => {
     expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
   });
 
+  it("lets Mia mark a Job Inbox role applied and not applied with quick actions", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-quick-status",
+          title: "Quick Status Analyst",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+      ],
+      activities: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+
+    expect(screen.getByText(/Orbit Wallet · new/i)).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: /Mark applied/i }));
+
+    expect(screen.getByText(/Orbit Wallet · applied/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("applied");
+
+    await openNav(user, /Weekly Review/i);
+    expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
+
+    await openNav(user, /Job Inbox/i);
+    await user.click(screen.getByRole("button", { name: /Mark not applied/i }));
+
+    expect(screen.getByText(/Orbit Wallet · reviewed/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Status/i)).toHaveValue("reviewed");
+  });
+
   it("counts a manual shortlisted status change in weekly review and records the manual shortlist activity", async () => {
     const user = userEvent.setup();
 
