@@ -68,6 +68,10 @@ function getDefaultSelectedJob(jobs: Job[]): Job | undefined {
   return jobs.find((job) => PACK_READY_STATUSES.includes(job.status)) ?? jobs[0];
 }
 
+function getStatusAfterPackGeneration(status: JobStatus): JobStatus {
+  return NON_REGRESSING_PACK_STATUSES.includes(status) ? status : "application_pack_ready";
+}
+
 const MANUAL_STATUS_ACTIVITY_BY_STATUS: Partial<
   Record<JobStatus, Pick<ApplicationActivity, "actionType" | "result">>
 > = {
@@ -327,15 +331,24 @@ export default function App() {
   }
 
   function savePack(pack: ApplicationPack) {
+    const selectedPackJob = state.jobs.find((job) => job.id === pack.jobId);
+    if (selectedPackJob && selectedPackJob.id === selectedPackJobId) {
+      const nextJob = {
+        ...selectedPackJob,
+        status: getStatusAfterPackGeneration(selectedPackJob.status),
+      };
+      const staysSearchVisible = matchesPackSearch(nextJob, packJobSearch);
+      const staysFilterVisible = matchesPackStatusFilter(nextJob, packStatusFilter);
+      setKeepSelectedPackJobVisible(staysSearchVisible && !staysFilterVisible);
+    }
+
     setState((current) => ({
       ...current,
       jobs: current.jobs.map((job) =>
         job.id === pack.jobId
           ? {
               ...job,
-              status: NON_REGRESSING_PACK_STATUSES.includes(job.status)
-                ? job.status
-                : "application_pack_ready",
+              status: getStatusAfterPackGeneration(job.status),
             }
           : job,
       ),

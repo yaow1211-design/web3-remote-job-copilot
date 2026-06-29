@@ -355,6 +355,43 @@ describe("App", () => {
     expect(screen.getByText(/Example Global Fintech · application_pack_ready/i)).toBeInTheDocument();
   });
 
+  it("keeps a generated pack visible when its job leaves the active status filter", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-shortlisted-pack",
+          title: "Shortlisted Pack Role",
+          company: "Orbit Wallet",
+          status: "shortlisted",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-other-shortlisted-pack",
+          title: "Other Shortlisted Role",
+          company: "Atlas Fintech",
+          status: "shortlisted",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "shortlisted");
+    await user.click(screen.getByRole("button", { name: /Shortlisted Pack Role Orbit Wallet shortlisted/i }));
+    await user.click(screen.getByRole("button", { name: /Generate pack/i }));
+
+    expect(screen.getByRole("heading", { name: /Shortlisted Pack Role · Orbit Wallet/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Shortlisted Pack Role Orbit Wallet application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/Orbit Wallet's Shortlisted Pack Role role/i).length).toBeGreaterThan(0);
+  });
+
   it("does not regress an applied job when generating a pack", async () => {
     const user = userEvent.setup();
 
@@ -700,6 +737,73 @@ describe("App", () => {
 
     await openNav(user, /Weekly Review/i);
     expect(screen.getByText(/Applied: 1/i)).toBeInTheDocument();
+  });
+
+  it("groups Job Inbox roles by not-applied and applied status", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-new-group",
+          title: "New Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-ready-group",
+          title: "Ready Analyst Role",
+          company: "Northstar Research",
+          status: "application_pack_ready",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-applied-group",
+          title: "Applied Ops Role",
+          company: "Atlas Fintech",
+          status: "applied",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-interview-group",
+          title: "Interview Research Role",
+          company: "Protocol Labs",
+          status: "interview",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-rejected-group",
+          title: "Rejected Analyst Role",
+          company: "Nova DAO",
+          status: "rejected",
+        },
+      ],
+    });
+
+    renderApp();
+
+    await openNav(user, /Job Inbox/i);
+
+    const notAppliedSection = screen.getByRole("heading", { name: /Not applied \(2\)/i }).closest("section");
+    const appliedSection = screen.getByRole("heading", { name: /Applied \(3\)/i }).closest("section");
+
+    expect(notAppliedSection).not.toBeNull();
+    expect(appliedSection).not.toBeNull();
+    expect(within(notAppliedSection as HTMLElement).getByRole("button", { name: /New Growth Role/i })).toBeInTheDocument();
+    expect(
+      within(notAppliedSection as HTMLElement).getByRole("button", { name: /Ready Analyst Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Applied Ops Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Interview Research Role/i }),
+    ).toBeInTheDocument();
+    expect(
+      within(appliedSection as HTMLElement).getByRole("button", { name: /Rejected Analyst Role/i }),
+    ).toBeInTheDocument();
   });
 
   it("lets Mia mark a Job Inbox role applied and not applied with quick actions", async () => {

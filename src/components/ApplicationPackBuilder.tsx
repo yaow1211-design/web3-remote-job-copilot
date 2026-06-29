@@ -1,4 +1,5 @@
 import { generateApplicationPack } from "../domain/applicationPack";
+import { isAppliedStatus } from "../domain/jobStatus";
 import { scoreJob } from "../domain/scoring";
 import type { ApplicationPack, CandidateAsset, Job } from "../domain/types";
 
@@ -36,7 +37,7 @@ const FILTER_LABELS: Record<PackStatusFilter, string> = {
 };
 
 export function isAppliedForFilter(job: Job): boolean {
-  return ["applied", "interview", "rejected"].includes(job.status);
+  return isAppliedStatus(job.status);
 }
 
 export function matchesPackStatusFilter(job: Job, filter: PackStatusFilter): boolean {

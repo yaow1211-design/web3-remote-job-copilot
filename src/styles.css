@@ -314,6 +314,20 @@ select {
   padding-top: 14px;
 }
 
+.pipeline-groups {
+  display: grid;
+  gap: 16px;
+}
+
+.pipeline-group {
+  display: grid;
+  gap: 8px;
+}
+
+.pipeline-group h3 {
+  margin: 0;
+}
+
 .outreach-form {
   margin-bottom: 20px;
 }
