@@ -509,6 +509,73 @@ describe("App", () => {
     expect(screen.getByRole("button", { name: /Generate pack/i })).toBeDisabled();
   });
 
+  it("filters Application Pack jobs by applied and not-applied groups", async () => {
+    const user = userEvent.setup();
+
+    saveState({
+      jobs: [
+        {
+          ...sampleJobs[0],
+          id: "job-not-applied",
+          title: "Not Applied Growth Role",
+          company: "Orbit Wallet",
+          status: "new",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-pack-ready",
+          title: "Pack Ready Analyst",
+          company: "Northstar Research",
+          status: "application_pack_ready",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-applied",
+          title: "Applied Product Ops",
+          company: "Atlas Fintech",
+          status: "applied",
+        },
+        {
+          ...sampleJobs[1],
+          id: "job-interview",
+          title: "Interview Stage Analyst",
+          company: "Protocol Labs",
+          status: "interview",
+        },
+      ],
+      packs: [],
+    });
+
+    renderApp();
+
+    await openNav(user, /Application Pack/i);
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "not_applied");
+
+    expect(screen.getByRole("button", { name: /Not Applied Growth Role Orbit Wallet new/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Pack Ready Analyst Northstar Research application_pack_ready/i }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Applied Product Ops Atlas Fintech applied/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Interview Stage Analyst Protocol Labs interview/i }),
+    ).not.toBeInTheDocument();
+
+    await user.selectOptions(screen.getByLabelText(/Filter jobs/i), "applied");
+
+    expect(
+      screen.queryByRole("button", { name: /Not Applied Growth Role Orbit Wallet new/i }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("button", { name: /Pack Ready Analyst Northstar Research application_pack_ready/i }),
+    ).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Applied Product Ops Atlas Fintech applied/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Interview Stage Analyst Protocol Labs interview/i }),
+    ).toBeInTheDocument();
+  });
+
   it("records manual outreach activity as sent manually by Mia", async () => {
     const user = userEvent.setup();
 
