@@ -1,0 +1,561 @@
+{
+  "id": "briefing-2026-07-07",
+  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T04:27:37.448Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "283c8682",
+        "title": "Business Analyst",
+        "company": "Blockchain.com",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-blockchain-com-1134457",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-blockchain-com-1134457",
+        "jdText": "Blockchain is connecting the world to the future of finance. As the most trusted and fastest-growing global crypto company, it helps millions of people worldwide safely access cryptocurrency. Since its inception in 2011, Blockchain has earned the trust of over 90 million wallet holders and more than 40 million verified users, facilitating over $1 trillion in crypto transactions. Blockchain.com is looking for a Business Analyst to support strategic products, markets, and customer segments within the Consumer business. This is a high-impact analytical and product-oriented role focused on business performance, growth opportunities, customer insights, product execution, and operational excellence. You will work closely with Business Leads, Product, Engineering, Trading, Risk, Compliance, Marketing, Finance, and Regional teams to help identify opportunities, shape product priorities, build business cases, track performance, and support the launch of new initiatives. WHAT YOU WILL DO Support the strategy, roadmap, and commercial performance of key business areas within Consumer. Analyze business performance across users, activity, revenue, margin, retention, volume, conversion, and P&amp;L. Work with Business Leads and Product Managers to identify product opportunities, define problem statements, and support prioritization. Translate business goals, customer insights, and data analysis into clear product recommendations. Build dashboards, reports, and analysis to help teams understand performance, diagnose issues, and identify opportunities. Support business cases for new products, features, markets, or customer propositions, including market size, customer demand, economics, operational requirements, and risk. Partner with Product and Engineering to help define requirements, clarify trade-offs, and support delivery of customer-facing features. Support product launches by coordinating inputs across Product, Engineering, Marketing, CRM, Growth, Compliance, Operations, and Regional teams. Work with Trading, Treasury, Risk, Finance, and Compliance to analyze pricing, economics, risk controls, and profitability. Track competitors, customer behavior, and market trends to identify opportunities to differentiate and win share. Help establish a clear operating cadence around performance tracking, experimentation, launches, product reviews, and business reviews. WHAT YOU WILL NEED Experience in business analysis, product analytics, product operations, strategy, growth, fintech, crypto, payments, consulting, or consumer technology. Strong analytical skills and comfort working with data, business modeling, funnels, unit economics, pricing, conversion, retention, and profitability. Ability to turn data, customer insights, and business problems into clear product recommendations. Strong product judgment and strong interest in building customer-facing products. Ability to work closely with Product and Engineering teams, including helping define requirements, prioritize opportunities, and support execution. Strong communication skills and ability to present findings clearly to cross-functional stakeholders. Comfort operating in a fast-moving, ambiguous environment. High ownership, attention to detail, and willingness to work across both strategic analysis and hands-on product execution. Interest in crypto, fintech, consumer products, and high-growth businesses. COMPENSATION &amp; PERKS Full-time salary based on experience and meaningful equity in an industry-leading company Hybrid model (remote &amp; on-site setup is mandatory) Unlimited vacation policy; work hard and take time when you need it Apple equipment The opportunity to be a key player and build your career at a rapidly expanding, global technology company in an emerging field Flexible work culture Blockchain is committed to diversity and inclusion in the workplace and is proud to be an equal opportunity employer. We prohibit discrimination and harassment of any kind based on race, religion, color, national origin, gender, gender expression, sex, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law. This policy applies to all employment practices within our organization, including hiring, recruiting, promotion, termination, layoff, recall, leave of absence, and apprenticeship. Blockchain makes hiring decisions based solely on qualifications, merit, and business needs at the time. You may contact our Data Protection Officer by email at dpo@blockchain.com. Your personal data will be processed for the purposes of managing Controllerâs recruitment related activities, which include setting up and conducting interviews and tests for applicants, evaluating and assessing the results thereto, and as is otherwise needed in the recruitment and hiring processes. Such processing is legally permissible under Art. 6(1)(f) of Regulation (EU) 2016/679 (General Data Protection Regulation) as necessary for the purposes of the legitimate interests pursued by the Controller, which are the solicitation, evaluation, and selection of applicants for employment. Your personal data will be shared with Greenhouse Software, Inc., a cloud services provider located in the United States of America and engaged by Controller to help manage its recruitment and hiring process on Controllerâs behalf. Accordingly, if you are located outside of the United States, your personal data will be transferred to the United States once you submit it through this site. Because the European Union Commission has determined that United States data privacy laws do not ensure an adequate level of protection for personal data collected from EU data subjects, the transfer will be subject to appropriate additional safeguards under the standard contractual clauses. Your personal data will be retained by Controller as long as Controller determines it is necessary to evaluate your application for employment. Under the GDPR, you have the right to request access to your personal data, to request that your personal data be rectified or erased, and to request that processing of your personal data be restricted. You also have the right to data portability. In addition, you may lodge a complaint with an EU supervisory authority. Please mention the word **FRUITFUL** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [
+          "crypto",
+          "DeFi",
+          "blockchain",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 82,
+        "productOpsFit": 100,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Blockchain.com is hiring for Business Analyst. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "fb34803a",
+        "title": "Asset Management Analyst Multifamily Real Estate",
+        "company": "Bluecore Residential",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-asset-management-analyst-multifamily-real-estate-bluecore-residential-1134402",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-asset-management-analyst-multifamily-real-estate-bluecore-residential-1134402",
+        "jdText": "100% REMOTE Bluecore Residential is a privately owned real estate investment company headquartered in Newport Beach, CA. Bluecore principals have owned and operated a multifamily portfolio totaling more than 16,000 units located in high-growth secondary markets. Bluecore's competitive advantage stems from its long-standing industry relationships and its fully integrated property management, asset management, and data analytics platform. Since 2018, Bluecore principals have been investing preferred equity in multifamily assets on behalf of large institutional investors. In 2022, Bluecore principals were the largest seller of multifamily in the US and has consistently delivered exceptional results, with deal-level IRRs exceeding 30% annually since inception. Going forward, Bluecore is looking to acquire high-quality multifamily assets across the Sunbelt and continue to invest preferred equity in multifamily development projects. Bluecore is adding an Asset Management Analyst to sit in the intersection of Operations and the Investment team. This role offers direct exposure to our Founders and they will working closely with senior leadership. Our Asset Management Analyst will support budgeting, underwriting analysis, and operational performance monitoring across our multifamily portfolio. This role is responsible for ensuring that asset-level operating performance is measured against underwriting assumptions and annual budgets â and for explaining why it diverges when it does. This is a high-visibility seat with direct exposure to portfolio leadership and a strong pathway into asset management or acquisitions. Key Responsibilities Asset Management Prepare monthly and quarterly variance-to-budget analyses, decomposing variances into operational drivers (occupancy, lease trade-outs, renewals, controllable expenses), market conditions (rent trends, concessions, supply), and comparable property performance Maintain and enhance market comp sets; track submarket rent, occupancy, and concession data to contextualize asset performance Partner with Property Management to identify performance gaps, validate budget assumptions, and track corrective action plans Build and maintain Excel models and reporting tools for budget-vs-actual tracking, trend analysis, and portfolio rollups Extract and analyze property management system data (Yardi or similar) to support recurring reporting and ad hoc analysis Analyze Underwriting Analyze underwriting budgets and operating assumptions for multifamily assets at acquisition and throughout the hold period Support investment reporting materials, including memos, return analysis, and scenario modeling Assist in due diligence processes, including review of third-party reports and financial data Budgeting Support the annual budgeting process: build, model, and stress-test property-level operating budgets in partnership with Asset Management and Property Management Investor Reporting Support investor reporting with asset-level performance narratives and supporting schedules Assist Asset Management with hold/sell analyses, refinancing support, and business plan updates as needed AI &amp; Process Optimization Leverage AI tools (e.g., Claude, ChatGPT, Excel integrations) to streamline analysis, underwriting, reporting, and workflows Help develop and refine internal processes to improve efficiency and scalability Identify opportunities to automate recurring analyses and enhance data quality Requirements Bachelor's degree in Finance, Economics, Accounting, Business, or a related field You have 1-4 years of experience in multifamily or commercial real estate â asset management, property accounting, acquisitions, FP&amp;A, or valuation/appraisal backgrounds all considered You have strong financial modeling skills in Excel, including the ability to build and audit models You have familiarity with multifamily operating statements and key metrics, including NOI, economic occupancy, trade-outs, and expense ratios Preferred Requirements: You have exposure to AI tools for investment workflows You have experience with Yardi, RealPage, Entrata, or comparable property management systems Benefits Performance Bonuses - Our corporate team participates in performance-based bonuses. Paid Time Off - Unlimited DTO starting upon hire. Mentorship- Work with an experienced team of multifamily investment professionals. Holiday Pay - 10 full paid holidays. Paid Volunteer Hours - 8 hours of paid volunteer time you can use throughout the year. Housing Discounts - 25% off rent available for all employees off any unit. Comprehensive Insurance Benefits - Medical PPO, HDHP, FSA, HSA with employer match, Dental, Vision, STD, &amp; LTD. Retirement Plan - 401K with a 25% company match up to 6%. Travel &amp; Personal Discounts - Company rate National/Enterprise rental cars for leisure travel, plus additional discounts with Verizon (18% discount) and Expedia (10% discount). Certification Reimbursement - Full reimbursement for approved industry related certifications, including CAM, CPO, EPA, and more! Tech Forward &amp; Transparent Culture - Innovative internal software to make your job easier! Cultural Appeal - We run on transparency and healthy debate (No Fear of Conflict); you are encouraged to appeal and share what is not working well. Your voice truly matters! EOE Please mention the word **REASONABLE** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 83,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Bluecore Residential is hiring for Asset Management Analyst Multifamily Real Estate. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4f7fb54b",
+        "title": "Manager HR Business Partner",
+        "company": "LinkedIn",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-manager-hr-business-partner-linkedin-1134451",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-manager-hr-business-partner-linkedin-1134451",
+        "jdText": "LinkedIn is the world's largest professional network, built to create economic opportunity for every member of the global workforce. Our products help people make powerful connections, discover exciting opportunities, build necessary skills, and gain valuable insights every day. We're also committed to providing transformational opportunities for our own employees by investing in their growth. We aspire to create a culture that's built on trust, care, inclusion, and fun â where everyone can succeed. Join us to transform the way the world works. Job Description At LinkedIn, our approach to flexible work is centered on trust and optimized for culture, connection, clarity, and the evolving needs of our business. This role may be remote or hybrid. At LinkedIn, hybrid roles are performed both from home and from a LinkedIn office on select days, as determined by the business needs of the team. Remote roles are performed from the designated home work location upon time of hire, and any changes to this home work location requires a review of remote status and approval. This role can be based in San Francisco, Mountain View, Chicago or New York. The Seniorâ¯Manager, HRBP Consulting and Solutions (C&amp;S) Behavior Management role, will lead a team of HR Business Partners responsible for advising and consulting people leaders on employee conduct, workplace behavior, and disciplinary and sensitive employee matters. The role ensures consistent, fair, and compliant resolution of employee concerns while enabling people leaders to make confident, timely people decisions. The Senior Manager serves as a trusted partner to HR, Legal, Employee Relations, Compliance, and business leaders, driving operational excellence, risk mitigation, manager capability, and a positive employee experience. This leader balances sound judgment with business pragmatism, helping scale a high-quality HR partnership model across regions and functions. The Senior Manager will report to the Sr Director, Consulting &amp; Solutions and lead a team of HRBPs focused on behavior management. The successful candidate willâ¯haveâ¯strong HR business partnering experience, be driven and self-directed,â¯have strongâ¯managementâ¯capability,â¯andâ¯demonstrate operational excellence.â¯â¯ Responsibilities:â¯â¯ Lead and Develop a Team of HR Business Partners Hire, coach, develop, and support a team of HR Business Partners specializing in behavior management. Establish a culture of accountability, inclusion, collaboration, and continuous learning. Provide guidance on complex and sensitive employee situations requiring escalated judgment. Drive consistency in decision-making, documentation, and case management practices across the team. Calibrate recommendations and outcomes to ensure fair, consistent, and equitable treatment. Provide Strategic Consultation on Behavior and Conduct Matters Serve as the escalation point for high-risk or complex behavior, conduct, and disciplinary cases. Ensure team is appropriately partnering with leaders to address concerns related to workplace behavior, policy adherence, interpersonal conflict, and team effectiveness. Ensure alignment between business needs, company values, risk mitigation, and employee experience considerations. Drive Manager Effectiveness Build manager capability through teamâs coaching, consultation, and scalable guidance. Identify patterns and recurring challenges impacting manager effectiveness and organizational health. Develop frameworks, training, and best practices that improve leadership decision-making. Enable leaders to navigate employee issues with confidence while maintaining fairness and consistency. Risk Management and Compliance Ensure all employee matters are handled in accordance with company policy, employment law, and regional requirements. Partner closely with Legal, Employee Relations, Compliance, and Functional HRBPs on sensitive matters. Monitor risk trends and proactively recommend actions to mitigate organizational exposure. Maintain high standards of confidentiality and professionalism. Operational Excellence Establish and continuously improve case management processes, service delivery standards, and team operating rhythms. Leverage data and reporting to identify trends, drive insights, influence HR initiatives, and improve outcomes. Monitor team capacity, service levels, and quality standards. Drive consistency across regions while balancing local employment law and cultural considerations. Cross-Functional Partnership Build strong, collaborative partnerships with HRBPs, Legal, Employee Relations, Compliance, and HR Operations teams. Contribute expertise to organization-wide talent, culture, and workforce initiatives. Qualifications Basic Qualifications:â¯ 10+ years of progressive Human Resources experienceâ¯requiredâ¯with significant focus on manager consulting and performance and behavior management. 3+ years experience supporting global organizations in a centralized HRBP or shared services model Preferred Qualifications:â¯ 3+â¯years of direct people management experienceâ¯or equivalentâ¯â¯ Strong knowledge of employment law and HR practices across multiple geographies Ability to exercise sound judgment in ambiguous and sensitive situations. Ability to manage, coach, mentor and motivate a diverse global team while ensuring team and individual accountability and performance standards areâ¯metâ¯â¯ Experience implementing HR and operational programs andâ¯strategies Background and familiarity with HR functional areasâ¯ Ability to prioritize, multitask and manage multiple projects successfully in a fast-paced and dynamicâ¯environmentâ¯ Strong attention to detail and commitment to delivery of quality/accurate work productsâ¯ Logical reasoning, analytical, and problem-solving skills to troubleshoot and overcomeâ¯challengesâ¯ Experience working in a highly-matrix and global organization and knows how to collaborate effectively with multiple stakeholders Proven leadership experience, with the maturity and ability to influence stakeholders and gain buy-in Outstanding interpersonal and communication skills, both verbal and written Suggested Skills: Behavior Management People Leadership Cross Functional Collaboration Risk Mitigation Strategic HR Partnership LinkedIn is committed to fair and equitable compensation practices. The pay range for this role is $144,000 to $234,000. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to skill set, depth of experience, certifications, and specific work location. This may be different in other locations due to differences in the cost of labor. The total compensation package for this position may also include annual performance bonus, stock, benefits and/or other applicable incentive compensation plans. For more information, visit https://careers.linkedin.com/benefits. Additional Information Equal Opportunity Statement We seek candidates with a wide range of perspectives and backgrounds and we are proud to be an equal opportunity employer. LinkedIn considers qualified applicants without regard to race, color, religion, creed, gender, national origin, age, disability, veteran status, marital status, pregnancy, sex, gender expression or identity, sexual orientation, citizenship, or any other legally protected class. LinkedIn is committed to offering an inclusive and accessible experience for all job seekers, including individuals with disabilities. Our goal is to foster an inclusive and accessible workplace where everyone has the opportunity to be successful. If you need a Reasonable Accommodation to search for a job opening, apply for a position, or participate in the interview process, connect with us and describe the specific Accommodation requested for a disability-related limitation. Fill out an Accommodation request here: https://app.smartsheet.com/b/form/b660a0327d044969abfd7a4e73d15c36 Reasonable accommodations are modifications or adjustments to the application or hiring process that would enable you to fully participate in that process. Examples of reasonable accommodations include but are not limited to: Documents in alternate formats or read aloud to you Having interviews in an accessible location Being accompanied by a service dog Having a sign language interpreter present for the interview A request for an accommodation will be responded to within three business days. However, non-disability related requests, such as following up on an application, will not receive a response. LinkedIn will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by LinkedIn, or (c) consistent with LinkedIn's legal duty to furnish information. San Francisco Fair Chance Ordinance Pursuant to the San Francisco Fair Chance Ordinance, LinkedIn will consider for employment qualified applicants with arrest and conviction records. Pay Transparency Policy Statement As a federal contractor, LinkedIn follows the Pay Transparency and non-discrimination provisions described at this link: https://lnkd.in/paytransparency. Global Data Privacy Notice and Compliance Posters for Job Candidates Please use this link to access documents that provide information about how LinkedIn handles the personal data of employees and job applicants, as well as the E-Verify Participation Notice and the Department of Justice Immigrant and Employee Rights Section Right to Work posters: https://www.linkedin.com/legal/candidate-portal. Please mention the word **SPLENDIDLY** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Mountain View, Mountain View, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 73,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "LinkedIn is hiring for Manager HR Business Partner. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "5d2b041e",
+        "title": "Associate Account Strategist Donut Studios",
+        "company": "New Engen",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-associate-account-strategist-donut-studios-new-engen-1134405",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-associate-account-strategist-donut-studios-new-engen-1134405",
+        "jdText": "WHY DONUT STUDIOS? At New Engen, we help brands grow, not just bigger, but smarter. Weâre a digital marketing agency that drives meaningful impact across the entire customer journey by integrating media, creative, analytics, influencer, and retail strategies into performance-driven campaigns. Donut Studios is our in-house creative studio, purpose-built to craft high-performing, platform-native, and digital content for the worldâs most ambitious brands. As a key part of New Engenâs suite of specialized solutions, alongside offerings like the Acorn Creator Suite - Donut Studios helps unlock breakthrough creative that drives results, fast. Weâre a collaborative group of strategists, content creators, copywriters, editors, designers, account managers, and more who are all in on helping brands, and each other, thrive. We work hard, stay humble, and build with purpose. What Youâll Do We're looking for an Account Coordinator to support one of our key enterprise client engagements. In this role, you'll partner closely with Account Strategists, Project Managers, and cross-functional teams to help keep projects organized, client communication flowing, and creative work moving from brief to delivery. This is an ideal opportunity for someone early in their career who's eager to build a strong foundation in account management while making an immediate impact. Support Strong Client Relationships Assist the Account Strategist with day-to-day client communication by preparing meeting materials, drafting status updates, tracking action items, and helping ensure every client interaction is thoughtful and organized. Keep Projects Organized Help maintain project documentation, account resources, client wikis, and internal trackers so teams always have accurate, up-to-date information. Support Creative Delivery Partner with Account Strategists and Project Managers to track deliverables across multiple campaigns, coordinate project intake, and help keep timelines on schedule. Stay One Step Ahead Monitor project progress, identify missing information, timeline risks, or potential blockers, and proactively communicate issues before they impact delivery. Champion Quality Review assets before delivery to ensure they meet project requirements, follow established processes, and are ready for client review. Collaborate Across Teams Work closely with Project Management, Creative Strategy, designers, copywriters, and production teams to keep communication clear, projects moving, and priorities aligned. Learn and Grow Every Day Build your knowledge of creative production, client services, and enterprise marketing while taking on increasing ownership and responsibility as you grow. What Youâll Need 1-2 years of experience in an account coordination, client services, marketing, or agency support role, preferably within a digital marketing, creative, or advertising agency. Strong organizational skills with the ability to manage multiple projects and competing priorities. Excellent written and verbal communication skills with a professional, client-focused approach. Exceptional attention to detail and a quality-first mindset. Experience working with project management platforms such as Asana or similar collaboration tools. A proactive attitude with the confidence to ask questions, solve problems, and follow through on commitments. Ability to thrive in a fast-paced, collaborative, remote environment while working across multiple time zones. Must reside or work within the Eastern Time Zone. Bonus Points If You Have Exposure to creative production, content, video, or design workflows. Experience with tools such as Frame.io, Figma, Airtable, Workfront, or Box. Familiarity with B2B, SaaS, technology, or enterprise clients. Experience supporting paid media, content marketing, or growth marketing programs. Internship or professional experience in digital marketing or creative production. SOME OF OUR PERKS Medical, Dental, Vision, Short/Long-Term Disability, Life/AD&amp;D 401k - Employer match HSA - Employer contributes Flexible Vacation &amp; PTO plan Paid Maternity / Paternity Paid Holidays Remote/Flex day schedule Laid back office environment The coolest team ;) Fun company events &amp; off-sites Salary Range: $50,000-$60,000 The range is applicable for the labor market where the role is intended to be hired. Final base salary is directly related to each candidate's qualifications and experience uniquely. New Engen is proud to have offices in Seattle, New York, and Northwest Arkansas, each one anchoring teams that drive creativity, collaboration, and culture. But great work isnât limited to those zip codes. We also support a distributed team of remote employees across the country, giving people the flexibility to do their best work wherever they are. We currently hire full-time employees in the following states: Arkansas, California, Colorado, Florida, Georgia, Illinois, Michigan, Missouri, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Virginia, Washington, and Wisconsin Letâs Build Whatâs Next Together â If youâre passionate about media and eager to make a meaningful impact with a team thatâs all in, weâd love to hear from you. Important Notice About Job Openings Please be aware of fraudulent job postings, consulting engagements, solicitations, or employment offers from suspicious sources. These attempts are often designed to steal your personal information or trick you into paying fees for recruitment or training services. New Engen does NOT charge any application, processing, or training fees at any stage of the recruitment or hiring process. All legitimate job openings will be posted directly on our careers page, and all communication about these roles will come exclusively from Recruitment outreach, conducted via email through our ATS, Greenhouse, and never through unsolicited text messages or the @newengen.online domain. If you have any concerns about the authenticity of any message claiming to be from New Engen, please contact us immediately at peopleteam@newengen.com before taking any further action. We take your security seriously and are here to support you, ensuring your job search is a safe, positive experience. Please mention the word **EMINENCE** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "New Engen is hiring for Associate Account Strategist Donut Studios. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "beff84c5",
+        "title": "Influencer Marketing Coordinator",
+        "company": "Nello",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-influencer-marketing-coordinator-nello-1134355",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-influencer-marketing-coordinator-nello-1134355",
+        "jdText": "We're looking for a highly organized and proactive Influencer Coordinator to own the day-to-day operations of our influencer and affiliate marketing programs. This role is ideal for someone who lives on TikTok and Instagram, understands creator culture deeply, and thrives on the behind-the-scenes execution that keeps influencer campaigns running at scale. You'll work closely with the Influencer Marketing Manager across creator partnerships, gifting and seeding logistics, campaign tracking, reporting, and calendar management - playing a key role in how we grow our creator ecosystem and drive performance. What You'll Do Assist in influencer outreach, onboarding, and ongoing relationship management Coordinate influencer gifting and product seeding end-to-end, including shipment tracking and follow-ups Maintain and update the influencer marketing calendar and campaign timelines Track and report on campaign performance metrics across TikTok, Instagram, and affiliate programs Manage reporting dashboards, creator deliverables, and budget trackers Lead creator research to identify emerging talent and platform trends Manage contracts, promo codes, and affiliate link organization Work cross-functionally with creative, growth, and content teams to keep campaigns on track Requirements 1-3 years of experience in influencer marketing, creator partnerships, or a related role Active user of TikTok and Instagram with a sharp eye for trends and emerging creators Extremely organized with strong attention to detail - you don't let things fall through the cracks Comfortable managing data and performance metrics in spreadsheets Strong communicator with excellent time management skills Self-starter who thrives in a fast-paced, scrappy environment Experience with Shopify, Superfiliate, ShopMy, or similar affiliate/influencer tools is a strong plus Experience in vitamins &amp; supplements category a plus Benefits Full-time Remote (EST hours preferred) Direct exposure to leadership and founders Competitive compensation - commensurate with experience Please mention the word **REGALLY** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-01",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Nello is hiring for Influencer Marketing Coordinator. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "af379b9b",
+        "title": "Operations Supervisor Healthcare Atlanta",
+        "company": "Belle",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-operations-supervisor-healthcare-atlanta-belle-1134404",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-operations-supervisor-healthcare-atlanta-belle-1134404",
+        "jdText": "Belle is a fast-growing healthcare company revolutionizing in-home care â starting from the feet up. More than 25 million U.S. seniors can no longer safely care for their feet, contributing to over $38 billion in avoidable medical costs each year. Belle trains and deploys a network of Community Health Workers â known as Belle Technicians â to deliver in-home foot exams, preventive care, and care management. Backed by advanced data science, our care model detects emerging health risks early, often before they escalate. When issues arise, our telehealth team and nurses coordinate follow-up care and take action. The result? Belle delivers clinical outcomes on par with blockbuster drugs, without a single pill. Our model helps prevent complications, reduce hospital visits, and improve quality of life â all with care that people genuinely love. Our mission: Bring Joy to Healthcare. Join us if our cause inspires you! About This Role As an Operations Supervisor in Atlanta, Georgia, you'll drive growth, build a strong team, and create community impact in your designated market. This role blends recruitment, market development, and operational excellence, ensuring seniors receive life-changing in-home care. You'll be actively engaged in technician development, field shadowing, performance reviews, and issue resolution. You'll also collaborate closely with cross-functional teams to ensure every appointment is delivered with consistency, professionalism, and warmth. You will also serve as the local face of the company â building trust with your team, ensuring quality standards are met, and collaborating cross-functionally to help Belle scale successfully. You'll work mainly remote but need to be available in the service area to shadow the field and provide support. Key Responsibilities Team Leadership &amp; Development Lead technician hiring and onboarding in partnership with centralized recruiting and training teams Conduct field-based shadowing and provide real-time coaching Facilitate technician check-ins and performance reviews Support technicians in meeting certification and compliance requirements Foster a connected and motivated team culture with ongoing engagement initiatives Provide proactive coaching on hospitality, documentation, attendance, and professionalism Operational Oversight Monitor KPI's such as attendance, appointment fulfillment, and CSAT Ensure proper execution of Belle's care model and scope of practice Manage documentation audits and follow up on quality concerns Track technician availability and support schedule optimization Report safety concerns, policy violations, or compliance issues as needed Collaborate with HR, Compliance, and Member Experience teams on escalations Requirements Qualifications Bachelor's degree in Business, Healthcare, or a related field preferred Prior experience managing a field-based or remote team (healthcare, retail, or service industries ideal) Strong people leadership and coaching abilities Highly organized, tech-savvy, and action-oriented Excellent communication skills â clear, direct, and compassionate Familiarity with scheduling, attendance, or workforce tools is a plus Resides in Atlanta, Georgia and able to travel locally to support CHWs in the field (15-25% expected) Benefits Competitive compensation based on experience Incentive Bonus paid quarterly Health, Dental, and Vision Insurance Benefits 401k PTO, Sick, and Paid Holidays Opportunity for significant career growth and expansion of responsibilities Ability to reshape an industry and protect lives Please mention the word **DECISIVENESS** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Atlanta, Atlanta, Georgia, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Belle is hiring for Operations Supervisor Healthcare Atlanta. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "cdbe6884",
+        "title": "Designer",
+        "company": "Forbes",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-designer-forbes-1134352",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-designer-forbes-1134352",
+        "jdText": "Forbes is an iconic global media brand that has symbolized success for over a century. Fueled by journalism that informs and inspires, Forbes spotlights the doers and doings shaping industries, achieving success and making an impact on the world. Forbes connects and convenes the most influential communities ranging from billionaires, business leaders and rising entrepreneurs to creators and innovators. The Forbes brand reaches more than 140 million people monthly worldwide through its trusted journalism, signature ForbesLive events and 49 licensed local editions in 81 countries. The award-winning Forbes Content &amp; Design Studio is looking for a talented, driven Designer to join our Multiplatform Content Design team. Leveraging visual, UX, and motion design, we produce high-volume, high-impact digital experiences in partnership with internal teams across Forbes and with many of the world's leading brands. This is a high-growth opportunity for an ambitious creative who wants their work seen at scale on a team dedicated to craft, experimentation, and continuous education. You'll bring sophisticated visual taste, a discerning eye for packaging, genuine empathy for the user, and a meticulous attention to detail. Because the role is deeply collaborative, strong communication and the ability to work well with a range of partners are just as important as your design skills. Responsibilities Premium ContentÂ Craft compelling, user-focused designs for on- and off-platform brand experiencesâfrom immersive article packages and landing pages to interactive features and video. Translate client briefs and content goals into clear visual concepts, owning the design from initial direction through polished final delivery. Partner closely with branded content editors to build coherent, end-to-end content experiences where design and narrative reinforce each other. Uphold both Forbes' editorial standards and each client's brand guidelines, balancing creative ambition with practical execution across multiple concurrent projects. Social Design and produce engaging, platform-native social content, including carousels, GIFs, motion graphics, and short-form video, tailored to the conventions and audiences of each channel. Develop social-first concepts that extend premium campaigns and stand on their own, keeping pace with fast-moving formats and trends. Use social performance data and audience behavior to inform creative decisions, iterate on what's working, and continually sharpen engagement. Pre-Sale &amp; Pitch WorkÂ Create polished pre-sale mockups and concept designs that help bring proposals to life and win new business. Help shape and evolve a library of templates and reusable assets that raise the quality and speed of pre-sale work. Live Events Â Â Â Â Â Design content recaps, highlight assets, and supporting graphics that capture the energy of Â Â Â Â Â Forbes' live events and extend their reach across platforms. Organization, Communication &amp; Tools Manage your own workload across competing priorities and consistently meet deadlines without sacrificing craft. Explore and adopt new tools and technologies, including AI-assisted design workflows, to elevate creativity, accelerate production, and push the team's capabilities forward. Contribute to and help lead working sessions, brainstorms, and reviews with fellow designers and collaborators across Forbes at all levels of seniority. Give and receive constructive feedback, helping to raise the creative quality of the work across the team. The Ideal Candidate 3+ years of experience in digital/interaction design. Experience in editorial, branded content, or agency environments is a plus. Portfolio showcasing thoughtful solutions to design problems. Strong visual communication skills with a keen eye for layout, hierarchy, typography, and color. Experience designing for social platforms, with familiarity with platform-specific best practices. Proficiency in motion design. Comfort with fast-turnaround, pitch-oriented work. Proficiency in tools such as Figma and the Adobe Creative Suite. Clear thinking and strong written and verbal communication. A nimble, flexible, solutions-oriented mindset. World-class attention to detail. A love for learning! The annual base salary range for this role is $70,000 - $80,000 Forbes has estimated the compensation range set forth above in good faith.Â The compensation range is what we believe we will offer, and ultimately pay, a successful candidate.Â In determining this range, we consider the experience, level of education (if applicable to the role), knowledge, skills, and abilities required to be had by a successful candidate as well as the budget and the companyâs pay rates, generally. This said, we may have to make changes to our compensation estimates and job descriptions from time to time and we expressly reserve the right to do so.Â Should we make any such changes, this advertisement will be revised to reflect such revisions.Â We encourage you to occasionally re-visit this advertisement to ensure that you are abreast of any changes.Â Thank you for your interest in joining Forbes! This role may evolve over time. While this job description outlines the primary responsibilities, additional duties may be assigned as business needs change.Â Forbes aims to offer employees the flexibility they need in order to be successful. Some positions may require candidates to be based in a specific location for consideration while some roles may be fully remote (within the U.S.) if it aligns with the needs of the position. This position is only open to candidates residing in California, Colorado, Connecticut, District of Columbia, Florida, Georgia, Maine, Maryland, Massachusetts, New Jersey, New York, North Carolina, Pennsylvania, South Carolina, Tennessee, Texas, &amp; Washington. Due to business operations and compliance requirements, we are unable to consider applicants based outside these states at this time. Forbes is an equal opportunity employer. Staff and Applicant Privacy Notice Notice of E-Verify Participation Please mention the word **IMPRESSIVE** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Jersey City, Jersey City, New Jersey, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-01",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Forbes is hiring for Designer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4504372c",
+        "title": "Administrative Data Entry File Clerk",
+        "company": "Recruitlytics Hiring",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-administrative-data-entry-file-clerk-recruitlytics-hiring-1134498",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-administrative-data-entry-file-clerk-recruitlytics-hiring-1134498",
+        "jdText": "Dedicated to delivering exceptional service and maintaining organized business operations, our company is seeking a detail-oriented Administrative Data Entry File Clerk to join our team. If you excel at managing records, entering data accurately, and working independently in a remote environment, this opportunity may be the perfect fit for you. In this role, you will be responsible for maintaining digital files, updating databases, organizing administrative records, and ensuring information is entered accurately and efficiently. Your attention to detail, reliability, and commitment to data accuracy will play an important role in supporting daily operations and helping our team stay organized and productive. Â Key responsibilities: Â Intake &amp; indexing. Receive files from shared inboxes, portals, internal ticketing tools, and cloud folders. Confirm document type, required fields, signatures, and attachments. Index each record using standard metadata (client/project ID, date, document category, version, region). Â Document organization. Apply standardized naming conventions and folder structures. Convert formats when needed (PDF merge/split, image-to-PDF, compressing, version labeling). Maintain controlled libraries (final vs draft vs archived), including retention tags. Â Quality control Perform daily spot checks for duplicates, misfiles, missing pages, and unreadable scans. Flag exceptions and route them to the correct owner with clear notes. Maintain error logs and contribute to process improvements that reduce rework. Â Records governance &amp; compliance Handle sensitive records with strict access controls and confidentiality. Follow retention schedules, legal hold instructions, and deletion/archival rules. Support audits by pulling records quickly and documenting chain-of-custody steps. Â Collaboration &amp; communication. Coordinate with HR, Finance, Operations, Legal, or Customer teams to clarify file requirements. Provide status updates on backlog, turnaround time, and issues found during processing. Â Tools you may use: Â Cloud storage (Google Drive/SharePoint/Dropbox), document tools (Adobe Acrobat or equivalents), spreadsheets, ticketing (Jira/Asana/ServiceNow), e-signature platforms, and basic office productivity tools. Success metrics (examples): Accuracy rate (misfile/metadata error rate) Turnaround time from receipt to filed Backlog size and daily throughput Audit retrieval speed and completeness Compliance adherence (access control, retention tagging) Â Qualifications: Â Experience in records management, admin support, clerical work, or document control (preferred). Strong attention to detail; able to follow naming/filing rules consistently. Comfortable handling confidential information and following strict procedures. Basic computer proficiency: file systems, spreadsheets, PDFs, and collaboration tools. Â Please mention the word **PINNACLE** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Alberta, Alberta, Canada",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Recruitlytics Hiring is hiring for Administrative Data Entry File Clerk. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "be78cd76",
+        "title": "Chief Executive Officer",
+        "company": "Community HealthCare Association of the Dakotas",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-chief-executive-officer-community-healthcare-association-of-the-dakotas-1134449",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-chief-executive-officer-community-healthcare-association-of-the-dakotas-1134449",
+        "jdText": "Chief Executive Officer (CEO) Remote in North Dakota or South Dakota | Full-Time Community HealthCare Association of the Dakotas (CHAD) is seeking an inspiring and strategic leader to serve as its next Chief Executive Officer. This is an opportunity to shape the future of community health, strengthen healthcare access, and drive meaningful impact across North Dakota and South Dakota. As the voice of community health centers throughout the Dakotas, CHAD supports organizations serving rural and underserved communities through advocacy, innovation, workforce development, and strategic partnerships. The Opportunity Reporting to the Board of Directors, the CEO will lead CHAD's strategy, operations, advocacy efforts, and organizational growth while ensuring the long-term success of the association and its members. The CEO serves as CHAD's chief ambassador, building relationships that advance healthcare access and improve community health outcomes throughout the region. What You'll Do Provide visionary leadership for CHAD, the Health Center Controlled Network (HCCN), and the Clinically Integrated Network (CIN). Partner with the Board to advance strategic priorities and support effective governance. Creates and maintains a high-performance organizational culture focused on collaboration, accountability, innovation, and service excellence Provides leadership development opportunities for staff and future organizational leaders. Lead advocacy initiatives and represent CHAD with policymakers, funders, and healthcare leaders. Strengthen member engagement and cultivate strategic partnerships across the Dakotas. Ensure strong fiscal management, compliance, grant oversight, and organizational sustainability. Advance workforce development and support data-driven decision-making across member organizations. What You'll Bring Bachelor's degree in healthcare administration, public health, business, public policy, or related field; master's degree preferred. Five or more years of progressive leadership experience in community health, healthcare, public health, or a related sector. Proven success in strategic leadership, stakeholder engagement, advocacy, and financial stewardship. Experience leading complex organizations, programs, or multi-site operations. Knowledge of healthcare systems, financing, and community-based care in the Dakotas. Why CHAD? For more than 35 years, CHAD has championed access to affordable, high-quality healthcare across North and South Dakota. Joining CHAD means joining a mission-driven organization dedicated to healthier communities and stronger healthcare systems. Exceptional Benefits 100% employer-paid health, dental, vision, disability, and life insurance Retirement plan with up to a 6% employer match Generous paid leave and 11 paid holidays Remote work environment Wellness time and office stipend Meaningful work that improves healthcare access across The Dakotas! Location &amp; Travel This remote position must be based in North Dakota or South Dakota and includes regular travel throughout the Dakotas, along with occasional regional and national travel to meetings and conferences. Some evening and weekend work may be required. Hiring Range The anticipated starting hiring range for this position is $130,000 - 150,000 annually, dependent on experience and qualifications. Candidates whose experience, skills, and credentials exceed the requirements of the role are encouraged to apply. Compensation above the stated hiring range may be considered for exceptionally qualified candidates. Apply Today If you are a visionary leader ready to shape the future of community health, strengthen healthcare access, and drive meaningful, lasting impact across North Dakota and South Dakota, we invite you to consider this exceptional opportunity, and Apply Today! Please mention the word **FAVE** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Sioux Falls,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Community HealthCare Association of the Dakotas is hiring for Chief Executive Officer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "6d6212c0",
+        "title": "File Clerk",
+        "company": "Recruitlytics Hiring",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-file-clerk-recruitlytics-hiring-1134495",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-file-clerk-recruitlytics-hiring-1134495",
+        "jdText": "As a Remote File Clerk, youâll keep digital and scanned records accurate, organized, searchable, and compliant. Youâll support multiple teams by receiving documents, validating completeness, applying naming conventions, classifying files into the correct repositories, and maintaining an audit-ready trail of what was received, when it was processed, and where it lives. Youâll work in a high-volume environment where speed matters, but accuracy and confidentiality matter more. Â Key responsibilities: Â Intake &amp; indexing: Receive files from shared inboxes, portals, internal ticketing tools, and cloud folders. Confirm document type, required fields, signatures, and attachments. Index each record using standard metadata (client/project ID, date, document category, version, region). Â Document organization: Apply standardized naming conventions and folder structures. Convert formats when needed (PDF merge/split, image-to-PDF, compressing, version labeling). Maintain controlled libraries (final vs draft vs archived), including retention tags. Â Quality control Perform daily spot checks for duplicates, misfiles, missing pages, and unreadable scans. Flag exceptions and route them to the correct owner with clear notes. Maintain error logs and contribute to process improvements that reduce rework. Â Records governance &amp; compliance: Handle sensitive records with strict access controls and confidentiality. Follow retention schedules, legal hold instructions, and deletion/archival rules. Support audits by pulling records quickly and documenting chain-of-custody steps. Â Collaboration &amp; communication: Coordinate with HR, Finance, Operations, Legal, or Customer teams to clarify file requirements. Provide status updates on backlog, turnaround time, and issues found during processing. Â Â Tools you may use: Â Cloud storage (Google Drive/SharePoint/Dropbox), document tools (Adobe Acrobat or equivalents), spreadsheets, ticketing (Jira/Asana/ServiceNow), e-signature platforms, and basic office productivity tools. Â Success metrics (examples): Â Accuracy rate (misfile/metadata error rate) Turnaround time from receipt to filed Backlog size and daily throughput Audit retrieval speed and completeness Compliance adherence (access control, retention tagging) Â Qualifications: Experience in records management, admin support, clerical work, or document control (preferred). Strong attention to detail; able to follow naming/filing rules consistently. Comfortable handling confidential information and following strict procedures. Basic computer proficiency: file systems, spreadsheets, PDFs, and collaboration tools. Â Please mention the word **ELATION** and tag ROTguODMuMTQ2LjE0OQ== when applying to show you read the job post completely (#ROTguODMuMTQ2LjE0OQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Hong Kong, Hong Kong, Hong Kong SAR",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Recruitlytics Hiring is hiring for File Clerk. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
