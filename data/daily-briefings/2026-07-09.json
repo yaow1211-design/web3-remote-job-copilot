@@ -1,0 +1,563 @@
+{
+  "id": "briefing-2026-07-09",
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T04:16:56.089Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "283c8682",
+        "title": "Business Analyst",
+        "company": "Blockchain.com",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-blockchain-com-1134457",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-blockchain-com-1134457",
+        "jdText": "Blockchain is connecting the world to the future of finance. As the most trusted and fastest-growing global crypto company, it helps millions of people worldwide safely access cryptocurrency. Since its inception in 2011, Blockchain has earned the trust of over 90 million wallet holders and more than 40 million verified users, facilitating over $1 trillion in crypto transactions. Blockchain.com is looking for a Business Analyst to support strategic products, markets, and customer segments within the Consumer business. This is a high-impact analytical and product-oriented role focused on business performance, growth opportunities, customer insights, product execution, and operational excellence. You will work closely with Business Leads, Product, Engineering, Trading, Risk, Compliance, Marketing, Finance, and Regional teams to help identify opportunities, shape product priorities, build business cases, track performance, and support the launch of new initiatives. WHAT YOU WILL DO Support the strategy, roadmap, and commercial performance of key business areas within Consumer. Analyze business performance across users, activity, revenue, margin, retention, volume, conversion, and P&amp;L. Work with Business Leads and Product Managers to identify product opportunities, define problem statements, and support prioritization. Translate business goals, customer insights, and data analysis into clear product recommendations. Build dashboards, reports, and analysis to help teams understand performance, diagnose issues, and identify opportunities. Support business cases for new products, features, markets, or customer propositions, including market size, customer demand, economics, operational requirements, and risk. Partner with Product and Engineering to help define requirements, clarify trade-offs, and support delivery of customer-facing features. Support product launches by coordinating inputs across Product, Engineering, Marketing, CRM, Growth, Compliance, Operations, and Regional teams. Work with Trading, Treasury, Risk, Finance, and Compliance to analyze pricing, economics, risk controls, and profitability. Track competitors, customer behavior, and market trends to identify opportunities to differentiate and win share. Help establish a clear operating cadence around performance tracking, experimentation, launches, product reviews, and business reviews. WHAT YOU WILL NEED Experience in business analysis, product analytics, product operations, strategy, growth, fintech, crypto, payments, consulting, or consumer technology. Strong analytical skills and comfort working with data, business modeling, funnels, unit economics, pricing, conversion, retention, and profitability. Ability to turn data, customer insights, and business problems into clear product recommendations. Strong product judgment and strong interest in building customer-facing products. Ability to work closely with Product and Engineering teams, including helping define requirements, prioritize opportunities, and support execution. Strong communication skills and ability to present findings clearly to cross-functional stakeholders. Comfort operating in a fast-moving, ambiguous environment. High ownership, attention to detail, and willingness to work across both strategic analysis and hands-on product execution. Interest in crypto, fintech, consumer products, and high-growth businesses. COMPENSATION &amp; PERKS Full-time salary based on experience and meaningful equity in an industry-leading company Hybrid model (remote &amp; on-site setup is mandatory) Unlimited vacation policy; work hard and take time when you need it Apple equipment The opportunity to be a key player and build your career at a rapidly expanding, global technology company in an emerging field Flexible work culture Blockchain is committed to diversity and inclusion in the workplace and is proud to be an equal opportunity employer. We prohibit discrimination and harassment of any kind based on race, religion, color, national origin, gender, gender expression, sex, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law. This policy applies to all employment practices within our organization, including hiring, recruiting, promotion, termination, layoff, recall, leave of absence, and apprenticeship. Blockchain makes hiring decisions based solely on qualifications, merit, and business needs at the time. You may contact our Data Protection Officer by email at dpo@blockchain.com. Your personal data will be processed for the purposes of managing Controllerâs recruitment related activities, which include setting up and conducting interviews and tests for applicants, evaluating and assessing the results thereto, and as is otherwise needed in the recruitment and hiring processes. Such processing is legally permissible under Art. 6(1)(f) of Regulation (EU) 2016/679 (General Data Protection Regulation) as necessary for the purposes of the legitimate interests pursued by the Controller, which are the solicitation, evaluation, and selection of applicants for employment. Your personal data will be shared with Greenhouse Software, Inc., a cloud services provider located in the United States of America and engaged by Controller to help manage its recruitment and hiring process on Controllerâs behalf. Accordingly, if you are located outside of the United States, your personal data will be transferred to the United States once you submit it through this site. Because the European Union Commission has determined that United States data privacy laws do not ensure an adequate level of protection for personal data collected from EU data subjects, the transfer will be subject to appropriate additional safeguards under the standard contractual clauses. Your personal data will be retained by Controller as long as Controller determines it is necessary to evaluate your application for employment. Under the GDPR, you have the right to request access to your personal data, to request that your personal data be rectified or erased, and to request that processing of your personal data be restricted. You also have the right to data portability. In addition, you may lodge a complaint with an EU supervisory authority. Please mention the word **FRUITFUL** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [
+          "crypto",
+          "DeFi",
+          "blockchain",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 82,
+        "productOpsFit": 100,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Blockchain.com is hiring for Business Analyst. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "80661140",
+        "title": "Asset Management Specialist Water Wastewater Treatment",
+        "company": "Woodard &amp; Curran",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-asset-management-specialist-water-wastewater-treatment-woodard-amp-curran-1134569",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-asset-management-specialist-water-wastewater-treatment-woodard-amp-curran-1134569",
+        "jdText": "Woodard &amp; Curran is a national engineering, science and operations firm with a simple vision for clean water, a safe environment, healthy communities and happy people. As an employee-owned company, we strive to cultivate teams that encourage collaboration in an inclusive culture. We seek talented individuals from all backgrounds to help us address a broad range of water and environmental issues. We prioritize our people, offering opportunities for professional growth, ownership and flexibility. This commitment enables us to make a meaningful impact on our clients, communities and the planet.&nbsp; Who are we looking for? &nbsp; Woodard &amp; Curran draws on the experience of hundreds of certified operators across the country, backed by the knowledge and skills of hundreds more engineers, scientists, and regulatory experts, to quickly tackle the most challenging operational issues and keep water and wastewater treatment plants running efficiently and in full compliance.&nbsp; Woodard &amp; Curran also aids employees in earning, upgrading, and keeping their certifications within the industry. &nbsp; As our Operations &amp; Management Strategic Business Unit (O&amp;M SBU) grows, we are looking to add a new member to our Asset Management team! In this role, you will be responsible for tracking, analyzing, and optimizing the lifecycle of physical assets to ensure operational efficiency, regulatory compliance, and cost-effectiveness. This role supports strategic planning, maintenance forecasting, and data-driven decision-making at our various projects.&nbsp; In this role, you will partner with our Area Managers, Plant/Project Managers, Technology Team, and clients, while reporting to our current Asset Management Services Manager. &nbsp; The location for this role is flexible and we are open to remote employment with the ability to travel as needed to our facilities across the country. We anticipate an average of 50-65% travel required. &nbsp; What will you be doing at Woodard &amp; Curran? &nbsp; Work remotely and engage in frequent travel to project sites when required.&nbsp; Maintain accurate asset inventories using Computerized Maintenance Management Systems (CMMS) or EAM systems. &nbsp; Develop and implement asset lifecycle strategies (acquisition, maintenance, disposal).&nbsp; Conduct physical audits and condition assessments.&nbsp; Analyze asset performance data to identify trends and improvement opportunities.&nbsp; Collaborate with maintenance, finance, and operations teams to align asset strategies.&nbsp; Ensure compliance with relevant Asset Management standards. &nbsp; Prepare reports on asset health, risk, and replacement forecasting.&nbsp; Support capital planning and budgeting processes.&nbsp; Train staff on asset management procedures and tools.&nbsp; &nbsp; &nbsp; What will you need to succeed? &nbsp; Minimum Qualifications: High school diploma or equivalent required.&nbsp; Bachelor's degree with coursework in computer science, mathematics, statistics, geography, or a closely related field preferred. Minimum of 5 yearsâ experience in the Utility Industry with knowledge of CMMS Systems, Maintenance coordination, Asset Inventory, facilities support required. &nbsp; &nbsp; Preferred Qualifications: Experience utilizing computerized maintenance management systems.&nbsp; Experience with utility assets.&nbsp; Strong analytical skills with the ability to collect, organize, analyze, and disseminate significant amounts of information with attention to detail and accuracy.&nbsp; Articulate and confident, with excellent presentation skills (both oral and written). Successful candidates who make it to the offer stage will need to pass a pre-placement background check, drug screen, and physical prior to establishing a start date. Why would you choose Woodard &amp; Curran? &nbsp; You would be offered a generous total rewards package: Competitive compensation. Excellent Benefits to include retirement, generous paid time off, holidays, medical &amp; dental insurance, flexible spending account. Career growth. Support and reimbursement in earning, upgrading, and keeping your licenses and certifications within the industry. Bonus potential for obtaining next level licensure. &nbsp; &nbsp; &nbsp; &nbsp; \\n \\n $80,000 - $115,000 a year Depending on local geography, qualifications, and experience. \\n Mutual Dispute Resolution (MDR) &nbsp; As part of our commitment to a fair and respectful workplace, Woodard &amp; Curran uses a&nbsp; Mutual Dispute Resolution (MDR) &nbsp;to help resolve most employment-related concerns efficiently and consistently. &nbsp; What this means: MDR applies to both you and the Company Most workplace-related disputes are resolved through&nbsp; binding arbitration , rather than court proceedings Certain exceptions are outlined in the full agreement &nbsp; If you are offered a position with Woodard &amp; Curran, you will be asked to review and sign the MDR as part of your offer packet. &nbsp; ð &nbsp; Review the full agreement here: &nbsp; Mutual Dispute Resolution Agreement &nbsp; &nbsp; Employee Support &amp; Benefits &nbsp; Retirement Savings: 401(k) Pre-tax or Roth Contributions: The company matches 100% of the first 3% of salary contributed &nbsp; Time away from work: Observed holidays: Choose up to 8 holidays to observe annually Vacation: Accrued based on years of experience and calculated on hours worked Sick time: Paid sick time for non-work-related illness or injury. Parental leave : Up to 80 hours of Paid Parental Leave for child bonding &nbsp; Coverage and support for your needs and well-being: Disability: Paid short- and long-term disability Health : Medical plan options; plus dental and vision plans. Life : Basic employee group life insurance and AD&amp;D benefits; additional voluntary life insurance for employees and families is available through Sun Life. Wellbeing: DarioMind assistance program combined with personalized mental health and wellbeing resources. &nbsp; Workplace Information &nbsp; E-Verify Participation Woodard &amp; Curran participates in the U.S. Department of Homeland Securityâs E-Verify program to confirm the employment eligibility of all newly hired employees. As part of this process, we display the required Notice of E-Verify Participation and Right to Work posters.&nbsp; ð View required Right to Work and E-Verify posters here. &nbsp; Equal Employment Opportunity &amp; Accessibility Woodard &amp; Curran is an Equal Opportunity Employer. We are committed to non-discrimination and make employment decisions based on job-related factors. Individuals with disabilities and protected veterans are encouraged to apply. If you require a reasonable accommodation during the application process, please contact Beth Sweitzer . ð View our Equal Employment Opportunity Policy ð View the \"Workplace Discrimination is Illegal\" poster&nbsp; &nbsp; Inclusion &amp; Belonging We welcome individuals from all backgrounds and believe diverse perspectives strengthen our ability to serve clients and communities. As an employee-owned company, we are committed to fostering a respectful and inclusive environment where employees can grow, contribute fully, and deliver meaningful impact. &nbsp; Recruitment Agency Policy We do not accept unsolicited resumes from recruitment agencies. Submissions without a signed agreement in place will be considered unsolicited and not eligible for referral fees. &nbsp; Text Message Communication Notice: To support an efficient hiring process, we may send brief SMS updates or reminders. You may opt out at any time by replying âSTOP.â &nbsp; Terms, Privacy &amp; Use of AI in Hiring&nbsp; ð Woodard &amp; Curran Terms of Use ð Woodard &amp; Curran Privacy Statement &nbsp; We may use artificial intelligence (AI) tools to support aspects of the hiring process (e.g., application review or resume screening). These tools assist our team but do not replace human decision-making. All final hiring decisions are made by people. Please mention the word **EXTOLL** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Virtual",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-08",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Woodard &amp; Curran is hiring for Asset Management Specialist Water Wastewater Treatment. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4f7fb54b",
+        "title": "Manager HR Business Partner",
+        "company": "LinkedIn",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-manager-hr-business-partner-linkedin-1134451",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-manager-hr-business-partner-linkedin-1134451",
+        "jdText": "LinkedIn is the world's largest professional network, built to create economic opportunity for every member of the global workforce. Our products help people make powerful connections, discover exciting opportunities, build necessary skills, and gain valuable insights every day. We're also committed to providing transformational opportunities for our own employees by investing in their growth. We aspire to create a culture that's built on trust, care, inclusion, and fun â where everyone can succeed. Join us to transform the way the world works. Job Description At LinkedIn, our approach to flexible work is centered on trust and optimized for culture, connection, clarity, and the evolving needs of our business. This role may be remote or hybrid. At LinkedIn, hybrid roles are performed both from home and from a LinkedIn office on select days, as determined by the business needs of the team. Remote roles are performed from the designated home work location upon time of hire, and any changes to this home work location requires a review of remote status and approval. This role can be based in San Francisco, Mountain View, Chicago or New York. The Seniorâ¯Manager, HRBP Consulting and Solutions (C&amp;S) Behavior Management role, will lead a team of HR Business Partners responsible for advising and consulting people leaders on employee conduct, workplace behavior, and disciplinary and sensitive employee matters. The role ensures consistent, fair, and compliant resolution of employee concerns while enabling people leaders to make confident, timely people decisions. The Senior Manager serves as a trusted partner to HR, Legal, Employee Relations, Compliance, and business leaders, driving operational excellence, risk mitigation, manager capability, and a positive employee experience. This leader balances sound judgment with business pragmatism, helping scale a high-quality HR partnership model across regions and functions. The Senior Manager will report to the Sr Director, Consulting &amp; Solutions and lead a team of HRBPs focused on behavior management. The successful candidate willâ¯haveâ¯strong HR business partnering experience, be driven and self-directed,â¯have strongâ¯managementâ¯capability,â¯andâ¯demonstrate operational excellence.â¯â¯ Responsibilities:â¯â¯ Lead and Develop a Team of HR Business Partners Hire, coach, develop, and support a team of HR Business Partners specializing in behavior management. Establish a culture of accountability, inclusion, collaboration, and continuous learning. Provide guidance on complex and sensitive employee situations requiring escalated judgment. Drive consistency in decision-making, documentation, and case management practices across the team. Calibrate recommendations and outcomes to ensure fair, consistent, and equitable treatment. Provide Strategic Consultation on Behavior and Conduct Matters Serve as the escalation point for high-risk or complex behavior, conduct, and disciplinary cases. Ensure team is appropriately partnering with leaders to address concerns related to workplace behavior, policy adherence, interpersonal conflict, and team effectiveness. Ensure alignment between business needs, company values, risk mitigation, and employee experience considerations. Drive Manager Effectiveness Build manager capability through teamâs coaching, consultation, and scalable guidance. Identify patterns and recurring challenges impacting manager effectiveness and organizational health. Develop frameworks, training, and best practices that improve leadership decision-making. Enable leaders to navigate employee issues with confidence while maintaining fairness and consistency. Risk Management and Compliance Ensure all employee matters are handled in accordance with company policy, employment law, and regional requirements. Partner closely with Legal, Employee Relations, Compliance, and Functional HRBPs on sensitive matters. Monitor risk trends and proactively recommend actions to mitigate organizational exposure. Maintain high standards of confidentiality and professionalism. Operational Excellence Establish and continuously improve case management processes, service delivery standards, and team operating rhythms. Leverage data and reporting to identify trends, drive insights, influence HR initiatives, and improve outcomes. Monitor team capacity, service levels, and quality standards. Drive consistency across regions while balancing local employment law and cultural considerations. Cross-Functional Partnership Build strong, collaborative partnerships with HRBPs, Legal, Employee Relations, Compliance, and HR Operations teams. Contribute expertise to organization-wide talent, culture, and workforce initiatives. Qualifications Basic Qualifications:â¯ 10+ years of progressive Human Resources experienceâ¯requiredâ¯with significant focus on manager consulting and performance and behavior management. 3+ years experience supporting global organizations in a centralized HRBP or shared services model Preferred Qualifications:â¯ 3+â¯years of direct people management experienceâ¯or equivalentâ¯â¯ Strong knowledge of employment law and HR practices across multiple geographies Ability to exercise sound judgment in ambiguous and sensitive situations. Ability to manage, coach, mentor and motivate a diverse global team while ensuring team and individual accountability and performance standards areâ¯metâ¯â¯ Experience implementing HR and operational programs andâ¯strategies Background and familiarity with HR functional areasâ¯ Ability to prioritize, multitask and manage multiple projects successfully in a fast-paced and dynamicâ¯environmentâ¯ Strong attention to detail and commitment to delivery of quality/accurate work productsâ¯ Logical reasoning, analytical, and problem-solving skills to troubleshoot and overcomeâ¯challengesâ¯ Experience working in a highly-matrix and global organization and knows how to collaborate effectively with multiple stakeholders Proven leadership experience, with the maturity and ability to influence stakeholders and gain buy-in Outstanding interpersonal and communication skills, both verbal and written Suggested Skills: Behavior Management People Leadership Cross Functional Collaboration Risk Mitigation Strategic HR Partnership LinkedIn is committed to fair and equitable compensation practices. The pay range for this role is $144,000 to $234,000. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to skill set, depth of experience, certifications, and specific work location. This may be different in other locations due to differences in the cost of labor. The total compensation package for this position may also include annual performance bonus, stock, benefits and/or other applicable incentive compensation plans. For more information, visit https://careers.linkedin.com/benefits. Additional Information Equal Opportunity Statement We seek candidates with a wide range of perspectives and backgrounds and we are proud to be an equal opportunity employer. LinkedIn considers qualified applicants without regard to race, color, religion, creed, gender, national origin, age, disability, veteran status, marital status, pregnancy, sex, gender expression or identity, sexual orientation, citizenship, or any other legally protected class. LinkedIn is committed to offering an inclusive and accessible experience for all job seekers, including individuals with disabilities. Our goal is to foster an inclusive and accessible workplace where everyone has the opportunity to be successful. If you need a Reasonable Accommodation to search for a job opening, apply for a position, or participate in the interview process, connect with us and describe the specific Accommodation requested for a disability-related limitation. Fill out an Accommodation request here: https://app.smartsheet.com/b/form/b660a0327d044969abfd7a4e73d15c36 Reasonable accommodations are modifications or adjustments to the application or hiring process that would enable you to fully participate in that process. Examples of reasonable accommodations include but are not limited to: Documents in alternate formats or read aloud to you Having interviews in an accessible location Being accompanied by a service dog Having a sign language interpreter present for the interview A request for an accommodation will be responded to within three business days. However, non-disability related requests, such as following up on an application, will not receive a response. LinkedIn will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by LinkedIn, or (c) consistent with LinkedIn's legal duty to furnish information. San Francisco Fair Chance Ordinance Pursuant to the San Francisco Fair Chance Ordinance, LinkedIn will consider for employment qualified applicants with arrest and conviction records. Pay Transparency Policy Statement As a federal contractor, LinkedIn follows the Pay Transparency and non-discrimination provisions described at this link: https://lnkd.in/paytransparency. Global Data Privacy Notice and Compliance Posters for Job Candidates Please use this link to access documents that provide information about how LinkedIn handles the personal data of employees and job applicants, as well as the E-Verify Participation Notice and the Department of Justice Immigrant and Employee Rights Section Right to Work posters: https://www.linkedin.com/legal/candidate-portal. Please mention the word **SPLENDIDLY** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Mountain View, Mountain View, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 73,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "LinkedIn is hiring for Manager HR Business Partner. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "654201eb",
+        "title": "Junior Project Manager",
+        "company": "ASG International",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-junior-project-manager-asg-international-1134576",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-junior-project-manager-asg-international-1134576",
+        "jdText": "Junior Project Manager Campaign Delivery | Installations | Project Coordination Remote Â£30,000 - Â£32,000 Are you looking to build a career in Project Management with a role that offers real responsibility, hands-on experience, and clear progression? We're looking for an organised and proactive Junior Project Manager to support the delivery of exciting campaigns, installations, and operational projects across the UK and Europe. This is an excellent opportunity for someone with strong coordination skills who is ready to develop their project management career in a fast-paced environment. Key Responsibilities â¢ Manage projects from brief to delivery while supporting larger campaign executions. â¢ Maintain project plans, schedules and key documentation, ensuring projects stay on track and within budget. â¢ Coordinate UK and European installation projects, including resource planning, scheduling and logistics management. â¢ Support on-site project delivery and provide project updates, reports and completion documentation. â¢ Prepare RAMS, coordinate permits and equipment requirements, and ensure compliance with health and safety standards. â¢ Build strong relationships with clients, suppliers and internal teams, providing clear communication throughout project lifecycles. â¢ Support KPI reporting, project reviews and continuous improvement initiatives. [ What We're Looking For â¢ Previous experience as a Project Coordinator, Project Administrator, Junior Project Manager or similar. â¢ Strong organisational and time management skills. â¢ Excellent communication and stakeholder management abilities. â¢ Ability to manage multiple priorities in a fast-paced environment. â¢ A proactive, solutions-focused approach with strong attention to detail. â¢ Experience within marketing, events, retail, experiential, production or installation projects would be advantageous. What's In It For You? â¢ Clear career progression into Project Management. â¢ Exposure to high-profile campaigns and nationwide projects. â¢ Opportunity to work across UK and European installations. â¢ Supportive and collaborative team environment. â¢ Hands-on experience across the full project lifecycle. If you're a driven project professional looking for a role that combines project coordination, campaign delivery, stakeholder management and operational planning, we'd love to hear from you. Apply now or contact us for a confidential discussion. #JuniorProjectManager #ProjectCoordinator #ProjectManagementJobs #MarketingJobs #CampaignManagement #OperationsJobs #InstallationProjects #ProjectDelivery #PMJobs #HiringNow #UKJobs #CareerGrowth Please mention the word **POSH** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "England, England, United Kingdom",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-06",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 80,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "ASG International is hiring for Junior Project Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "5550c2ba",
+        "title": "Human Resources Administrative Coordinator",
+        "company": "Enstar Group",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-human-resources-administrative-coordinator-enstar-group-1134583",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-human-resources-administrative-coordinator-enstar-group-1134583",
+        "jdText": "About you and the role: As part of the HR Shared Services Team, the HR Services Coordinator will deliver first-line support and day to day activities for the HR Team. The individual will respond to employee enquiries and leadership requests. What you will be doing: Provide administrative support to the (US) Maintain accurate and current electronic personnel files and documentation in compliance with applicable legal requirements and Company policies as well as country-specific legislation Partner with the HR Business Partners and HR Centres of Expertise to support the delivery of HR Target Operating Model Assist with onboarding by preparing contracts/offer letters, new joiner documentation, background screening and country-specific processes Coordinate and deliver new hire orientation/onboarding activities Assist with assigning and follow-up of mandatory training through Enstarâs Learning Management System Provide first-line support and escalation for HR systems Process changes to employee records within Enstarâs HRIS including new joiners, job changes and leavers Prepare employee changes and termination paperwork, notifications and change forms Answer frequently asked questions from employees concerning HR processes Support inquiries and requests related to the HR department Continuously remain up to date on global HR practices Assist with HR projects as necessary, including but not limited to HR data audits, new policy and program development All other duties as required What you will bring: Self-directed individual with initiative, analytical and problem-solving skills Customer focus, collaboration and teamwork. Key to this Competency is the ability to listen, prioritize and deliver accurate and speedy results. Ability to exercise practical judgment, sensitivity, creativity to changing needs and situations Ability to operate in a fast-paced organization and handle multiple projects simultaneously Ability to work as part of a wider team and independently Strong Microsoft Office skills in Outlook, Word, PowerPoint, and Excel Experience using HR &amp; Payroll platforms Initial experience gained within a HR department Providing system support to users Involvement in system development or enhancement Proven ability in creating management information for the business Strong organizational skills that reflect ability to perform and prioritize multiple tasks and a complex workload seamlessly with keen attention to detail and follow-up Experience working in a fast-paced environment and ability to apply good work habits to effectively complete assigned tasks and contribute to the smooth operation of the department Ability to work effectively in a team environment and to collaborate/work remotely with colleagues Excellent verbal and written communication skills Your Benefits: Enstar offers best-in-class Medical, Dental, and Vision healthcare for single and family coverage. Board-certified doctors and pediatricians are available virtually 24/7 for urgent care. Access to Health Savings Account (HSA) or Flexible Spending Account (FSA). Access to Dependent Care FSA to cover daycare expenses. Access to Employee Assistance Programs (EAP) for health and well-being. Optional Pet &amp; Home/Auto Insurance. Wellness Reimbursement program (up to $600 annual reimbursement for wellness-related expenses, i.e., gym memberships, massage, etc.). 401K retirement plan (company matches up to 6% of employee contribution). One paid annual volunteer day. General Info The target base salary pay range for this role is $70,000-$75,000* *Target full-time equivalent base salary range is based on relevant market data. The actual salary offered will depend on applicable market data for hiring location and relevant candidate knowledge, skills/experience. This salary range is not inclusive of applicable discretionary incentives. Who we are: We are a trusted global re/insurance group and the leading provider of retrospective solutions, with specialist underwriting capabilities. We help our clients manage risk, unlock capital and create the financial freedom to grow. With operations across the worldâs major insurance hubs and a global network of close to 800 talented professionals, we bring expertise and fresh thinking to some of the industryâs biggest challenges. For more information about Enstar, visit our website: www.enstargroup.com . For more information about careers at Enstar, visit our LinkedIn Life page or visit our careers site Why Enstar: Learning and development are a fundamental part of every employee's career journey with Enstar. Supporting growth and career progression is key to how we engage our people - helping them to learn, grow and succeed at Enstar. We offer a range of initiatives and resources to support our people throughout their careers: Professional Qualifications and Study Support: We support employees who wish to take professional qualifications aligned to their role and career development. Training, Conferences &amp; Seminars: As a global organisation, we work with many professional bodies to provide access to training programmes, conferences, seminars and continuing professional development (CPD) opportunities. Digital Learning Hub: Our digital learning hub, LinkedIn Learning, offers a wide range of self-serve resources, including courses, videos, eBooks, and audio books, to help employees build news skills and deepen their knowledge. We also invest in physical, mental and financial wellbeing initiatives for our employees. Supportive teams, inspiring work and a positive working environment all contribute to our collective wellbeing. Beyond the workplace, we strive to make a positive influence in our communities and to continuously reduce our impact on the environment. Enstar Inclusivity Policy: Weâre an equal opportunity employer and believe that our inclusive environment creates an authentic working culture. We donât discriminate on the basis of age, physical or mental disability, gender reassignment, marriage and civil partnership, pregnancy and carer status, race (including colour, nationality, and ethnic or national origin), religion or belief, sex and sexual orientation. Enstar is committed in providing an accessible recruitment experience for all those interested in working with us. Please let your Enstar Recruitment Partner know if you require any reasonable accommodation during the application process due to a disability to enable you to fully participate in our recruitment process. Please mention the word **UNFETTERED** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Florida, Florida, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-07",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Enstar Group is hiring for Human Resources Administrative Coordinator. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "7b6e2e64",
+        "title": "Social Media Manager TikTok and Founder",
+        "company": "Once Upon a Farm",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-social-media-manager-tiktok-and-founder-once-upon-a-farm-1134578",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-social-media-manager-tiktok-and-founder-once-upon-a-farm-1134578",
+        "jdText": "Who You Are You are a culturally plugged, TikTok-obsessed content creator and strategist who understands how to own TikTok content and TikTok Shop. You will drive Once Upon a Farmâs TikTok presence end-to-endâstrategy, creation, publishing, and performanceâwhile also developing and producing content for our co-founders. This role will have vendor resources, but must be able to execute content on their own as well. While this is a remote role, this candidate must be based out of Los Angeles, CA , NYC or San Francisco/Bay Area, CA. The Task At Hand This is a rare dual mandate: roughly half your time is building Once Upon a Farmâs TikTok into a high-converting Gen-Z and millennial destination, and the other half is working directly our founders to develop their own content. You will report to the Senior Manager of Social and collaborate closely with the broader Marketing and Creative teams. Responsibilities TikTok Strategy &amp; Growth Own our TikTok channel as the driver of primarily Gen-Z audience growth, with a secondary focus on Millennial parents, health enthusiasts, and athletes, to help Once Upon a Farm find niche markets to expand reach, brand awareness, and TikTok Shop revenue Develop and execute a platform-native content strategy built around Once Upon a Farmâs product lineup, brand mission, and cultural relevance to young parents and Gen-Z consumers Build and manage Once Upon a Farmâs TikTok Shop presence along with the E-Commerce team, driving traffic, conversion, and repeat purchase through shoppable content, live formats, and product integrations Stay ahead of TikTok trends, sounds, formats, and creator culture to ensure our brand is consistently early, authentic, and on-platform Partner with the Senior Manager of Social Media on cross-platform content strategy, ensuring TikTok content complements and amplifies Once Upon a Farmâs Instagram and YouTube presence Work proactively within your budget to find and develop agencies and influencers who can create additional TikTok Content for the brand. TikTok Content Creation &amp; Production Personally concept, shoot, edit, and publish much of Once Upon a Farmâs TikTok contentâyou are the creator, not just the director Develop recurring formats and series that build audience loyalty and drive saves, shares, and follows Create content spanning product storytelling, childhood nutrition education, brand values, and culturally relevant momentsâall tailored for a TikTok-first audience Capture real-time content at brand events, activations, and shoots with prepared concepts and shot lists, and direct on-site photographers and videographers to do the same with your art direction. Brief and collaborate with the Partnerships &amp; Influencer team to activate creators who extend OFarmâs TikTok reach and authenticity. Own vendor selection, outreach, payment and execution for the TikTok platform including agencies, CGI creators and videographers. Founder Content Work directly with our founders to produce content, with a focus on TikTok and Instagram. Work with Once Upon a Farm Brand team to proactively identify relevant brand moments in a timely manner, allowing you time to capture, execute and edit the content with founders ahead of launch. Translate foundersâ authentic personality, passions, and voice into platform-native content that resonates with their audiences, while reinforcing their roles as our founders. Concept, produce, and edit content for Once Upon a Farm specific founder appearancesâincluding product launches, campaigns, and brand storytelling momentsâthat works in concert with their personal channelâs content Develop repeatable formats for founders that are engaging, sustainable, and distinctly theirs Coordinate shoot logistics, prep shot lists and talking points, and ensure content is captured efficiently during Jenâs available windows Performance &amp; Optimization Track and report on TikTok KPIs including follower growth, engagement rate, video views, TikTok Shop GMV, and conversion metrics Translate performance data into actionable content decisionsâdouble down on what works, kill what doesnât Partner with the E-commerce team to align TikTok content with promotional calendars and TikTok Shop campaigns Present TikTok and Founder content performance to stakeholders in quarterly business reviews In This Role, Youâll Bring With You 4+ years of social media or content experience, with a significant portion focused on TikTok content creation and strategy Demonstrated ability to grow a TikTok account and drive measurable business outcomesâincluding TikTok Shopâthrough original content Deep, native understanding of TikTokâs algorithm, trends, and creator ecosystem; you consume the platform daily and can spot an emerging format before it peaks Proven experience creating content for or alongside a public figure, founder, or talentâcomfortable navigating the balance between authentic personal voice and brand alignment Hands-on creator skills: you can concept, shoot (ideally on mobile), and edit (CapCut, Adobe, or equivalent) a high-performing TikTok video yourself Experience in CPG, beauty, food, lifestyle, or wellness brands strongly preferred Strong copywriting instincts with the ability to adapt voice across Onec Upon a Farmâs brand and foundersâ personal tone Comfortable working with senior stakeholders and talent; professional, organized, and discreet Highly self-directedâyou manage your own production schedule, publishing calendar, and performance reporting without hand-holding Must provide a portfolio that includes TikTok content you personally created and can speak to the strategy and outcome behind Must demonstrate measurable TikTok results: follower growth, viral content, Shop-driven revenue, or equivalent Must be comfortable on-screen and directing talent in a low-fuss, high-output production environment Previous exposure to cross-functional work between Sustainability and People &amp; Culture preferred This role must be based out of Los Angeles, CA , NYC or San Francisco Please note that visa sponsorship is not available for this position Compensation Full-Time, Salaried, Exempt The anticipated salary range for this position is $100,000.00 to $110,000.00. The actual salary offer will carefully consider a few factors, including skills, qualifications, experience, and location. Certain positions are eligible for additional forms of compensation, such as bonuses, stipends, and role-specific perks. Additional Remote-first work environment Annual Bonus 401(k) program + 4% company match after three months New Hire Remote Life Stipend + annual Nourish and Nurture Allowance Monthly Cell and Internet Stipend Quarterly Farm-to-Fridge home deliveries and Employee Discounts New Parents: Up to 18 weeks of paid Parental Leave, Baby Steps Back To Work, 3 monthsâ supply of Once Upon a Farm products, and breast milk shipping service and support for those who travel after birth for the duration of your breastfeeding journey Unlimited Paid Time Off Paid Volunteer Time Paid Time Off to fulfill civic responsibilities, including jury duty and voting in local, state, and national elections Medical Insurance for the employee is covered at 100% on select plans, with additional plan options at a reduced cost to the employee Vision and Dental Insurance are covered at 100% for the employee and dependents Life insurance Flexible spending account and Health Savings Accounts for applicable plans Employee assistance program (EAP) All other benefits, leaves, and insurance as required by law, based on your specific residence And so much more! Who We Are Our Purpose: Drive systemic improvement in childhood nutrition for a healthier, happier, and more equitable world. Our Business: At Once Upon a Farm, a better story starts here. We're on a greater mission in providing organic, crave-worthy snacks and meals for children of all ages. Our recipes are crafted with only the best organic ingredients - whole fruits and veggies, cold-pressed (our pouches), or freshly frozen (our meals) to perfection- to support your growing kids at every stage. Each of our organic, non-GMO, non-dairy recipes contains no added sugar and are free from artificial flavors, colors, and preservatives - just simple, real, nutritious snacks your entire family will love. We support and champion farmers who supply the highest-quality organic ingredients for our foods. We help parents keep their promise to provide the best nourishment for their childrenâs bodies and souls. We treat our consumers, customers, suppliers, investors, and all our valued employees with the same high level of dignity and respect that we expect from others. We will always fight for and support efforts to drive positive social change and food justice for the benefit of parents, kids, and families. Lastly, we foster an entrepreneurial and collaborative culture that values humility, honesty, passion, positive social impact, and fun. Our Team: Weâre all fully remote, which makes us a highly collaborative, dynamic, and supportive bunch. We share a singular mission to make the world a better place through the highest quality, most delicious, nourishing, and nutritious products made accessible to every home, from our farms to your fridge. And while weâre invested in our product, weâre equally invested in one another's success. Once Upon a Farm is a purpose-driven brand made up of an inclusive group of individuals with diverse backgrounds, passions, and beliefs. We hire self-motivated, independent thinkers, and those who are genuinely passionate about improving childhood nutrition for a healthier and happier planet. Bring your whole self to your work at Once Upon a Farm, a proud equal-opportunity employer. In your application, please feel free to note which pronouns you use. In an effort to help us remove unconscious bias from our resume review process, we ask that you please remove all identifying information from your resume (like profile photos) before you upload it. Once Upon a Farm is committed to cultivating an inclusive environment where a diverse group of people can and want to do their best work, and that starts with our hiring practices. Once Upon a Farm, PBC, provides equal employment opportunities to all employees and applicants in all company facilities without regard to race, color, religious creed, sex, national origin, ancestry, citizenship status, pregnancy, childbirth, physical disability, mental and/or intellectual disability, age, military status or status as a Vietnam-era or special disabled veteran, marital status, registered domestic partner or civil union status, gender (including sex stereotyping and gender identity or expression), medical condition (including, but not limited to, cancer-related or HIV/AIDS-related), genetic information, or sexual orientation in accordance with applicable federal, state and local laws. This policy applies to all terms and conditions of employment, including, but not limited to, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training. Please see our Privacy Policy to learn more about the data we collect. This job description is a summary of duties; it is by no means an all-inclusive list but is merely a broad guide of expected duties. You must reside in the United States to be considered for this position. Must be 18 years or older at the time of application. Please mention the word **TERRIFICALLY** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Los Angeles Metropolitan Area",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-07",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Once Upon a Farm is hiring for Social Media Manager TikTok and Founder. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "f36f91a5",
+        "title": "Operations Supervisor Healthcare South Georgia",
+        "company": "Belle",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-operations-supervisor-healthcare-south-georgia-belle-1134553",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-operations-supervisor-healthcare-south-georgia-belle-1134553",
+        "jdText": "Belle is a fast-growing healthcare company revolutionizing in-home care â starting from the feet up. More than 25 million U.S. seniors can no longer safely care for their feet, contributing to over $38 billion in avoidable medical costs each year. Belle trains and deploys a network of Community Health Workers â known as Belle Technicians â to deliver in-home foot exams, preventive care, and care management. Backed by advanced data science, our care model detects emerging health risks early, often before they escalate. When issues arise, our telehealth team and nurses coordinate follow-up care and take action. The result? Belle delivers clinical outcomes on par with blockbuster drugs, without a single pill. Our model helps prevent complications, reduce hospital visits, and improve quality of life â all with care that people genuinely love. Our mission: Bring Joy to Healthcare. Join us if our cause inspires you! About This Role As an Operations Supervisor in South Georgia, you'll drive growth, build a strong team, and create community impact in your designated market. This role blends recruitment, market development, and operational excellence, ensuring seniors receive life-changing in-home care. You'll be actively engaged in technician development, field shadowing, performance reviews, and issue resolution. You'll also collaborate closely with cross-functional teams to ensure every appointment is delivered with consistency, professionalism, and warmth. You will also serve as the local face of the company â building trust with your team, ensuring quality standards are met, and collaborating cross-functionally to help Belle scale successfully. You'll work mainly remote but need to be available in the service area to shadow the field and provide support. Key Responsibilities Team Leadership &amp; Development Lead technician hiring and onboarding in partnership with centralized recruiting and training teams Conduct field-based shadowing and provide real-time coaching Facilitate technician check-ins and performance reviews Support technicians in meeting certification and compliance requirements Foster a connected and motivated team culture with ongoing engagement initiatives Provide proactive coaching on hospitality, documentation, attendance, and professionalism Operational Oversight Monitor KPI's such as attendance, appointment fulfillment, and CSAT Ensure proper execution of Belle's care model and scope of practice Manage documentation audits and follow up on quality concerns Track technician availability and support schedule optimization Report safety concerns, policy violations, or compliance issues as needed Collaborate with HR, Compliance, and Member Experience teams on escalations Requirements Qualifications Bachelor's degree in Business, Healthcare, or a related field preferred Prior experience managing a field-based or remote team (healthcare, retail, or service industries ideal) Strong people leadership and coaching abilities Highly organized, tech-savvy, and action-oriented Excellent communication skills â clear, direct, and compassionate Familiarity with scheduling, attendance, or workforce tools is a plus Resides in South Georgia and able to travel locally to support CHWs in the field (15-25% expected) Benefits Competitive compensation based on experience Incentive Bonus paid quarterly Health, Dental, and Vision Insurance Benefits 401k PTO, Sick, and Paid Holidays Opportunity for significant career growth and expansion of responsibilities Ability to reshape an industry and protect lives Please mention the word **INTRIGUE** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Fairburn, Fairburn, Georgia, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-06",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Belle is hiring for Operations Supervisor Healthcare South Georgia. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "afaf8650",
+        "title": "Paid Media Specialist Meta & Google Ads",
+        "company": "Noventra Group",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-paid-media-specialist-meta-google-ads-noventra-group-1134552",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-paid-media-specialist-meta-google-ads-noventra-group-1134552",
+        "jdText": "Noventra Group is hiring a remote Paid Media Specialist to support Meta Ads and Google Ads campaigns across selected partner-brand initiatives. This role is focused on performance marketing, campaign optimization, reporting, and paid media execution for brands and commercial partners working within Noventra Groupâs partner-brand ecosystem. About Noventra Group Noventra Group is a European-based brand partnership and commercial growth group working with selected brands, ecommerce businesses, retail partners, consumer product companies, and commercial partners across multiple markets. The companyâs work is centered on partner-brand development, market expansion, campaign coordination, digital acquisition, and performance-focused commercial operations. Noventra Group is not positioned as a traditional marketing agency. The team works across partner-brand campaigns where paid media, commercial strategy, campaign performance, and clear reporting are important parts of the operating structure. Role Overview The Paid Media Specialist will work across Meta Ads and Google Ads campaigns for partner brands in ecommerce, retail, lifestyle, consumer products, premium goods, and service-based markets. The role requires strong hands-on paid media experience, clear analytical thinking, practical optimization judgment, and the ability to communicate campaign performance in a structured and professional way. The ideal candidate understands how to review paid advertising data, identify performance issues, improve campaign structure, test creative angles, monitor budget efficiency, and produce clear recommendations that support better business outcomes. Key Responsibilities - Plan, launch, monitor, and optimize paid advertising campaigns across Meta Ads and Google Ads - Review campaign structure, audience targeting, budget allocation, bidding strategy, and conversion paths - Monitor key performance indicators including CPA, ROAS, CTR, CPC, conversion rate, lead quality, and budget efficiency - Identify issues in campaign setup, tracking, creative performance, funnel quality, and landing page conversion flow - Review ad creatives, hooks, messaging, visuals, offers, and campaign angles - Prepare clear campaign reports, optimization notes, and performance summaries - Recommend practical next steps based on campaign data and commercial objectives - Support campaign testing, scaling decisions, and performance improvement plans - Work with remote teams across different markets and maintain clear written communication - Keep campaign documentation organized, including changes, observations, results, and recommendations Required Experience - Hands-on experience managing Meta Ads campaigns - Hands-on experience managing Google Ads campaigns - Experience with Search, Display, Shopping, YouTube, Performance Max, or similar Google Ads campaign types - Strong understanding of paid media optimization, campaign reporting, and performance analysis - Ability to interpret advertising data and make practical campaign decisions - Experience managing advertising budgets with measurable performance outcomes - Good written English communication skills - Ability to work remotely, manage priorities independently, and communicate clearly - Organized, detail-oriented, and comfortable working across multiple campaigns or brand accounts Preferred Experience - Experience with ecommerce, DTC, retail, fashion, beauty, lifestyle, wellness, premium products, or service-based campaigns - Familiarity with GA4, Google Tag Manager, Meta Pixel, Shopify, landing pages, CRM tracking, or conversion tracking setup - Experience preparing weekly or monthly paid media reports - Experience with creative testing, ad angle analysis, funnel review, and campaign scaling - Experience working with international teams or multiple partner-brand campaigns - Experience with business-managed advertising accounts, invoiced ad accounts, monthly billing structures, or partner-brand ad operations is a plus Working Style This is a remote role suited for someone who can work independently, communicate professionally, and provide structured campaign insights without requiring constant supervision. Noventra Group values clear reporting, reliable communication, organized work, data responsibility, and practical problem-solving. The role requires a professional approach to campaign management, partner-brand communication, and performance improvement. Compensation and Engagement Compensation is based on experience, capability, availability, and engagement structure. The role may be suitable for a long-term remote collaboration depending on experience, performance, communication quality, and alignment with Noventra Groupâs partner-brand operating standards. Please mention the word **SOOTHE** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-07",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Noventra Group is hiring for Paid Media Specialist Meta & Google Ads. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4d491710",
+        "title": "Construction Inspector",
+        "company": "AECOM",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-construction-inspector-aecom-1134555",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-construction-inspector-aecom-1134555",
+        "jdText": "Company Description Work with Us. Change the World. At AECOM, we're delivering a better world. Whether improving your commute, keeping the lights on, providing access to clean water, or transforming skylines, our work helps people and communities thrive. We are the world's trusted infrastructure consulting firm, partnering with clients to solve the worldâs most complex challenges and build legacies for future generations. There has never been a better time to be at AECOM. With accelerating infrastructure investment worldwide, our services are in great demand. We invite you to bring your bold ideas and big dreams and become part of a global team of over 50,000 planners, designers, engineers, scientists, digital innovators, program and construction managers and other professionals delivering projects that create a positive and tangible impact around the world. We're one global team driven by our common purpose to deliver a better world. Join us. Job Description As a Construction Inspector , you will provide on-site inspection, monitoring, reporting and documentation for municipal infrastructure projects, including water/ wastewater treatment facility, water distribution piping, sanitary sewers, and roadway construction. In this role, you will help ensure that work is completed in accordance with approved plans, specifications, and regulatory standards while supporting project managers and engineers throughout the construction process. Responsibilities include: Perform daily field inspections of civil infrastructure construction Monitor contractor activities for compliance with project plans, specifications, and municipal standards. Document daily construction activities, quantities, and site conditions using inspection reports and photo logs. Observe and verify materials, testing procedures, and workmanship. Coordinate with contractors, engineers, utility providers, and municipal staff to resolve field issues. Assist with reviewing shop drawings, RFIs, and change orders as needed. Monitor health and safety compliance on-site Ensure compliance with safety regulations and environmental requirements. Participate in project meetings and provide progress updates. Qualifications Minimum Requirements: 6+ years of experience in construction inspection for municipal civil infrastructure. Understanding of water, sanitary, storm, and roadway construction methods and materials. Ability to read and interpret engineering drawings, specifications, and standards. Preferred Qualifications: 8+ years of experience in construction inspection for municipal civil infrastructure. Engineering Technologist Certification Prior health and safety experience Proficiency with inspection documentation tools (e.g., tablets, daily logs, photo documentation). Familiarity with municipal codes, public works standards, and construction best practices. Strong communication and problemâsolving skills. Valid driverâs license and ability to work outdoors in varying conditions. Additional Information Sponsorship for Barbados employment authorization is not available for this position. At AECOM, we are committed to maintaining a secure and trustworthy recruitment process and take any fraudulent hiring activity seriously. To support this commitment, all newly hired employees are required to attend an in-person Day 1 onboarding at an AECOM office location as a condition of employment. About AECOM AECOM is proud to offer comprehensive benefits to meet the diverse needs of our employees. Depending on your employment status, AECOM benefits may include medical, dental, vision, life, AD&amp;D, disability benefits, paid time off, leaves of absences, voluntary benefits, perks, flexible work options, well-being resources, employee assistance program, business travel insurance, service recognition awards, retirement savings plan, and employee stock purchase plan. AECOM is the global infrastructure leader, committed to delivering a better world. As a trusted professional services firm powered by deep technical abilities, we solve our clientsâ complex challenges in water, environment, energy, transportation and buildings. Our teams partner with public- and private-sector clients to create innovative, sustainable and resilient solutions throughout the project lifecycle â from advisory, planning, design and engineering to program and construction management. AECOM is a Fortune 500 firm that had revenue of $16.1 billion in fiscal year 2025. Learn more at aecom.com. What makes AECOM a great place to work You will be part of a global team that champions your growth and career ambitions. Work on groundbreaking projects - both in your local community and on a global scale - that are transforming our industry and shaping the future. With cutting-edge technology and a network of experts, youâll have the resources to make a real impact. Our award-winning training and development programs are designed to expand your technical expertise and leadership skills, helping you build the career youâve always envisioned. Here, youâll find a welcoming workplace built on respect, collaboration and community - where you have the freedom to grow in a world of opportunity. As an Equal Opportunity Employer, we believe in your potential and are here to help you achieve it. All your information will be kept confidential according to EEO guidelines. ReqID: J10155147 Business Line: Water Business Group: DCS Strategic Business Unit: Canada Career Area: Quality Work Location Model: On-Site Please mention the word **ENRICHMENT** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Christ Church,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-06",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "AECOM is hiring for Construction Inspector. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "82014fde",
+        "title": "CRO specialist",
+        "company": "sofatutor",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-cro-specialist-sofatutor-1134522",
+        "jdText": "Design and run A/B tests that directly impact subscription growth for one of Europe's leading EdTech platforms â 1M+ users, real experiments, measurable results. Weâre looking for aÂ Conversion Rate Optimization (CRO) Specialist (gn) Â to join our Product Growth Team and help drive one of sofatutorâs most important goals: turning more parents into customers who trust us to support their childrenâs learning journey. In this role, your work will have a direct and measurable impact on the companyâs success. By designing and running smart, strategic A/B tests, youâll help increase user acquisition, activation, and retention across our subscription-based learning products. Youâll collaborate closely with designers, developers, data analysts, and senior leadership to uncover high-potential growth opportunities and turn insights into real results. ðÂ 100% remote (EMEA)Â | â³Â 32-40h/week Your Tasks: Define and implement growth experiments across the funnel â Â from hypothesis to launch and evaluation. Maintain a clear pipeline of experiments Â based on impact, effort, and learning value. Collaborate closely with design, engineering , and keyÂ stakeholders Â to translate testing concepts into high-quality experiments. Leverage analytics, user research, competitor insights , and best practices to identify opportunities and build strong hypotheses. Share Â experimentÂ results, insights, and learnings Â transparently with the team and stakeholders to drive alignment and continuous improvement. What you bring to the table: A minimum of Â 2 â 4+ years of experience Â in conversion rate optimization (CRO), website optimization, or growth-focused roles. AÂ strong track record Â of designing and executing experiments that resulted in measurable business outcomes (e.g., increased conversion rates, revenue uplift). Experience working inÂ high-velocity testing Â environments and a drive to continuously improve experimentation speed without sacrificing quality or learning value. Advanced analytical capabilities Â with hands-on experience interpreting quantitative data from platforms such as GA4, Amplitude, or Power BI. Strong conceptual thinking , with the ability to structure and prioritize experiments around strategic growth objectives. Proficiency in Figma or equivalent design tool Â is essential, with the ability to independently produce high-fidelity, multi-variant test concepts. Excellent communication skills in English, with theÂ ability to present insights and strategies clearly Â to stakeholders across functions and seniority levels. Experience with A/B testing tools (e.g., Convert) and familiarity with complementary insight tools (e.g., Hotjar). Preferred qualifications (not required): German language skills to better understand customer needs in DACH markets. What we offer: Flexible Work: Flexible hours, remote-first, work all over the EU Team Events: Â Regular meetups â online and in Berlin. Extra Time Off: Â 2 paid volunteering days + Dec 24 &amp; 31 off. Please mention the word **RESTRUCTURING** and tag RMTc0LjEyOS4xNzguMTcx when applying to show you read the job post completely (#RMTc0LjEyOS4xNzguMTcx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-06",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 96,
+        "productOpsFit": 64,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "sofatutor is hiring for CRO specialist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
