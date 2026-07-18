@@ -1,0 +1,556 @@
+{
+  "id": "briefing-2026-07-18",
+  "date": "2026-07-18",
+  "generatedAt": "2026-07-18T03:38:03.486Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "5f6fbe80",
+        "title": "Creative Strategist",
+        "company": "New Engen",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-creative-strategist-new-engen-1134990",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-creative-strategist-new-engen-1134990",
+        "jdText": "WHY DONUT STUDIOS? At New Engen, we help brands grow, not just bigger, but smarter. Weâre a digital marketing agency that drives meaningful impact across the entire customer journey by integrating media, creative, analytics, influencer, and retail strategies into performance-driven campaigns. Donut Studios is our in-house creative studio, purpose-built to craft high-performing, platform-native, and digital content for the worldâs most ambitious brands. As a key part of New Engenâs suite of specialized solutions, alongside offerings like the Acorn Creator Suite - Donut Studios helps unlock breakthrough creative that drives results, fast. Weâre a collaborative group of strategists, content creators, copywriters, editors, designers, account strategists, and more who are all in on helping brands, and each other, thrive. We work hard, stay humble, and build with purpose. What You'll Do Own Creative Strategy for Enterprise B2B Campaigns Lead the creative strategy for Amazon Web Services, translating complex business priorities into clear, insight-driven creative direction across paid social, display, video, and other digital channels. Develop scalable concepts that align with business objectives while engaging technical and executive audiences. Lead and Develop the Creative Strategy Team Manage and mentor the account's Creative Strategists, providing direction, coaching, and thoughtful feedback to ensure consistently high-quality work. Foster a collaborative environment that elevates creative thinking and execution across the team. Shape Creative Direction from Brief to Execution Develop and refine creative briefs that provide clear strategic direction for design, motion, video, and copy teams. Ensure every concept aligns with AWS brand standards while supporting campaign goals across the full B2B customer journey. Partner Cross-Functionally to Deliver Integrated Campaigns Collaborate closely with Content Strategists, copywriters, designers, motion artists, and production teams to create cohesive campaigns across awareness, consideration, and conversion. Ensure messaging and creative remain aligned across channels, formats, and audience segments. Drive Creative Testing and Performance Optimization Develop testing frameworks tailored to technical and executive buyer audiences, using campaign performance insights to refine messaging, creative approaches, and content strategies over time. Continuously identify opportunities to improve campaign effectiveness through experimentation and iteration. Maintain Creative Excellence at Scale Oversee the creative quality and consistency of a high volume of assets across multiple formats, markets, and languages. Leverage AI-enabled creative workflows and quality control processes to deliver efficient, scalable production without compromising craft. Represent Creative Strategy with Clients Serve as a senior creative voice in client meetings, presenting strategic recommendations, communicating creative rationale, and building trusted relationships with marketing and design stakeholders. Navigate feedback confidently while maintaining alignment with business goals. Identify Opportunities for Innovation and Growth Continuously assess creative performance, emerging trends, and evolving business needs to identify new opportunities for testing and innovation. Stay current on AWS brand standards, enterprise technology trends, and platform best practices to keep creative fresh, relevant, and impactful. What You Bring 5+ years of experience in creative strategy, ideally with B2B, enterprise tech, SaaS, or cloud accounts. Proven ability to write strong creative briefs and translate audience/performance data into clear creative direction for design, motion, and video teams. Experience managing or mentoring creative strategists, with a track record of elevating the work of the people you lead. Comfort operating at high production volume with tight QC standards; experience contributing to or running production workflows/systems is a plus. Strong understanding of paid social and display platforms (LinkedIn, Meta, DV360) and their format and spec requirements. Experience presenting creative recommendations directly to senior client stakeholders. Familiarity with B2B and technical buyer audiences, including developers, IT decision-makers, and enterprise executives. Comfort working within brand systems that carry strict guardrails (e.g., no AI-generated talent, voice, or music). Bonus: direct experience on AWS, Azure, GCP, or another enterprise cloud/tech brand. Perks &amp; Benefits Remote or hybrid work environment with flexible hours Unlimited PTO + company holidays Comprehensive medical, dental, vision, and disability coverage Life &amp; AD&amp;D insurance 401(k) with company match Paid parental leave &amp; family support Pet care perks &amp; insurance Learning &amp; career development programs Commuter &amp; transit benefits Exclusive employee discounts Salary Range: $70,000 - $80,000 annually The range is applicable for the labor market where the role is intended to be hired. Final base salary is directly related to each candidate's qualifications and experience uniquely. New Engen is proud to have offices in Seattle, New York, and Northwest Arkansas, each one anchoring teams that drive creativity, collaboration, and culture. But great work isnât limited to those zip codes. We also support a distributed team of remote employees across the country, giving people the flexibility to do their best work wherever they are. We currently hire full-time employees in the following states: Arkansas, California, Colorado, Florida, Georgia, Illinois, Michigan, Missouri, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, South Carolina, Tennessee, Texas, Virginia, Washington, and Wisconsin Letâs Build Whatâs Next Together â If youâre passionate about media and eager to make a meaningful impact with a team thatâs all in, weâd love to hear from you. Important Notice About Job Openings Please be aware of fraudulent job postings, consulting engagements, solicitations, or employment offers from suspicious sources. These attempts are often designed to steal your personal information or trick you into paying fees for recruitment or training services. New Engen does NOT charge any application, processing, or training fees at any stage of the recruitment or hiring process. All legitimate job openings will be posted directly on our careers page, and all communication about these roles will come exclusively from Recruitment outreach, conducted via email through our ATS, Greenhouse, and never through unsolicited text messages or the @newengen.online domain. If you have any concerns about the authenticity of any message claiming to be from New Engen, please contact us immediately at peopleteam@newengen.com before taking any further action. We take your security seriously and are here to support you, ensuring your job search is a safe, positive experience. Please mention the word **ADEQUATE** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Los Angeles, Los Angeles, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-16",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 80,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "New Engen is hiring for Creative Strategist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c2b2c5fa",
+        "title": "Content Marketing Manager",
+        "company": "Planned Parenthood of Greater New York",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-content-marketing-manager-planned-parenthood-of-greater-new-york-1134953",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-content-marketing-manager-planned-parenthood-of-greater-new-york-1134953",
+        "jdText": "POSITION SUMMARY The Content Marketing Manager is a creative storyteller and digital content strategist responsible for producing compelling, mission-driven content that advances Planned Parenthood of Greater New York&rsquo;s mission, brand, advocacy, and fundraising goals. This role develops and executes engaging content across social media, video, email, web, and emerging digital platforms to connect with patients, supporters, donors, activists, organizers, and community partners. Working closely with colleagues across the organization, the Content Marketing Manager transforms complex issues, timely news, and community stories into impactful digital experiences that inspire action, build trust, and deepen engagement in support of sexual and reproductive health care, education, and rights. This person is a highly creative content creator who thrives in fast-paced digital environments and has a passion for social media, video storytelling, and audience engagement. They bring a strong understanding of platform trends, content performance, and digital culture, pairing creativity with data-informed decision-making to create content that expands reach, strengthens community, and advances PPGNY&rsquo;s mission. CORE COMPETENCIES Under the leadership of the Director of Marketing, the Content Marketing Manager oversees digital components of the communications and marketing plan that fulfill PPGNY&rsquo;s organizational mission, vision, values, business, and fundraising goals Produces and manages a consistent pipeline of high-quality content, including social media posts, short-form videos, graphics, blog posts, email content, and storytelling campaigns that expand reach and deepen audience engagement Captures, records, edits, and publishes timely video content, including Reels, TikToks, interviews, and behind-the-scenes storytelling, and is comfortable appearing on camera and providing voice-over narration when appropriate Identifies and elevates compelling patient, community, supporter, and organizational stories that shape perspectives about sexual and reproductive health care, education, and rights Monitors social media conversations, cultural moments, platform trends, and emerging best practices to create relevant and timely content that strengthens PPGNY's digital presence Cultivates and engages online communities through active social listening, audience engagement, relationship-building with partners and influencers, and responsive digital communications Supports the development and execution of integrated marketing and advocacy campaigns designed to grow audiences, increase engagement, inspire action, and strengthen supporter relationships Creates written and visual content for email marketing campaigns, including copywriting, content development, and audience-focused storytelling Uses analytics and audience insights to evaluate content performance, identify opportunities for growth, and optimize digital strategies across platforms Thrives in fast-paced digital environments, brings curiosity and creativity to content development, and continuously tests new approaches to audience engagement and storytelling Performs other duties as assigned REQUIRED SKILLS/ABILITIES Proficiency in video editing using video-specific software or in-app tools, such as Instagram or TikTok Experience working in reproductive/sexual health care, social justice, or mission-driven environments Excellent communication (oral, written, presentation, and image) skills Must have the ability to travel to health centers and events across the affiliate&rsquo;s areas Creative eye for graphic design and developing content across a variety of channels and platforms (extensive design experience is not required) Proficiency in Microsoft Office suite, social media platforms including Facebook, Twitter, Instagram, TikTok, and social media management systems like Sprout Social Must be self-directed with ability to work collaboratively and independently in a remote setting Strong writing skills, able to write concisely, clearly, and quickly Strong, detail-oriented communicator who takes initiative Excellent time and project management skills Has an energized curiosity for emerging trends in digital spaces (including new platforms, influencers, media focuses, and cultural movements) that are related or tangential to PPGNY&rsquo;s missions and values Ability to identify opportunities for digital content and spearhead creative REQUIRED QUALIFICATIONS Bachelor's degree in marketing-related field, or comparable work experience 3-4 years in social media marketing and digital content management, including but not limited to social media, Google Analytics, website management, and other web development tools Commitment to PPGNY&rsquo;s mission, purpose, and values Bilingual, English and Spanish, is a plus Strong writing and editing skills, including the ability to carefully target messaging, quickly turn around materials, and respond to current events Must be a motivated self-starter and able to function effectively with a degree of Autonomy A high level of enthusiasm, energy, initiative, and drive Ability to distill complicated issues and research for messaging to multiple audiences Ability to prioritize work on several simultaneous, deadline-driven projects This position requires interaction with staff at all levels in a fast-paced environment with a high level of professionalism and confidentiality, demonstrated ability to work effectively and meet deadlines in high-pressure situations, and good judgment. The Manager must bring a positive âcan-doâ attitude, be flexible, have strong attention to detail, have strong decision-making ability, and work well both independently and collaboratively as part of a team. In keeping with the position, the Manager may be required to work evening and weekend hours, or irregular hours depending on the activity and event schedule and may have to travel throughout the state, intermittently. PHYSICAL DEMANDS Requires sitting for long periods of time.&nbsp; Periodic standing, walking, bending. Requires lifting of up to 15 pounds.&nbsp; Visual acuity sufficient to perform frequent work on a computer screen and review printed reports and other materials. This role routinely uses standard office equipment such as computers, phones, photocopiers, and filing cabinets.&nbsp; Requires the ability to hear and to communicate orally with others.&nbsp; &nbsp; PPGNY's benefits package includes: Generous PTO and holiday schedule Medical, dental and vision coverage options for you and eligible dependents FSA, HSA, Commuter pre-tax reimbursement funds Short- and Long-Term Disability, Free Basic Life and AD&amp;D 401(k) Retirement Plan with Safe Harbor contributions after 1 year of employment All positions at PPGNY require: Proof of immunization or immunity to certain communicable diseases (including influenza during the flu season and Covid-19) and testing for tuberculosis. These certifications are required by the NYC DOHMH Health Code, NYSDOH and OSHA. Planned Parenthood of Greater New York (PPGNY) is a leading provider, educator, and advocate of sexual and reproductive health care in New York State. PPGNY is proud to provide a wide-range of family planning services at our brick-and-mortar health centers and mobile care units. We care for everyone regardless of their immigration status, zip code or ability to pay. PPGNYâs education and outreach programs are backed by medically accurate, evidence-based information that allows people to make informed decisions about their health and future. As a voice for reproductive freedom, PPGNY supports legislation and policies that ensure all New Yorkers have access to the full range of reproductive health care and education. At PPGNY, we provide the absolute best care to our patients and our communities through innovative health care delivery and education programming. We care for everyone who walks through our doors regardless of insurance, ability to pay or immigration status. As a leading voice for reproductive freedom, PPGNY fiercely advocates for policies to ensure that all New Yorkers will have access to the full range of reproductive health care services and information. PPGNY is committed to diversity, equity, and inclusion. We believe we are most impactful when people with a wide range of backgrounds, experiences, and identities come together with common purpose. We encourage candidates from all backgrounds to apply. Please mention the word **FREED** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-17",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Planned Parenthood of Greater New York is hiring for Content Marketing Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "dda3138b",
+        "title": "Associate Customer Engagement",
+        "company": "The Coca-Cola Company",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-associate-customer-engagement-the-coca-cola-company-1134955",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-associate-customer-engagement-the-coca-cola-company-1134955",
+        "jdText": "This role requires the ability to work from the Atlanta office as business needs require. At The CocaâCola Company, every interaction with our customers is an opportunity to create value and strengthen relationships. Guided by our purpose to refresh the world and make a difference, we deliver iconic brands and exceptional experiences for billions of people each day. To make this possible, we rely on talented team members who combine digital fluency with a passion for solving real-world customer needs. As an Associate, Customer Engagement you will play a critical role in creating effortless, high-quality service experiences across multiple touchpoints. This position goes beyond answering inquiriesâit is about anticipating customer needs and delivering solutions that reinforce trust and reliability. By leveraging innovative platforms and collaborating across diverse teams, you will help ensure that customer engagement is seamless, supportive, and aligned with CocaâColaâs commitment to excellence. If you thrive in a fast-paced setting, are confident navigating multiple digital systems, and take pride in making every interaction meaningful, this role offers the chance to influence how customers experience a world-class global brand. What Youâll Do For Us Serve as a brand representative by delivering superior engagement across multiple communication channels while embodying CocaâColaâs values in every interaction. Actively listen, clarify customer needs, and communicate solutions that instill confidence and satisfaction. Research inquiries using internal systems and digital tools to provide accurate, timely resolutions for service and account support. Navigate multiple applications simultaneously to ensure efficient service execution across channels. Apply strong problem-solving skills to achieve first-contact resolution whenever possible and escalate issues responsibly when additional support is needed. Capture and relay customer insights to inform service improvements and support customer-centric initiatives. Contribute to enhancements in processes and tools through feedback and collaboration with the Customer Engagement team. Demonstrate adaptability by embracing evolving technologies, processes, and tools that advance the customer experience. Requirements &amp; Qualifications High School Diploma or equivalent required. Minimum of 2+ years of experience in customer service, customer engagement, or contact center environments with a strong track record of delivering exceptional customer experiences. Minimum of 2+ years of experience in a high-volume customer engagement environment utilizing CRM and customer interaction platforms. Experience with Salesforce, Genesys, or similar enterprise customer service technologies. Knowledge of CocaâCola customer engagement processes, systems, and ways of working preferred. Strong verbal and written communication skills, demonstrating professionalism and a customer-first mindset. Proven ability to resolve customer issues with creativity and composure under pressure. Excellent time management skills and attention to detail in a fast-paced, multitasking environment. Ability to consistently interpret and apply policies, workflows, and service standards. Ability to work independently in a remote setting while maintaining collaborative connections with team members. Typing proficiency of at least 50 words per minute and demonstrated ability to efficiently navigate multiple digital applications simultaneously while documenting customer interactions accurately and professionally. Flexibility to work contact center operating hours between 5:00 a.m. and 11:00 p.m., including weekends and holidays. Reliable high-speed internet access and a dedicated remote workspace suitable for professional communication and data security. What Weâll Do For You Provide hands-on exposure to next-generation customer engagement platforms that boost problem-solving and responsiveness. Deliver structured capability-building programs to strengthen service expertise, communication skills, and digital proficiency. Offer a collaborative, globally connected team environment focused on sharing insights, innovating processes, and elevating customer experiences. Enable your role to drive meaningful contributions that directly impact customer retention and reinforce CocaâColaâs reputation for reliability and care. The Coca-Cola Company will not offer sponsorship for employment status (including, but not limited to, H1-B visa status and other employment-based nonimmigrant visas) for this position. Accordingly, all applicants must be currently authorized to work in the United States on a full-time basis and must not require The Coca-Cola Company's sponsorship to continue to work legally in the United States. Computer Literacy, Customer Service, Detail-Oriented, Microsoft Office, Oral Communications, Recordkeeping, Relationship Building, Technical Support, Troubleshooting Pay Range United States of America: 51,300 USD - 57,900 USD Base pay offered may vary depending on geography, job-related knowledge, skills, and experience. A full range of medical, financial, and/or other benefits, dependent on the position, is offered. Annual Incentive Reference Value Percentage 7.5 Annual Incentive reference value is a market-based competitive value for your role. It falls in the middle of the range for your role, indicating performance at target. Location(s): United States of America City/Cities Remote Travel Required 00% - 25% Relocation Provided: No Job Posting End Date July 16, 2026 Our Purpose And Growth Culture We are taking deliberate action to nurture an inclusive culture that is grounded in our company purpose, to refresh the world and make a difference. We act with a growth mindset, take an expansive approach to whatâs possible and believe in continuous learning to improve our business and ourselves. We focus on four key behaviors â curious, empowered, inclusive and agile â and value how we work as much as what we achieve. We believe that our culture is one of the reasons our company continues to thrive after 130+ years. Visit Our Purpose and Vision to learn more about these behaviors and how you can bring them to life in your next role at Coca-Cola. We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, national origin, religion, sexual orientation, gender identity and/or expression, status as a veteran, and basis of disability or any other federal, state or local protected class. When we collect your personal information as part of a job application or offer of employment, we do so in accordance with industry standards and best practices and in compliance with applicable privacy laws. Pay Range:United States of America: 0 USD - 0 USD Base pay offered may vary depending on geography, job-related knowledge, skills, and experience. A full range of medical, financial, and/or other benefits, dependent on the position, is offered. Annual Incentive Reference Value Percentage:7.5 Annual Incentive reference value is a market-based competitive value for your role. It falls in the middle of the range for your role, indicating performance at target. Long-term Incentive Reference Value Percentage:0 - 20 Long-term Incentive reference value is a market-based competitive value for your role Please mention the word **ASTONISHMENT** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Atlanta,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-15",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "The Coca-Cola Company is hiring for Associate Customer Engagement. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "85d11796",
+        "title": "Chief Growth Officer",
+        "company": "Original Peptide",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-chief-growth-officer-original-peptide-1134878",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-chief-growth-officer-original-peptide-1134878",
+        "jdText": "Company Description Original Peptide supplies high-quality peptides designed to support strength, energy, recovery, cognitive optimization, and overall wellness research. The company emphasizes rigorous standards of quality, purity, and accessibility, offering trusted compounds to individuals pursuing advanced health and performance goals. Its product range spans muscle support, metabolic balance, and restorative wellness applications, enabling customers to explore innovative approaches to well-being. Original Peptide is committed to providing reliable, cutting-edge tools backed by careful formulation and a strong focus on customer care. Role Description The Chief Growth Officer (CGO) is a full-time, remote role responsible for driving revenue growth, market expansion, and brand visibility for Original Peptide. This role oversees integrated growth strategies across sales, business development, and marketing, ensuring alignment with company objectives and regulatory considerations in the wellness and research sectors. Day-to-day responsibilities include developing and executing growth plans, optimizing customer acquisition and retention, managing sales pipelines, and identifying new market opportunities and strategic partnerships. The CGO will collaborate closely with leadership to set performance targets, analyze data and KPIs, refine pricing and positioning, and guide cross-functional teams toward sustainable, scalable growth. The role also involves staying informed about industry trends, competitive dynamics, and customer needs to inform product and go-to-market strategies. Qualifications Demonstrated expertise in Sales and Sales Management, including building high-performing teams and managing end-to-end sales cycles. Strong Business Development skills, with experience identifying, negotiating, and managing strategic partnerships and new market opportunities. Proficiency in Marketing and Digital Marketing, including campaign strategy, performance measurement, and brand positioning across channels. Proven ability to develop and execute data-driven growth strategies, using analytics and KPIs to inform decisions and optimize outcomes. Experience in health, wellness, life sciences, or related industries is highly beneficial, with familiarity around compliant growth practices. Excellent leadership, communication, and cross-functional collaboration skills, with the ability to work effectively in a remote, fast-paced environment. Bachelorâs degree in Business, Marketing, or a related field; an advanced degree (MBA or equivalent) is a plus. Recruit train and manage a national network of independent sales representatives Negotiate large commercial agreements. Procure new clinic and med-spa and similar accounts Marketing - Coordinate with marketing to generate qualified leads. Improve conversion rates. Align campaigns with sales objectives. Please mention the word **MAJESTY** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "California, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-14",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Original Peptide is hiring for Chief Growth Officer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4d6fd4fe",
+        "title": "Date Posted",
+        "company": "OptN Inc",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-date-posted-optn-inc-1134954",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-date-posted-optn-inc-1134954",
+        "jdText": "Home Careers Chief Executive Officer Chief Executive Officer Executive Leadership Remote/Frisco TX Expiration date: 18 Oct 2025 Date Posted 18 May 2025 Expiration date 18 Oct 2025 Offered Salary (month) Generous Equity Experience 5 year exp Type Full Time Level Executive Language English ð CEO â EdTech Startup Location: Remote (US-based preferred) Compensation: Equity-first, generous founding-level package Industry: EdTech | University Recruitment | AI-Powered Student Engagement Stage: Seed | Pre-Series A | Product Launched ð Who We Are OptN is an AI-driven EdTech startup revolutionizing how universities connect with high school studentsâbefore they apply. Our platform, joinoptn.com, is live with a number of partner institutions and over 20,000 students, helping enrollment teams identify, engage, and convert prospective students with personalized outreach, predictive analytics, and mobile-first experiences. With a full product in market, and a powerful technical foundation, we are now seeking a visionary CEO to scale the business, help close a Series A, and lead OptN into its next phase of growth. ð¼ The Role Weâre looking for a founder-type leader who thrives in zero-to-one environments and is passionate about transforming the future of education through technology. This is a rare opportunity to take the reins of a venture-scale business with an established technical platform and traction. As CEO, You Will Own and drive company strategy, fundraising, and vision execution Play a key role in investor outreach and close our next round of financing (Series A) Build out a strong go-to-market function (sales, marketing, partnerships) Serve as the face of the company to institutions, press, and the broader EdTech community Collaborate closely with the founding technical team and board â You Might Be a Fit If You Have experience as a founder, co-founder, GM, or growth-stage operator in a tech or EdTech startup Understand the higher education buyer journey, especially in admissions or enrollment Have raised or helped raise venture capital and are eager to do it again Are obsessed with product-market fit, unit economics, and customer love Are comfortable with equity-forward compensation while building value ð What We Offer Founding-level equity stake A built product with real users and early institutional revenue Complete technical leadership and engineering support Opportunity to build your own team as we scale Mission-driven work that meaningfully improves access to higher education This role is for builders, not caretakers. If you want to be the driving force behind the next big EdTech companyâand youâre ready to earn your stake by executingâletâs talk. ð© To apply, email info@joinoptn.com with your background and why youâre excited about OptN. Job Skills Sales Self-motivated Edtech Leadership Other Benefits Generous Equity Flexible Hours Founding Opportunity Share FaceBook Instagram Linkedin Twitter OptN Inc. View Company Profile Jobs From This Company Chief Executive Officer 18 Oct 2025 Get The Right Job For You Subscribe to get updated on latest and relevant career opportunities Please mention the word **PLEASURE** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Frisco,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-16",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 99,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "OptN Inc is hiring for Date Posted. Role angle: Growth Data Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "f8e8d29d",
+        "title": "QA Engineer",
+        "company": "InEight",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-qa-engineer-ineight-1134965",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-qa-engineer-ineight-1134965",
+        "jdText": "Company Description InEight provides field-tested project management software for the owners, contractors, engineers and architects who are building the world around us. Over 300,000 users and more than 750 customers worldwide rely on InEight for real-time insights that help manage risk and keep projects on schedule and under budget across the entire life cycle. From pre-planning to design, from estimating to scheduling, and from field execution to turnover, InEight has powered more than $400 billion in projects globally across infrastructure, public sector, energy and power, oil, gas and chemical, mining, and commercial. Based in Scottsdale, Arizona, InEight supports a remote work model with employees working throughout the United States, Canada, Australia, Sri Lanka and Europe. InEight, an ISO 9001:2015-registered company, is a subsidiary of Kiewit Corporation (Kiewit). Kiewit, through its subsidiaries, is one of North Americaâs largest and most respected construction and engineering organizations. InEight is a fast-paced, innovative company comprised of high-energy teams of self-starters playing integral roles in shaping the future of capital projects around the world. Our industry-leading solutions, dedicated employees, and proven leadership team provide a solid foundation to support our continued growth and success. About The Role We are on the lookout for talented and motivated individuals who would like to join our highly talented Software Development team. The Quality Engineer will be responsible for ensuring the product meets the established standards of quality including reliability, usability and performance. The person in this role will liaise with the development and product teams to create, execute and validate test cases based upon product requirements. The candidate will report to the QA lead and will collaborate with other QA members to track QA tasks, engage in defect resolution and look for automation integration. Skills &amp; Experience 1- 2 years of software testing experience and solid domain experience. Execution of test plan reviews, system integration testing, and documentation of testing results in conjunction with QA manager and subject matter experts. Diagnose, track and manage testing issues and defects to resolution. Communicate testing progress, results and other relevant information to QA Manager. Actively participate in process improvement initiatives by providing feedback on deployed processes. ISTQB testing certification is considered advantageous InEight Inc. is an Equal Opportunity Employer, (EOE) and will consider all applications without regard to race, marital status, sex, age, color, religion, national origin, veteran status, disability or any other characteristic protected by law. Please mention the word **AVIDLY** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Colombo,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-14",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 75,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "InEight is hiring for QA Engineer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "7ac352ae",
+        "title": "Business Analyst",
+        "company": "EasyPark",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-easypark-1134922",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-business-analyst-easypark-1134922",
+        "jdText": "Weâve signed up to an ambitious journey. Join us! As Arrive, we guide customers and communities towards brighter futures and more livable cities, it isnât a challenge just anyone could take on. Luckily, we have something to help us make it happen. Our people and our values. We Arrive Curious, Focused and Together. Just as our entire brand is inspired by the North Star, the shining light leading travelers to their destinations since time began, our values guide us. They help us be at our best. For our customers. For the cities and communities we serve. For ourselves. As a global team, we are transforming urban mobility. Letâs grow better, together. The Role We're looking for a Business Analyst to join our Sales &amp; Business Development team, supporting Parkopedia's global commercial operations through market intelligence, data analysis and AI-driven insights. This role sits at the heart of our commercial strategy, helping improve pipeline visibility, customer insights and revenue forecasting. You'll work closely with our global Account Managers, providing data-driven recommendations that support business growth and smarter decision-making. What You'll Do Analyse market trends, customer performance and mobility industry insights. Research competitors and market developments using modern AI tools. Support Account Managers with commercial insights and growth opportunities. Monitor customer contracts, renewals, billing and revenue forecasts. Analyse transaction data across parking, charging, fuel and tolling products. Improve CRM data quality, reporting and pipeline visibility. Produce regular commercial reporting to support business decision What You'll Bring Strong analytical and numerical skills with experience interpreting large datasets. Experience using AI tools and modern analytics solutions to improve research, reporting and workflows. Experience in Business Analysis, Sales Operations, Commercial Operations or a similar analytical role. Strong Excel skills and experience working with CRM platforms. Excellent communication skills with the ability to present complex data clearly to business stakeholders. Fluent English, both written and spoken. Why Join Us? Youâll be part of a team where your ideas are heard, your craft is respected, and your growth is prioritized. If you are curious, proactive, and ready to solve complex challenges, we want to meet you. This a remote role based in Moldova Please mention the word **CONVINCINGLY** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "ChiÅinÄu, ChiÅinÄu, ChiÈinÄu, Moldova",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-14",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "EasyPark is hiring for Business Analyst. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "cb3fcf81",
+        "title": "Business Development",
+        "company": "Timo",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-business-development-timo-1134909",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-business-development-timo-1134909",
+        "jdText": "Business Development (BR) Timo is a global platform expanding across Southeast Asia, ARC, Brazil, and beyond! We specialize in chat, party rooms, and gaming, creating engaging social entertainment experiences for users worldwide. We are looking for an Business Development to manage and grow our network of agencies in Brazil. If you have a passion for operations, partnerships, and strategy, this could be the role for you! Responsibilities Recruit and onboard agencies and hosts, ensuring performance and engagement targets are met. Build strong, lasting relationships with guild leaders and streamers. Organize events and campaigns to boost community engagement. Monitor performance metrics and optimize strategies using data insights. Ensure a positive and engaging experience for all community members. Qualifications Bachelorâs degree. 2+ years experience in social/voice chat/live streaming/gaming platforms. Proven recruitment and relationship management skills. Data-driven with strong problem-solving abilities. Excellent communication in English and Portuguese. Please mention the word **ROSY** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "SÃ£o Paulo e RegiÃ£o",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "Python",
+          "campaign",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-14",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Timo is hiring for Business Development. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "b2b113e4",
+        "title": "Community &amp; Social Manager",
+        "company": "Pacifica Beauty",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-community-amp-social-manager-pacifica-beauty-1134951",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-community-amp-social-manager-pacifica-beauty-1134951",
+        "jdText": "Beauty With a Higher Purpose! Pacifica Beauty has been a trailblazer in clean, cruelty-free beauty since 1996, offering natural, sustainable products that empower individuals to express their unique beauty while respecting the planet. Our mission is to create high-performance skincare, makeup, fragrance, and body care that promote self-care, wellness, and environmental consciousness. With a commitment to innovation, integrity, and compassion for people, animals, and the planet, we strive to inspire positive change in the beauty industry and beyond. Join us in redefining beauty and inspiring conscious living, one product and one person at a time. About The Role We're looking for a Community &amp; Social Manager who thrives in fast-moving, multi-channel environments. This role sits at the intersection of community building, creator relationships, and social strategy execution. You'll build and run creator/community campaigns, manage day-to-day social community engagement, coordinate events, and monitor brand sentiment across review platforms â all while keeping a sharp eye on what's driving engagement and conversion. This is a hands-on role for someone who can juggle multiple priorities at once, stay extremely organized under pressure, and bring both strategic instinct and operational discipline to the table. Candidates must be based in the NYC area. The role is currently remote, with the possibility of shifting to hybrid in the future. Location: NYC Area required (role is currently remote, with potential shift to hybrid in the future) Reports to: VP, Community Type: Full-time Comp : $95-$110k Based on experience What You'll Do Community &amp; Creator Management Manage relationships across creator and influencer platforms (e.g., TikTok Shop, Levanta, CreatorIQ, Shopify affiliates or similar) Identify, vet, and onboard creators aligned with brand voice and campaign goals Build and execute creator campaigns from brief to content review to performance recap Track creator performance and content licensing opportunities (Spark Ads, organic-to-paid conversion, whitelisting) Cultivate creator relationships beyond the campaign brief, including coordinating and attending in-person touchpoints such as coffee meetings, meals, and brand social events to build authentic, long-term partnerships Social Strategy &amp; Community Engagement Own day-to-day community engagement across brand social channels (comments, DMs, community interaction) Execute social strategy aligned with broader brand and marketing goals Monitor trends and proactively suggest campaign or community opportunities Reputation &amp; Review Management Monitor and respond to reviews across platforms (e.g., Google, Sephora, Ulta, Amazon, Trustpilot) Flag recurring product or customer service themes to relevant internal teams Maintain brand voice and tone across all public-facing responses Events &amp; Collaboration Coordinate logistics for brand events, activations, and creator collaborations (in-person and virtual) Attend and support NYC-based events, pop-ups, and creator meetups as needed Partner cross-functionally with marketing, PR, and product teams to align event strategy with broader campaigns Own content strategy and capture at brand events and activations, from shot lists to on-site production, ensuring content is optimized for social and community channels Requirements What You Bring 5+ years of experience in social media, community management, or influencer/creator marketing Must live in the NYC area Extremely organized, with strong attention to detail and the ability to manage multiple campaigns and deadlines simultaneously Hands-on experience with creator platforms and affiliate/licensing tools Strong writing skills and an ear for brand voice across different channels and audiences Experience with review/reputation management platforms Data-curious: comfortable pulling basic performance metrics and translating them into next steps Event planning and cross-functional event collaboration experience, in-person or virtual Experience producing or overseeing content at live events (photo/video capture, real-time posting, recap content) A collaborative, low-ego approach â this role works closely with cross-functional teams Ability to travel to and attend NYC-based events and corporate meetings, plus periodic travel outside the NYC area for company business (typically 4+ times per year) Ability to work hybrid in the NYC area as needed Nice to Have Experience in beauty, wellness, or CPG is a huge plus! Familiarity with Spark Ads, TikTok Shop, or content licensing models Basic design or content editing skills (Canva, CapCut, or similar) Benefits Competitive salary and benefits package Opportunities for professional growth and development Employee discounts on Pacifica Beauty products A supportive and inclusive work culture that values diversity, creativity, and innovation Meaningful work that makes a positive impact on people and the planet Join Pacifica Beauty in our mission to redefine beauty and inspire conscious living. Together, we can create a brighter, more beautiful future for all. Apply now to join our passionate team! Please mention the word **RECEPTIVE** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-16",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Pacifica Beauty is hiring for Community &amp; Social Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "ed0855c3",
+        "title": "Field Marketing Manager",
+        "company": "CELSIUS",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-field-marketing-manager-celsius-1134874",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-field-marketing-manager-celsius-1134874",
+        "jdText": "IfÂ you'reÂ reading this on your way from 5am spin class to festival fast-pass,Â you'reÂ CELSIUSÂ®â an everyday hustler with the essential energy to aimÂ high, andÂ go the extra mile wherever your goals take you.Â Joyful by design, sunny by nature, and unapologetically bold. If your bestie has you saved in their phone as \"Icon,\"Â you'reâ¯ALANI NUÂ®â¯â confident, colorful, and bringing main-character energy to every moment.Â SoCal in your soul, attitude in your stride. If gravityÂ doesn'tÂ stop you and \"impossible\" sounds more like \"dare you,\"Â you'reâ¯ROCKSTARÂ®â a born rebel, raising the bar with mind-body energy and zero compromise.Â ---Â Together,Â we'reÂ Celsius Holdings, Inc.â a global CPG company united by three powerhouse brands and one incredibly talented team.Â At Celsius, we pride ourselves on empowering our people. Every employee hasÂ a stakeÂ in our success. We create a collaborative culture built on inclusivity, innovation, and a belief that great ideas can come from anywhere.Â AndÂ we'reÂ on our way to building something bigger: a category where energyÂ isn'tÂ just consumed,Â it'sÂ livedâwhere performance meets personality, brand becomes community, and every can crack sparks a statement.Â This is the future of modern energy. This is Celsius. Â Â Ready to take your career to the next level? Join our team and redefine what it means to be energized.Â Field-Based: Remote; role requires presence in assigned market. This is a driving position. A valid U.S. Driver's License required; applicants must pass an MVR (Motor Vehicle Record) screening. People Management Responsibilities: Yes Role Type: Full-Time Salary Range: $60-$70k Position Overview As the Field Marketing Manager, you'll be the face of the CELSIUSÂ® or ALANI NUÂ® brand on the ground, driving awareness, trial, and conversion across your region. This is your opportunity to activate national marketing strategies through impactful local experiences that connect with consumers and energize retail. You'll bring leadership, creativity, and a passion for building community through smart, scalable field programs. This position is available in the following markets: Miami, FL - CELSIUSÂ® or ALANI NUÂ® Dallas, TX - CELSIUSÂ® ONLY New York City Metro - CELSIUSÂ® ONLY Denver, CO - CELSIUSÂ® ONLY Orlando, FL - CELSIUSÂ® ONLY Requirements Experience : 5+ years in grassroots and brand marketing, preferably in CPG, food, or beverage; 3+ years in team management or field leadership Education : Bachelor's degree preferred Strong background in community engagement, event marketing, and project management Familiarity with regional events and cultural moments that drive brand relevance Demonstrated ability to lead teams, manage cross-functional priorities, and deliver under pressure Self-motivated with excellent organizational and problem-solving skills Strong interpersonal and communication skills Comfortable working independently and collaboratively in a dynamic environment Willingness to travel within the assigned region Valid U.S. driver's license Physically able to lift up to 25 lbs and stand for extended periods Key Responsibilities Implement 360Â° marketing campaigns aligned with national goals and regional sales strategies Build partnerships with local influencers, community leaders, and media outlets Develop and manage local sponsorships and sampling opportunities Lead high-impact consumer activations and events; measure performance to optimize ROI Recruit, train, and lead a team of part-time Brand Ambassadors Collaborate with Sales and distributor teams to support in-store visibility and retail success Manage regional marketing budgets, product forecasting, and campaign reporting Oversee operational logistics, including warehouse space, product inventory, and company vehicle use Coordinate with Finance to process invoices and manage expenses Support broader marketing and sales initiatives as needed Benefits Comprehensive Medical, Dental &amp; Vision benefits Long- and short-term disability Life insurance 10 Vacation days per year subject to accrual policy 11 Company paid holidays 401(k) with Company match Identity theft and legal services The base pay range for this position is for a successful candidate within the state listed. The successful candidate's actual pay will be based on multiple factors, such as work location, job-related knowledge, skills, qualifications, and experience. Celsius is a total rewards company. This position may be eligible for other compensation, including bonuses and Restricted Stock Units (subject to company plans). Celsius Holdings, Inc. celebrates diversity and is committed to creating an inclusive environment for all employees. We are proud to provide equal employment opportunities (EEO) to all employees and applicants for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. We believe strongly in fostering a safe, fair and respectful work environment. If you need assistance and/or a reasonable accommodation due to a disability during the application process, please reach out to careers@celsius.com. The above information has been designed to indicate the general nature and level of work performed by employees within this classification. It is not designed to contain or be interpreted as a comprehensive inventory of all duties, responsibilities and qualifications required of employees assigned to this job. Please mention the word **TRUSTINGLY** and tag RMTMuMjIxLjE0Ni4yNDI= when applying to show you read the job post completely (#RMTMuMjIxLjE0Ni4yNDI=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Orlando, Orlando, Florida, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-15",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "CELSIUS is hiring for Field Marketing Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
