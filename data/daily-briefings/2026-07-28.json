@@ -1,0 +1,549 @@
+{
+  "id": "briefing-2026-07-28",
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-28T03:42:10.428Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "b7df377d",
+        "title": "Technical Recruiter 2026 New Graduate",
+        "company": "Radiant Industries",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-recruiter-2026-new-graduate-radiant-industries-1135414",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-recruiter-2026-new-graduate-radiant-industries-1135414",
+        "jdText": "About Radiant Radiant is an El Segundo, CA-based startup building the worldâs first mass-produced, portable nuclear microreactors. The companyâs first reactor, Kaleidos, is a 1-megawatt, fail-safe microreactor that can be transported anywhere power is needed and run for up to 5 years without refueling. Portable nuclear power with rapid-deploy capability can replace similar-sized diesel generators and provide critical asset support for hospitals, data centers, remote sites, and military bases. Radiantâs unique, practical approach to nuclear development leverages modern software engineering to rapidly deliver safe, factory-built microreactors that use existing, well-qualified materials. Founded in 2020, Radiant is on track to test its first reactor at the Idaho National Laboratory this summer, with initial customer deliveries beginning in 2028. About the Role Radiant is seeking a driven recent grad to join our talent team and help build the engineering teams behind Kaleidos, our portable, mass-producible nuclear microreactor targeting commercial deployment in 2028. This is a role for someone who wants to start a career in recruitment, work in a dynamic, fast-paced environment with real ownership and influence, build a deep tech career, and learn about several technical domains like nuclear, hardware, electrical, software, and more. You'll get close mentorship from recruiters and sourcers who've built teams before, regular visibility with executives, own requisitions, and find top talent for engineering leaders and their teams. Responsibilities and Duties Run your own reqs from open to close, building the pipeline, screening candidates, coordinating interviews, and getting offers signed. Find niche talent markets for specialized engineering roles in places like GitHub repos, arXiv papers, technical mailing lists, tech foundation communities, conference speaker rosters, and academic programs. Create talent market reports based on research you drive to help make better-informed recruiting strategies. Coordinate interviews and help facilitate hiring team debriefs to keep decisions moving quickly. Sit in on offer conversations with senior recruiters and learn how strategy and closing work in practice. Help shape how Radiant recruits; the processes, tools, and 3rd party platforms you help build and adopt now become the foundation the team scales on. Get hands-on exposure to hiring across multiple technical functions: electrical, mechanical, software, and more. Required Qualifications and Skills: Bachelor's degree from an accredited university. 0â2 years of experience in recruiting, sales, sourcing, or coordination, or you've picked it up on your own and can point to something that proves it. Something outside the classroom that shows real team influence, a club you led, student government, a project you built, a sport you competed in, or work you volunteered for. A genuine pull toward hardware, nuclear, physics, or AI/ML; you don't need an engineering background, just real curiosity. A bias toward action: you move quickly, problem-solve on the fly, and know when to raise your hand for help. You're able to hold a genuine conversation with technical candidates, curious enough to ask good questions, and honest enough to admit when something's outside your depth. Desired Qualifications and Skills: Bachelor's degree in a STEM-related major is a plus. Any prior exposure to hardware, software, engineering, or tech recruiting, even informally. Comfort picking up new tools such as LinkedIn Recruiter, ATS, sourcing, LLM platforms, even without direct prior experience. Additional Requirements: Must be willing to work extended hours and weekends as necessary to accomplish our mission. Must work 100% onsite at El Segundo HQ. Benefits and Perks Stock: Substantial incentive stock plan for all full-time employees. Medical: 100% up to base silver level plan for employee + 50% dependents, offers up to Platinum plans. One Medical: Sponsored memberships for employees and their dependents. Vision: 100% top tier plan coverage + 50% for dependents. Dental: 100% top tier plan coverage, orthodontia extra, 50% for dependents. Voluntary life, accident, hospital, critical illness, commuter and FSA/HSA are offered as employee contributed benefits. 8-weeks of paid parental leave for all parents. Additional paid pregnancy leave for CA employees. Daily catered lunch. Free snacks and drinks. Flexible PTO policy. Remote workday allocation. Company and team-bonding events, happy hours and in-person camaraderie. Beautiful El Segundo headquarters close to the Pacific Ocean. Total Compensation and Benefits Radiant compensates people for impact and invests in those who continue to raise the bar. Radiantâs new hire compensation package includes base salary, substantial equity grants, and comprehensive health benefits. Total compensation and level are determined through a rigorous evaluation of interview performance, experience, education, and qualifications, and are designed to support continued growth as scope, responsibility, and impact expand at Radiant. The best of todayâs advanced reactor builders donât wait for job postings. They join the winning team. If thatâs you, contact us directly for immediate opportunities: recruiting@radiantnuclear.com . We are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity or expression, pregnancy, age, national origin, disability status, genetic information, protected veteran status, or any other characteristic protected by law. This position involves access to technology that is subject to U.S. export controls. Any job offer made will be contingent upon the applicantâs capacity to serve in compliance with U.S. export controls. Please mention the word **NOURISHING** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "El Segundo",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Radiant Industries is hiring for Technical Recruiter 2026 New Graduate. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "5ea864b3",
+        "title": "Creative Project Manager",
+        "company": "MUSEUM OF ICE CREAM",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-creative-project-manager-museum-of-ice-cream-1135382",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-creative-project-manager-museum-of-ice-cream-1135382",
+        "jdText": "About The Role At Museum of Ice Cream, we exist to spark joy, create connection, and turn everyday moments into unforgettable experiences â while serving as the global champion of ice cream culture. From the brands and makers shaping the category to the communities that gather around it, MOIC sits at the center of a cultural movement built on nostalgia, creativity, and shared joy. As we continue to grow, we are looking for a Creative PM to help bring structure, momentum, and timeline management to our creative projects. This role sits at the intersection of big imagination and meticulous execution â perfect for an experienced freelancer who knows how to hit the ground running and make an immediate impact. What You'll Do Creative Production &amp; Project Leadership Own the end-to-end lifecycle of creative projects across campaigns and marketing channels, from brief through to final delivery. Build and maintain production timelines and project plans, keeping every stakeholder aligned on what's happening and when. Translate creative concepts into actionable workstreams without losing the vision. Support the SVP of Marketing &amp; Brand Director with kick-off meetings, creative reviews, and production check-ins. Manage multiple concurrent projects simultaneously across your contracted hours. Process &amp; Workflow Management Champion creative process standards â ensuring briefs are clear, feedback loops are tight, and nothing goes into production without the right approvals. Own and maintain Asana boards, workflows, and templates so the creative team stays focused on making, not chasing. Identify workflow inefficiencies and proactively recommend improvements. Maintain version control and asset organisation across projects. Support the Director, Marketing Strategy &amp; Ops with timelines that feed into the broader Marketing team timelines. Cross-Functional Collaboration Gather and clarify briefs from internal stakeholders before they reach the creatives. Manage external vendor relationships â photographers, videographers, fabricators, and agencies â within the scope of your projects. Budgets &amp; Resources Manage vendor estimates and POs as required. Manage contract creative team budgets in support of the Director, Marketing Strategy &amp; Ops Reporting &amp; Communication Produce clear status updates and project recaps for the team and senior stakeholders. Support in the maintenance of a shared creative calendar with visibility into upcoming campaigns and milestones. Run post-mortems on completed projects and feed learnings back into process. Contract Details This is a temporary contractor role The hourly pay is between $65/hr-$75/hr Commitment: Approx. 20-30 hours per week Duration: 3 months, with potential to extend Location: Remote Requirements Expert in creative production and project management, ideally within a consumer brand, agency, or experiential environment. Proven ability to manage creative workflows across digital, social, print, and video. Expert-level proficiency in Asana, with experience building workflows and templates independently. A clear, confident communicator who earns trust quickly â with creatives, stakeholders, and vendors alike. Comfortable owning budgets and managing vendor relationships with minimal oversight. Calm under pressure, solutions-oriented, and highly organized. Available for a consistent part-time commitment each week (hours to be agreed at contract stage). Able to work independently as a contractor â you manage your own time and hit your deadlines. Please mention the word **REFORMS** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Washington,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "MUSEUM OF ICE CREAM is hiring for Creative Project Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "135e4f4c",
+        "title": "Social Community Representative",
+        "company": "CELSIUS",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-social-community-representative-celsius-1135380",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-social-community-representative-celsius-1135380",
+        "jdText": "The Social Community Representative is responsible for engaging with consumers, creators, and ambassadors across social media channels to build community, strengthen brand affinity, and support a positive customer experience. This remote, part-time role combines community management, creator support, social engagement, and content execution to help drive meaningful connections and brand growth. Reporting to the DIGITAL COMMUNITIES' ASSOCIATE MANAGER , the SOCIAL COMMUNITY REPRESENTATIVE will support our collegiate team in the following areas and meet the job requirements below. This is a remote, part-time position. -- Responsibilities Monitor and respond to direct messages, comments, tagged content, and community interactions across social media platforms to support audience engagement and strengthen brand affinity. Act as a trusted voice of the brand by reviewing and responding to consumer, creator, and ambassador inquiries with professionalism, accuracy, and attention to detail. Foster positive brand sentiment through timely, thoughtful, and on-brand interactions across all social channels. Support creator, ambassador, and community engagement by resharing stories, engaging with tagged content, and recognizing standout community members. Amplify user-generated content (UGC) and spotlight exceptional creator and ambassador content through social features, community initiatives, and monthly reward or gift-code programs. Identify and report recurring community themes, ambassador questions, consumer complaints, and engagement opportunities to help improve brand communications and customer experience. Assist with content creation and execution across platforms including TikTok, Instagram, Threads, X, and other emerging social channels. Contribute creative ideas, messaging concepts, and social-first content recommendations that align with brand voice and campaign objectives. Encourage participation in community programs, ambassador challenges, competitions, seasonal campaigns, and engagement initiatives through proactive outreach. Research social trends, creators, cultural moments, and emerging platforms to identify opportunities for community growth and engagement. Requirements Experience with excel. Strong written and verbal communication skills, with the ability to represent the brand voice professionally and enthusiastically. Familiarity with social media platforms (Instagram, TikTok, etc.) and current social trends. Highly organized with the ability to manage multiple projects and track many moving pieces at once. Comfortable using influencer marketing platforms, social media monitoring tools, or CRM systems (e.g., CIQ, Sprout Social). A proactive, collaborative attitude and a passion for digital communities and creator culture. Please mention the word **BOOM** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Washington,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "CELSIUS is hiring for Social Community Representative. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "61cfae39",
+        "title": "Executive Assistant",
+        "company": "16VC",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-16vc-1135443",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-16vc-1135443",
+        "jdText": "Executive Assistant / Operations Coordinator (Remote) Location Remote Employment Type Contract (with potential to transition to full-time) Compensation USD $500â$1,200 per month , depending on experience, skills, availability, and location. About Us We are a venture capital firm backing ambitious founders building the next generation of technology companies. We work closely with entrepreneurs from the earliest stages, helping them grow through capital, strategic guidance, and access to our network. We're looking for a highly organized, proactive Executive Assistant / Operations Coordinator to support our leadership team and keep day-to-day operations running smoothly. What You'll Do Manage executive calendars, scheduling, and meeting coordination across multiple time zones. Organize investor, founder, and partner meetings. Prepare agendas, take meeting notes, and follow up on action items. Coordinate travel, accommodations, and itineraries when required. Support internal operations, documentation, and process improvements. Maintain organized records, files, and internal knowledge bases. Assist with preparing presentations, reports, and spreadsheets. Coordinate virtual events, webinars, and team meetings. Liaise with founders, investors, vendors, and external partners professionally. Handle confidential information with discretion. Provide general administrative support to the investment and operations teams. What We're Looking For 2+ years of experience as an Executive Assistant, Operations Coordinator, Administrative Assistant, or similar role. Excellent organizational and time management skills. Strong written and verbal communication in English. High attention to detail and ability to manage multiple priorities. Comfortable working independently in a remote environment. Proactive mindset with a strong sense of ownership. Ability to maintain confidentiality and professionalism. Proficiency with Google Workspace (Docs, Sheets, Calendar, Drive), Microsoft Office, Zoom, Slack, and Notion or similar productivity tools. Nice to Have Experience working at a startup, venture capital, private equity, or technology company. Familiarity with CRM tools such as HubSpot or Affinity. Experience coordinating events or investor communications. Basic project management experience. Experience supporting multiple executives. What We Offer Fully remote work. Flexible working hours with overlap during core business hours. Opportunity to work closely with founders, investors, and high-growth startups. High ownership and autonomy. Collaborative, fast-paced environment with opportunities to learn and grow. Please mention the word **BEST** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Idaho, Idaho, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-26",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "16VC is hiring for Executive Assistant. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "cb08e269",
+        "title": "No positions currently available",
+        "company": "UpTye",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-no-positions-currently-available-uptye-1135504",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-no-positions-currently-available-uptye-1135504",
+        "jdText": "JOIN THE TEAM Let's Build SomethingGreat Together We're looking for passionate people to help shape the future of global work. General Application Don't see a perfect match? Tell us about yourself and we'll find the right opportunity. Full Name * Email * Role Interest *Select a role categoryEngineeringProduct DesignProduct ManagementPeople OperationsMarketingSalesOther LinkedIn GitHub Portfolio Why UpTye? (Optional) Resume / CV * Drop your PDF here or click to browse PDF only, max 5MB By submitting, you agree to our privacy policy. We'll never share your info. Why Join UpTye? We're building the infrastructure for the future of global work. Join us and make an impact. Work with a global, distributed team Clear growth paths and mentorship Shape the future of remote hiring Current Openings We have active roles across Engineering, Product, Design, and Operations. View Open Positions â Questions? Reach out to our talent team directly. We'd love to hear from you. careers@uptye.com Please mention the word **CELEBRATE** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Oregon,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-27",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "UpTye is hiring for No positions currently available. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "bc4c6f4c",
+        "title": "Executive Assistant",
+        "company": "Ritual AdsÂ®",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-ritual-adsr-1135344",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-ritual-adsr-1135344",
+        "jdText": "Company Description Ritual AdsÂ® is a cutting-edge AI software company that uses generative AI to create tailored, data-driven advertising content on demand. The platform helps organizations quickly produce high-impact, customized ads that align with their brand and audience. By combining advanced machine learning with real-time data, Ritual AdsÂ® aims to improve campaign performance and efficiency. Team members collaborate in a technology-forward environment focused on innovation, scalability, and measurable results. Role Description The Executive Assistant at Ritual AdsÂ® is a full-time, remote role responsible for providing comprehensive administrative and organizational support to company leadership. Day-to-day tasks include managing calendars, scheduling meetings, coordinating travel, and preparing agendas and meeting materials. The Executive Assistant will handle expense reports, track reimbursements, and maintain accurate documentation. The role also includes managing correspondence, drafting and editing communications, organizing digital files, and supporting special projects and operational tasks to ensure smooth executive workflows. Qualifications Strong Executive Administrative Assistance and Executive Support skills, with experience managing calendars, meetings, and executive priorities. Proficiency in Administrative Assistance tasks, including documentation, scheduling, and workflow coordination. Excellent Communication skills, both written and verbal, with the ability to interact professionally with internal and external stakeholders. High level of organization, time management, and ability to handle multiple tasks in a fast-paced, remote environment. Ability to think and act proactively anticipating problems before they arise. Comfort with digital tools and productivity software and AI workflows and LLMs. Discretion and sound judgment in handling confidential and sensitive information. Previous experience supporting leadership in a technology or startup environment is beneficial. Relevant education or training in business administration, communications, or a related field is an advantage. Please mention the word **GOOD** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Pasadena, Pasadena, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Ritual AdsÂ® is hiring for Executive Assistant. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "9c089e54",
+        "title": "Customer Support",
+        "company": "Talenticlix",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-customer-support-talenticlix-1135446",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-customer-support-talenticlix-1135446",
+        "jdText": "Customer Support Specialist (Arabic) | Remote Â We are actively seeking a detail-oriented Remote Customer Support (Arabic) Specialist to join our team. In this role, you will be responsible for delivering professional and timely support to Arabic-speaking customers through various communication channels. You will handle customer inquiries, resolve issues efficiently, and ensure a positive customer experience at every interaction. Strong communication skills in Arabic, excellent problem-solving ability, and attention to detail are essential for success in this remote position. Your contribution will play a key role in maintaining customer satisfaction and supporting the overall growth of our organization. Â Key Responsibilities Â 1) Customer Communication Respond to customer inquiries via email, chat, or phone in Arabic (and English if required) Provide accurate information about products, services, and processes Maintain clear, professional, and empathetic communication 2) Issue Resolution Assist customers with troubleshooting and resolving common issues Identify root causes and guide customers through solutions Escalate complex or sensitive cases to appropriate teams 3) Case Management Document all customer interactions in CRM or support systems Track open cases and follow up to ensure timely resolution Maintain accurate and up-to-date customer records 4) Quality and Service Standards Ensure all responses meet company quality and communication standards Handle complaints with professionalism and empathy Support continuous improvement by identifying recurring issues 5) Team Collaboration Work closely with internal teams to resolve customer concerns Participate in training sessions and team meetings Stay updated on product changes, policies, and procedures Â Required Skills and Qualifications Fluency in Arabic (written and spoken) and good English skills Strong communication and interpersonal abilities Customer-focused mindset with empathy and patience Ability to handle multiple tasks in a fast-paced environment Basic computer skills and familiarity with digital tools Problem-solving skills and attention to detail Ability to work independently in a remote setting Previous customer support experience is a plus Â Technical Requirements Reliable high-speed internet connection Personal computer or laptop with updated operating system Quiet and professional workspace Familiarity with email, chat tools, and CRM systems (preferred) Â What We Offer Competitive compensation Flexible remote working schedule Training and onboarding support Opportunities for career growth in customer support Performance-based incentives Supportive and collaborative remote team environment Â Keywords Customer support â¢ Arabic speaker â¢ Remote work â¢ Customer service â¢ CRM systems â¢ Communication skills â¢ Problem-solving â¢ Multilingual support â¢ Work from home â¢ Customer experience â¢ Service representative Â Â Please mention the word **STREAMLINED** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Ø§ÙÙØ¯ÙÙØ©, Ø§ÙÙØ¯ÙÙØ© Ø§ÙÙØ¯ÙÙØ© Ø§ÙØ³Ø¹ÙØ¯ÙØ©",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 45,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [
+          "Language requirement may be outside Mia's current positioning."
+        ],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Talenticlix is hiring for Customer Support. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "Language requirement may be outside Mia's current positioning."
+      ]
+    },
+    {
+      "job": {
+        "id": "16dcec5d",
+        "title": "Enterprise Account Executive",
+        "company": "career",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-enterprise-account-executive-career-1135389",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-enterprise-account-executive-career-1135389",
+        "jdText": "About Haven Safety: Haven is transforming how organizations learn from workplace incidents. Built in partnership with The AES Corporation and backed by AI Fund, Haven applies purpose-built AI to incident investigations, root cause analysis, corrective actions, and organizational learning. Our platform helps utilities, energy companies, construction firms, and other high-risk industries dramatically reduce investigation effort while improving investigation quality and organizational learning. We're an early-stage company with enterprise customers, global ambitions, and an experienced leadership team. We're looking for exceptional salespeople who enjoy building a category rather than simply selling software. The Opportunity: We are seeking an experienced Enterprise Account Executive with a successful track record selling enterprise EHS software. You will own opportunities from discovery through executive alignment, proof of value, commercial negotiation, and close. You will engage Fortune 1000 executives across Safety, Operations, IT, Risk, and Procurement and help customers rethink how work gets done through AI. \\n Responsibilities Include: Own enterprise sales opportunities from qualification through close. Develop executive relationships across Safety, Operations, IT, Risk, and Procurement. Lead consultative discovery and business value discussions. Demonstrate Haven's platform and ROI. Coordinate pilots and proof-of-value engagements. Build business cases and ROI models. Navigate enterprise procurement, security, and legal reviews. Partner with Customer Success during implementation. Represent Haven at industry events. Consistently exceed revenue targets. What Success Looks Like: Within your first year you will close multiple enterprise customers, become a trusted advisor to senior EHS leaders, contribute to Haven's go-to-market strategy, and help establish Haven as the leader in AI-powered industrial safety. Required Experience Includes: 7+ years of enterprise B2B software sales. Success selling into Fortune 1000 organizations. Experience leading complex multi-stakeholder enterprise sales cycles. Consistent history of exceeding quota. Experience building executive relationships with EHS, Operations, Risk, or Operational Excellence leaders. Strong consultative selling skills. Excellent executive communication and presentation skills. Experience navigating procurement, security, and legal reviews. Nice to Haves Include: AI or advanced analytics solutions. Utilities, Oil &amp; Gas, Construction, Manufacturing, Mining, Chemicals, or other high-risk industries. Early-stage or venture-backed SaaS companies. Experience with enterprise sales methodologies such as MEDDICC or Challenger. Direct experience selling EHS (Environmental, Health &amp; Safety) software solutions. \\n Why Join Haven: Build a new AI category, work directly with founders and enterprise customers, influence product direction, receive competitive compensation, uncapped commissions, equity participation, health benefits, and flexible working arrangements. Please mention the word **UNMATCHED** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Remote",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-25",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 40,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "career is hiring for Enterprise Account Executive. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "3cf42ccd",
+        "title": "Paralegal",
+        "company": "Giga Energy",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-paralegal-giga-energy-1135386",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-paralegal-giga-energy-1135386",
+        "jdText": "Why join Giga The Pace: We're building at a speed most companies talk about but never actually operate at. If you've been bored somewhere else, you won't be here. The Impact: Every person at Giga touches the work that matters. No layers, no waiting for approval chains. You'll see your fingerprints on what we ship. The Team: A team of operators defining the future of AI infrastructure. We recruit A-players from the most innovative companies in the world, and they choose Giga because the work here means more. The Moment: AI doesn't run without power, and that's us. Giga is the picks and shovels behind the AI revolution. This industry is about to explode, and you'll be in the room where it's already happening. What Youâll Do As Paralegal , youâll take full ownership of the NDA &amp; intake process. Youâll drive NDAs to execution independently, without attorneys needing to be involved. Youâll maintain a centralized legal intake process â a single place where requests come in, get triaged, and get worked â and then hold the rest of the company accountable to using it. Youâll own the signature pipeline end to end: queuing documents, sending them out, and tracking them to completion. This is a highly autonomous role: youâll be given the outcome we need and trusted to enforce the process to get there, adapting as priorities shift. This role starts as an individual contributor with real scope across every project at Giga, and thereâs a clear path to take on bigger, more complex work as you prove out the process. Where youâll work This role is remote. Travel is light â expect roughly 0â10%, mainly for occasional in-person team time. Responsibilities Own the end-to-end NDA process â draft, negotiate, and drive NDAs to execution independently, escalating to attorneys only on true edge cases. Design and own a centralized legal intake process, replacing todayâs scattered mix of personal email, Slack channels and DMs, and texts with a single, clear front door for legal requests. Triage incoming legal requests â route them appropriately and set expectations on turnaround. Enforce the intake process company-wide: when requests bypass it, redirect requesters back into the right workflow, including on Daveâs behalf. Manage the full signature pipeline â queue documents, send for e-signature, and track them to completion. Maintain and organize the contract repository so agreements are easy to find, track, and report on. Partner with attorneys and business teams to keep the legal function organized and responsive as request volume grows. Take on larger, higher-complexity projects as you build trust and track record in the role. Requirements 7+ years of experience as a paralegal or in a similar legal operations role. Experience independently managing NDAs from drafting through execution. Experience building, running, or significantly improving a legal intake or triage process. Working knowledge of e-signature tools, contract repositories, and contract lifecycle management (CLM) tools. Ability to work autonomously with minimal oversight, exercising sound judgment on when to escalate to attorneys. Comfortable enforcing process consistently while staying flexible as priorities and workflows shift. Bonus points Paralegal certificate. 10+ years of experience in a legal operations or paralegal role. Experience standing up legal intake or operations processes from scratch. Experience supporting legal teams at a high-growth or fast-paced company. Experience preparing legal notes or executive briefs. Benefits Subsidized health, dental, and vision insurance Equity (options) in a rapidly growing startup 401(k) with 4% employer match Unlimited PTO Parental leave Healthcare and Dependent Care Flexible Spending Accounts (FSA) or Health Savings Account (HSA) Commuter benefits Monthly team on-sites where all offices come in-person to collaborate Who We Hire We hire people who thrive in chaos and get sharper under pressure. You don't wait to be told what to do, you spot the gap and fill it. When there's work to be done, you do it. You make decisions with the information you have, move fast, and adjust along the way. We're not looking for perfect; we're looking for people who get things done. Equal Opportunity Employer Statement Giga Energy is an equal opportunity employer and is committed to fostering an inclusive and diverse workplace. We do not discriminate based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic as outlined by federal, state, or local laws. Giga Energy complies with all applicable labor laws, including the California Fair Employment and Housing Act (FEHA) and other relevant state and federal regulations. We provide reasonable accommodations for qualified individuals with disabilities and encourage applicants who require accommodations during the hiring process to contact us. Please mention the word **PURPOSEFUL** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Greater Houston,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Giga Energy is hiring for Paralegal. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4710095b",
+        "title": "Safety Data Analyst",
+        "company": "SkyWest Airlines",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-safety-data-analyst-skywest-airlines-1135445",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-safety-data-analyst-skywest-airlines-1135445",
+        "jdText": "About SkyWest With over 16,000 aviation professionals operating thousands of daily flights, SkyWest Airlines connects millions of passengers each month to hundreds of destinations across North America. SkyWest operates in partnership with Delta Air Lines, United Airlines, American Airlines, and Alaska Airlines and has a fleet of nearly 450 aircraft. Headquartered in St. George, Utah, SkyWest's industry-leading workforce and excellent leadership team have consistently generated solid operational and economic performance, setting the standard for excellence in the regional industry. SkyWest employees enjoy a distinctive and unmatched culture of teamwork, respect, quality, and professionalism, along with world-class benefits such as a 401(k) match, Performance Rewards, health care, retirement, and discounted travel worldwide. Primary Job Duties Analyze, compile, and report safety data to support all SkyWest safety programs. Collect, analyze, and report safety assurance data from multiple safety data sources. Identify, monitor, and communicate safety performance trends and emerging risks. Track, maintain, and report key performance indicators (KPIs) for the Safety Department, including Flight Severity Index (FSI) events. Present data analysis findings in safety meetings, investigations, and Safety Risk Assessments (SRAs). Provide safety data reports and analysis for: Partner safety metric reporting Internal and external safety meetings Pattern and trend analysis for Department Safety Managers and Safety Committees Ad hoc reporting supporting investigations and proactive risk assessments Maintain process measurement data and performance metrics for Safety Managers. Create, update, and maintain Tableau dashboards and other reporting tools to support safety initiatives. Support data-driven decision-making through proactive analysis of safety risks and operational trends. Recognize and report hazards in the work environment through established safety reporting programs. Ensure the accuracy, integrity, and timely delivery of safety data and reports. Compensation: The salary range for this position is $37,000-$52,000 per year. Initial offers will be based on a combination of relevant work experience, education, certifications, and formal training. Minimum Requirements Qualified through education, training, experience, and expertise to perform data analysis functions. Formal education in data analytics, statistics, quantitative methods, data collection, data interpretation, and analytical techniques; and/or a professional data analyst certification. Two years of experience as a Data Analyst or in a related analytical role. Excellent verbal and written communication, presentation, and interpersonal skills. Ability to communicate complex data findings to leadership and business stakeholders. Ability to work effectively in a collaborative team environment. Ability to manage multiple projects simultaneously and prioritize competing deadlines. Highly proficient in Microsoft Excel and experienced with the Microsoft Office Suite. Demonstrated attention to detail and commitment to data accuracy. Proficiency in Tableau, including dashboard development and maintenance. Preferred Qualifications Experience with aviation safety assurance programs, such as ASAP, FOQA, and LOSA. Experience with Excellence through Quality (EtQ) Reliance software. Experience working within an Aviation Safety Management System (SMS). Knowledge of Federal Aviation Regulations (FARs) and company policies and procedures. Experience analyzing operational, safety, or risk-management data. Experience collecting, analyzing, and interpreting large datasets to identify trends, risks, and performance indicators. Physical And Other Requirements Open to remote work or based in SGU or SLC. Ability to sit for extended periods while working at a computer. Ability to travel occasionally as required. This is not a Department of Transportation safety-sensitive position. Please complete the online application. Top candidates will be contacted for an interview Please mention the word **FAVORED** and tag RMy44Ny4xMjguMTkx when applying to show you read the job post completely (#RMy44Ny4xMjguMTkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Salt Lake City Metropolitan Area,",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 40,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "SkyWest Airlines is hiring for Safety Data Analyst. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
