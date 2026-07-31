@@ -1,0 +1,563 @@
+{
+  "id": "briefing-2026-07-31",
+  "date": "2026-07-31",
+  "generatedAt": "2026-07-31T03:55:16.543Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "a72cf0a4",
+        "title": "Senior Demand Generation Manager",
+        "company": "TestGorilla",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-senior-demand-generation-manager-testgorilla-1135606",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-demand-generation-manager-testgorilla-1135606",
+        "jdText": "â¨ Where do we hire from? Find out if we're hiring in your location fromÂ hiring at TestGorilla Hi there, I'mÂ Mehak ,Â interim Head of Marketing Â at TestGorilla. Weâre excited to share more about the Â Sr. Demand Generation Manager Â role and our team. About the role As ourÂ Sr. Demand Generation Manager , you'll be essential in achieving TestGorilla's vision of helping one billion people land their dream job. You'll own our largest acquisition lever, a multi-six-figure monthly Google Ads investment, along with the lifecycle, enrichment, and website systems that turn that spend into revenue. This isn't just a role, it's your chance to make a real difference by proving, with data, that every dollar of spend becomes pipeline. You'll directly contribute to sustainable, cost-efficient growth as TestGorilla scales. Responsibilities In this role, your responsibilities will include but not limited to: Upholding TestGorilla's behaviors and fostering an inclusive, supportive culture. Owning the demand generation number across paid and organic channels, including managing and scaling paid spend across Google Ads (Search, Performance Max, Display, YouTube) and adjacent channels, while testing and developing emerging acquisition opportunities such as advertising on ChatGPT and other AI-native platforms. Setting the channel mix, budget allocation, and account structure required to hit MQL, SQO, and pipeline targets. Building and owning source-of-truth reporting across paid and organic funnel performance, including SQL, dashboards, attribution modeling, and incrementality testing, so channel investment decisions are backed by evidence rather than platform screenshots. Owning the roadmap for paid landing pages, ad creative, and offers, and running rapid A/B tests to lift conversion with proper statistical rigor. Designing and owning automated nurture workflows and enrichment infrastructure (n8n, Make, HubSpot, Clay) so paid-sourced leads convert, and feeding that data back into targeting and ICP decisions. Partnering with Sales and RevOps on lead quality and conversion by campaign, and presenting performance and recommendations to marketing and GTM leadership in clear, business-first language. Staying ahead of advertising platform, AI ecosystem, and privacy changes, and turning successful tests into repeatable, automated systems rather than one-off wins. What youâll bring We're looking for someone who: Is passionate about TestGorilla's mission to help one billion people find their dream jobs. Has excellent written and verbal communication skills in English. Thrives in a fast-paced, async-first, remote-only environment. Has proven experience in performance or growth marketing, including hands-on ownership of a Google Ads budget of at least six figures per month (B2B SaaS strongly preferred), and a track record of scaling spend while holding or improving CAC and ROAS. We typically expect 7+ years of experience in performance or growth marketing to have developed the core skills necessary for this position. But it may be more or less than that, according to your career journey so far. Has deep expertise across the Google Ads stack, including Search, Performance Max, Display, YouTube, Smart Bidding, conversion tracking, and Google Tag Manager. Working knowledge and hands-on expertise of Clay, HubSpot (or a comparable CRM) and GA suite. Has a solid grasp of funnel and unit economics (CAC, LTV:CAC, ROAS, payback period, cohort analysis) and comfort with experimentation design, including significance, sample sizing, and reading results honestly. Has hands-on experience using AI/LLM tools (Claude, ChatGPT, or similar) to build real growth workflows, from lead scoring to automation logic, not just surface-level use. Has an ownership mentality: treats this budget like their own P&amp;L, ships the workflow, dashboard, and test themselves, and is comfortable with ambiguity and fast iteration as pipeline needs shift. We seek diversity and encourage applications from everyone. Studies show that women and underrepresented groups can be hesitant to apply unless they meet every requirement. If you're interested in this role but your experience doesn't perfectly match the description, please still apply. Bonus skills While these skills arenât a requirement, weâd be very interested to hear from you if you have: Experience managing an agency or freelancers alongside in-house execution. Exposure to PLG or hybrid PLG/sales-led GTM. Experience presenting to VP/C-level stakeholders on performance and budget. Experience owning SEO or content-led demand generation programs alongside paid channels. Has strong working SQL, fluency in GA4 and at least one BI tool Whatâs in it for you? Please note: Â Some specifics, particularly around leave, may vary depending on your country of residence. This will be discussed during the hiring process. Global Team:Â Join a fully remote, mission-driven team from around the world Competitive compensation:Â Receive a competitive pay (â¬65,650-â¬84,500 per annum) + Share Appreciation Rights (SARs) Remote &amp; flexible work:Â Work from almost anywhere*. Enjoy flexible hours and asynchronous work to balance work and life. *Â Check out the countries we currently hire fromÂ here Remote work budget:Â â¬1,000 available each year or up to â¬2,000 from day 1 if you're buying a laptop! Growth &amp; development: Â Invest in yourself and your career with a 3.5% L&amp;D budget per year and clear growth opportunities Parent/Caregiver support:Â We provide a caregiver-friendly work environment with paid 8-16 week parental leave and tailored return-to-work approaches Work-life balance:Â Our unlimited and flexible time off policy empowers you to take the time you need to recharge and maintain your well-being Interested? At TestGorilla, we believe your skills speak louder than your resume. That's why we champion a skills-first approach, using cutting-edge, AI-powered assessments to uncover your true potential. Forget traditional biases; we're building the world's largest skills-tested talent pool, making hiring fairer, faster, and smarter for everyone! When you apply, you'll get to experience our platform firsthand by taking an assessment â it's your chance to shine and show us what you can do! While our platform is powered by AI, every hiring decision is made by humans, ensuring a truly unbiased and thoughtful process. Check out ourÂ Applicant Privacy document Â to see how we protect your data. We're passionate about building diverse teams where every voice is heard. We genuinely welcome applicants from all backgrounds and experiences. Concerned about test anxiety?Â We've got you covered. Accommodations are readily available as part of the assessment setup, and requesting support will never impact your application. Please mention the word **CONFIDENT** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "campaign",
+          "growth",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-29",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 100,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "TestGorilla is hiring for Senior Demand Generation Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "07952f5b",
+        "title": "Junior Data Analyst",
+        "company": "HiredBuddy",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-hiredbuddy-1135673",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-hiredbuddy-1135673",
+        "jdText": "About HiredBuddy At HiredBuddy , we connect domain specialists and subject-matter experts with leading AI research labs to shape and train the next generation of artificial intelligence. We focus on high-quality data annotation, RLHF (Reinforcement Learning from Human Feedback), and model evaluation across various domains, ranging from STEM and software engineering to linguistics and data science. Position Overview We are seeking a detail-oriented, highly analytical Junior Data Analyst based in the United States to join our growing remote team. In this role, you will play a crucial part in monitoring dataset quality, analyzing annotator performance metrics, optimizing labeling pipelines, and delivering insights that improve our AI training data pipelines. This is an ideal role for an early-career analyst passionate about the intersection of data, machine learning, and AI operations. Key Responsibilities Data Quality Assurance: Audit, clean, and validate large datasets generated by our network of AI trainers and domain experts to ensure high precision and adherence to guidelines. Performance &amp; Metrics Tracking: Analyze annotator accuracy, turnaround times, and throughput using SQL, Python, and BI dashboards to help optimize operations. Pipeline Optimization: Collaborate with cross-functional teams (Operations, AI Specialists, and Product) to identify bottlenecks in data labeling pipelines and recommend data-driven solutions. Reporting &amp; Dashboards: Build, maintain, and update daily/weekly operational reports and dashboards for internal stakeholders and client leads. Guideline Calibration: Analyze edge cases and error patterns in dataset outputs to help refine project annotation instructions and rubrics. Qualifications &amp; Skills Education: Bachelorâs degree in Data Analytics, Computer Science, Statistics, Information Systems, or a related quantitative field (or equivalent practical experience). Technical Skills: Proficiency with SQL for data querying, aggregation, and analysis. Practical knowledge of Python or R for data manipulation (e.g., Pandas, NumPy). Experience with visualization tools like Tableau, Power BI, or Looker . Advanced Excel / Google Sheets skills (Pivot tables, VLOOKUP/XLOOKUP, complex formulas). Analytical Mindset: Strong problem-solving skills with a high degree of attention to detail when working with complex datasets. Communication: Ability to clearly translate data findings into actionable insights for non-technical team members. Work Authorization: Must be legally authorized to work in the United States. Nice-to-Haves Familiarity with AI/ML concepts , data annotation workflows, or RLHF (Reinforcement Learning from Human Feedback). Prior experience or internship experience in an operations-focused analyst role. What We Offer 100% Remote Flexibility: Work from anywhere in the US. Cutting-Edge Industry Exposure: Gain hands-on experience at the forefront of AI model training and evaluation. Growth Opportunities: Direct mentorship and opportunities to advance within a fast-growing tech environment. Competitive Compensation: Hourly/Salaried rate commensurate with experience. Please mention the word **AMICABLY** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "California, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "analytics",
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 66,
+        "productOpsFit": 100,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "HiredBuddy is hiring for Junior Data Analyst. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "48b7ebd1",
+        "title": "Graphic Designer",
+        "company": "Miranda Creative, Inc.",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-miranda-creative-inc-1135610",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-miranda-creative-inc-1135610",
+        "jdText": "We are looking for a talented and detail-oriented Graphic Designer to join our creative team part-time (25 hours per week), with the potential to grow into a full-time opportunity. Since 1988, Miranda Creative has partnered with more than 6,000 clients across finance, hospitality, healthcare, manufacturing, tourism, and government. We're a full-service, award-winning, New England-based creative and strategic agency. We pride ourselves on being a highly inclusive, collaborative community built on creativity, trust, and joy. We welcome you to Miranda Creative and look forward to learning more about you. This role is ideal for a designer who enjoys bringing brands to life through thoughtful design, understands the importance of consistency, and has experience creating both static and motion-based content. The primary focus of this position will be supporting production needs, ensuring brand standards are implemented accurately, and helping deliver high-quality creative work across print, digital, social, and web platforms. The right candidate is organized, collaborative, detail-focused, and comfortable working within established brand systems while applying strong design judgment. We are seeking someone who is consistently available 5 hours per day ( 9 to 2 EST), and who is located in the Eastern Standard time zone in order to coordinate internal and external meetings and deadlines. All candidates will be asked to provide a link to their portfolio, professional references, and confirmation of their scheduling availability. We look forward to hearing from you. Key Responsibilities Support the creative team with ongoing production design needs Accurately implement brand guidelines across print, digital, social media, and marketing materials Ensure consistency, quality, and attention to detail across all deliverables Prepare production-ready files for print and digital applications Adapt existing creative concepts into multiple formats and platforms Manage design updates, revisions, and ongoing brand-related projects Create motion graphics, animations, and video edits for digital content Support the development of social media assets, including short-form video and animated content Assist with website and digital design projects using Figma Collaborate with creative leadership and project teams to meet deadlines and maintain quality standards Maintain organized files and follow established creative workflows Requirements 3+ years of professional graphic design experience Strong understanding of typography, layout, color, composition, and visual hierarchy Ability to work within established brand guidelines with accuracy and consistency Strong production skills and excellent attention to detail Proficiency with Adobe Creative Cloud, including: Adobe Illustrator Adobe Photoshop Adobe InDesign Adobe After Effects and/or Premiere Pro Experience creating motion graphics, animations, and video edits Proficiency in Figma for digital design, collaboration, and presentation Ability to manage multiple projects and deadlines in a remote environment Strong communication skills and ability to collaborate effectively with a remote team Preferred Qualifications Experience working in an agency or fast-paced creative environment Experience supporting established brands and large-scale marketing campaigns Understanding of digital design systems and responsive web design Experience preparing files for print production Knowledge of animation principles and video storytelling Ability to identify design or production issues before they impact timelines Benefits This part time role is eligible for pro-rated paid time off benefits. The part-time salary range for this position is $35,000 to $40,000, with salary commensurate with skills and experience. Please mention the word **OUTSTANDING** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Norwich, Norwich, Connecticut, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-29",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Miranda Creative, Inc. is hiring for Graphic Designer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c4fceb18",
+        "title": "Product Manager Â· New York Chicago Charlotte",
+        "company": "Oula",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-product-manager-new-york-chicago-charlotte-oula-1135672",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-product-manager-new-york-chicago-charlotte-oula-1135672",
+        "jdText": "Oula delivers maternity care built around our patientsâoffering comprehensive support before, during, and after pregnancy. With fewer C-sections and higher VBAC success rates, our research-backed approach is delivering better outcomes. Our team of trusted midwives, OBGYNs, and dedicated care navigators ensure our patients get the type of care they need in the moments that matter most. Since launching in 2021, weâve expanded to include Preconception and Miscarriage Care, Pregnancy Care, Postpartum Support, and Gynecology. We currently have 4 clinics in the tri-state area, with three new clinics opening in 2026! Come join our team of clinicians, innovators, operators, and technologists passionate about setting a new standard in maternity care. OULA HEALTH Product Manager Full-Time New York, Chicago or Charlotte Reports to VP, Central Operations About Oula Oula Health is a venture-backed, midwifery-led maternity and GYN care company building the next generation of women's healthcare. We partner exclusively with major health systems â including Mount Sinai, Stamford Health, and Novant Health â to embed our collaborative OB-GYN and midwifery model directly inside their networks. We're a team of ~100 people at Series B stage, with 4 clinics today and three more opening in 2026. The Role At Oula, our product doesn't sit alongside our EHR â it integrates directly into it. Every product and engineering decision has downstream consequences for how our EHRs are configured, and every EHR configuration decision shapes what's possible on the product side. Someone has to hold both at once. We're looking for a technically-minded Product Manager to own and evolve our core technology stack â including our EHR, patient portal, and care management platform. This role sits at the intersection of product, operations, and health system integration, serving as the internal and external subject matter expert on our EMR and the primary lead for health system EHR integrations. You'll manage the day-to-day health of our tech stack, partnering closely with both internal teams and external health system stakeholders to ensure our systems run smoothly and our integrations deliver. You can sit with a midwife and understand why a clinical template matters, then turn around and write a bug ticket that engineering can actually action, then build the SOP so the next market launch doesn't require you to be in the room. When things are ambiguous (and they often are), you'll lean in rather than wait for clarity. What You'll Own EHR Configuration &amp; Clinical Systems Own day-to-day management of our core tech stack: the EHR, patient portal, and care management platform Own Athena and Epic configuration end to end: clinical templates, order sets, lab configurations, payer connectivity, and access management for clinical and ops staff Lead EHR integration efforts as the internal and external subject matter expert â FHIR/HL7 data exchange, health system IT coordination and committed go-live timelines Own and accelerate Epic integration timelines as we onboard additional health system partners Maintain configuration integrity as new markets launch and care model workflows evolve Partner with our IT team on infrastructure; own the clinical systems layer they don't touch Product Operations &amp; Launch Own bug intake and prioritization from Market Operations â standardize how Engineering receives, scopes, and resolves issues and communicates status back to the field Build structured launch toolkits and training materials so clinic teams are prepared for new feature rollouts on day one Coordinate end-to-end launches across Product, Engineering, and Operations Identify where AI and automation can reduce manual administrative burden in product operations workflows Standards &amp; Knowledge Management Build and maintain the clinical systems SOP library so new market setup is repeatable â documented well enough that a new hire can execute without you in the room Develop onboarding materials for clinic managers and clinical staff on EHR workflows and tooling Drive feature parity efforts so patients and clinicians experience a consistent standard of care across markets Data &amp; Reporting Build and maintain dashboards tracking feature adoption, issue resolution, and rollout health across clinics Develop quarterly reporting for Product, leadership, and health system partners on platform performance Ensure data infrastructure is in place to measure the impact of every feature rollout What You Bring 3+ years with product operations, technical program management, or PM-adjacent work â ideally at a growth-stage digital health or services company Strong problem-solving instincts and genuine curiosity â you like figuring out how things work and making them work better Ease with ambiguity and a bias toward action; this role requires you to create the playbook, not execute someone else's Demonstrated ability to navigate complex stakeholder environments and drive aggressive timelines â ideally with client-facing or health system-facing experience Ability to speak âmultiple languagesâ â comfort going deep on technical details while communicating clearly to non-technical audiences; you can write a bug ticket, an SOP, and a launch plan that people actually follow; hands-on EHR configuration and integration experience strongly preferred Analytical enough to build a dashboard and identify a pattern, even if you're not a SQL expert What Success Looks Like In your first 90 days, you've audited our current Athena configuration, identified gaps, and have a remediation plan. You understand the bug triage process well enough to have improved it. You've met your counterparts at every health system partner and know what's coming for the next Epic integration. At six months, new market launches have a repeatable systems and product checklist. Clinic teams know what to expect before a feature goes live. Bug resolution time is measurably faster and the field is no longer sending issues into a black hole. At one year, the SOP library is comprehensive, clinical systems configuration is stable and documented, and you've successfully navigated at least one new health system EHR environment. The product team has a reliable partner and the ops team isn't dependent on any single person for systems knowledge. Compensation &amp; Details Salary: $110,000 â $140,000 depending on experience and location Equity: Options commensurate with level Location: Preference for New York/New Jersey/Connecticut, Chicago or Charlotte Remote-flexible with periodic travel to clinic locations and health system partners Benefits: Comprehensive medical, dental, and vision; 401(k); generous PTO Oula offers a competitive total rewards package which includes base salary, and comprehensive benefits. Exact compensation inclusive of salary and any bonuses is determined based on a number of factors including experience and skill level, location, and qualifications which are assessed during the interview process. Oula is committed to fostering an inclusive workplace where everyone's contributions are valued. Salary Range: $110,000 USD - $140,000 USD Oula's Commitment as an Equal Opportunity Employer : We want you to know: You can be a great candidate even if you don't fit everything we've described above. You can also have important skills we haven't thought of. If that's you, don't hesitate to apply and tell us about yourself (especially in your cover letter â this is where you can really state your case for *why you*). We are committed to fostering diversity in our organization and building an equitable and inclusive environment for people of all backgrounds and experiences. We're taking steps to meet that commitment. We especially encourage members of traditionally underrepresented communities to apply, including women, people of color, LGBTQ people, veterans, and people with disabilities. Please mention the word **PRECISELY** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 66,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Oula is hiring for Product Manager Â· New York Chicago Charlotte. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4bc34493",
+        "title": "Executive Assistant",
+        "company": "Pearster",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-pearster-1135643",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-executive-assistant-pearster-1135643",
+        "jdText": "Spoiler: This is where your next big move begins. What This Journey Looks Like We're looking for a creative and enthusiastic Junior Marketing Specialist to join our growing marketing team. This is a great opportunity for someone who is passionate about marketing, eager to learn, and excited to contribute to impactful campaigns while building their career in a collaborative, fast-paced environment. Experience: 0â2 years Employment Type: Contractor / Full-time (depending on client) What You'll Lead And Build Manage executives' calendars, meetings, and travel arrangements. Coordinate and prepare materials for meetings, presentations, and conferences. Screen and route phone calls, emails, and other correspondence. Maintain organized filing systems and digital records. Draft, edit, and proofread reports, presentations, and communications. Liaise with internal teams and external partners on behalf of executives. Handle confidential information with professionalism and discretion. Support special projects and administrative initiatives as needed. What You Bring to the Table Bachelor's degree or equivalent practical experience. 0â2 years of experience in an administrative or executive support role. Excellent organizational and time management skills. Strong verbal and written communication skills. Proficiency with Microsoft Office and/or Google Workspace. High level of professionalism and discretion when handling confidential information. Strong attention to detail and problem-solving abilities. Ability to prioritize multiple tasks in a dynamic environment. Positive attitude and willingness to learn and grow. Nice-to-have Experience working in a remote or international environment. Familiarity with project management or scheduling tools. Experience supporting multiple stakeholders simultaneously. Benefits that Move you Forward. Competitive compensation based on experience. Ongoing training, coaching, and professional development. Exposure to international clients and diverse sales opportunities. A collaborative, supportive, and remote-first work environment. Clear opportunities for career growth within the sales organization. ð Join Pearster! At Pearster, we connect exceptional talent with innovative companies around the world. If you're passionate about sales, building relationships, and creating new business opportunities, we'd love to hear from you. Apply today and become part of our global team! Please mention the word **STANDOUT** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "BogotÃ¡, BogotÃ¡, Distrito Capital, Colombia",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 75,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Pearster is hiring for Executive Assistant. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "81870aa9",
+        "title": "Healthcare Virtual Assistant Registered Nurse",
+        "company": "Snapscale",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-healthcare-virtual-assistant-registered-nurse-snapscale-1135684",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-healthcare-virtual-assistant-registered-nurse-snapscale-1135684",
+        "jdText": "Overview : Snapscale is seeking a dedicated and highly organized Registered Nurse (RN) to join our team as a US Healthcare Coordinator in a remote setup . This role is ideal for nurses looking to transition into a virtual healthcare support environment while utilizing their clinical knowledge and patient care experience to support U.S.-based healthcare providers. The ideal candidate is detail-oriented, tech-savvy, and passionate about delivering excellent patient support while ensuring compliance with healthcare regulations and administrative processes. Key Responsibilities: Assist US based healthcare providers with administrative and clinical coordination tasks Manage patient records, scheduling, and insurance verifications Handle medical documentation and maintain accurate patient information in EMR/EHR systems Provide virtual patient support and conduct inbound/outbound follow-ups Coordinate with patients and healthcare teams to ensure smooth clinic operations Ensure compliance with HIPAA and other healthcare privacy regulations Support day-to-day healthcare administrative workflows efficiently and professionally Perks: Health Maintenance Organization (HMO) Competitive pay Government-mandated benefits 13th month pay Night differential pay Internet allowance Perfect attendance bonus Yearly salary increase Opportunities for career growth and development Requirements: Active Registered Nurse (RN) license Experience as a Healthcare Virtual Assistant is an advantage Experience with EMR/EHR systems and medical administrative tasks preferred Strong written and verbal English communication skills Highly organized with strong attention to detail Tech-savvy and able to quickly learn new systems and tools Professional, empathetic, and patient-focused approach Must have stable internet connection and a dedicated quiet workspace for remote work Please mention the word **BLESS** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Davao, Davao, Davao Region, Philippines",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Snapscale is hiring for Healthcare Virtual Assistant Registered Nurse. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "759a2a02",
+        "title": "Human Resources Specialist",
+        "company": "Harvey Nash",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-harvey-nash-1135675",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-human-resources-specialist-harvey-nash-1135675",
+        "jdText": "Harvey Nash USA has been engaged to find a talented HR Operations Specialist for a leading healthcare organization committed to delivering exceptional employee experiences through operational excellence. Job Title: HR Operations Specialist Location: Remote (California Residents Only) Duration: 6-Month Contract About the Role We are seeking a detail-oriented and customer-focused HR Operations Specialist to join a dynamic HR team. This role is responsible for supporting a wide range of HR operations and employee inquiries while ensuring timely, accurate, and high-quality service delivery. The ideal candidate is resourceful, takes ownership of their work, communicates effectively, and thrives in a fast-paced environment. Day-to-Day Responsibilities Review HRIS transactional process requests daily and weekly, approving or rejecting transactions based on established HR policies and procedures. Understand core HR policies and processes to ensure accurate, timely, and compliant transaction processing. Escalate complex transactional issues and policy-related questions to HR leadership when appropriate. Manage employee HR cases, calls, and chats involving benefits, compensation, wellness programs, leave of absence, payroll, performance management, and other HR-related inquiries. Collaborate with cross-functional HR teams including Benefits, Payroll, HR Technology, Compensation, Talent Acquisition, Employee Relations, Retirement, Eligibility, and Corporate Real Estate to resolve employee issues. Deliver exceptional customer service by managing cases with accuracy, attention to detail, and professionalism while enhancing the employee experience. Identify trends in employee inquiries and partner with leadership on process improvements or escalations. Serve as a trusted HR resource while ensuring compliance with organizational policies and service standards. Must-Have Skills Resourceful and self-sufficient with the ability to work independently and efficiently. Demonstrates strong ownership, accountability, and a growth mindset by learning quickly and embracing feedback. Excellent verbal and written communication skills with a customer-first approach. Strong understanding of HR processes, policies, and employee support functions. Experience handling HR service requests or HR operations in a shared services or HR support environment. Preferred Skills Experience with Oracle HCM. Experience with UKG (Ultipro ) and/or ServiceNow. Passion for Human Resources with broad HR knowledge; SHRM-CP certification is a plus. Strong relationship-building and stakeholder management skills. Experience supporting multiple HR Centers of Excellence. Education Associate's or bachelorâs degree in human resources or a related field OR 5+ years of HR experience in lieu of a degree. A reasonable, good faith estimate of the minimum and maximum hourly wage for this position is $25.00 - $29.00 per hour on W2 , depending on experience. About Us Harvey Nash is a national, full-service talent management firm specializing in technology and professional staffing. Our company was founded with a mission to serve as the talent partner of choice by connecting exceptional talent with leading organizations across a wide range of industries. Please mention the word **FASCINATINGLY** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "California, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "Python",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Harvey Nash is hiring for Human Resources Specialist. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "b3cc77db",
+        "title": "Program &amp; Events Coordinator",
+        "company": "LSP Association",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-program-amp-events-coordinator-lsp-association-1135669",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-program-amp-events-coordinator-lsp-association-1135669",
+        "jdText": "About the LSPA: The LSP Association (LSPA) is a non-profit association for Massachusetts Licensed Site Professionals (LSPs) and other related environmental practitioners who work on behalf of property owners, operators, and other involved parties to assess and cleanup oil and hazardous materials (OHM) released to the environment. LSPs are licensed by the Commonwealth to oversee this work and, since 1993, over 40,000 contaminated properties have been brought into regulatory compliance. The LSPA's mission is to support our membership in achieving and maintaining a high standard of practice in the assessment and remediation of contaminated sites in Massachusetts and New England. The LSPA provides technical and educational resources to our membership in the form of programming, networking events, committees, and resources. The LSPA also serves as an advocate to the profession with MassDEP, the LSP Board of Registration, and the state legislature, and as a resource to the public. Job Description: The Program &amp; Events Coordinator plays a critical role in the success of the LSPA and serves as a primary point of contact for our members, volunteers, and sponsors. This individual is responsible for planning, coordinating, and executing the association's educational programs and networking events, administering the sponsorship program, and providing customer service support. Success in this position means delivering high-quality member experiences, maintaining strong relationships with volunteers and sponsors, and ensuring the smooth administration of our continuing education program. The ideal candidate is highly organized, detail-oriented, customer-focused, and comfortable managing multiple projects simultaneously. This individual enjoys working independently while collaborating closely with volunteers, board members, speakers, sponsors, and staff. Key Responsibilities: Educational Programs : Coordinate, plan, and manage programs and speakers for all LSPA courses, membership meetings, emerging professional events, the Annual Fall Party, and the Environmental Symposium. The LSPA hosts one to three events per month with 25-250 people in attendance. Approximately 65% of programming is hosted virtually. Content creation is performed in conjunction with input from the Executive Director, Committee Chairs, Education Committee, and Board of Directors. Event Logistics: For in-person events, source event venues and help facilitate contracts; plan food and beverage, room set-up, and audiovisual needs; reconcile venue bills; and serve as the point of contact on-site. For virtual programs, setup and run the virtual meeting platform, monitor attendance and engagement, create moderator scripts and slides, and train speakers on how to use the virtual platform. Continuing Education (CE) Administration : Compile CE materials for all educational courses and meetings; submit materials for credit approval with the LSP Board of Registration, the Connecticut Licensed Environmental Professional (LEP) Board, and other Boards/entities; maintain CE records related to attendance, engagement, and evaluation; issue certificates of attendance to attendees; and attend monthly virtual LSP Board of Registration meetings. Sponsorship : Help administer the corporate and event sponsorship program, including updating the sponsorship prospectus, facilitating invoices/payments, maintaining contact lists, conducting outreach, and working with sponsors to access their sponsorship benefits. Member Service and Organizational Support : Help monitor and respond to inquiries received through the organization email inbox; provide customer service to members, sponsors, speakers, and event attendees; attend Board meetings, leadership meetings, and committee meetings as requested; and support association operations and special projects as needed. Qualifications The person hired for this role should have the following qualifications: Experience: 2-5 years of experience in program/event planning, project management, or another related field. Excellent written and verbal communication skills, and proven ability to provide excellent customer service. Strong project management skills with excellent attention to detail. Ability to manage multiple priorities and meet deadlines independently. Comfortable coordinating, building relationships with, and communicating professionally with members, volunteers, sponsors, vendors, and other external stakeholders/partners. Technology: Microsoft 365 (Outlook, Teams, SharePoint, Word, Excel, PowerPoint). Zoom Meetings and Zoom Webinar, including coordinating presenters from multiple locations, incorporating polling, and managing technical issues. Association management systems (AMS) or member databases. Online registration and evaluation platforms. Canva or similar design tools (preferred, not required). Preferred Qualifications (not required): Experience working for a nonprofit organization, professional association, or membership-based organization. Experience with the environmental sciences industry. Familiarity with sponsorship development or relationship management. Bachelor's degree, Associate's degree with relevant experience, or significant relevant professional experience demonstrating the knowledge, skills, and abilities required to perform the position successfully. Why Join the LSPA? This is an opportunity to work with a respected association that supports environmental professionals making a meaningful impact on public health and environmental protection throughout Massachusetts and New England. As a small organization, we offer autonomy, flexibility, and the opportunity to build relationships with industry leaders while helping shape the educational and professional development experiences of our members. Compensation and benefits include: Salary : The salary range for this position is $70,000â$80,000 annually. Compensation will be based on a variety of factors such as individual qualifications and experience. Benefits : LSPA employees receive $300 per month for a Healthcare Reimbursement Account (HRA) that may be used to reimburse certain medical and insurance-related expenses. The organization does not currently offer group health or dental insurance plans. In addition, employees have access to a 401(k) plan. PTO : 15 days of paid time off (PTO) annually for the first three years (increases to 20 days thereafter). The LSPA also provides 14 holidays per year (inclusive of 5 floating holidays). Fully remote position : Candidates may reside anywhere in New England, with preference given to Massachusetts-based applicants. Travel to Massachusetts-based programs and events approximately 10â12 times annually is required. Reimbursement for home office expenses : $750 annually. How to Apply Please submit a cover letter and resume to mmorris@lspa.org. Applications without cover letters or that request compensation/benefits beyond what we can provide will not be reviewed. The LSPA is committed to providing reasonable accommodations to qualified individuals with disabilities. If you need a reasonable accommodation to participate in the job application or interview process, contact mmorris@lspa.org. The LSPA is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. All employment decisions are based on business needs, job requirements, and individual qualifications, without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran, or disability status. Please mention the word **PEACEFUL** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Massachusetts, Massachusetts, United States",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-29",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 40,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "LSP Association is hiring for Program &amp; Events Coordinator. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "2d64673b",
+        "title": "Traveler Care Specialist Luxury Travel",
+        "company": "Zicasso",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-traveler-care-specialist-luxury-travel-zicasso-1135640",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-traveler-care-specialist-luxury-travel-zicasso-1135640",
+        "jdText": "Company Overview Established in 2008, Zicasso is the most-reviewed and highest-rated luxury travel company, specializing in immersive custom tours, vacations, and safaris. Our Zicasso travel specialists are the worldâs top 2% of boutique tour operators and travel agents, pre-vetted and handpicked to compete in creating itineraries tailored to each of our travelersâ unique preferences. Joining Zicasso, you'll play a key role in bringing our travelersâ dreams to lifeâpushing the boundaries of whatâs possible with luxury travel experiences. As a member of our team, youâll be part of a company recognized for its strong brand reputation among discerning travelers. Our authority in the luxury travel industry is consistently affirmed through features in top media outlets, including The New York Times, The Wall Street Journal, BBC, Forbes, CNN, and CondÃ© Nast Traveler, to name a few. See our press coverage here. We are a fully remote company spanning five continents, and we foster a dynamic, progressive global work environment that values creativity, initiative, and continuous learning. We're seeking passionate, data-driven individuals who thrive in a high-performance environment and are eager to contribute to our innovative company culture, underpinned by a consistent pursuit of excellence, integrity, and teamwork. Our global team comes together biannually for international retreats and summits. These are typically held for a week at a new location each time, providing opportunities to share ideas, collaborate in person, and strengthen our culture, all while learning firsthand about the destinations we serve. These events embody our commitment to both professional growth and the transformative power of travel. Join us in shaping the future of luxury travel while working towards our visionâcreating a more connected humanity through travel. To learn more, visit https://www.zicasso.com/careers. The Role Currently, we are seeking a highly motivated, customer service-minded Traveler Care Specialist who embraces an entrepreneurial spirit and has a passion for international travel! This role will be working at the intersection of our travelers and Zicassoâs global network of travel providers (partners), making both sides delighted with Zicassoâs unique matching service and will be responsible for assessing and processing incoming travel inquiries via email/messaging, phone, and online. You will learn to understand analytics and help ensure that we are maximizing the potential of our leads. You will build trusted relationships with our travelers to understand their travel needs and ensure these needs are being met and their expectations exceeded. This position plays a key role towards driving loyalty and repeat bookings of our most valued travelers. This is an international, fully remote, freelance contractor position, working from home with a 5-day workweek that includes rotating weekend shifts. Initial training (3 to 4 weeks) will take place Monday through Friday.Â This role is open to candidates located outside of the United States, with a strong preference for those based in Argentina, Costa Rica, Brazil, and Colombia. The work will all be conducted in English. Key Responsibilities Provide exceptional customer service to travelers by taking ownership of their inquiries and becoming a trusted advisor throughout their use of Zicasso services. This includes assessing and solving incoming traveler inquiries via phone, live chat, messages and email. Build trusted, long-lasting relationships with discerning luxury clients to strengthen their confidence in Zicasso. This involves assisting and serving clients in a way that meets their needs and exceeds their expectations. Ensure a high level of inquiry conversion by demonstrating expertise in consultation, product knowledge, and the benefits of using Zicasso. This includes speaking with travelers via phone calls (and sometimes video), helping them understand how Zicasso works, and providing guidance for their travel needs. Participate cross-functionally with the Partnerships, Product, and Marketing teams to integrate best practices and solutions for the client's experience and/or issues that may arise. Partner with the Care Team leadership on projects and initiatives to solve problems and create innovative solutions. Leverage Zicassoâs data, analytics and technologyÂ to set new standards for customer success, driving innovation and excellence for the luxury travel industry. Provide consultation and advice to move general inquiries to destination-specific trip requests. Coach and mentor team members as needed. Please Note: Weâre seeking highly-motivated candidates. Those who excel in this role will be given the opportunity to take on increasingly complex projects and initiatives, and grow their role and responsibility within the Traveler Care Team. Required Skills and Experience Minimum 8+ years of experience in the travel industry, with a focus on travel sales or operations of luxury tours or hotels. Examples of relevant experience include tour leader, tour director, hotel front desk, client relations, or guest services Passionate about travel, with extensive experience traveling abroad and a strong curiosity about new international destinations. Strong customer service-focused skills, with a passion for building strong relationships with travelers. This includes being comfortable with telephone-based work as a key part of the role. Excellent fluency in oral and written English. A cheerful and confident person who is adaptable to different styles of communication and traveler behaviors. Highly motivated and enthusiastic, with a willingness to put in extra effort in a start-up environment to drive company success. Comfortable with technology and able to quickly learn and adapt to the use of new software. Thorough knowledge of Google Workspace (formerly G Suite) (e.g. Docs, Sheets, Slides) is preferred. Strong organizational skills and attention to detail, striving to achieve quality, error-free work. Work flexible hours, including weekends, evenings, and holidays. A Bachelor's degree or higher is preferred. What We Offer: Remote work from your home base and flexible hours that allow you to enjoy a great work-life balance. Innovative, fast-paced and collaborative culture that values diverse voices and opinions. Learning and development annual stipend. Enjoy two company-sponsored business trips each year at international destinations we serve! If you are a customer service-minded problem solver with a passion for travel and a strong desire to make a difference, we strongly encourage you to apply for this exciting opportunity to join our team and help shape the future of personalized, life-enriching travel experiences at Zicasso! All applications should be submitted in English. Our Commitment to Candidates Zicasso is an Equal Opportunity Employer. Applicable to all locations, all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or any other characteristic protected by local law. We provide reasonable accommodations to qualified individuals with disabilities; if you need an accommodation to participate in the application process, please contact careers@zicasso.com. At Zicasso, we value a highly personalized recruitment journey. For recruiting purposes, we may use AI tools to review, transcribe, and record application materials and interviews, but this is always under human review and judgment. All final hiring determinations are made exclusively by our hiring teams. Please mention the word **PAMPER** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Zicasso is hiring for Traveler Care Specialist Luxury Travel. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "855087cf",
+        "title": "AI Intern",
+        "company": "CertifyOS",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-ai-intern-certifyos-1135555",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-ai-intern-certifyos-1135555",
+        "jdText": "About CertifyOS CertifyOS is building the data infrastructure that powers modern healthcare. Today, healthcare organizations rely on fragmented and outdated provider data. This creates unnecessary administrative work, regulatory risk, and higher costs across the system. Weâre solving that problem. Our API-first platform automates provider licensing, enrollment, credentialing, and network monitoring by connecting directly to hundreds of primary data sources. We help healthcare organizations maintain accurate, compliant, and reliable provider networks at scale. Our vision is simple: One API. One provider ID. Frictionless provider data. Weâre backed by leading investors and built by a team with deep experience in provider data systems. At CertifyOS, we value authenticity, accountability, collaboration, results, and openness to feedback. Weâre building a high-ownership team focused on solving real infrastructure problems that impact millions of patients. About the Role: As an Intern Machine Learning Engineer on a 6-month contract, you will help build, test, and deploy ML-powered services on our provider data platform. This is not a pure research role; the focus is on strong software engineering, testing, and robust evaluation rather than novel model architectures. You will own features end-to-end by collaborating with stakeholders, implementing production-ready code, designing evaluation pipelines, and deploying services on Google Cloud Platform (GCP). This is a fully remote position. What Youâll Do: Design, implement, and maintain ML-driven services and data workflows in Python. Apply software engineering best practices, including clean code, testing (unit and integration), code reviews, CI/CD, observability, and documentation. Build and maintain evaluation pipelines and metrics to measure model and system performance in production-like environments. Deploy and operate ML services on GCP, including tools such as Cloud Run, GKE, Cloud Functions, Pub/Sub, BigQuery, and Cloud Storage. Troubleshoot and improve existing ML services with a focus on reliability, latency, and correctness. Collaborate proactively with internal stakeholders across product, operations, engineering, and data teams to clarify requirements and iterate on solutions. Communicate clearly about trade-offs, risks, timelines, and results to both technical and non-technical audiences. What Youâll Need: Experience as a Software Engineer or Machine Learning Engineer. Strong proficiency in Python and experience building production services. Hands-on experience deploying and running workloads on Google Cloud Platform. Expertise in writing and debugging SQL queries. Strong foundation in software engineering fundamentals, including testing, debugging, version control (Git), CI/CD, and monitoring. Experience evaluating ML systems by defining metrics, building evaluation datasets, running experiments, and interpreting results. Ability to work independently, take ownership, and drive projects with limited supervision. Excellent written and verbal communication skills in English. Comfort proactively reaching out to internal stakeholders to understand requirements. Bonus Points If You: Have experience writing code in Java. Have built or maintained data pipelines or ETL jobs on GCP. Have experience working with healthcare data, compliance requirements, or PII. Have used experiment tracking and evaluation tools such as MLflow, Weights &amp; Biases, or custom dashboards. Â Benefits of Working at Certify At Certify, weâre building with intention and taking care of the people doing the work. Your well-being matters to us. We provide 100% coverage of health, dental, and vision insurance premiums for employees. Our US-based team benefits from unlimited PTO, with at least two weeks off each year to recharge. In India, employees are supported with health insurance, statutory leave benefits, and additional wellness (menstrual) leave for women. We are an equal opportunity employer committed to building an inclusive environment where everyone feels valued and empowered to do their best work, and we welcome applicants from all backgrounds and experiences. If you require reasonable accommodations during the application process, please contact recruiting@certifyos.com. We are also committed to pay transparency and foster an open culture where compensation conversations are encouraged and respected. Please mention the word **PEACEFUL** and tag RMTAwLjU0LjExMy4yNDA= when applying to show you read the job post completely (#RMTAwLjU0LjExMy4yNDA=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Pune",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 71,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 52,
+        "productOpsFit": 100,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "CertifyOS is hiring for AI Intern. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
