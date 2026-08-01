@@ -1,0 +1,561 @@
+{
+  "id": "briefing-2026-08-01",
+  "date": "2026-08-01",
+  "generatedAt": "2026-08-01T03:55:31.262Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "a72cf0a4",
+        "title": "Senior Demand Generation Manager",
+        "company": "TestGorilla",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-senior-demand-generation-manager-testgorilla-1135606",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-demand-generation-manager-testgorilla-1135606",
+        "jdText": "â¨ Where do we hire from? Find out if we're hiring in your location fromÂ hiring at TestGorilla Hi there, I'mÂ Mehak ,Â interim Head of Marketing Â at TestGorilla. Weâre excited to share more about the Â Sr. Demand Generation Manager Â role and our team. About the role As ourÂ Sr. Demand Generation Manager , you'll be essential in achieving TestGorilla's vision of helping one billion people land their dream job. You'll own our largest acquisition lever, a multi-six-figure monthly Google Ads investment, along with the lifecycle, enrichment, and website systems that turn that spend into revenue. This isn't just a role, it's your chance to make a real difference by proving, with data, that every dollar of spend becomes pipeline. You'll directly contribute to sustainable, cost-efficient growth as TestGorilla scales. Responsibilities In this role, your responsibilities will include but not limited to: Upholding TestGorilla's behaviors and fostering an inclusive, supportive culture. Owning the demand generation number across paid and organic channels, including managing and scaling paid spend across Google Ads (Search, Performance Max, Display, YouTube) and adjacent channels, while testing and developing emerging acquisition opportunities such as advertising on ChatGPT and other AI-native platforms. Setting the channel mix, budget allocation, and account structure required to hit MQL, SQO, and pipeline targets. Building and owning source-of-truth reporting across paid and organic funnel performance, including SQL, dashboards, attribution modeling, and incrementality testing, so channel investment decisions are backed by evidence rather than platform screenshots. Owning the roadmap for paid landing pages, ad creative, and offers, and running rapid A/B tests to lift conversion with proper statistical rigor. Designing and owning automated nurture workflows and enrichment infrastructure (n8n, Make, HubSpot, Clay) so paid-sourced leads convert, and feeding that data back into targeting and ICP decisions. Partnering with Sales and RevOps on lead quality and conversion by campaign, and presenting performance and recommendations to marketing and GTM leadership in clear, business-first language. Staying ahead of advertising platform, AI ecosystem, and privacy changes, and turning successful tests into repeatable, automated systems rather than one-off wins. What youâll bring We're looking for someone who: Is passionate about TestGorilla's mission to help one billion people find their dream jobs. Has excellent written and verbal communication skills in English. Thrives in a fast-paced, async-first, remote-only environment. Has proven experience in performance or growth marketing, including hands-on ownership of a Google Ads budget of at least six figures per month (B2B SaaS strongly preferred), and a track record of scaling spend while holding or improving CAC and ROAS. We typically expect 7+ years of experience in performance or growth marketing to have developed the core skills necessary for this position. But it may be more or less than that, according to your career journey so far. Has deep expertise across the Google Ads stack, including Search, Performance Max, Display, YouTube, Smart Bidding, conversion tracking, and Google Tag Manager. Working knowledge and hands-on expertise of Clay, HubSpot (or a comparable CRM) and GA suite. Has a solid grasp of funnel and unit economics (CAC, LTV:CAC, ROAS, payback period, cohort analysis) and comfort with experimentation design, including significance, sample sizing, and reading results honestly. Has hands-on experience using AI/LLM tools (Claude, ChatGPT, or similar) to build real growth workflows, from lead scoring to automation logic, not just surface-level use. Has an ownership mentality: treats this budget like their own P&amp;L, ships the workflow, dashboard, and test themselves, and is comfortable with ambiguity and fast iteration as pipeline needs shift. We seek diversity and encourage applications from everyone. Studies show that women and underrepresented groups can be hesitant to apply unless they meet every requirement. If you're interested in this role but your experience doesn't perfectly match the description, please still apply. Bonus skills While these skills arenât a requirement, weâd be very interested to hear from you if you have: Experience managing an agency or freelancers alongside in-house execution. Exposure to PLG or hybrid PLG/sales-led GTM. Experience presenting to VP/C-level stakeholders on performance and budget. Experience owning SEO or content-led demand generation programs alongside paid channels. Has strong working SQL, fluency in GA4 and at least one BI tool Whatâs in it for you? Please note: Â Some specifics, particularly around leave, may vary depending on your country of residence. This will be discussed during the hiring process. Global Team:Â Join a fully remote, mission-driven team from around the world Competitive compensation:Â Receive a competitive pay (â¬65,650-â¬84,500 per annum) + Share Appreciation Rights (SARs) Remote &amp; flexible work:Â Work from almost anywhere*. Enjoy flexible hours and asynchronous work to balance work and life. *Â Check out the countries we currently hire fromÂ here Remote work budget:Â â¬1,000 available each year or up to â¬2,000 from day 1 if you're buying a laptop! Growth &amp; development: Â Invest in yourself and your career with a 3.5% L&amp;D budget per year and clear growth opportunities Parent/Caregiver support:Â We provide a caregiver-friendly work environment with paid 8-16 week parental leave and tailored return-to-work approaches Work-life balance:Â Our unlimited and flexible time off policy empowers you to take the time you need to recharge and maintain your well-being Interested? At TestGorilla, we believe your skills speak louder than your resume. That's why we champion a skills-first approach, using cutting-edge, AI-powered assessments to uncover your true potential. Forget traditional biases; we're building the world's largest skills-tested talent pool, making hiring fairer, faster, and smarter for everyone! When you apply, you'll get to experience our platform firsthand by taking an assessment â it's your chance to shine and show us what you can do! While our platform is powered by AI, every hiring decision is made by humans, ensuring a truly unbiased and thoughtful process. Check out ourÂ Applicant Privacy document Â to see how we protect your data. We're passionate about building diverse teams where every voice is heard. We genuinely welcome applicants from all backgrounds and experiences. Concerned about test anxiety?Â We've got you covered. Accommodations are readily available as part of the assessment setup, and requesting support will never impact your application. Please mention the word **CONFIDENT** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "campaign",
+          "growth",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-29",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 100,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "TestGorilla is hiring for Senior Demand Generation Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "07952f5b",
+        "title": "Junior Data Analyst",
+        "company": "HiredBuddy",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-hiredbuddy-1135673",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-hiredbuddy-1135673",
+        "jdText": "About HiredBuddy At HiredBuddy , we connect domain specialists and subject-matter experts with leading AI research labs to shape and train the next generation of artificial intelligence. We focus on high-quality data annotation, RLHF (Reinforcement Learning from Human Feedback), and model evaluation across various domains, ranging from STEM and software engineering to linguistics and data science. Position Overview We are seeking a detail-oriented, highly analytical Junior Data Analyst based in the United States to join our growing remote team. In this role, you will play a crucial part in monitoring dataset quality, analyzing annotator performance metrics, optimizing labeling pipelines, and delivering insights that improve our AI training data pipelines. This is an ideal role for an early-career analyst passionate about the intersection of data, machine learning, and AI operations. Key Responsibilities Data Quality Assurance: Audit, clean, and validate large datasets generated by our network of AI trainers and domain experts to ensure high precision and adherence to guidelines. Performance &amp; Metrics Tracking: Analyze annotator accuracy, turnaround times, and throughput using SQL, Python, and BI dashboards to help optimize operations. Pipeline Optimization: Collaborate with cross-functional teams (Operations, AI Specialists, and Product) to identify bottlenecks in data labeling pipelines and recommend data-driven solutions. Reporting &amp; Dashboards: Build, maintain, and update daily/weekly operational reports and dashboards for internal stakeholders and client leads. Guideline Calibration: Analyze edge cases and error patterns in dataset outputs to help refine project annotation instructions and rubrics. Qualifications &amp; Skills Education: Bachelorâs degree in Data Analytics, Computer Science, Statistics, Information Systems, or a related quantitative field (or equivalent practical experience). Technical Skills: Proficiency with SQL for data querying, aggregation, and analysis. Practical knowledge of Python or R for data manipulation (e.g., Pandas, NumPy). Experience with visualization tools like Tableau, Power BI, or Looker . Advanced Excel / Google Sheets skills (Pivot tables, VLOOKUP/XLOOKUP, complex formulas). Analytical Mindset: Strong problem-solving skills with a high degree of attention to detail when working with complex datasets. Communication: Ability to clearly translate data findings into actionable insights for non-technical team members. Work Authorization: Must be legally authorized to work in the United States. Nice-to-Haves Familiarity with AI/ML concepts , data annotation workflows, or RLHF (Reinforcement Learning from Human Feedback). Prior experience or internship experience in an operations-focused analyst role. What We Offer 100% Remote Flexibility: Work from anywhere in the US. Cutting-Edge Industry Exposure: Gain hands-on experience at the forefront of AI model training and evaluation. Growth Opportunities: Direct mentorship and opportunities to advance within a fast-growing tech environment. Competitive Compensation: Hourly/Salaried rate commensurate with experience. Please mention the word **AMICABLY** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "California, California, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "analytics",
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 66,
+        "productOpsFit": 100,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "HiredBuddy is hiring for Junior Data Analyst. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "48b7ebd1",
+        "title": "Graphic Designer",
+        "company": "Miranda Creative, Inc.",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-miranda-creative-inc-1135610",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-miranda-creative-inc-1135610",
+        "jdText": "We are looking for a talented and detail-oriented Graphic Designer to join our creative team part-time (25 hours per week), with the potential to grow into a full-time opportunity. Since 1988, Miranda Creative has partnered with more than 6,000 clients across finance, hospitality, healthcare, manufacturing, tourism, and government. We're a full-service, award-winning, New England-based creative and strategic agency. We pride ourselves on being a highly inclusive, collaborative community built on creativity, trust, and joy. We welcome you to Miranda Creative and look forward to learning more about you. This role is ideal for a designer who enjoys bringing brands to life through thoughtful design, understands the importance of consistency, and has experience creating both static and motion-based content. The primary focus of this position will be supporting production needs, ensuring brand standards are implemented accurately, and helping deliver high-quality creative work across print, digital, social, and web platforms. The right candidate is organized, collaborative, detail-focused, and comfortable working within established brand systems while applying strong design judgment. We are seeking someone who is consistently available 5 hours per day ( 9 to 2 EST), and who is located in the Eastern Standard time zone in order to coordinate internal and external meetings and deadlines. All candidates will be asked to provide a link to their portfolio, professional references, and confirmation of their scheduling availability. We look forward to hearing from you. Key Responsibilities Support the creative team with ongoing production design needs Accurately implement brand guidelines across print, digital, social media, and marketing materials Ensure consistency, quality, and attention to detail across all deliverables Prepare production-ready files for print and digital applications Adapt existing creative concepts into multiple formats and platforms Manage design updates, revisions, and ongoing brand-related projects Create motion graphics, animations, and video edits for digital content Support the development of social media assets, including short-form video and animated content Assist with website and digital design projects using Figma Collaborate with creative leadership and project teams to meet deadlines and maintain quality standards Maintain organized files and follow established creative workflows Requirements 3+ years of professional graphic design experience Strong understanding of typography, layout, color, composition, and visual hierarchy Ability to work within established brand guidelines with accuracy and consistency Strong production skills and excellent attention to detail Proficiency with Adobe Creative Cloud, including: Adobe Illustrator Adobe Photoshop Adobe InDesign Adobe After Effects and/or Premiere Pro Experience creating motion graphics, animations, and video edits Proficiency in Figma for digital design, collaboration, and presentation Ability to manage multiple projects and deadlines in a remote environment Strong communication skills and ability to collaborate effectively with a remote team Preferred Qualifications Experience working in an agency or fast-paced creative environment Experience supporting established brands and large-scale marketing campaigns Understanding of digital design systems and responsive web design Experience preparing files for print production Knowledge of animation principles and video storytelling Ability to identify design or production issues before they impact timelines Benefits This part time role is eligible for pro-rated paid time off benefits. The part-time salary range for this position is $35,000 to $40,000, with salary commensurate with skills and experience. Please mention the word **OUTSTANDING** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Norwich, Norwich, Connecticut, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-29",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Miranda Creative, Inc. is hiring for Graphic Designer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c1ea014f",
+        "title": "Growth Marketer",
+        "company": "CLANX",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-growth-marketer-clanx-1135656",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-growth-marketer-clanx-1135656",
+        "jdText": "Overview Nola is building the AI-native account for the next decade â a stablecoin bank account with intelligence supporting every action. We're looking for a Founding Marketer to own growth, narrative, distribution, content, and experimentation from day one. Company Details The ultra-wealthy have always had a private banker, a wealth manager, and a concierge running their financial life. Everyone else got an app and a PDF statement. Nola is that team for everyone â a stablecoin bank account with intelligence supporting every action. It moves your money globally in seconds, earns high yield on your USD savings, and runs the admin of your life around it: the subscriptions, the travel, the eSIMs, the bookings, all the things you shouldn't have to do yourself. Stablecoins, AI agents, and on-chain yield finally work â all at the same time, for the first time. Whoever builds the AI-native account in this window owns where money moves through for the next decade. Website: https://nola.money Requirements 3+ years of experience as a growth marketer in the B2C domain. Experience taking a product or company from 0 to 1. Worked at an early-stage startup and driven growth from zero to meaningful user adoption. Built a public profile through a podcast, YouTube channel, newsletter, Twitter/X audience, Substack, meme page, or similar. Strong understanding of GTM without brand recognition, large budgets, or existing playbooks. AI-native mindset with experience building agents, content pipelines, research workflows, automation systems, or outbound engines. Ability to write, ship, and iterate quickly. Currently working at a b2c startup. Strong content creation and storytelling skills. Responsibilities Own everything that brings users to Nola and keeps them there â the narrative, the channels, the launch sequence, the founder content, the lifecycle, the experiments. Define and execute the company narrative. Build and scale acquisition channels. Design and execute launch strategies. Drive founder-led content initiatives. Own lifecycle marketing and retention programs. Run growth experiments across channels. Build agents and automations to increase marketing leverage. Create and ship content at high velocity. Solve growth challenges with no predefined playbook. Drive user growth and engagement across the funnel. Job Details Remote Interview Process Recruiter Screen Founder Conversation Marketing Strategy Round Assignment Round Final Founder Round Important Note ClanX is a recruitment partner, helping Nola hire a Founding Marketer. Please mention the word **AMITY** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [
+          "DeFi",
+          "on-chain"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 96,
+        "productOpsFit": 64,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "CLANX is hiring for Growth Marketer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c4fceb18",
+        "title": "Product Manager Â· New York Chicago Charlotte",
+        "company": "Oula",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-product-manager-new-york-chicago-charlotte-oula-1135672",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-product-manager-new-york-chicago-charlotte-oula-1135672",
+        "jdText": "Oula delivers maternity care built around our patientsâoffering comprehensive support before, during, and after pregnancy. With fewer C-sections and higher VBAC success rates, our research-backed approach is delivering better outcomes. Our team of trusted midwives, OBGYNs, and dedicated care navigators ensure our patients get the type of care they need in the moments that matter most. Since launching in 2021, weâve expanded to include Preconception and Miscarriage Care, Pregnancy Care, Postpartum Support, and Gynecology. We currently have 4 clinics in the tri-state area, with three new clinics opening in 2026! Come join our team of clinicians, innovators, operators, and technologists passionate about setting a new standard in maternity care. OULA HEALTH Product Manager Full-Time New York, Chicago or Charlotte Reports to VP, Central Operations About Oula Oula Health is a venture-backed, midwifery-led maternity and GYN care company building the next generation of women's healthcare. We partner exclusively with major health systems â including Mount Sinai, Stamford Health, and Novant Health â to embed our collaborative OB-GYN and midwifery model directly inside their networks. We're a team of ~100 people at Series B stage, with 4 clinics today and three more opening in 2026. The Role At Oula, our product doesn't sit alongside our EHR â it integrates directly into it. Every product and engineering decision has downstream consequences for how our EHRs are configured, and every EHR configuration decision shapes what's possible on the product side. Someone has to hold both at once. We're looking for a technically-minded Product Manager to own and evolve our core technology stack â including our EHR, patient portal, and care management platform. This role sits at the intersection of product, operations, and health system integration, serving as the internal and external subject matter expert on our EMR and the primary lead for health system EHR integrations. You'll manage the day-to-day health of our tech stack, partnering closely with both internal teams and external health system stakeholders to ensure our systems run smoothly and our integrations deliver. You can sit with a midwife and understand why a clinical template matters, then turn around and write a bug ticket that engineering can actually action, then build the SOP so the next market launch doesn't require you to be in the room. When things are ambiguous (and they often are), you'll lean in rather than wait for clarity. What You'll Own EHR Configuration &amp; Clinical Systems Own day-to-day management of our core tech stack: the EHR, patient portal, and care management platform Own Athena and Epic configuration end to end: clinical templates, order sets, lab configurations, payer connectivity, and access management for clinical and ops staff Lead EHR integration efforts as the internal and external subject matter expert â FHIR/HL7 data exchange, health system IT coordination and committed go-live timelines Own and accelerate Epic integration timelines as we onboard additional health system partners Maintain configuration integrity as new markets launch and care model workflows evolve Partner with our IT team on infrastructure; own the clinical systems layer they don't touch Product Operations &amp; Launch Own bug intake and prioritization from Market Operations â standardize how Engineering receives, scopes, and resolves issues and communicates status back to the field Build structured launch toolkits and training materials so clinic teams are prepared for new feature rollouts on day one Coordinate end-to-end launches across Product, Engineering, and Operations Identify where AI and automation can reduce manual administrative burden in product operations workflows Standards &amp; Knowledge Management Build and maintain the clinical systems SOP library so new market setup is repeatable â documented well enough that a new hire can execute without you in the room Develop onboarding materials for clinic managers and clinical staff on EHR workflows and tooling Drive feature parity efforts so patients and clinicians experience a consistent standard of care across markets Data &amp; Reporting Build and maintain dashboards tracking feature adoption, issue resolution, and rollout health across clinics Develop quarterly reporting for Product, leadership, and health system partners on platform performance Ensure data infrastructure is in place to measure the impact of every feature rollout What You Bring 3+ years with product operations, technical program management, or PM-adjacent work â ideally at a growth-stage digital health or services company Strong problem-solving instincts and genuine curiosity â you like figuring out how things work and making them work better Ease with ambiguity and a bias toward action; this role requires you to create the playbook, not execute someone else's Demonstrated ability to navigate complex stakeholder environments and drive aggressive timelines â ideally with client-facing or health system-facing experience Ability to speak âmultiple languagesâ â comfort going deep on technical details while communicating clearly to non-technical audiences; you can write a bug ticket, an SOP, and a launch plan that people actually follow; hands-on EHR configuration and integration experience strongly preferred Analytical enough to build a dashboard and identify a pattern, even if you're not a SQL expert What Success Looks Like In your first 90 days, you've audited our current Athena configuration, identified gaps, and have a remediation plan. You understand the bug triage process well enough to have improved it. You've met your counterparts at every health system partner and know what's coming for the next Epic integration. At six months, new market launches have a repeatable systems and product checklist. Clinic teams know what to expect before a feature goes live. Bug resolution time is measurably faster and the field is no longer sending issues into a black hole. At one year, the SOP library is comprehensive, clinical systems configuration is stable and documented, and you've successfully navigated at least one new health system EHR environment. The product team has a reliable partner and the ops team isn't dependent on any single person for systems knowledge. Compensation &amp; Details Salary: $110,000 â $140,000 depending on experience and location Equity: Options commensurate with level Location: Preference for New York/New Jersey/Connecticut, Chicago or Charlotte Remote-flexible with periodic travel to clinic locations and health system partners Benefits: Comprehensive medical, dental, and vision; 401(k); generous PTO Oula offers a competitive total rewards package which includes base salary, and comprehensive benefits. Exact compensation inclusive of salary and any bonuses is determined based on a number of factors including experience and skill level, location, and qualifications which are assessed during the interview process. Oula is committed to fostering an inclusive workplace where everyone's contributions are valued. Salary Range: $110,000 USD - $140,000 USD Oula's Commitment as an Equal Opportunity Employer : We want you to know: You can be a great candidate even if you don't fit everything we've described above. You can also have important skills we haven't thought of. If that's you, don't hesitate to apply and tell us about yourself (especially in your cover letter â this is where you can really state your case for *why you*). We are committed to fostering diversity in our organization and building an equitable and inclusive environment for people of all backgrounds and experiences. We're taking steps to meet that commitment. We especially encourage members of traditionally underrepresented communities to apply, including women, people of color, LGBTQ people, veterans, and people with disabilities. Please mention the word **PRECISELY** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 66,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Oula is hiring for Product Manager Â· New York Chicago Charlotte. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "d6b84c5c",
+        "title": "Regional General Manager Airports",
+        "company": "WestJet",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-regional-general-manager-airports-westjet-1135745",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-regional-general-manager-airports-westjet-1135745",
+        "jdText": "Why WestJet Since our story took off in 1996, WestJet has strived to enrich the lives of everyone in our world; a career with us is no exception. Weâre proud to be one of Canadaâs most admired and respected corporate cultures and continuously aim for the highest standards of service and success. Join us, this is where your career story takes off. This position is eligible for remote work, within Canada, under our mobile workforce program. Regional General Manager, Airports As the Regional General Manager, you will provide strategic leadership and direction to deliver safe operations while driving excellence in operational performance and guest service through our contracted service partners across the designated region. Reporting directly to the Vice President of Airports, you will lead a team of Regional Managers and collaborate closely with internal and external stakeholders to maintain regulatory compliance, foster positive relationships, and ensure a consistent, high-quality guest experience across all airport touchpoints within the region. This role requires an experienced leader who holds service partners accountable for delivering WestJet's operational and service standards while balancing the needs of our guests, our partners, and our business. You will coach and support service partners in developing and executing airport action plans that address performance gaps, strengthen safety, and improve the guest experience. The Regional General Manager will provide strategic oversight of airport operations across the region by identifying emerging risks, monitoring operational performance, and ensuring consistent execution of WestJet's standards and priorities. Through strong partnerships with service providers and airport authorities, you will drive continuous improvement, enhance operational resilience, and ensure our airports consistently deliver safe, reliable operations and an exceptional guest experience. Key Deliverables Include Foster a Safety Above All culture with Regional Managers by ensuring service partners achieve safety targets, monitoring performance trends, and addressing operational risks. Lead, coach, and develop a high-performing team of Regional Managers to deliver operational performance, guest satisfaction, employee engagement, and financial results. Provide strategic oversight of airport operations, ensuring consistent execution of WestJet's operational and guest standards and priorities. Deliver regional operational performance by achieving operational, guest experience, and financial objectives while driving continuous improvement through station action plans. Provide governance through audits, operational reviews, and performance assessments to ensure adherence to standards, identify risks, and drive corrective actions. Analyze operational performance and safety data to identify trends and risks, inform operational decision making, prioritize resources, and strengthen oversight across the region. Serve as the senior escalation point for Regional Managers, providing leadership and decision support for complex operational, guest, commercial, safety, and irregular operations. Partner with the Strategic Procurement team to develop service partner strategies, support partner selection, and ensure service partners deliver safe, high-performing, and cost-effective operations. Build and maintain executive relationships with airport authorities, service partner leadership, government agencies, bargaining agents, and other key stakeholders. Lead regional operational planning to ensure airports are resourced and operationally ready for seasonal demand, network growth, start-ups, restarts, service partner transitions, station closures, and other strategic initiatives. Champion innovation and continuous improvement by leveraging data and implementing initiatives that enhance operational performance, the guest experience, employee engagement, and financial results. Participate as a member of the Airports Leadership Team to establish departmental priorities, contribute to strategic direction, and lead the development and execution of departmental initiatives. Experience And Qualifications 3+ years Airports leadership experience required Business leadership experience with a significant level of internal and external dependencies and relationships. Possess strong business acumen to deliver departmental plans including budget. Proven ability to multitask &amp; handle changing priorities. Confident in presenting materials and reports to the next 2 levels. Post-secondary education with a business application an asset. Ability to manage multiple leaders and locations simultaneously. Proficient in PC based applications, Microsoft Project, Word, Excel and Outlook. Ability to travel &amp; spend time away for significant periods of time. Project management skills considered an asset. Knowledge of International regulations and guidelines (for example - TSA/Civil Aviation, UK High Commission etc.) an asset. Proven track record of effectively influencing leadership teams via handling partners and developing strong direct leadership teams. IATA SGHA experience would be beneficial. The Benefits Of Being a WestJetter WestJet provides all WestJetters with a competitive total rewards package. On top of that, we offer: A fun and friendly culture with colleagues who work together to win Travel privileges for you and your family, effective from your start date Savings and Benefit programs that are flexible to meet your specific needs Think weâre a great fit? Apply now! About WestJet Group Of Companies WestJet took to the skies in 1996 with just over 200 employees and three aircraft operating service to five destinations. Since then, WestJet has pioneered low-cost travel in Canada, cutting airfares in half, and increasing the flying population in Canada by more than 50 per cent. Since the Sunwing Airlines integration in 2025, more than 15,000 WestJetters support nearly 200 aircraft and connect guests to our global network of more than 100 destinations across North America, Central America, the Caribbean, Europe and Asia. The WestJet Group is a major Canadian employer and includes WestJet Airlines, WestJet Encore and Sunwing Vacations Group. Weâre Canadaâs leading value airline and largest vacation provider, with a united purpose of providing affordable and accessible air and vacation travel to Canadians. Our safety promise At WestJet, the safety and security of our people and our guests is a core value and at the heart of what we do. Safety and security are shared responsibilities all team members are expected to use safe work practices to ensure their well-being and the safety of others. WestJet recognizes that the use of Alcohol and Drugs can adversely impact a safe work environment and the well-being of others including guests, suppliers and the public, as well as place WestJet's operations at risk. All roles that are identified as Safey-Sensitive are required to pass a Pre-Employment Alcohol and Drug Test as per WestJet'sâ¯Alcohol and Drug Policy.â¯ Our commitment to diversity, equity and inclusion We embrace what makes each of us unique, and what makes us uniquely WestJet. We welcome diverse skills, experiences and backgrounds so if you're passionate about this role, we encourage you to apply â even if you don't meet every qualification listed. WestJet is committed to inclusiveness, equity and accessibility throughout the selection process. If you require accommodation at any stage, please contact our Talent Acquisition team at talent@westjet.com. We value the time and effort you put into your application. Our recruitment process is highly competitive and while every applicant will receive communication regarding their application status, only those selected to move forward will be contacted with next steps. If this role isnât the right fit, we encourage you to explore future opportunities with us. About For more information about everything WestJet, please visit westjet.com/aboutus. If you wish to withdraw your application or request that your personal information be deleted, please contact us at talent@westjet.com. Please mention the word **OVERTAKING** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Mississauga,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-31",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "WestJet is hiring for Regional General Manager Airports. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "08435343",
+        "title": "Sales Development Representative â Outbound",
+        "company": "PromoGeneration",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-outbound-promogeneration-1135746",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-sales-development-representative-outbound-promogeneration-1135746",
+        "jdText": "Job Title: Sales Development Representative (SDR) Employment Type: Full-Time | Remote Schedule: Monday â Friday | 6:00 PM â 2:30 AM PKT Compensation: Competitive Base Salary + High Uncapped Commissions About The Role Are you an energetic, target-driven self-starter with a knack for identifying key decision-makers and C-suite influencers? We are seeking a high-performing Sales Development Representative (SDR) to drive our outbound growth strategy. In this remote role, you will be on the frontlines of our business development effortsâbuilding pipeline, engaging targeted prospects, conducting strategic lead qualification, and establishing long-term business relationships. If you thrive in a competitive, goal-driven startup environment and want a role where your hard work translates directly into high commission payouts, this is the position for you. What You'll Do (Responsibilities) Pipeline Generation &amp; Outbound Outreach: Execute multi-channel outreach strategiesâincluding cold calling, targeted cold emailing, and LinkedIn messagingâto generate qualified leads and build a robust sales pipeline. Account Mapping &amp; Prospect Research: Conduct deep industry research to identify high-value target accounts, key decision-makers, and industry trends. Lead Qualification: Qualify inbound/outbound prospects by evaluating their pain points, goals, budget, and business environment. Sales Presentations &amp; Demonstrations: Present and demonstrate the core value of our products and services to prospective corporate buyers. CRM Management: Maintain meticulous records of all outreach activities, prospect interactions, and sales stages in Salesforce.com. Collaborative Strategy: Partner with leadership and clients to refine sales scripts, objection-handling strategies, and target audience mapping. Target Achievement: Consistently hit and exceed monthly key performance indicators (KPIs), booked meeting quotas, and revenue targets. Client Relationship Management: Provide exceptional follow-up and rapport-building to ensure high prospect satisfaction and seamless sales hand-offs. What We're Looking For (Requirements) Experience: Minimum of 1+ year of hands-on B2B sales, outbound SDR, or lead generation experience. Communication Skills: Fluent English communication skills (both written and verbal) with strong conversational confidence. Tech Setup &amp; Workstation: A dedicated quiet home office setup, a high-performance laptop/desktop, and a stable, high-speed internet connection. CRM Proficiency: Hands-on experience with CRM platforms (Salesforce.com experience is strongly preferred). Mindset &amp; Drive: A resilient, self-motivated sales professional who excels in a fast-paced, competitive startup environment. Interpersonal Skills: Proven ability to build trust quickly, overcome sales objections, and manage client relationships effectively. Work Style: Ability to work independently with minimal supervision while contributing positively to team goals. Organizational Skills: Exceptional time-management skills and attention to detail. Why Join Us? Uncapped Earning Potential: Base salary plus an aggressive high-commission structure that rewards top performers. Remote Flexibility: Work comfortably from your home office setup. Growth Opportunities: Accelerate your career within a fast-scaling company that promotes from within. Dynamic Culture: Be part of a supportive, friendly, and performance-oriented team. Please mention the word **DARING** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Islamabad, Islamabad, IslÄmÄbÄd, Pakistan",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 75,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "PromoGeneration is hiring for Sales Development Representative â Outbound. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "81870aa9",
+        "title": "Healthcare Virtual Assistant Registered Nurse",
+        "company": "Snapscale",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-healthcare-virtual-assistant-registered-nurse-snapscale-1135684",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-healthcare-virtual-assistant-registered-nurse-snapscale-1135684",
+        "jdText": "Overview : Snapscale is seeking a dedicated and highly organized Registered Nurse (RN) to join our team as a US Healthcare Coordinator in a remote setup . This role is ideal for nurses looking to transition into a virtual healthcare support environment while utilizing their clinical knowledge and patient care experience to support U.S.-based healthcare providers. The ideal candidate is detail-oriented, tech-savvy, and passionate about delivering excellent patient support while ensuring compliance with healthcare regulations and administrative processes. Key Responsibilities: Assist US based healthcare providers with administrative and clinical coordination tasks Manage patient records, scheduling, and insurance verifications Handle medical documentation and maintain accurate patient information in EMR/EHR systems Provide virtual patient support and conduct inbound/outbound follow-ups Coordinate with patients and healthcare teams to ensure smooth clinic operations Ensure compliance with HIPAA and other healthcare privacy regulations Support day-to-day healthcare administrative workflows efficiently and professionally Perks: Health Maintenance Organization (HMO) Competitive pay Government-mandated benefits 13th month pay Night differential pay Internet allowance Perfect attendance bonus Yearly salary increase Opportunities for career growth and development Requirements: Active Registered Nurse (RN) license Experience as a Healthcare Virtual Assistant is an advantage Experience with EMR/EHR systems and medical administrative tasks preferred Strong written and verbal English communication skills Highly organized with strong attention to detail Tech-savvy and able to quickly learn new systems and tools Professional, empathetic, and patient-focused approach Must have stable internet connection and a dedicated quiet workspace for remote work Please mention the word **BLESS** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Davao, Davao, Davao Region, Philippines",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Snapscale is hiring for Healthcare Virtual Assistant Registered Nurse. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "a4b9fbed",
+        "title": "People and Culture Manager",
+        "company": "Casa TrÃ¨s Events",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-people-and-culture-manager-casa-tres-events-1135719",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-people-and-culture-manager-casa-tres-events-1135719",
+        "jdText": "People &amp; Culture Manager CASA TRÃS Â· BARCELONA Â· FULL-TIME Â· ON-SITE Casa TrÃ¨s is a cultural house, not an event supplier. Since 2018 we have designed, built and executed luxury events across Barcelona, Monaco and worldwide â 240+ productions in 11+ countries for brands including Red Bull, Maserati and Dom PÃ©rignon. Official partner of the Circuit de Barcelona-Catalunya F1 Weekend, staging for 300,000+ attendees. The house is growing fast. Last year alone: 33 events, 11 countries. Growth at this pace is built on people â the team that specifies every element, and the crews that make the night run itself. We are opening our first People &amp; Culture Manager role to build the structure that growth demands, without losing what makes this place a home. Casa means home. That has always applied to our guests. Your job is to make sure it applies, permanently, to our team. The role You will own people end to end at Casa TrÃ¨s â from the first conversation with a candidate to the way the team feels on the Monday after a build week. You report directly to the founders and work from our Barcelona office in Poble Nou. 01 â Talent &amp; hiring Own recruitment across production, creative and operations: brief, source, interview, close. Build the talent pipeline for a house that produces across 11+ countries â including the freelance crews, technicians and specialists our productions depend on. Design onboarding that gets new people from signed contract to confident on-site, quickly. 02 â Culture &amp; experience Protect and shape the culture as the team grows: rituals, communication, the standard of hospitality we extend inward, not just outward. Own the employee experience through the realities of event production â intense build weeks, travel, seasonal peaks â and design recovery and balance into the calendar. Plan the internal moments: team gatherings, reviews of the season, the way wins are marked. 03 â Development &amp; performance Build a simple, honest performance framework: clear expectations, regular feedback, real conversations. Map growth paths so people can see their next role inside the house. Identify training needs across production, technical and client-facing teams, and organise the learning to meet them. 04 â HR operations &amp; compliance Run the HR foundations: contracts, payroll coordination, holidays, absence, records. Ensure compliance with Spanish employment law, and coordinate with advisors on cross-border work in Monaco, France and beyond. Own the policies â written once, written clearly â and the tools and processes that keep people operations running without friction. Who we are looking for [3â5+] years in HR, people operations or a generalist people role â ideally in events, hospitality, agency or another fast-moving, project-based environment. Working knowledge of Spanish employment law and HR administration. Fluent English and Spanish. French is a plus â Monaco is our second address. Comfortable being the first dedicated people person: building structure from scratch, hands-on, without a playbook. High discretion, warmth and judgement. You will handle the human side of a house built on hospitality. What we offer A first-of-its-kind role with direct line to the founders, and the mandate to build the people function of a growing international house. A seat in Poble Nou, Barcelona â and a front-row view of productions from the Monaco Grand Prix to the F1 Weekend at Circuit de Barcelona-Catalunya. Competitive package To apply Send a short note and your CV to piers@casatres.es â tell us one thing about how a team should feel, and why. Please mention the word **ENTHUSE** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Barcelona, Barcelona, CataluÃ±a, EspaÃ±a",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-07-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Casa TrÃ¨s Events is hiring for People and Culture Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "9ac244b3",
+        "title": "Growth Strategist",
+        "company": "Lyric",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-growth-strategist-lyric-1135681",
+        "jdText": "About the Company Why We Built Lyric: Supply chains are more critical and complex than ever. Every day, large enterprises navigate trillions of possible decisions that could impact the bottom line. Powerful algorithms and AI can address these problems, yet most organizations struggle to leverage supply chain AI at scale. The current SCM technologies are either rigid, limited-scope point solutions or custom solutions built in-house, which demand immense expertise and investment. That isâ¦until now. Enter Lyric : Lyric is an enterprise AI platform built specifically for supply chains, offering the best of both worlds: Out-of-the-box AI solutions for optimizing networks, allocating inventory, scheduling routes, planning fulfillment capacity, promising orders, propagating demand, building predictions, analyzing scenarios, and more, plus A platform-first approach that empowers both business and technical users with end-to-end product composability, leveraging no-code tools, their own code, or even forking our code to build and refine supply chain decision intelligence With Lyric, enterprises no longer have to choose between flexibility and speed, they get both. The Mission: Weâre building a new era in supply chain with the team best equipped to lead it. With over 20 years at the intersection of supply chain and algorithms, we developed a deep conviction that global supply chains needed something like Lyric. Since our inception in December 2021, that conviction has been validated time and time again. Today, a growing number of Fortune 500 companies, including Smurfit WestRock, EstÃ©e Lauder, Coca-Cola, and more, are innovating on their own terms with Lyric. We canât wait to see what our customers, both current and future, are empowered to build with us next. Come build with us! About the Role Weâre hiring Growth Strategists: high-agency, client-facing professionals who will be the tip of the spear for Lyricâs go-to-market approach. This is not a traditional business development role. Youâll be embedded with senior sales leaders and cross-functional teams, opening new accounts while building real expertise in the enterprise GTM motion. This role is designed for driven early-career professionals or post-MBA candidates looking to break into a high-growth startup. You donât need enterprise AI or supply chain experience, just the curiosity and work ethic to learn it fast. Â What Youâll Do Identify, research, and develop new account opportunities across target verticals Conduct outbound prospecting through multi-channel campaigns (email, phone, LinkedIn, events) Shadow senior AEs and GTM leaders on client meetings and demos to build domain fluency and selling skills Help prepare demo environments, RFP responses, and opportunity materials for active deals Join opportunity teams to support key pursuit strategy and client engagement Contribute to broader GTM activities: market research, competitive intelligence, event support, and content collaboration Develop a point of view on target accounts and industries that sharpens the teamâs overall strategy Who You Are Early career (2+ years of professional experience) or post-MBA candidate looking to pivot into enterprise AI technology Exceptional communicator; polished, articulate, and comfortable in client-facing settings High agency: you take ownership, follow through, and donât wait to be told what to do Intellectually curious with a hunger to learn about supply chain, technology, and enterprise sales Strong researcher; you can quickly synthesize complex information and present it clearly Resourceful with tools and technology. You're the kind of person who finds the right shortcut or AI-powered workflow to 10x your output before anyone asks you to Collaborative and team-oriented; comfortable in a fast-moving, ambiguous environment Â Why This Role Career path into AE, pre-sales, solution design, revenue operations, or other GTM roles Direct mentorship from experienced Revenue leadership, VPs of Sales, and AEs. Youâll learn by doing alongside the best You'll be helping define a new category, enterprise AI for supply chain, at a company where the playbook is still being written but the customer base already includes some of the largest, most complex enterprises in the world. Join at a pivotal stage where your contributions are visible, and your growth trajectory is steep Â Even if you donât meet 100% of the qualifications, we recommend applying to the role! Â Location: Remote - Spain, Italy, Portugal. Some travel required. Â Compensation: We provide a competitive mix of salary, commissions, local benefits, and equity, designed to reward both your impact and growth. Please mention the word **SURVIVAL** and tag RMTAwLjU1LjI2LjIyMw== when applying to show you read the job post completely (#RMTAwLjU1LjI2LjIyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-07-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Lyric is hiring for Growth Strategist. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
