@@ -1,0 +1,554 @@
+{
+  "id": "briefing-2026-08-06",
+  "date": "2026-08-06",
+  "generatedAt": "2026-08-06T03:45:01.999Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "5fcf1f19",
+        "title": "Head of Security",
+        "company": "Tremendous",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-head-of-security-tremendous-1136210",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-head-of-security-tremendous-1136210",
+        "jdText": "Tremendous is the global platform built for businesses to send payoutsâgift cards and moneyâto anyone, anywhere, instantly. We're trusted by 20,000+ organizations, from startups to giants like Atlassian, MIT, and United Way, to reach millions of recipients worldwide. We're profitable and growing without outside investors. We're fully remote, with a high-documentation, low-meeting culture that leaves more time for the work that mattersâand for your life outside it. Our employee NPS sits in the high 80s. We move billions of dollars through our systems. That makes security existential, and it's why we're making our first dedicated security hire. About The Role You'll be our first Head of Security. There's already a real foundation hereâbug bounty, pen tests, automated code and configuration scanning on the production and code side, phishing simulations on the people side. Youâll add to it across access and identity, SecOps and monitoring, incident response, vendor security, employee security practices, and policy. You'll own the whole posture. This is a player-coach role. Early on, you'll do the scoping and the hands-on work yourself; this is not a role where you direct from above. As the work demands it, we're fully prepared to build a team hereâand we're looking to you to define what that team should be and when. You'll report to the VP of Engineering , Tremendous' most senior technical leader. We've deliberately placed security with Engineering so you're set up to drive real implementation fastâembedded with the people whose work you're securing, not siloed in a compliance function. As the security function matures, we'll revisit this. What You'll Do Own Tremendous' security posture end-to-end, partnering with our engineering team on production infrastructure and code security. Assess where we have gaps, prioritize them, and tackle our highest-leverage gaps first. Weâll have opinions, but you own the prioritization and implementation. Treat incident response as core, not afterthought. We may not be able to prevent a breach, but your job is making sure it's small, contained, and that we know exactly what to do. Drive security as a cultural shift across the companyâintroducing controls incrementally, working with teams rather than over them. \"Yes, and,\" not \"no.\" Lead our AI-security posture. We invest heavily in AI tooling; your job is to manage that risk and enable it, not to ban it. Define when and how to staff up the security function, and hire your own team. What You'll Bring Real, hands-on security experience at a company that scaledâideally as an early security hire who grew with the business through high growth. Deep experience in at least one core security domainâproduct/production security, security operations, or access/identity and policyâwith enough range to reason across the others. You defined the security posture, not just executed someone elseâs playbook. An engineer's mindset. You reach for code to solve problems and can read our codebase and understand our infrastructure (Ruby on Rails; TypeScript + React; PostgreSQL; Google Cloud). You won't write much day-to-day, but you're not lost in the code. Judgment over checklists. You can explain the actual risk of a given decision, hold a firm line where it matters, and give ground where \"best practice\" doesn't apply to us or real business need pulls the other way. You can hold your own in a debate about whether to open up broad data access for AI tooling. Bedside manner. You drive hard change by bringing the team around to your point of view, rather than just telling them no. Engineers and the rest of the company want to work with you. Experience building or co-building a small security team is a plus. Fintech, payments, or regulated-industry experience is a plus. What's Cool About The Role You define the function. First security leader, with the budget for the required tools and team. A real mandate. The push for this hire comes straight from the founders. We invest in your tools. Everyone has a $5k/month budget for AI tools. Use it. Competitive pay and equity. Base salary $250,000â$330,000, plus meaningful equity. Fully remote. Work from anywhere in the Americas. Great culture. Read more about how we work in our public handbook. Compensation Range: $250K - $330K Please mention the word **GOLDEN** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-08-05",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 66,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Tremendous is hiring for Head of Security. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "d26ca724",
+        "title": "Market Research",
+        "company": "GROW10X",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-market-research-grow10x-1136216",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-market-research-grow10x-1136216",
+        "jdText": "Company Description GROW10X is a leading full-service agency specializing in helping B2B SaaS technology companies accelerate revenue growth through outbound lead generation. Utilizing a combination of cutting-edge technology, expert strategies, on-demand data, and a globally distributed team, GROW10X is dedicated to delivering measurable sales outcomes for clients. With a focus on direct outreach methods such as cold calling and one-on-one cold email marketing, the team works as an integrated extension of clients' sales operations. By providing comprehensive support from prospect identification to pipeline growth, GROW10X ensures scalable and efficient sales enablement. Role Description You will be finding contacts and sending emails. Qualifications Strong expertise in LinkedIn research Proficient in using Analytical Skills to interpret complex data and provide actionable insights Experience in conducting Quantitative Research and presenting data-driven recommendations Excellent verbal and written Communication skills Proficiency in the use of tools and platforms for data collection and analysis is a plus Ability to work independently and collaboratively in a remote, fast-paced environment Bachelor's degree in Business, Marketing, Data Science, or a related field preferred Prior experience in B2B SaaS or sales enablement is an advantage Please mention the word **AMBITIOUS** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Chennai, Chennai, Tamil Nadu, India",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 81,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "GROW10X is hiring for Market Research. Role angle: Growth Data Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "1d24c694",
+        "title": "Marketing Coordinator Partner Programs",
+        "company": "Digiday",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-marketing-coordinator-partner-programs-digiday-1136045",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-marketing-coordinator-partner-programs-digiday-1136045",
+        "jdText": "Overview Digiday Media is looking for a Marketing Coordinator, Partner Programs to lead the marketing and fulfillment of sponsored programs across four premium media brands. &nbsp; Who you are You have about a year of experience in media and/or growth marketing and are eager to take on more responsibility. Youâre a pro and extremely reliable when it comes to managing projects and ensuring theyâre executed on time and at a high level. Youâre analytical and when it comes to solving problems, youâre able to use data to identify trends and challenges and turn those into action items. Youâre results-oriented and are extremely ambitious and motivated when it comes to delivering on those results. Most of all, youâre able to work extremely effectively across teams to be able to deliver results for our partners. &nbsp; Responsibilities Oversee the fulfillment and marketing for partner programs, including webinars, white papers, reports, surveys, guides and more. Youâll be responsible for developing promotional plans for each of these programs and executing them at an extremely high level. Coordinate the distribution and promotion for each program. Youâll manage a content calendar and be responsible for using various channels across the company to promote each of these assets. Report on the progress and success of each campaign. From a fulfillment standpoint, youâll keep key stakeholders informed of the progress of each campaign and make recommendations to improve performance. From a promotion standpoint, youâll track the success of the tactics being used and make recommendations in order to optimize those tactics going forward. Work closely with client service and custom content teams to coordinate the logistics of campaign launches. Work with the sales team on feasibility for RFPs and other programs being pitched. Youâll work closely with vp, marketing &amp; growth to ensure all programs are sold in a way that puts Digiday Media and our partners in position to be successful. Requirements About one year of experience (internships count) Media, marketing or communications background preferred. Ideally, a mix of the three. A proven ability to manage a number of projects at once. Youâre extremely organized and can juggle multiple campaigns in your sleep. Experience with direct response channels. Ideally, working with email marketing, display advertising, social platforms and/or other native publishing placements. A willingness to âroll up your sleevesâ. Youâre happy to get your hands dirty and get s**t done. Comfortable in a fast-paced, occasionally ambiguous environment Meticulous attention to detail. Nothing gets by you. Generally fluent in marketing technology &nbsp; ABOUT DIGIDAY MEDIA Digiday Media is a vertical media company founded in 2008 by our Chairman, Nick Friese. Our mission is to chronicle how industries like media, marketing and retail are navigating change.&nbsp; Our approach is to continually reimagine and reshape the media we create and the way we connect the industries we cover, guided by our core virtues of quality, honesty, curiosity and tenacity. OUR BRANDS Digiday: The home of modern media and marketing. Glossy: Chronicling the evolution of beauty and fashion. Modern Retail: Exploring the transformation of the retail industry. OUR VALUES Be respectful. We work with each other in a way thatâs empathetic, kind and productive. Embrace change. Media is perpetually changing. To keep up, so are we. Choose quality. Quality over quantity -- always. Experiment. Weâre obsessed with finding ways to get better. Be honest . Whether itâs the way we report on the industries we cover or how we work together, it starts with honesty.&nbsp; OUR BENEFITS Remote work schedule flexibility. Work from where you want: home, the moon -- it's up to you. Professional development :&nbsp; We help pay for approved courses and training to help you grow. Generous paid time off . Including half-day Fridays, a week off following Christmas and ample PTO. Insurance including health, vision, dental and 401k.&nbsp; Please mention the word **AFFORDABLY** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "New York, New York, New York, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 76,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Digiday is hiring for Marketing Coordinator Partner Programs. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "3bf45228",
+        "title": "Business Development",
+        "company": "GROW10X",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-business-development-grow10x-1136221",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-business-development-grow10x-1136221",
+        "jdText": "Company Description Grow10X is a leading full-service agency dedicated to accelerating revenue growth for B2B SaaS technology companies through outbound lead generation. By integrating expertise, technology, on-demand data, and a globally distributed workforce, Grow10X empowers clients to achieve fast and scalable business growth. The company specializes in enhancing sales outcomes through direct outreach, including cold calling and personalized cold email campaigns. Supported by a comprehensive team of strategists, researchers, content creators, sales development representatives, and analysts, Grow10X operates as an embedded sales team for its clients. Their expertise enables businesses to effectively identify prospects, automate outbound processes, and build a strong sales pipeline. Role Description: This is a cold calling role. If you do not have cold calling experience please DO NOT apply You will be cold calling to Australian prospects You will be working from 6 am PST- 3pm PST This is a REMOTE work Qualifications Cold calling Neutral accent Salary: 150,000 PAK RS per month Please mention the word **REGALLY** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Islamabad, Islamabad, IslÄmÄbÄd, Pakistan",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 75,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "GROW10X is hiring for Business Development. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "180dd842",
+        "title": "Data Analyst Assistant",
+        "company": "Arabian Private Holdings",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-data-analyst-assistant-arabian-private-holdings-1136217",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-data-analyst-assistant-arabian-private-holdings-1136217",
+        "jdText": "About the role The Data Analyst Assistant role is central to our current engagement with a Dubai-based investment firm that requires precise data handling and clear visualization. This position provides the quantitative groundwork that allows our principals to form a view on complex corporate governance and strategy questions. We need an assistant who can organize messy data sets into logical structures that reveal the health and performance of a holding company. About Arabian Private Holdings Arabian Private Holdings was founded on the principle that many critical business problems do not fit the traditional large-firm consulting model. A board facing a succession question or a family group weighing a capital injection does not need a team of twelve associates and a hundred-page methodology deck. They need experienced partners who can sit with a problem, form a rigorous view, and defend it. We take on a limited number of mandates to ensure that every client receives direct attention from the principals who are actually accountable for the outcome. Our work covers corporate strategy, governance, and operating model efficiency for some of the most significant family groups, listed corporations, and government entities in the region. We focus on clarity over complexity. We operate as a remote firm, choosing to prioritize the quality of our analysis and the strength of our relationships over traditional office overhead or aggressive growth targets. What you will do Collect and organize financial and operational data from various portfolio companies for a Dubai-based investment. Clean and validate data sets to ensure accuracy before they are used in client presentations. Build simple, effective spreadsheets that track performance indicators for large holding companies. Assist in drafting reports that translate numbers into clear written arguments for our principals. Monitor industry trends and perform basic market research to support ongoing strategic mandates. Maintain internal records to ensure that historical client data is easily accessible and correctly categorized. Prepare charts and graphs that simplify complex financial structures for board-level reviews. Support the audit of corporate governance documents by cross-referencing quantitative findings with qualitative reports. What we are looking for A clear understanding of basic statistics and a logical approach to problem-solving. Proficiency in spreadsheet software with an ability to manage large amounts of information without errors. Strong written skills and the ability to explain what a set of numbers means in plain English. Curiosity about how large corporations and family groups operate in different sectors. Precision in your work, where you check your own calculations before submitting them for review. A degree or ongoing studies in a quantitative field such as economics, finance, or mathematics. How we work We operate as a fully remote firm, which means we rely on clear documentation and asynchronous communication. Because our work involves sensitive mandates for high-profile clients, we maintain a high standard of professional conduct and data security. You will work closely with a principal who provides direct mentorship and expects you to form your own view on the data you analyze. We do not value long hours for the sake of appearances. Instead, we focus on the rigor of the output and the clarity of the logic. This remote model allows us to hire individuals based on their intellectual capability rather than their physical location, ensuring we can provide the best possible advice to our clients. What the role offers A paid entry-level position with a competitive compensation package for the current market. Direct exposure to high-level corporate strategy and governance mandates. Mentorship from experienced principals who have managed some of the largest holding companies in the region. The flexibility of a permanent, full-time role that is entirely remote. Practical experience in forming a rigorous view on business performance and portfolio health. Please mention the word **TRIVIALLY** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Ø¯Ø¨Ù, Ø¯Ø¨Ù Ø¯Ø¨Ù Ø§ÙØ¥ÙØ§Ø±Ø§Øª Ø§ÙØ¹Ø±Ø¨ÙØ© Ø§ÙÙØªØ­Ø¯Ø©",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Arabian Private Holdings is hiring for Data Analyst Assistant. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "2fec9b78",
+        "title": "Marketing Specialist",
+        "company": "INNERGY",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-marketing-specialist-innergy-1136094",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-marketing-specialist-innergy-1136094",
+        "jdText": "INNERGY is transforming the woodworking industry with purpose built, cloud based ERP software designed exclusively for custom manufacturers. Our platform helps businesses operate smarter, faster, and more efficiently while seamlessly connecting design, production, and delivery for teams creating architectural millwork, cabinetry, and casework. What truly sets INNERGY apart is our people. Founded in 2016, we are a globally distributed team of 200 plus professionals united by deep software expertise and a shared passion for solving meaningful, real world problems. We value collaboration, creativity, and ownership, and we are intentional about building not only powerful products, but also a culture where people feel supported, heard, and inspired to do their best work. With strong momentum and the recent acquisition of Microvellum, a trusted leader in design to manufacturing solutions for the woodworking industry, INNERGY is entering an exciting new phase of growth. This combination expands our capabilities, deepens our industry impact, and accelerates our vision of delivering a truly connected, end to end platform for custom manufacturers. As we scale thoughtfully and bring together top talent and new perspectives, this is a unique opportunity to join a company where your work will have visible impact, your ideas will help shape decisions, and your contributions will play a meaningful role in defining the future of a fast evolving product, team, and industry. Job Description We're looking for a versatile, hands-on Marketing Specialist who thrives as a generalist and can move fluidly between product marketing content, web production, and performance channels. You'll be the kind of marketer who can write a compelling product page in the morning, build and publish it in WordPress over lunch, and optimize a paid search and social campaign by the afternoon. You're equally comfortable thinking about messaging and positioning as you are reading a CPL report. This is a high-impact role for someone who wants ownership across the funnel and the chance to directly influence pipeline at a fast-growing vertical SaaS company. If you like wearing multiple hats, learning a niche industry deeply, and seeing your work drive measurable results, you'll fit right in. Duties &amp; Responsibilities include: Product &amp; content marketing Translate product features and capabilities into clear, benefit-driven messaging that resonates with millwork and cabinetry business owners. Write and produce marketing content across formats â landing pages, web copy, emails, case studies, one-pagers, ad copy, and campaign assets. Partner with product and sales to keep positioning sharp and messaging consistent across the buyer journey. Web production (WordPress) Build, edit, and publish web pages in WordPress â from landing pages to product and resource pages â with an eye for layout, conversion, and on-page experience. Maintain and improve the website over time: updating content, fixing issues, A/B testing, and ensuring pages stay fast, on-brand, and conversion-ready. Paid social &amp; paid search Plan, launch, manage, and optimize paid campaigns across search (Google Ads) and social (LinkedIn, Meta, and others as relevant). Own day-to-day campaign management: audiences, creative, budgets, bidding, and ongoing testing to improve cost-per-lead and ROAS. Report on performance and translate results into clear next steps. Demand generation Support full-funnel demand gen programs that drive leads and pipeline â across email, webinars, events, content syndication, and nurture. Help build and execute integrated campaigns from concept through measurement. Track and report on funnel metrics, contributing to a continuous test-and-learn culture. Knowledge and Preferred Qualifications: Attention to detail sets you apart. Youâll be working across multiple projects at once, and get to be responsible for delivering them with a high standard of quality Youâre organized, efficient and deadline driven Experience marketing to manufacturers, the construction/building products space, or other niche/vertical industries. Familiarity with marketing automation and CRM platforms (e.g., HubSpot, Marketo, Salesforce). Comfort with analytics tools (GA4, Google Search Console, Looker Studio) and ad platforms' native reporting. Basic design or creative production skills (Canva, Figma, Adobe Creative Suite). Experience with webinars, events, or field marketing. Qualifications Ability to travel for maximum of one week at a time. Both domestic and international travel may be required. A valid US passport will be required, if not already in place. Weekend travel may be required during conventions and shows. Your position is not expected to require a significant amount of travel, but we expect that you might be on the road up to 20% of your time. Ability to sit for extended periods of time. Ability to work / look at a monitor for extended periods of time. Ability to lift 45lbs or less. Additional Information All your information will be kept confidential according to EEO guidelines. Accessibility &amp; Work Environment INNERGY is committed to fostering an inclusive and accessible workplace. We support reasonable adjustments for individuals with disabilities in accordance with applicable laws. If you require any accommodations during the recruitment process or in your role, please let us know. This role is primarily computer-based and may involve extended periods of screen time and frequent communication through digital tools. Work may be performed remotely or in an office setting, depending on the role and location. We prioritize employee wellbeing, flexibility, and a safe, supportive work environment across all regions. Equal Opportunity Employer INNERGY is an Equal Opportunity Employer that values diversity at every level of the organization. We are committed to creating a workplace free from discrimination and harassment. All qualified applicants will be considered without regard to race, color, religion, sex, age, sexual orientation, pregnancy, gender identity or expression, national origin, disability, veteran status, or any other protected characteristic under applicable law. Location Eligibility Notice This is a U.S.-based remote role. Due to current regulatory requirements, we are only able to consider candidates residing in certain U.S. states. Eligible states include, but are not limited to: Texas, Florida, Missouri, Arizona, Indiana, North Carolina, and Wisconsin. At this time, candidates located in California, Colorado, New York, Illinois, Washington, or other states with active pay transparency requirements are not eligible for consideration. Please mention the word **BLESSING** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Austin, Austin, Texas, United States",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "INNERGY is hiring for Marketing Specialist. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "1514f972",
+        "title": "Data Entry Assistant",
+        "company": "PT. Mastersystem Infotama",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-data-entry-assistant-pt-mastersystem-infotama-1136103",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-data-entry-assistant-pt-mastersystem-infotama-1136103",
+        "jdText": "We are looking for a Data Entry Assistant to join our remote team. This is an entry-level position, and no previous experience is required. Full training will be provided to help you succeed in your role. This opportunity is ideal for students, fresh graduates, stay-at-home parents, and anyone looking for a flexible remote job. Responsibilities Enter and update information in online databases Review records for accuracy Organize electronic files and documents Maintain data confidentiality Complete assigned tasks within deadlines Follow simple instructions and company procedures Requirements No experience required Basic computer skills Good attention to detail Reliable internet connection Ability to work independently Willingness to learn Benefits 100% Remote Work Flexible Schedule Paid Training Friendly Team Career Growth Opportunities Performance Bonuses Minimum Qualifications No previous work experience is required. Fresh graduates, students, and individuals looking for their first remote job are encouraged to apply. Applicants should have basic computer skills, attention to detail, a reliable internet connection, and the ability to follow instructions while completing data entry tasks accurately. Please mention the word **INDIVIDUALIZED** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Quezon City, Quezon City, National Capital Region, Philippines",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "PT. Mastersystem Infotama is hiring for Data Entry Assistant. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "15c0ec6b",
+        "title": "Regional Sales Manager",
+        "company": "Balco, Inc.",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-balco-inc-1136097",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-balco-inc-1136097",
+        "jdText": "Company Information CSWâs Engineered Building Solutions segment manufactures custom architectural building components and innovative firestopping and smoke-rated products that help protect people. Safety and code compliance are top of mind for architects, engineers and contractors. Our purposeful brands combine functionality with aesthetically pleasing designs for the construction, refurbishment, and modernization of buildings.â¯Our brands include Balco, Greco Architectural Metal Products, and Smoke Guard. Position Summary Balco is seeking a dynamic, motivated, and results-driven Regional Sales Manager to lead and grow sales of our architectural product lines across the Western Half of the United States. This is a high-impact leadership role for a sales professional who thrives in the architectural building products space and is energized by building teams, driving growth, and influencing complex construction projects from design through installation. The RSM will lead a network of direct sales professionals and independent manufacturer representatives while serving as a key market ambassador for Balcoâs portfolio of architectural engineered products for the construction industry. Categories include expansion joint systems, stair nosings, entrance mats &amp; grids, photoluminescent egress systems, etc. The ideal candidate combines strong sales leadership with technical acumen to guide product selection based on project-specific conditions, ensuring Balco solutions are specified and installed successfully in competitive bid environments. This role combines strategic leadership, hands-on selling and technical support, and rigorous performance management to deliver profitable growth and exceptional customer experiences. Responsibilities Drive year-over-year revenue growth to meet or exceed sales budgets across assigned territories and product lines. Build, coach, and lead a high-performing sales organization consisting of direct sales employees and independent manufacturer representatives, setting clear goals and driving accountability across both groups. Provide technical guidance and support to sales team members and customers, including analyzing project conditions, recommending appropriate Balco products (e.g., expansion joint systems, stair nosings, photoluminescent egress markings), and assisting with submittals and specifications. Develop and implement competitive strategies to increase Balco specification rates and market share, including targeted initiatives with architects, contractors, and distributors. Maintain deep knowledge of the competitive landscape, including products, pricing, and market dynamics, to win specification and project opportunities. Track and report on sales performance, market trends, and competitive activities using CRM tools; prepare weekly, monthly, and quarterly reports.â¯ Deliver sales and product knowledge presentations to architects, contractors, trade groups, and other stakeholders. Lead and support complex negotiations to secure profitable, strategic opportunities. Partner closely with Customer Service, Technical Services, and internal leadership to ensure outstanding execution and customer satisfaction. Establish clear expectations, regularly track, and review performance metrics, proactively address gaps through coaching and development plans, and recognize/reward wins and best practices. Expand and strengthen relationships with existing customers, contractors, distributors, architects, design engineers, and other key influencers across the full sales territory. Ensure compliance with all safety requirements, including OSHA 10 standards for jobsite visits. Travel to meet customers, prospects, sales team members, attend trade shows, and other industry events. Travel expectations ~30%.â¯ This role may require other job duties to be performed. The above statements are intended to describe the general nature and level of work performed by employees assigned to this role. They are not to be construed as an exhaustive list of all job duties performed by the personnel in this role. Qualifications (Knowledge &amp; Skills) Hands-on experience with expansion joint systems, stair nosings, photoluminescent egress, or similar specialty products strongly preferred. Demonstrated track record of building and leading sales teams to consistently meet or exceed aggressive growth targets in competitive markets. Strong executive presence with excellent verbal and written communication skills. Highly relationship-driven with the ability to influence across multiple stakeholders and decision-makers. Strategic thinker with an entrepreneurial mindset and a strong customer-first approach. Skilled negotiator comfortable managing complex, multi-party sales scenarios. Confident presenter capable of delivering impactful sales and technical presentations. Proficiency in Microsoft Office (Word, Excel, PowerPoint) and CRM/order management systems, including Salesforce. Able to communicate effectively and professionally with team members and customers verbally and in writing. Able to complete work accurately and on time. Able to work collaboratively with direct team members, or across departments, and work independently as needed. Able to effectively lead a team by providing direction, measuring quality of work, giving feedback, and managing performance. Candidates who apply for positions that require driving must have a valid U.S. driverâs license and clean driving record. An MVR and proof of insurance will be required as part of the pre-employment background check process. Education High school diploma required. Bachelorâs degree in Business, Marketing, or related field preferred. Experience 5+ years of progressive experience in sales, with at least 2 years in a leadership role. Work Environment Physical Conditions: Field: This position requires the ability to visit construction sites from time to time and utilize the required Personal Protective Equipment (PPE), i.e.: hard hat, eye/face protection, hearing protection, steel toes, etc. Remote: This is remote role. Remote employees are required to have a dedicated work space where they can conduct business and have private conversations. Other Requirements Candidates who receive an offer of employment must successfully pass a background check and drug screen. This role requires driving for the Company, so candidates who receive an offer of employment for this role must have a current driverâs license and have a clean MVR. Must be able to use hands and have finger dexterity Must be able to reach, bend, kneel, and crouch occasionally Must be able to safely lift 40 pounds CSW Industrials Offers a Competitive Total Rewards Package Including Annual Performance Bonus Program 401(k) $1-$1 match, up to 6% Employee Stock Ownership Plan (ESOP) Health insurance Dental insurance Disability insurance Life insurance Flexible spending account Health savings account Vision insurance Paid time off Parental leave Employee assistance program Tuition reimbursement Compensation: CSW Industrials has an effective process for assessing market data and establishing salary ranges to ensure we remain competitive. Within the range, individual pay is determined by work location and additional job-related factors. The pay scale is subject to change depending on business needs. In addition to base pay, e mployees may be eligible for pay incentives based on overall corporate and individual performance or at the discretion of the CSW Board of Directors. Sales roles are eligible for a sales bonus. Balco, a CSW Industrials Company, is an Equal Opportunity Employer (EOE). All qualified applicants will receive consideration for employment without regard to race, color, religion, sex (including pregnancy), sexual orientation, gender identity, national origin, political affiliation, disability, age, genetic information, or status as a protected veteran. Please mention the word **PHENOMENALLY** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Wichita,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 73,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Balco, Inc. is hiring for Regional Sales Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "30c97450",
+        "title": "Clinical Coordination Manager",
+        "company": "Enable Dental",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-clinical-coordination-manager-enable-dental-1136096",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-clinical-coordination-manager-enable-dental-1136096",
+        "jdText": "Department: Support Operations Reports To: Director, Support Operations Location: Remote (U.S.) Position Type: Full-Time, Exempt Position Summary The Clinical Coordinator Department Manager oversees the Clinical Coordination team responsible for maintaining accurate, appropriately filled provider schedules across all markets. This role provides leadership, operational oversight, training, workload management, process improvement, and cross-department collaboration to support consistent scheduling performance. This leader sets daily and weekly priorities, delegates work, holds the team accountable, monitors current and upcoming schedule health, and identifies risks before they impact provider days. The manager ensures accepted treatment and unscheduled new-patient backlogs are actively worked and that scheduling barriers are tracked and escalated to the appropriate owner. Key Responsibilities Team Leadership &amp; Performance Management Lead, mentor, and develop Clinical Coordinators through clear priorities, delegation, accountability, and follow-through Conduct regular 1:1s, performance reviews, coaching, and ongoing training refreshers Oversee team scheduling, workload balancing, and coverage across markets based on provider days, appointment volume, and overall workload Support onboarding and competency development for new team members Foster a positive, efficient, and collaborative culture grounded in service excellence and ownership Appointment Readiness &amp; Schedule Reliability Monitor the 0-14-day schedule and upcoming weeks to identify open capacity, underfilled provider days, and scheduling risks early Ensure accepted treatment and unscheduled new-patient backlogs are actively worked in accordance with provider availability, market zoning, and scheduling priorities Ensure Clinical Coordinators identify, track, and escalate scheduling barriers, including outstanding medical clearances, insurance verification, pre-medication needs, facility documentation, and lab-case concerns, to the appropriate department or owner Monitor Clinical Days at Goal and schedule disruptions to ensure timely follow-up and improve filled provider days across applicable markets Ensure schedules are entered timely and accurately while production-based scheduling remains focused appropriately Root-Cause Analysis &amp; Continuous Improvement Analyze recurring scheduling barriers, backlog trends, fall-aparts, and schedule-health concerns to identify operational gaps and root causes Develop preventive strategies and implement workflow or SOP improvements within Clinical Coordination Coordinate any workflow change affecting another department or external partner with the appropriate department leader or Account Manager before implementation Support system optimization, automation initiatives, and process refinements in CareStack and Healier Cross-Functional Collaboration Partner across departments to resolve scheduling barriers, maintain clear ownership, and support consistent patient flow Serve as an escalation point for complex scheduling needs or facility and provider concerns Independently address department concerns, communicate risks and updates, and escalate to the Director when additional leadership support is needed Data, Reporting &amp; Accountability Monitor and report team performance and operational health indicators, including: Clinical Days at Goal 0-14-day schedule health and upcoming provider weeks Accepted treatment and unscheduled new-patient backlog progress Schedule-entry timeliness Reschedule, cancellation, and fall-apart trends Outstanding scheduling barriers and escalations Provide weekly insights, actions taken, next steps, and performance updates to leadership Ensure accurate documentation standards in CareStack and Healier Requirements Qualifications Experience: 5+ years in dental, medical, or clinical scheduling/coordination; minimum 2 years leadership experience Systems: Experience with CareStack, or similar EMR platforms and Google Suite required Knowledge: Strong understanding of medical/dental workflows, provider scheduling, multi-facility coordination, pre-med &amp; medical clearance processes, insurance verification, lab case coordination, and multi-facility scheduling Leadership: Demonstrated success managing remote teams, assigning and delegating work, coaching performance, holding employees accountable, and implementing process improvements. Skills: Excellent communication and relationship-building skills Strong organizational, delegation, and prioritization abilities Ability to independently assess problems, make decisions, and follow through Ability to remain calm and solution-focused in a fast-paced environment Key Competencies Leadership &amp; team development Delegation, accountability &amp; follow-through Proactive problem solving &amp; root-cause thinking Schedule-health oversight &amp; workload management Workflow optimization &amp; accuracy Efficient decision-making &amp; prioritization Cross-functional collaboration Service-minded communication with professionalism and empathy Work Environment Fully remote role requiring reliable internet access Requires ongoing communication with team members, facilities, providers, and internal departments via virtual platforms Occasional travel for leadership meetings, in-field shadow sessions, or training as needed Benefits Compensation: Base compensation $60,000-65,000 annually Benefits: Medical, Dental, Vision, 401(k), Life Insurance, Paid Time Off Please mention the word **DEPENDABLE** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Austin, Austin, Texas, United States",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 40,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "Enable Dental is hiring for Clinical Coordination Manager. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "d3cadf40",
+        "title": "Data Analyst",
+        "company": "SEAhub Asia",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-data-analyst-seahub-asia-1136222",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-data-analyst-seahub-asia-1136222",
+        "jdText": "Build What's Next With Us At SEAhub Asia, your career isn't just a job â it's a launchpad. We move fast, think big, and build futures together. What's waiting for you here? Remote-first roles built for freedom and flexibility Learning &amp; Development That Sharpens Skills And Accelerates Careers Competitive salary packages for high performers Wellbeing perks that help you thrive inside and outside work A team that supports, celebrates, and wins as one and we're just getting started. We're growing across Southeast Asia â and we're searching for sharp minds, big thinkers and curious hearts ready to help us build what's next. learners, and big thinkers who want to create what's next. If you're ready to make a real impact and grow with a future-ready team, your next chapter starts here. Job Summary Support the Data Analytics team by assisting with data validation, report generation, and basic analysis to help ensure data accuracy and enable informed business decision-making. Responsibilities: Reporting, Analysis &amp; Insight Communication Prepare reports and perform data analysis to support data-driven decision-making Monitor key business performance metrics to identify trends, patterns, and anomalies Assist in building and maintaining dashboards and reports for performance tracking Communicate data insights to stakeholders in a clear, concise, and actionable way Data Quality &amp; Validation Support the validation and upkeep of data accuracy across dashboards and data pipelines Cross-Team Collaboration Respond to data requests from cross-functional teams, including coordinating requirements and providing basic analytical support Process Improvement &amp; Documentation Document data processes and workflows, and contribute to improving existing data practices and standards Explore and apply new tools and methods to enhance the efficiency and quality of data work Ad-Hoc Analytical Projects Assist with ad-hoc data tasks and analytical projects as needed Requirements: 0â1 year of experience in data analysis or a related field. Foundational knowledge of SQL, Excel, and data visualization platforms such as Power BI or Tableau. Exposure to Python for data analysis is an added advantage. Highly detail-oriented with a strong focus on maintaining data quality and accuracy. Strong communication skills with the ability to present findings and insights clearly. Demonstrates a proactive mindset and willingness to learn new tools, technologies, and analytical techniques. Well-organized, with the ability to prioritize and manage multiple tasks effectively. Don't miss out on this exciting opportunity! Apply now at www.seahubasia.com. Please mention the word **BRIGHTEST** and tag ROTguODAuMTAxLjE1 when applying to show you read the job post completely (#ROTguODAuMTAxLjE1). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Kuala Lumpur, Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "analytics",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-04",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 72,
+        "roleFit": 78,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 52,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "SEAhub Asia is hiring for Data Analyst. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
