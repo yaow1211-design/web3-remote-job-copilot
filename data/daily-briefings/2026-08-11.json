@@ -1,0 +1,169 @@
+{
+  "id": "briefing-2026-08-11",
+  "date": "2026-08-11",
+  "generatedAt": "2026-08-11T02:31:08.281Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "c478880a",
+        "title": "owlette",
+        "company": "Tridant",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-owlette-tridant-1136206",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-owlette-tridant-1136206",
+        "jdText": "attention is all you need monitormonitor all of your computerscomputers svg]:px-4 text-background font-semibold px-8 h-12 text-base\" href=\"/register\"&gt;get startedsvg]:px-4 border-border/50 hover:bg-accent-warm/10 hover:border-accent-warm/30 h-12 text-base text-muted-foreground\" href=\"/demo\"&gt;see the live demo windows only free during beta FSL-1.1 source on github explore the live demo one dashboard for every screen, every machine, everywhere. owlette lets you monitor, control, and update all of your computers remotely â so you always know they're running, even when you're not there. live cpu, memory, gpu, and disk usage for every machine. inline sparkline charts track trends over time. know instantly when something drifts. full remote process control across your entire fleet. configure startup sequences, manage dependencies, and auto-restart crashed processes before anyone notices. deploy software, configurations, and content to any machine, anywhere. fleet-wide rollouts or targeted single-machine updates â your call. cortex turns plain-english questions into real diagnostic actions across your fleet. bring your own openai or anthropic key. owlette captures the windows display topology you want and watches for drift. when a restart, a driver update, or an accidental change moves a monitor, owlette restores the known-good layout automatically. mosaic-aware. define when machines restart, the order processes start in, and the dependencies between them. owlette runs the playbook so you don't have to. displays that stay put. windows can lose your display layout after a driver update, a restart, or an accidental change. owlette captures the layout you want, watches for drift, and restores it automatically. baselinecaptured 1 2 3 4 layout saved known-good layout driftdetected 1 2 3 4 layout changed drift detected restoredack 1 2 3 4 baseline restored auto-restored captured drift detected auto-restored drift detection owlette watches for changes after restarts, driver updates, and accidental config edits. when something drifts, you'll know. auto-restore your known-good layout is restored automatically â no manual intervention, no kiosk that needs a keyboard found in the ceiling. mosaic-aware detects and protects active nvidia mosaic configurations. owlette won't blindly rewrite a wall it shouldn't touch. read the display api reference every dashboard action, scriptable. the same API that powers the dashboard â scoped keys, idempotency, webhooks, OpenAPI. install the CLI on a runner, import the SDK into your backend, or just curl it. # restart a process across the API URL=\"https://owlette.app/api/sites/$SITE/machines/$MACHINE\" curl -X POST \"$URL/processes/$PROC/restart\" \\ -H \"Authorization: Bearer $OWLETTE_TOKEN\" \\ -H \"Idempotency-Key: $(uuidgen)\" scoped keys keys are scoped per-site and per-action. a webhook delivery key cannot restart a machine. idempotency-key required on writes every mutating endpoint enforces idempotency. retry without doubling up. webhooks with HMAC signatures subscribe to process / deploy / display events. signed payloads, verifiable in any language. read the api reference install the cli built for theme parks/ digital signage/ museums &amp; galleries/ live events/ corporate AV/ worship/ virtual production/ projector walls/ LED installations simple, transparent pricing. two tiers. no hidden fees. pay only for what you run. core $10/machine/month free during beta process monitoring &amp; auto-recovery start, stop, restart, kill â every process, every machine software &amp; file deployment display layouts with watchdog auto-revert cortex AI fleet assistant (BYOK)* 1 site with role-based access unlimited machines &amp; members email alerts email support svg]:px-4 w-full sm:w-auto mx-auto text-background font-semibold px-10 h-12 text-base\" href=\"/register\"&gt;get started new pro $50/machine/month free during beta 3-machine minimum Everything In Core, Plus roost â incremental project sync with atomic deploy and rollback 1 TB included project storage per site $0.05/GB overage 50-version retention with 30-day rollback public REST API with scoped keys CLI + TypeScript SDK webhooks with HMAC signing unlimited sites with multi-site rbac priority support svg]:px-4 w-full sm:w-auto mx-auto text-background font-semibold px-10 h-12 text-base\" href=\"/register\"&gt;get started need volume pricing or an enterprise agreement? get in touch cortex requires your own API key (OpenAI, Anthropic, or compatible) ~10s auto-recovery crashed processes detected and restarted in under ten seconds. runs offline, syncs on reconnect agents monitor and recover locally without the cloud. resync resumes automatically when the connection returns. no inbound ports â outbound 443 only no vpn. no firewall holes. just https to firebase. questions, answered. during beta, yes â both tiers, no credit card, no trial clock. after beta: core is $10/machine/month for monitoring, control, deploy, displays, and cortex on a single site. pro is $50/machine/month (3-machine minimum) and adds the public API, CLI, SDK, webhooks, unlimited sites, and roost â incremental project sync with 1 TB included storage per site. no per-user fees on either. no. owlette is windows-only. your mac is fine â it doesn't need monitoring. it'll let you know when something's wrong. loudly. in the middle of a show. the agent keeps running. it monitors and auto-recovers processes whether or not it can reach the cloud. when the connection returns, it syncs everything it missed. your machines don't need the internet to run. they've been alone before. they know how to survive. no inbound ports, no vpn. agents connect outbound over https (port 443) to google's firebase infrastructure. if your network allows general internet access, it just works. locked-down environments may need to whitelist *.googleapis.com and *.firebaseio.com. cortex is owlette's ai fleet assistant â ask it the questions you ask yourself every day: \"which nvidia driver are we running?\", \"restart the media server on node 3\", \"what crashed at 3am?\" it translates natural language into real commands across your fleet. you bring your own api key (openai, anthropic, or any compatible provider). roost is owlette's project sync. point it at a folder â a TouchDesigner project, a content drop, a build output â and it ships only the bytes that changed to every machine on the site, atomically: a machine gets the whole new version or stays on the old one, never a half-copied mess. every deploy is versioned, so you can roll back to any of the last 50 for up to 30 days. it's part of the pro tier and includes 1 TB of storage per site ($0.05/GB after that). no more zipping a folder and RDP-ing into ten machines at 2am. agents connect over tls, credentials are encrypted on-device using a machine-bound key, and oauth tokens are never logged or stored in plaintext. access is managed through firebase auth with optional passkey and two-factor authentication. yes â owlette is FSL-1.1-Apache-2.0 (converts to apache 2.0 two years after each release). the full source is on github. fair warning: it requires firebase, a railway (or equivalent) deployment for the web app, and a willingness to blow past your usage limits at 3am debugging support tickets from your neighbor's camper because your furnace broke and it's -10 outside. we won't talk you out of it, but the hosted version exists for a reason. Please mention the word **GIFTED** and tag RNDQuMjA0Ljg1Ljkx when applying to show you read the job post completely (#RNDQuMjA0Ljg1Ljkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Fleet,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "dashboard"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-08-05",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 70,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Tridant is hiring for owlette. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "9cf730fb",
+        "title": "Open Vacancies",
+        "company": "CCDC - The Cambridge Crystallographic Data Centre",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-open-vacancies-ccdc-the-cambridge-crystallographic-data-centre-1136303",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-open-vacancies-ccdc-the-cambridge-crystallographic-data-centre-1136303",
+        "jdText": "We curate and distribute the Cambridge Structural Database (CSD) and associated software used by thousands of organizations across the globe for molecular discovery and design. Our mission is to advance structural science for the public benefit. We operate as a not-for-profit company and registered charity. Although independent, we are a University of Cambridge Partner Institute. We offer an excellent benefits package and a competitive salary in a lively and friendly organization of around 100 staff worldwide. Our activities span scientific research, software development, financial, IT systems, commercial, and support. We strive to provide a unified, connected data experience through a FAIR (Findable, Accessible, Interoperable, and Reusable) inspired platform where users can easily interrogate all structural and property information in the expanding data universe. Data reimagined. We need great people in every team to continue this mission. Please take a look at our open opportunities â we look forward to hearing from you. Please mention the word **SUCCEEDING** and tag RNDQuMjA0Ljg1Ljkx when applying to show you read the job post completely (#RNDQuMjA0Ljg1Ljkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Open Hall,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-07",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 68,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "CCDC - The Cambridge Crystallographic Data Centre is hiring for Open Vacancies. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "f568849b",
+        "title": "Senior React Full stack Developer",
+        "company": "Lemon.io",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1136299",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-react-full-stack-developer-lemon-io-1136299",
+        "jdText": "Are you a talented Senior Developer looking for a remote job that lets you show your skills and get decent compensation? Look no further than Lemon.io â the marketplace that connects you with hand-picked startups in the US and Europe. What we offer: The rate depends on your seniority level, skills and experience. We've already paid out over $11M to our engineers. No more hunting for clients or negotiating rates â let us handle the business side of things so you can focus on what you do best. We'll manually find the best project for you according to your skills and preferences. Choose a schedule that works best for you. Itâs possible to communicate async or minimally overlap within team working hours. We respect your seniority so you can expect no micromanagement or screen trackers. Communicate directly with the clients. Most of them have technical backgrounds. Sounds good, yeah? We will support you from the time you submit the application throughout all cooperation stages. Most of our projects involve working in a fast-paced startup environment. We hope you like it as much as we do. Through our community, we will connect you with the best developers from more than 75 countries. We have several open positions for Full-Stack React.js Developers - please see the details below. We also have some backend positions; the full list is included below as well. Requirements for the Senior React &amp; Python Position: 4+ years of software development experience. Commercial experience: React.js 3+ years &amp; Python 3+ years OR React.js 2+ years &amp; Python 5+ years OR React.js 5+ years &amp; Python 2+ years Experience with AWS, GCP, or Azure is required. Requirements for the Senior Ruby &amp; React Position: 5+ years of software development experience React.js 2+ years and Ruby/Ruby on Rails 5+ years OR React.js 5+ years and Ruby/Ruby on Rails 2+ years Experience with AWS, GCP, or Azure is required. Requirements for the Senior Node &amp; React Position: 5+ years of software development experience Commercial experience: React.js: 3+ years, Node.js: 5+ years, and Next.js: 2+ years OR React.js: 5+ years, Node.js: 3+ years, and Next.js: 2+ years Expertise in AWS, TypeScript and AI-assisted coding is a must. Other requirements: Strong technical skills: as a Senior Developer, you are expected to be able to create projects from scratch and have a deep understanding of application architecture. Clear and effective communication in English â advanced ability to discuss business tasks, justify decisions, and communicate issues. Good self-presentation is also essential for upcoming client calls. Strong self-organizational skills â ability to work full-time remotely with no supervision. Reliability â we want to trust you and expect that you wonât let us and the client down. Adaptability and Flexibility â the ability to onboard the project promptly after accepting it and start delivering results quickly. Sounds good for you? Apply now and join the Lemon.io community! NOT YOUR TECH STACK? We have a variety of projects, so if you have 4+ years of commercial software development experience and are proficient in AI Agent Architecture, AI Automation Architecture, AI Engineering, Site Reliability Engineering, Platform Engineering, React &amp; Golang, Golang, React &amp; Java, Ruby, PHP &amp; Vue, Vue &amp; Node.js, React &amp; .NET, Android &amp; iOS, iOS &amp; Swift, Flutter &amp; Dart, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular &amp; Node.js, Vue &amp; .NET, Python &amp; Vue, DevOps, MLOps, Data Science, Angular &amp; PHP, Angular &amp; .NET, Symfony &amp; React, Symfony &amp; Vue, Symfony &amp; Angular, Python, Symfony &amp; JavaScript &amp; Next.js &amp; TypeScript, Data Analysis, React &amp; PHP, Data Engineering, Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native &amp; Node, React Native &amp; React, React Native &amp; Ruby, React Native &amp; Python, WordPress, Android, Data Annotation, Angular, Python &amp; Node, Java &amp; Spring, Svelte &amp; Python, Svelte &amp; Node.js, Svelte &amp; TypeScript, Rust, Shopify &amp; JavaScript, Vue &amp; Nuxt, PHP &amp; Laravel, UI/UX Design, Animation, Graphic Design, React &amp; Node &amp; React Native, .NET &amp; C#, Electron, Scala, C++, Unreal Engine &amp; C++, Python &amp; LLM, Unity, or Machine Learning Engineering, we would be happy to connect with you and match you with a project that fits your experience. We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire. We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa). Please mention the word **PLEASURE** and tag RNDQuMjA0Ljg1Ljkx when applying to show you read the job post completely (#RNDQuMjA0Ljg1Ljkx). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "Python"
+        ],
+        "preferredSkills": [
+          "blockchain"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-08-07",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 63,
+        "roleFit": 78,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "Lemon.io is hiring for Senior React Full stack Developer. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
