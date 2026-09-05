@@ -1,0 +1,541 @@
+{
+  "id": "briefing-2026-09-05",
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T04:38:43.830Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "639fabf1",
+        "title": "QA Engineer",
+        "company": "SunnyData",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-qa-engineer-sunnydata-1137300",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-qa-engineer-sunnydata-1137300",
+        "jdText": "About SunnyData At SunnyData, a leading DataBricks technology partner, our mission is to empower customers with scalable architectures, robust data engineering pipelines, seamless data consumption layers, and advanced ML and AI applications. As a QA Engineer with a strong focus on Data, you will understand requirements and translate them into effective test cases, execute and automate those tests, and track testing progress and defects. Â The Impact Youâll Have Understand requirements and translate them into test plans and test cases, ensuring requirements traceability. Execute test cases, including regression testing, and document results and testing progress. Document, track, and validate the resolution of software defects in collaboration with Engineering. Work with business stakeholders to clarify requirements and address testing-related questions. Collaborate with engineers to investigate defects and determine the right solutions. Validate data across applications, APIs, databases, and data pipelines to ensure accuracy, consistency, and integrity. Establish and document testing processes, standards, and best practices. Contribute to continuous improvement of testing processes and data quality. Leverage AI tools to improve automation efficiency, data validation, and test coverage. Collaborate with Engineering and Data teams to ensure high-quality software and reliable data. Â What We Look For 4+ years of experience in Quality Assurance. Hands-on experience with test automation using Playwright and/or Cypress. Strong SQL skills and experience validating data in databases. Experience testing APIs and data-driven applications. Understanding of data quality, consistency, and integrity. Experience with GitHub and CI/CD pipelines. Cloud experience is a plus. Strong analytical and problem-solving skills. Strong attention to detail and ability to effectively document, troubleshoot, and communicate defects and test results. Strong organizational skills, with the ability to manage multiple testing initiatives and drive them to completion. Proactive mindset, with the ability to anticipate risks and identify opportunities to improve automation, test coverage, and overall efficiency. Strong written and verbal communication skills, with the ability to build positive relationships with internal teams and external partners. Interest and experience in leveraging AI tools to improve automation efficiency, data validation, and test coverage. Ability to work collaboratively in a fast-paced environment. Â Education: Bachelorâs Degree in Computer Science, Systems Engineering, Information Technology, Software Engineering, or a related technical field. Our Commitment to Diversity and Inclusion: SunnyData is dedicated to building a workforce that reflects the world around us. We are an equal opportunity employer committed to unbiased hiring practices. All qualified applicants will receive consideration for employment without regard to race, religion, gender identity, disability, veteran status, or any other protected characteristic. Â Why Join SunnyData? Innovative Environment . Work with cutting-edge technologies and industry leaders in data engineering and AI. Customer Impact. Make a real difference in how businesses leverage data for strategic decision-making. Career Growth . Opportunities for professional development and career advancement. Collaborative Culture . Join a supportive team that values collaboration and knowledge sharing. Please mention the word **BRILLIANTLY** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-09-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 66,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "SunnyData is hiring for QA Engineer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "321c16c7",
+        "title": "Programmatic Campaign Operations Specialist Trader",
+        "company": "VirtuHire",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-programmatic-campaign-operations-specialist-trader-virtuhire-1137169",
+        "jdText": "Location: South Africa â Remote Hours: 14:00â23:00 SAST, MondayâFriday, aligned with U.S. Eastern business hours Employment: Permanent, Full-Time Role Purpose Execute and maintain programmatic campaigns accurately and efficiently within MediaPath's established strategy, workflows, and QA standards. This is a hands-on campaign execution role focused on campaign builds, trafficking, pacing, optimisation, troubleshooting, and maintenance. Key Responsibilities Build campaigns, line items, targeting structures, and campaign components within assigned DSPs. Traffic creative assets and third-party tags. Complete pre-launch campaign QA. Monitor campaign pacing and delivery on a daily basis. Identify and escalate pacing or delivery risks before they become client-visible. Execute routine optimisations and approved campaign changes within defined guidelines. Troubleshoot campaign, creative, targeting, and activation issues. Escalate complex technical issues to the Senior Programmatic Operations Lead. Maintain accurate campaign documentation, naming conventions, and change histories. Provide screenshots, compliance documentation, and campaign data when required. Support campaign closeout, reconciliation, and reporting processes. Work accurately across high volumes of campaigns and line items. Must-Have Requirements 2â4 years of hands-on digital or programmatic campaign execution experience. Direct experience building and managing campaigns within at least one major DSP. Ability to learn and work across additional platforms quickly. Strong attention to detail. Comfortable with repetitive, high-volume campaign production where accuracy is critical. Strong Excel and Google Sheets skills. Comfortable working from insertion orders, build sheets, and campaign specifications. Strong written communication. Disciplined escalation and issue-management skills. Preferred Experience Experience with one or more of: DV360 Basis Simpli.fi Amazon DSP Meta YouTube VAST and ad-server tags PMP deals Verification tools CTV/OTT Online video Agency or managed-service campaign operations Success in the Role Campaigns are built correctly the first time. Campaigns meet agreed launch SLAs. Pacing and delivery issues are identified early. Routine changes are completed quickly and accurately. Campaign documentation remains clean and up to date. QA and escalation procedures are consistently followed. The wider programmatic team can rely on accurate, consistent execution. Please mention the word **GLORIOUS** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-08-27",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 75,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 68,
+        "productOpsFit": 76,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "VirtuHire is hiring for Programmatic Campaign Operations Specialist Trader. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "dcccc8aa",
+        "title": "Assistant Housekeeping Manager",
+        "company": "Marriott International",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-assistant-housekeeping-manager-marriott-international-1137255",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-assistant-housekeeping-manager-marriott-international-1137255",
+        "jdText": "Additional Information Job Number 26111267 Job Category Housekeeping &amp; Laundry Location Vagator Beach Road, Goa, India, India, 403509 VIEW ON MAP Schedule Full Time Located Remotely? N Position Type Management Job Summary Entry level management position that focuses on supporting the day-to-day activities in Housekeeping, Recreation/Health Club and Laundry, if applicable. Position works with employees to clean and maintain guestrooms and public space. Completes inspections and holds people accountable for corrective action. Position assists in ensuring guest and employee satisfaction while maintaining the operating budget. CANDIDATE PROFILE Education And Experience High school diploma or GED; 1 year experience in the housekeeping or related professional area. OR 2-year degree from an accredited university in Hotel and Restaurant Management, Hospitality, Business Administration, or related major; no work experience required. CORE WORK ACTIVITIES Managing Housekeeping Operations and Budgets Ensures knowledge and understanding of OSHA regulations are up to date. Oversees all lost and found procedures. Obtains list of rooms to be cleaned immediately and list of prospective check-outs or discharges to prepare work assignments. Inventories stock to ensure adequate supplies. Ensures guest room status is communicated to the Front Desk in a timely and efficient manner. Works effectively with the Engineering department on guest room maintenance needs. Understands and complies with loss prevention policies and procedures. Ensures all employees have proper supplies, equipment and uniforms. Assists in supervising an effective inspection program for all guestrooms and public space. Manages linen inventory and guest supplies and assists in the ordering of supplies as necessary. Supervises Housekeeping and all related areas in the absence of the Director of Services or Housekeeping Manager. Observes service behaviors of employees and provides feedback to individuals; continuously strives to improve service performance. Ensuring Exceptional Customer Service Handles guest problems and complaints seeking assistance from supervisor as necessary. Assists in the review of comment cards and guest satisfaction results with employees. Sets a positive example for guest relations. At Marriott International, we are dedicated to being an equal opportunity employer, welcoming all and providing access to opportunity. We actively foster an environment where the unique backgrounds of our associates are valued and celebrated.â¯Our greatest strength lies in the rich blend of culture, talent, and experiences of our associates. We are committed to non-discrimination on any protected basis, including disability, veteran status, or other basis protected by applicable law. Marriott Hotels strive to elevate the art of hospitality, innovating at every opportunity while keeping the comfort of the oh-so-familiar all around the globe. As a host with Marriott Hotels, you will help keep the promise of âWonderful Hospitality. Always.â by delivering thoughtful, heartfelt, forward-thinking service that upholds and builds upon this living legacy. With the name thatâs synonymous with hospitality the world over, we are proud to welcome you to explore a career with Marriott Hotels. In joining Marriott Hotels, you join a portfolio of brands with Marriott International. Be where you can do your best work, begin your purpose, belong to an amazing global team, and become the best version of you. JW Marriott is part of Marriott International's luxury portfolio and consists of more than 100 beautiful properties in gateway cities and distinctive resort locations around the world. JW believes our associates come first. Because if youâre happy, our guests will be happy. JW Marriott associates are confident, innovative, genuine, intuitive, and carry on the legacy of the brandâs namesake and company founder, J.Willard Marriott. Our hotels offer a work experience unlike any other, where youâll be part of a community and enjoy true camaraderie with a diverse group of co-workers. JW creates opportunities for training, development, recognition and most importantly, a place where you can pursue your passions in a luxury environment with a focus on holistic well-being. Treating guests exceptionally starts with the way we take care of our associates. Thatâs The JW Treatmentâ¢. In joining JW Marriott, you join a portfolio of brands with Marriott International. Be where you can do your best work, begin your purpose, belong to an amazing global team, and become the best version of you. Please mention the word **POSITIVES** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Goa,",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-09-01",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 78,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 40,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 81,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "Marriott International is hiring for Assistant Housekeeping Manager. Role angle: Product / Operations Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "dbb50870",
+        "title": "Sales Manager",
+        "company": "Radisson Hotel Group",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-sales-manager-radisson-hotel-group-1137200",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-sales-manager-radisson-hotel-group-1137200",
+        "jdText": "Radisson Hotel Group is one of the world's largest hotel groups with ten distinctive hotel brands, and more than 1,500 hotels in operation and under development in 95+ countries. The Groupâs overarching brand promise is Every Moment Matters with a signature Yes I Can! service ethos. People are at the core of our business success and future. Our people are true Moment Makers and together we bring the culture, spirit, environment and opportunities that empower you to be your best, every day, everywhere, every time. Together, we make Every Moment Matter. Job Description Ambitious, thirsty for results, love interacting with people? We are looking for a natural brand promoter just like you! Our people are at the core of our success. Your role guarantees variety and excitement every day. At RHG, we cherish your entrepreneurial spirit, collaborative nature. We foster an inclusive and supportive culture where, together, we ensure that every moment is truly meaningful. Embrace your uniqueness as an individual in our team and explore the exciting growth opportunities we have for you and the chance to create memorable moments. We are currently seeking a Sales Manager to join our vibrant team. At RHG, we are in search of individuals who go beyond the resume â those with character, skills, talents, and a passion for creating memorable experiences. We value mindset as pivotal: anticipating guest needs, supporting your department, and consistently delivering memorable experiences. We are dedicated to nurturing and growing talent, offering pathways for advancement, and fostering a culture of continuous learning. As the Sales Manager , you infuse our dynamic Sales Team with an unparalleled level of strategic vision, a results-driven mindset, and an unwavering passion for elevating customer interactions. Your role as a leader is pivotal in steering our sales efforts to new heights, and your ambition sets the tone for achieving exceptional outcomes. Manages all aspects of the hotelâs sales team initiatives. Maximize the revenue and growth of the hotel by directing the revenue generates activities in accordance with the business plan. Drive new business for your hotel. Build effective and collaborative relationships with internal and external stakeholders to ensure all sales opportunities are maximized. Qualifications Achieve sales goals by managing the sales team. A proven track record in a similar role within a quality environment and to be able to demonstrate excellent standards and sales productivity. Commercially astute, multi-tasker who is motivated by challenge. Driven and ambitious to increase productivity and sales volume with appropriate techniques. Clear thinker with excellent communication abilities and attention to detail Strong negotiation skills. Ability to enhance the hotels community image. Itâs all about the experience and the sale, so say Yes I Can! Additional Information Why Join Radisson Hotel Group? Live the Magic of Hospitality - Be part of a team that creates exceptional experiences and memorable moments every day. Let your Yes I Can! spirit shine as you bring hospitality to life. Build a Great Career - No matter your background or experience, we invest in your growth, learning, and career development âhelping you reach your full potential. Experience the Team Spirit - Join a workplace thatâs inclusive, fun, and meaningful . We celebrate diversity, support one another and foster a sense of belonging through our Employee Resource Groups and inclusion initiatives . Lead with Your Ambition - Your ideas, passion and drive matter! We empower you to make a difference âin hospitality, your community and beyond. Enjoy Global &amp; Local Perks - No matter where youâre located, youâll enjoy exclusive global benefits - like special hotel rates for you and your loved ones at our hotels worldwide. Plus, youâll have access to local perks and rewards tailored to your country, making your experience even more rewarding! Enjoy benefits such as - up to 53% off your stay as a Team Member at over 1,500 Radisson Hotels worldwide Guaranteed minimum of 30% off for your Friends &amp; Family Exclusive Discounts on Breakfast, Food &amp; Beverage, Spa and more Join us in shaping the future of hospitality! If youâre ready to bring your talent, energy, and passion , weâd love to hear from you. Apply now and letâs make every moment matter. We welcome applicants from all backgrounds, abilities, and experiences . If you need any adjustments during the application process, please let us know. Please mention the word **INTRIGUINGLY** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Visakhapatnam Rural mandal,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 74,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Radisson Hotel Group is hiring for Sales Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "3ff055a2",
+        "title": "Car Wash Attendant",
+        "company": "Hertz",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-car-wash-attendant-hertz-1137276",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-car-wash-attendant-hertz-1137276",
+        "jdText": "Job Description Wage: $17.60/hr We are looking for a Full Time Car Wash Attendant who takes pride in their work and drives customer satisfaction. If this is you, and youâre ready for your next destination, then you have cruised to the right spot! Benefits And Perks Not only do you get to be part of an organization where you Drive your Potential, Power your Passion!! Below are a few perks and discounts: Up to 40% off the base rate of any standard Hertz rental Discounted Travel, gym membership and Food Career Growth with hands-on learning Medical, Dental &amp; Vision plan options Retirement programs, including voluntary pension plan with employer matching Employee Assistance Program for employees &amp; family Educational Reimbursement &amp; Discounts Job Description The Full Time Car Wash Attendant is responsible to ensure a vehicle is ready for customer pick-up. Drive and park cars on the lot as needed. Check the vehicles for damage. Fill gasoline and check all fluid levels. Meet processing and standardization quotas. In this role you will be required to work outdoors in all weather conditions. Qualifications High School diploma or equivalent required. Must be 20 years of age or older. A valid driverâs license is required with a clean driver record. Must be able to work on your feet for majority of your shift. Must be able to work in all weather conditions. We use AIâenabled tools to screen and/or assess applications against jobârelated criteria (e.g., minimum qualifications and keywords). All hiring decisions involve human review. #zip About Us The Hertz Corporation operates the Hertz, Dollar Car Rental, Thrifty Car Rental brands in approximately 9,700 corporate and franchisee locations throughout North America, Europe, The Caribbean, Latin America, Africa, the Middle East, Asia, Australia and New Zealand. The Hertz Corporation is one of the largest worldwide airport general use vehicle rental companies, and the Hertz brand is one of the most recognized in the world. Please mention the word **EXCELENT** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Etobicoke,",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-28",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 71,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Hertz is hiring for Car Wash Attendant. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "37a2af4a",
+        "title": "Store Manager BOSS Store Plaza Las Americas",
+        "company": "HUGO BOSS",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-store-manager-boss-store-plaza-las-americas-hugo-boss-1137301",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-store-manager-boss-store-plaza-las-americas-hugo-boss-1137301",
+        "jdText": "HUGO BOSS is one of the leading fashion and lifestyle companies in the premium segment with over 19,000 employees worldwide. As versatile as we are, we are united by a common goal: We love fashion, we change fashion! Become a brand ambassador and be part of a team that works with passion, ambition and expertise to create excellent customer experiences. Be among the first to bring our collections from the runway to the customers! Join our team and explore career opportunities that are tailor-made for you! Convey a positive impression of HUGO BOSS to the marketplace by delivering an exceptional shopping experience, showcasing the brand through exciting merchandise presentations and executing operational strategies resulting in positive operating profits. What you can expect: Utilize effective communication skills in training and developing staff, delivering exceptional service to customers, driving business with the merchant group and general problem solving. Achieve positive results in top line sales, profit and loss management and inventory control. Establish a goal oriented selling culture that focuses on relationship selling, building a client base and exceptional service. Ensure standard operating procedures are executed and policies followed. Cultivate a relationship with the community via personal involvement, PR events and advertising opportunities.Manage personnel activities of staff (i.e. hire, train, appraise, reward, motivate, discipline, etc). Monitor performance, provide direction, and take corrective action when needed. Continually evaluate and react to performance issues and actively recruit candidates. Exceptional leadership and management skills and the ability to motivate, develop and inspire a team while creating a highly empowered organization. Ensure all relevant conditions relating to Health &amp; Safety are fulfilled and empower store staff to achieve the highest standards to support store management within this area. Knowledgeable in all Health &amp; Safety policies and procedures. Ensure all documentation relating to Health &amp; Safety are well recorded and maintained. Your profile: Minimum Education ( or substitute experience): 4 year degree preferred Minimum Experience : 5 years of specialty retail management experience. Skills: Excellent organizational, analytical, time management and leadership skills Strong customer service and communication skillsIndependent, self-motivated, detail-oriented, and entrepreneurial Strong business acumen and interpersonal skills Proficient in Microsoft OfficeExcellent knowledge of HUGO BOSS products Strong consulting, negotiation, problem resolution, mediation, and interpersonal skills Your benefits: Base Pay Health and Wellness Benefits Earned Vacation and Sick time Company Paid Holidays Generous Employee Discount We are a global company with our employees representative of the world at large. Our inclusive culture embraces each personâs authenticity and individuality. We are committed to equal employment opportunity. And we believe our equitable work environment helps unleash your full potential and inspires you to thrive. Please mention the word **FEARLESS** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "San Juan,",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-09-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 68,
+        "roleFit": 78,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "HUGO BOSS is hiring for Store Manager BOSS Store Plaza Las Americas. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "29488941",
+        "title": "Regional Sales Manager",
+        "company": "OrderYOYO",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-orderyoyo-1137279",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-regional-sales-manager-orderyoyo-1137279",
+        "jdText": "&lt;p&gt;&lt;strong&gt;Regional Sales Manager&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;Netherlands - Field based&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;We are looking for a confident and highly motivated Regional Sales Manager to strengthen our team in the Netherlands. We are growing quickly and have ambitious plans for the coming years, so we need someone exceptional to help us get there!&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;What we do at OrderYOYO&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;We help restaurants succeed online by providing personalised, branded mobile apps, websites, and tailored marketing. We ensure that small and medium-sized restaurants and chains arenât burdened with high commissions and give them control over their success. Recently, we merged with App Smart, a market leader in shop and POS systems, making us the European market leader and the biggest restaurant liberator in Europe.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;What youâll be doing&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;You will lead all field sales activities.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;You will be responsible for the performance and development of a team of Business Development Managers. We rely on you to motivate and engage the team daily so they can reach their targets and personal development goals.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;We need someone with an inclusive leadership style â supportive, consistent, and results-driven.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;The role&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Develop and manage KPIs for the sales function&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Prepare weekly and monthly performance reports&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Ensure sales quality meet required standards&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Support and guide the team when needed&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Conduct one-to-one meetings and help team members achieve their development goals&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Recruit and onboard new team members&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Organise and promote team initiatives and contribute new ideas&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Lead and support projects where needed&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Provide necessary updates and improvements on projects&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Collaborate with colleagues, support the team, and foster a positive work environment and team spirit&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Build strong relationships with key stakeholders to ensure a cohesive approach across all functions&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;Who we are at OrderYOYO&lt;/strong&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;Our company culture comes first. We aim to create a pleasant and safe working environment where personal growth is supported. At OrderYOYO,, we act as one team and strive to help others succeed. Our values â Passion, Action, Compassion, One Team â define us and will be part of your daily work, no matter your role.&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;What weâre looking for&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Experience leading a team in a sales environment specifically field based&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Ability to adapt your approach to the individual needs of team members&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Demonstrates honesty and integrity&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;&lt;strong&gt;Passion&lt;/strong&gt; â adaptable with a can-do attitude; positive, proactive, and energised by working in a fast-paced, ever-changing environment&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;&lt;strong&gt;Action&lt;/strong&gt; â leads by example and initiates action&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;&lt;strong&gt;Compassion &lt;/strong&gt;â able to show empathy and provide support when needed&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;&lt;strong&gt;One Team&lt;/strong&gt; â strong communication skills (written and verbal); able to build strong relationships with your team, stay calm under pressure, and communicate information clearly and logically&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;What we offer&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Competitive base salary up to &lt;strong&gt;5,000 Euros per month + commission&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Quarterly conferences (This years global conference is in Las Palmas!)&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Quarterly employee awards&lt;/p&gt;&lt;/li&gt;&lt;li class=&quot;MsoNormal&quot;&gt;&lt;p&gt;Holiday purchase scheme&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt; Please mention the word **NEATEST** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-09-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 67,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 54,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "OrderYOYO is hiring for Regional Sales Manager. Role angle: Growth Data Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "f0897380",
+        "title": "AI Engineer Data APIs",
+        "company": "Benzinga",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+        "jdText": "Remote - Before you read further: applying to this role requires a Loom video walkthrough under 5 minutes of the best thing you have built, plus a repo or live link. Tell us the hardest problem you hit and how you solved it. Focus on architecture decisions and tradeoffs, not a f... Please mention the word **CHARMINGLY** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Business Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-08-30",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 66,
+        "roleFit": 84,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Business Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Business Analyst"
+      },
+      "summary": "Benzinga is hiring for AI Engineer Data APIs. Role angle: Business Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Business Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "c5505dda",
+        "title": "Chief Steward",
+        "company": "W Hotels",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-chief-steward-w-hotels-1137272",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-chief-steward-w-hotels-1137272",
+        "jdText": "Additional Information Job Number 26111393 Job Category Food and Beverage &amp; Culinary Location Andrassy ut 25, Budapest, Hungary, Hungary, 1061VIEW ON MAP Schedule Full Time Located Remotely? N Position Type Non-Management Position Summary Direct and assist Stewards in order to make clean up more efficient. Ensure water temperature, and chemical levels are appropriate for cleaning and documented. Assist with Banquet plate-ups. Assist cooks and kitchen staff with various tasks as needed. Provide cooks with needed items. Support banquet and buffet by transporting and ensuring adequate stock. Return cleaned items to proper locations. Operate and maintain cleaning equipment and tools, including the dish washing machine, hand wash stations pot-scrubbing station, and trash compactor. Assist management in hiring, training, scheduling, evaluating, counseling, disciplining, and motivating and coaching employees. Follow all company and safety and security policies and procedures; report accidents, injuries, and unsafe work conditions to manager; complete safety training and certifications. Ensure uniform and personal appearance are clean and professional; maintain confidentiality of proprietary information; protect company assets. Welcome and acknowledge all guests according to company standards; anticipate and address guestsâ service needs. Speak with others using clear and professional language. Develop and maintain positive working relationships with others; support team to reach common goals. Ensure adherence to quality expectations and standards. Move, lift, carry, push, pull, and place objects weighing less than or equal to 50 pounds without assistance. Stand, sit, or walk for an extended period of time. Reach overhead and below the knees, including bending, twisting, pulling, and stooping. Move over sloping, uneven, or slippery surfaces. Perform other reasonable job duties as requested by Supervisors. Preferred Qualifications Education: High school diploma or G.E.D. equivalent. Related Work Experience: At least 2 years of related work experience. Supervisory Experience: At least 1 year of supervisory experience. License or Certification: None At Marriott International, we are dedicated to being an equal opportunity employer, welcoming all and providing access to opportunity. We actively foster an environment where the unique backgrounds of our associates are valued and celebrated.â¯Our greatest strength lies in the rich blend of culture, talent, and experiences of our associates. We are committed to non-discrimination on any protected basis, including disability, veteran status, or other basis protected by applicable law. W Hotelsâ mission is to Ignite Curiosity, Expand Worlds. We are a place to experience life. Weâre here to open doors and open minds. We are constantly inspired by new faces and new experiences. A tuned-in, up-for-anything spirit is at our core and has made us renowned for reinventing the norms of luxury around the globe. Whatever/Whenever is our culture and service philosophy that brings our guestsâ passions to life. If you are original, innovative, and always looking towards the future of whatâs possible, welcome to W Hotels. In joining W Hotels, you join a portfolio of brands with Marriott International. Be where you can do your best work, begin your purpose, belong to an amazing global team, and become the best version of you. Please mention the word **APPROVE** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Budapest,",
+        "roleFamily": "Product / Operations Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "UAT"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-09-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 66,
+        "roleFit": 78,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Product / Operations Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Product / Operations Analyst"
+      },
+      "summary": "W Hotels is hiring for Chief Steward. Role angle: Product / Operations Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Product / Operations Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "d174cfa4",
+        "title": "Data Entry Clerk",
+        "company": "Astrek Careers",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-astrek-careers-1137286",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-data-entry-clerk-astrek-careers-1137286",
+        "jdText": "Data Entry Clerk Location: United States Only | Remote About the Position Astrek Careers is seeking a dependable and detail-oriented Data Entry Clerk to support day-to-day administrative and data management activities. This is a remote position available to candidates who are currently located in the United States. The successful candidate will be responsible for entering, reviewing, organizing, and maintaining information across company systems and digital records. This role is well suited for someone who is organized, comfortable working with computers, and able to complete repetitive tasks accurately while meeting established deadlines. Responsibilities Enter and update information accurately in company databases, spreadsheets, and other digital systems. Review submitted information for accuracy, completeness, and consistency. Identify missing or incorrect information and make appropriate corrections. Organize and maintain electronic records and documents. Transfer information between documents, spreadsheets, and internal systems. Perform routine administrative and data-related assignments. Maintain accurate records of completed work. Follow established procedures and instructions for data handling. Protect confidential company and customer information. Communicate with team members when clarification or additional information is required. Meet assigned deadlines while maintaining a high level of accuracy. Report recurring data issues or discrepancies to the appropriate team member. Qualifications Must currently reside in the United States . High school diploma or equivalent preferred. Basic computer proficiency. Comfortable using email, spreadsheets, web-based applications, and digital documents. Strong attention to detail and accuracy. Good written communication skills. Ability to organize tasks and manage time effectively. Ability to work independently in a remote environment. Reliable internet connection and a suitable workspace. Previous data entry or administrative experience is helpful but not required . Training Training and role-specific guidance will be provided to help qualified candidates understand the companyâs systems, procedures, and responsibilities. Compensation and Schedule $30 per hour Full-time position Monday through Friday Remote work United States only Training provided Work Environment This is a remote position. Employees are expected to maintain a professional and secure workspace, have reliable internet access, and be able to communicate with the team during their scheduled working hours. Equal Opportunity Astrek Careers is committed to providing employment opportunities based on qualifications, skills, and business needs. Employment decisions are made without unlawful discrimination. How to Apply Candidates interested in the position can apply through the application link included with this listing. Please provide accurate and current information when submitting your application. Location Restriction: United States only. Candidates outside the United States are not eligible for this position. Please mention the word **ATTUNE** and tag RMzQuMjI2LjE0Ny4xMDQ= when applying to show you read the job post completely (#RMzQuMjI2LjE0Ny4xMDQ=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Business Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-09-02",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 66,
+        "roleFit": 84,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 40,
+        "productOpsFit": 40,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Apply with Custom Pack",
+        "reasons": [
+          "Role angle: Business Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Business Analyst"
+      },
+      "summary": "Astrek Careers is hiring for Data Entry Clerk. Role angle: Business Analyst. Recommendation: Apply with Custom Pack.",
+      "fitReasons": [
+        "Role angle: Business Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
