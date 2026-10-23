@@ -1,0 +1,573 @@
+{
+  "id": "briefing-2026-10-23",
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T05:02:07.684Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "ad3a1585",
+        "title": "Risk Analyst",
+        "company": "Pavago",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-risk-analyst-pavago-1137548",
+        "jdText": "Risk Analyst / Risk Manager â Remote Enterprise Risk | Compliance | Governance | Financial &amp; Operational Risk Position Type: Full-Time, Remote Working Hours: U.S. Client Business Hours (with flexibility for reporting cycles, audits, and incident response) About the Role At Pavago, weâre hiring on behalf of one of our clients for a Risk Analyst / Risk Manager to identify, assess, monitor, and mitigate financial, operational, compliance, and enterprise risks across the organization. This is a high-impact role where youâll help safeguard the business by developing risk frameworks, analyzing emerging threats, strengthening internal controls, and delivering actionable insights that support strategic decision-making. Youâll work closely with Finance, Operations, Compliance, Legal, IT, and Executive Leadership to ensure the organization remains compliant, resilient, and prepared for evolving business risks. If youâre analytical, detail-oriented, and enjoy translating complex risk data into practical business recommendations, this role is built for you. What Youâll OwnEnterprise Risk Assessment Conduct enterprise-wide risk assessments across: Financial risk Operational risk Compliance risk Market risk Cybersecurity risk Maintain and update: Risk registers Control matrices Risk assessments Remediation trackers Identify emerging risks and prioritize mitigation activities. Partner with business leaders to strengthen proactive risk management practices. Risk Modeling &amp; Analytics Build and maintain quantitative risk models using: SQL Excel Python R SAS Perform: Stress testing Scenario analysis Sensitivity analysis Regression analysis Monte Carlo simulations Value at Risk (VaR) modeling Analyze trends, anomalies, and key risk indicators (KRIs). Deliver data-driven recommendations to leadership. Compliance &amp; Regulatory Oversight Support compliance with applicable frameworks such as: SOX Basel III Dodd-Frank GDPR HIPAA PCI-DSS Industry-specific regulations Prepare quarterly and annual compliance reports. Support internal and external audits. Maintain audit-ready documentation and evidence. Track remediation activities and regulatory deadlines. Internal Controls &amp; Governance Test and evaluate internal controls. Monitor incidents, exceptions, and risk events through Governance, Risk &amp; Compliance (GRC) platforms. Support governance committees with reporting and documentation. Partner with IT and Security teams on: Cyber risk Vendor risk Operational resilience Recommend improvements to governance processes and internal controls. Reporting &amp; Executive Communication Build dashboards and reports using: Power BI Tableau Looker Excel Present risk trends and mitigation recommendations to leadership. Translate technical risk findings into clear business insights. Maintain accurate documentation for executive reporting and audit purposes. Cross-Functional Collaboration Work closely with: Finance Operations Compliance Legal IT &amp; Security Executive Leadership Embed risk awareness into business processes. Support continuous improvement of enterprise risk management frameworks. RequirementsMust-Have QualificationsExperience 3+ years of experience in: Risk Management Enterprise Risk Compliance Audit Governance Experience working within regulated or compliance-driven environments. Core Skills Strong proficiency in: SQL Microsoft Excel Data analysis Experience using Governance, Risk &amp; Compliance (GRC) platforms such as: Archer ServiceNow LogicManager Or similar solutions Strong understanding of: Enterprise Risk Management (ERM) Internal controls Regulatory compliance Experience creating executive dashboards and risk reports. Excellent written and verbal English communication skills. Nice to Have Professional certifications such as: FRM CFA CPA CCEP Experience with: VaR Monte Carlo simulations Stress testing Background in: Financial Services Healthcare SaaS Enterprise Technology Experience supporting board reporting or executive governance committees. Knowledge of: Cyber risk Vendor risk Operational resilience Experience using: Tableau Power BI Looker What Makes You a Strong Fit Strong analytical and quantitative mindset. Exceptional attention to detail. Able to simplify complex risk concepts for business stakeholders. Proactive in identifying issues before they become significant risks. Strong balance of technical expertise and business judgment. Comfortable managing multiple priorities in a fast-paced environment. Tools &amp; Technologies SQL Microsoft Excel Python R SAS Power BI Tableau Looker Archer ServiceNow LogicManager Enterprise Risk Management (ERM) platforms What a Typical Day Looks Like Review dashboards for emerging operational, financial, or compliance risks. Run quantitative risk analyses and stress tests. Update risk registers and remediation trackers. Test internal controls and validate governance processes. Prepare executive reports and compliance documentation. Collaborate with business teams to strengthen risk mitigation strategies. Track remediation progress and regulatory deadlines. In short: You serve as the organizationâs early-warning systemâidentifying, assessing, and mitigating risks before they impact the business. Key Metrics for Success (KPIs) Timely and accurate risk reporting. Internal controls tested and validated on schedule. Early identification and mitigation of business risks. Zero missed regulatory or audit deadlines. High-quality executive reporting and dashboards. Positive audit outcomes and leadership confidence. Why Join Us? Make a direct impact on enterprise risk strategy. Work closely with executive leadership and cross-functional teams. Influence governance, compliance, and operational resilience. Build scalable risk management frameworks. Fully remote role with long-term growth opportunities. Clear career progression into: Senior Risk Manager Enterprise Risk Lead Director of Risk &amp; Compliance Chief Risk Officer (CRO) Interview Process Application Review Spark Hire Intro Video (3â5 minutes) Recruiter Interview Practical Assessment (Risk Analysis &amp; Recommendations) Client Interview Offer &amp; Background Verification What Happens After You Apply Right after you apply, youâll receive an email invitation from Spark Hire to record your Intro Video. This short, self-recorded video is the final step that completes your application and can be recorded whenever itâs convenient for you. Instead of repeating yourself across multiple screening calls, youâll introduce yourself once, and your video will be shared with the hiring team. This helps hiring managers evaluate your communication style early, making future interviews more meaningful and reducing unnecessary interview rounds. Donât overthink itâyou can record your video as many times as youâd like before submitting it. Only your final submission will be reviewed. Please keep an eye on both your inbox and spam folder for your Spark Hire invitation after submitting your application. Apply Now If youâre a Risk Analyst or Risk Manager who enjoys identifying business risks, strengthening governance, improving compliance, and helping organizations make informed decisions, weâd love to hear from you. Apply today and play a key role in protecting and strengthening a growing business. Please mention the word **IMPRESSIVENESS** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "analytics",
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-20",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 87,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 66,
+        "productOpsFit": 100,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Pavago is hiring for Risk Analyst. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "18c1dd38",
+        "title": "Senior Growth Product Manager AI Native",
+        "company": "Magic Eden",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414",
+        "jdText": "About Magic Eden and Dicey Magic Eden reached unicorn status in just 9 months after launch, one of the fastest in history. We built a category-defining NFT marketplace from scratch and proved we know how to move fast. Now we're doing it again. Dicey is our crypto casino and sportsbook platform, targeting the $180B+ iGaming and sports betting markets. We're a small, fully remote team. We ship fast, we're hands-on with our data, and we're rebuilding how a growth team operates around AI from the ground up. The role Most of the iGaming industry competes on acquisition. Almost nobody has figured out personalized retention, knowing who a player is, what they need right now, and what would actually change their behavior this week. That's the problem you'll own. This role focuses on the full post-signup journey: expanding our player segmentation framework, designing and running targeted offers and campaigns, and owning the P&amp;L lever that comes with it. It's explicitly AI-native. You'll build workflows, agents, and pipelines to run lifecycle campaigns that would have taken a whole team two years ago. Half the job is identifying the right problem. The other half is running the experiments to find the answer. What you'll do Own retention and monetization as a growth loop. Set the targets, find the leverage, and drive the numbers for everything that happens after a player signs up Own the player segmentation framework. Today it's value and risk. You decide how it evolves, what signals feed it, and how the rest of the company uses it Build the AI-native growth stack. Analysis, agents, and automated pipelines that surface segments, generate offer candidates, and run campaigns with minimal manual work Design and ship targeted offers for specific segments and moments: reload bonuses, lossback, wager bounties, challenges, win-back sequences. Size them, spec them, ship them, measure them Spend real time in our data warehouse and on-chain data finding patterns and turn them into campaigns before anyone else does Expand the signals we have on players: on-chain activity, status-match programs, social account linking, and whatever else you can think of Run the campaigns. Email, in-app, Telegram, whatever the channel. You're hands-on with it, with AI doing the heavy lifting Partner with engineering and design to ship the product surfaces that make all of this repeatable What we're looking for Strong intuition for player psychology and incentive design. Experience in gambling, gaming, fintech, or consumer marketplaces helps. Genuine curiosity about why people behave the way they do is required Deeply analytical. You can go from a vague question to a clean cohort cut yourself, without waiting on a data scientist AI-native by default. You already use AI to write queries, build analyses, and automate your own work and you want to push that much further High output with good judgment. You generate a lot of ideas and know which ones are worth testing first Bias to do it yourself. You're comfortable sending the email, running the query, and writing the spec, not just briefing others Comfortable with ambiguity. There's no playbook here, you'll be building it Backgrounds that tend to fit Growth PM at a data-heavy consumer company MBB consultant who wants to move into product and own outcomes, not just advise on them Product Minded Data scientist or analyst who wants to ship, not just report Why this is interesting Competitive, top-of-market compensation You're defining what a growth PM looks like in an AI-native company, there's no inherited playbook Personalised retention is where the industry is going and we're building it early Real ownership: a segmentation framework, a product surface, and a P&amp;L lever, with a direct line to the founding team Please mention the word **WINNERS** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Melbourne",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [
+          "crypto",
+          "DeFi",
+          "on-chain",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-09-22",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 100,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Magic Eden is hiring for Senior Growth Product Manager AI Native. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "2e866a3e",
+        "title": "Technical Customer Support",
+        "company": "QuickMail",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
+        "jdText": "QuickMail is a cold email and LinkedIn outreach platform for markets you can't afford to burn. Our customers can't easily replace leads that land in spam, which is why deliverability matters more to us than anything else. We have been running since 2014, and we pioneered deliverability technology such as Inbox rotationâ¢ and deliverability AIâ¢. The Role We are hiring a technical customer support person with an owner's mentality. You will own support for QuickMail and Mailflow, our deliverability add-on. There is no first or second line. You are the first and last person our customers talk to. Customers count on you to solve their problems and find the real cause when something breaks. You work closely with engineering, and you tell the founder what we need to know to make the product better: where the friction is and where the opportunities are. The role covers the help desk, system health checks, testing new releases before they ship, and leading the weekly team meeting. It takes excellent communication, solid technical understanding and sharp critical thinking. This is not a script-reading job. Most tickets involve deliverability, DNS records, LinkedIn automation or campaign setup. You dig into customer accounts in our Support Dashboard, reproduce the issue, then decide what to do and how to explain it to the customer. We are a remote team spread across time zones. Most routine tasks have a written guide with a checklist, so you know what done looks like. You are expected to refine and improve those processes. When something new comes up, you work out the most efficient way to handle it. If you want a lot of autonomy across many areas, real responsibility and a fast-paced environment, this role is for you. What Work Looks Like You own two things: customers get unstuck fast, and the product stays reliable. Every day Set the day's support priorities and work the Help Scout queue for QuickMail and Mailflow. Triage, resolve, and dig deeper when a ticket needs it. Check the support dashboard: job queue, event-stream latency, blacklist status, newly purchased domains. If something is off, investigate, diagnose, and drive it to resolution. Review fraud alerts and disable accounts that are scams or abusing the platform. Delighting customers Comfortable jumping on calls with customers, building rapport fast, and setting them up for success. Update the changelog and help articles based on what shipped and what customers asked. Share customer feedback with the team, ask happy customers for reviews and case studies, and watch NPS for testimonial candidates. Making support smarter with AI Improve the AI support agent. Review its answers, fix the docs it drew from when it is wrong, and contact the customer when its reply was off. Write and maintain automated tests, built with AI, that try to break staging before customers do. Use the MCP connections we have in place (Helpscout, GitHub, Postmark, and others) to get an accurate picture of support and find the next thing worth improving. Keeping the product solid Gatekeep releases. New fixes and features land on staging every week. Test them, confirm when staging is ready to ship, and think through how existing and new users will be affected. Report bugs as GitHub issues with everything the developer needs: steps to reproduce, screenshots or a Loom, and any GraphQL or console errors. Captain red alerts. When a core feature breaks (emails not sending, login down), confirm it, alert the team on Slack or Telegram, update the status page every 30 minutes, keep affected customers informed, and drive the fix. Then run the retrospective so it does not happen twice. Running the week Lead the weekly team meeting in MonsterOps: issues written up, to-dos done, numbers updated. Keep rock status and KPIs current in MonsterOps. Tools you'll use: Helpscout, our Support Dashboard, Sidekiq, GitHub, Slack, Telegram, MonsterOps, Outline, MxToolbox, Postmark, Bento, TidyCal, Fathom, Visual Code and Claude. Who You Are You build rapport fast. You are warm, positive, and relatable in writing and on calls. You are a good communicator. Externally, you can show warmth, empathy and care. Internally, you are able to communicate clearly and concisely about important things. You can operate with minimal instructions. You understand a short brief without every detail spelled out. You can prioritize well (especially when you have a lot on your plate), and get things done without hand-holding. You are comfortable on video. You are natural on live calls with Zoom and Meet, and on recorded video through tools like Loom. Your teammates can always count on you. You say what you'll do and you do what you said. You act with a constant sense of urgency. You can execute fast and find new ways to improve your productivity. You are resourceful. You use all the tools at your disposal to get great results. You have a low ego. You don't take offense easily and you handle disagreement as a discussion, not a personal attack. Growth mindset. You are positive about new workflow/process/product/tool changes. You love giving and receiving positive and negative feedback without getting defensive. Hours that overlap with East coast US and UK, where most of our customers are. A Plus If You Have Experience with customer facing work, or if you don't have it, tell us why you are perfect for this role. Working knowledge of deliverability and LinkedIn outreach. Warmup, DNS, inbox rotation, DKIM, SPF, Outlook and Gmail technical setup. We can teach this, but a head start helps. Comfort with agency setups. Workspaces, guest seats, inbox purchases and what happens when an agency loses a client. Light data skills. You can pull numbers from Help Scout or our MCP to back up what you report. An eye for happy customers. You notice them and ask for testimonials and case studies at the right moment. How We Work Together You'll work directly with the founder and with our lead developer. Working with the founder can be intense. Here is what that looks like in practice: Replies are short and can come across as harsh. If something written lands badly or isn't clear, ask. Direction can change. The founder may say one thing, then something different a few days later as they learn more. When that happens, check what changed and adapt. Information should be short and to the point. Lead with what matters, then give more details if asked. The founder can stay frustrated about a problem until it's solved. That's something they are aware of and working on. You'll do well here if you can stay calm and focused when the pressure is on. The team often thinks fast and interrupts each other when discussing ideas. If that would bother you, this role probably isn't for you. This role suits someone with high emotional intelligence, who doesn't take things personally, asks when something is unclear, and keeps many things moving at once. Your schedule can be flexible. If you have a martial arts class every Thursday at 3 pm, go and make up the time later. In return, on the rare occasion the team needs your help on a weekend, we ask you to be flexible too. Benefits Contract type: full-time or part-time Compensation: $2,500 to $4,000 USD per month, depending on experience and location. US-based hires will work as independent contractors (1099). Start date: negotiable Please mention the word **TRUMP** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-12",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 99,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "QuickMail is hiring for Technical Customer Support. Role angle: Growth Data Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "72c42f5f",
+        "title": "Payment Operations Specialist",
+        "company": "Utopia",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-payment-operations-specialist-utopia-1137514",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-payment-operations-specialist-utopia-1137514",
+        "jdText": "UtopiaÂ is an ultra-luxury hospitality and lifestyle brand creating a global ecosystem of properties and experiences. We develop private villa retreats in beautiful locations around the world, each with high-end service.Â UtopiaÂ also offers a wider ecosystem of leisure experiences and services available both to those staying on property and to external visitors. UtopiaÂ designs and builds its properties in-house. Our projects span the full journey: from concept and architecture to construction, interiors, landscape, guest experience, and long-term operation. For architects and designers, this means contributing on properties from the ground up, with the ability to influence how each place is planned, built, and experienced. For hospitality professionals, it means collaborating with a brand where service is personal, attentive, and built around each guestâs stay. Weâre a young, ambitious team with high standards and a hands-on approach. We value strong ideas, practical thinking, attention to detail, and people who are ready to take ownership of their part of each project. If youâre interested in architecture, design, hospitality, or guest experience, we invite you to explore opportunities withÂ Utopia. About the role We are looking for a detail-oriented and motivated Payment Operations Specialist to join our finance team. You will support the day-to-day execution of payment workflows, reconciliation processes, and financial reporting â playing a critical part in ensuring money moves accurately and on time. You will collaborate closely with internal finance and accounting teams as well as external banking and payment providers. This is an excellent opportunity for someone early in their finance career who is eager to build hands-on experience in financial operations within a fast-paced, process-driven environment. We value precision, ownership, and a proactive mindset. If you take pride in getting the details right and want to grow within a team that handles real financial responsibility, we'd love to hear from you. Responsibilities Payment processing â execute domestic and international transactions; verify payment details and authorizations Exception handling â identify, investigate, and resolve payment failures, chargebacks, and discrepancies Reporting â prepare daily cash position reports, payment summaries, and operations dashboards Process improvement â document workflows; flag inefficiencies and suggest automation opportunities Compliance support â ensure transactions adhere to AML, KYC, and internal control policies Degree in Finance, Accounting, Economics, or Business 2-3 years of experience in similar role Experience with payment processing and bank reconciliation Comfortable meeting tight deadlines and high-volume work Demonstrated attention to detail â reconciliation, auditing, or data entry examples Fluency in English Nice-to-have: Fluency in one (or more) languages below: Russian Spanish Portuguese Remote first environment and collaboration in LATAM time zone Work on international luxury hospitality projects A truly global team (30+ nationalities) Growth opportunities within the Financial function as we scale The chance to help build a luxury hospitality brand aiming to become #1 worldwide By submitting this application, I agree that my personal data will be collected, processed, and retained by the company solely for the purposes of managing and assessing my candidacy. Please mention the word **TOUGHER** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-14",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 80,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Utopia is hiring for Payment Operations Specialist. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "add6d714",
+        "title": "Technical Account Manager",
+        "company": "Yuno",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-yuno-1137540",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-yuno-1137540",
+        "jdText": "Remote, Brazil, Full Time, Individual Contributor, +3 years of experience Who We Are At Yuno, we are building the payment infrastructure that allows all companies to participate in the global market. Founded by seasoned experts from the payments and tech industries, our technology provides access to leading payment capabilities, enabling companies to engage customers confidently and maintain global operations through seamless integrations. We empower high-performing teams at brands like InDrive, McDonald's, Rappi, and Viva Aerobus to integrate over 1,000 payment methods via a single API. By leveraging advanced AI and the latest technologies, we orchestrate smart routing and fraud prevention across 80+ countries. &nbsp; About The Role We are orchestrating the best high-performing team! We are looking for a Technical Account Manager to own and elevate Yuno's technical customer relationships across Latin America. This is a leadership position for someone who combines deep technical expertise with the ability to inspire a team, build trust with customers, and drive outcomes that matter. You will be the senior technical voice for our most strategic accounts in the region â and the person who sets the standard for how great technical partnership looks at Yuno. Day to day, you will lead a team of TAMs while staying close to the most complex customer challenges yourself. LATAM is one of the fastest-growing payment ecosystems in the world, with unique local nuances and high-stakes integrations. That environment rewards people who bring both precision and resilience â someone who can stay steady under pressure, push through hard problems, and come out the other side with better solutions and stronger customer relationships than before. This role also sits at the heart of Yuno's cross-functional engine. You will work closely with Product, Development, Sales, and Partnerships teams, making sure customer insights translate into real improvements and that internal teams have the context they need to move fast. You will set best practices, define how the TAM function scales, and ensure every integration your team owns reflects the quality and reliability Yuno's customers expect. If you are technically sharp, and genuinely excited about building something meaningful in one of the most dynamic payment markets in the world â this role is for you. &nbsp; Your contribution will be Serve as the senior technical point of contact for strategic accounts, owning escalations and driving resolution on complex integration challenges Lead high-level discussions with customer leadership around technical strategy, product trade-offs, incident management, and risk mitigation Define and implement best practices for technical onboarding, integration delivery, and ongoing account health monitoring Build deep knowledge of each customer's business model, technical stack, and operational needs to proactively unlock value Partner with developers and senior engineers to provide strategic technical guidance and support solution design Collaborate with Product and Development teams to customize platform capabilities and feed customer insights into the roadmap Work cross-functionally with Sales, Partnerships, and Finance to support account retention and regional growth Monitor integration progress and ramp-up milestones across the team, ensuring consistent and high-quality delivery Champion the LATAM customer base internally, bringing regional intelligence into Yuno's strategic conversations &nbsp; Skills You Need Minimum Qualifications Fluency in English and Portuguese is a plus ; Spanish is a plus 5+ years of experience in technical account management or integration engineering, preferably in fintech or payments Proven track record of leading or mentoring technical teams Strong understanding of RESTful APIs, SOAP, JSON, XML, and API management tools such as Postman, SoapUI, or Swagger Proficiency in web fundamentals: HTML, CSS, JavaScript, RESTful APIs, and modern frameworks Hands-on experience in at least one server-side language: Golang, Python, Node.js, or equivalent Familiarity with server and database technologies including Apache, Nginx, MySQL, Oracle, PostgreSQL, MongoDB, or similar Strong analytical, problem-solving, and project management skills Excellent organizational skills with the ability to manage multiple accounts, team priorities, and concurrent projects Clear and compelling communication with both technical and non-technical stakeholders at all seniority levels Experience with ticketing systems is a plus &nbsp; What We Offer at Yuno Competitive Compensation Remote Work â You can work from everywhere! Home Office Bonus â A one-time allowance to help you create your ideal home office. Work Equipment Stock Options Health Plan wherever you are. Flexible Days Off \\n \\n Please mention the word **PASSIONATELY** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Brazil",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-10-17",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 80,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 80,
+        "productOpsFit": 64,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Yuno is hiring for Technical Account Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "4f7bb90d",
+        "title": "Marketing and Sales Administrator",
+        "company": "Hunt St",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-marketing-and-sales-administrator-hunt-st-1137488",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-marketing-and-sales-administrator-hunt-st-1137488",
+        "jdText": "Looking for Philippines-based candidates Job Role: Marketing and Sales Administrator Compensation range: $1,500 AUD - $2,000 AUD / Monthly Engagement type: Independent Contractor Agreement Work Schedule: This role is expected to align with the AU business hours (approx. 9 AM - 5 PM, Monday to Friday) for collaboration, but as a contractor, youâll have flexibility in how you manage your time. Who We Are: At Hunt St, we help Australian companies hire top remote talent in the Philippines. For this role, you will be engaged directly by the client as an independent contractor. We are not an outsourcing agency. All of our roles are 100% remote so you'll be able to work from home. Who The Client Is: Our company is a thriving real estate agency in Brisbaneâs south-west, with a principal who lists and sells at a strong pace, an in-house finance broker, and a loyal local client base built over many years. Appraisal requests are coming in fast, and the agency is ready to add a sharp, organised operator to keep every lead warm and every opportunity moving. Role Overview: Youâll sit at the centre of the agencyâs growth engine. Youâll own a database of 30,000+ contacts, keep it clean and organised, and run a consistent nurture program so past clients, buyers and potential sellers hear from us at the right time. Youâll be on the phones connecting with homeowners, qualifying appraisal leads and booking them in for the principal. Youâll also support marketing and bring practical AI and automation skills that make every follow-up faster and more reliable. Key Responsibilities:Â Database &amp; CRM ownership Clean, de-duplicate, update and segment approx. 25,000 existing contacts plus 5,000â10,000 newer buyer and seller contacts. Run a structured 6â12 month nurture cadence so every contact receives timely, relevant touchpoints. Log every call, email and outcome accurately so the CRM stays the single source of truth. Phones &amp; lead nurturing Make value-led outbound calls: just listed, just sold, upcoming auctions in the street, and free market report offers. Nurture appraisal leads, qualify their timing and motivation, and book appraisals directly into the principalâs calendar. Hand over warm, ready-to-list clients with clear notes, and refer finance opportunities to the in-house broker. Marketing support Build and send email and SMS campaigns to targeted database segments. Prepare market updates and suburb reports that give homeowners genuine value. Support social media content and scheduling alongside the agencyâs existing marketing. AI &amp; automation Set up automated follow-ups across SMS, email and CRM workflows using tools such as n8n, Make, or built-in CRM automation. Monitor automations for accuracy and tone, and refine them to lift response and booking rates. Additional sales administration Prepare sale contracts using approved templates and instructions; enter details, coordinate signing and distribute completed copies to relevant parties.Â Prepare and process Form 6 appointment documents; check details and signatures, follow up outstanding items and file completed records, subject to principal review. Reception and general administration coverÂ When the receptionist is away, answer and direct calls, respond to general enquiries, record messages, manage appointments and assist with routine administrative tasks. Required Skills and Qualifications: 2-3+ years in a sales admin, marketing admin or client-facing role, ideally within Australian real estate. Excellent spoken and written English with a warm, confident phone manner that Australian homeowners respond to. Hands-on CRM experience and a genuine love of clean, well-organised data. Comfortable making outbound calls daily and energised by booking results. Confident using AI tools and automation platforms to work smarter. Self-directed and output-focused: you plan your day, deliver consistently and report progress proactively. Bonus Skills: Australian real estate CRMs such as Rex, VaultRE, AgentBox or Box+Dice. Email marketing platforms, Canva, and social scheduling tools. Familiarity with Australian property terms: appraisals, auctions, listings, settlements. Work Arrangement &amp; Expectations: This is a remote role that will be set up as an independent contractor engagement. To ensure alignment and transparency, successful candidates will be expected to: Disclose any existing ongoing roles or client work Reflect this engagement on their LinkedIn profile (clearly marked as âIndependent Contractorâ) Please mention the word **RECOVER** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-11",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 79,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 68,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Hunt St is hiring for Marketing and Sales Administrator. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "02c10638",
+        "title": "Accounting & Finance Manager",
+        "company": "Political Asylum Lawyers",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-accounting-finance-manager-political-asylum-lawyers-1137555",
+        "jdText": "Who We Are Political Asylum Lawyers is a Houston-based immigration law firm focused on asylum cases. We help immigrants all over the United States secure their futures here through asylum, combining exceptional standards with deep respect for the human reality behind every case.Â Our work changes lives. The standards we maintain, the discipline behind our work, and the way we show up every day can determine whether someone is able to stay safe and build a stable future in the United States. That is why we operate with integrity, urgency, and excellence, and why we expect every team member to take full ownership of their role. Everything we do is guided by our core values: integrity, excellence, accountability, teamwork and passion. Working here means: High-stakes responsibility: our work is of great consequence for our clients Deeply meaningful outcomes: our work changes lives for the better Emotionally demanding moments: resilience and maturity are essential High standards and constant growth: excellence and continuous improvement are expected Mission-driven teamwork: weâre passionate about helping immigrants secure their future in the United States through asylum, and we know that meeting our high standards requires each of us to take ownership, communicate proactively, and support one another If you want a career where your skills create tangible change in the world, this is it. Learn more about what itâs like to work with us here:Â politicalasylumlawyers.com/careers The Role In this role, you'll be an integral part of our team's mission of helping immigrants secure their future in the United States through asylum. We believe that those fleeing persecution deserve expert guidance and unwavering support as they seek safety and a new beginning in the United States.Â The Accounting &amp; Finance Manager (Hands-on) is responsible for managing the firmâs financial operations, accounting systems, billing, accounts receivable, cash flow forecasting, financial reporting, trust accounting compliance, payroll oversight, tax reporting coordination, internal controls, and finance-related operational projects.Â This role serves as the firmâs first level of financial analysis and operational financial control. The Accounting &amp; Finance Manager ensures that financial records are accurate, timely, compliant, and useful for decisions. This is a hands-on role. The initial focus is to learn the firmâs systems, work with existing staff and providers, and establish accurate, reliable financial operations. Recurring accounting and billing work will be delegated progressively, while the manager retains responsibility for controls, review, quality, and results. As readiness and scope are agreed with leadership and current senior finance support, the manager will gradually assume selected planning and reporting responsibilities from that support. The Accounting &amp; Finance Manager must explain complex financial information in plain English, identify financial risks, recommend corrective action, and follow approved actions through implementation and verified results. The role supports leadership decisions on budgeting, profitability, cash management, pricing, collections, and strategic planning.Â What You'll Do Your day-to-day responsibilities will vary based on the firmâs needs, but will include a combination of the following: Financial Operations ManagementÂ Perform and manage day-to-day financial operations, working with existing staff and service providers and documenting procedures so the work is completed accurately and on time. Follow financial issues through to resolution: identify who is responsible for each next step and its deadline, follow up, raise problems with recommended solutions, and confirm that the agreed actions were completed correctly. Ensure accurate execution of accounting, billing, A/R, A/P, payroll, trust accounting, collections, tax coordination, and general ledger maintenance.Â Â Maintain clean and current financial records in the accounting system.Â Â Ensure the legal team is supported with accurate financial information related to client matters, billing, retainers, and collections.Â Â Monitor daily cash balances, bank accounts, credit card activity, merchant activity, and other key financial accounts.Â Â Ensure bills, vendor payments, check requests, and reimbursements are processed accurately and on time. Financial Reporting, Budgeting, and ForecastingÂ Prepare, review, and analyze monthly financial statements and key financial reports on time. Validate supporting records, calculations, and assumptions; investigate material inconsistencies and disclose unresolved limitations.Â Â Ensure monthly financial reports are completed accurately and on time.Â Â Prepare annual and periodic budgets and forecasts as required throughout the year. Provide budget variance reports and explain the results to the Owner/CFO in clear business language, including conclusions, recommendations, and decisions needed. Support the creation, maintenance, and monitoring of the annual budget.Â Â Maintain a forward-looking cash flow forecast to help leadership anticipate shortfalls, plan distributions, and manage working capital.Â Â Track year-over-year revenue growth, gross profit, operating profit, and other key financial trends.Â Â Provide analysis that supports strategic planning, operational planning, and financial decision-making.Â Â Billing, Collections, and Accounts ReceivableÂ Own and continuously improve the firmâs billing and collections process.Â Â Supervise timely preparation and delivery of client invoices.Â Â Monitor payment plans and ensure clients comply with payment terms.Â Â Track, measure, and report accounts receivable aging.Â Â Ensure collection protocols are followed consistently and professionally.Â Â Work with billing staff and leadership to prevent A/R from accruing unnecessarily.Â Â Address client billing questions and payment concerns professionally while protecting the firmâs financial interests.Â Â Own the operational handling of chargebacks, refund requests, billing disputes, and merchant service issues through documented resolution.Â Review billing records, payment history and related correspondence to understand and resolve chargebacks, refund requests and billing disputes. Coordinate follow-up, obtain required approvals, and confirm that any approved refunds, credits or other adjustments are correctly recorded in the relevant systems and account balances. Recommend process improvements to increase collection rate and reduce financial leakage.Â Â Trust Accounting and ComplianceÂ Ensure trust/IOLTA account activity is properly monitored, reconciled, and documented.Â Â Own or review three-way trust reconciliations.Â Â Identify and resolve trust accounting discrepancies with urgency.Â Â Ensure compliance with applicable legal, ethical, and accounting requirements.Â Â Work with the Owner/CFO and CPA to correct accounting or reporting issues.Â Â Maintain strong internal controls to protect the integrity of firm financials.Â Â Internal Controls and Risk ManagementÂ Design, recommend, and enforce financial controls that protect the firm.Â Â Identify financial risks, reporting gaps, compliance issues, cash flow risks, billing breakdowns, and process weaknesses.Â Â Recommend practical corrective actions to leadership and work within approved policies and authority limits.Â Â Support audits, tax preparation, financial reviews, and outside accounting reviews.Â Â Ensure balance sheet reconciliations, payroll liability reconciliations, and bank reconciliations are completed accurately.Â Â Monitor payroll taxes, tax liabilities, vendor obligations, debt obligations, and compliance deadlines.Â Â Finance Team and Vendor OversightÂ Oversee existing staff and providers formally assigned to the role, including the bookkeeper, billing specialist, payroll provider, outsourced finance vendors, and other accounting support.Â Â Provide direction, accountability, and feedback to finance/accounting staff.Â Â Progressively delegate recurring accounting and billing work while retaining controls, review, and accountability for results, as appropriate.Â Participate in onboarding, training, and performance reviews for other assigned finance-related positions.Â Â Ensure finance team members understand expectations, deadlines, reporting requirements, and quality standards.Â Â Hold vendors accountable for timely and accurate work.Â Â Serve as the internal subject matter expert for accounting software, billing systems, chart of accounts, reporting processes, and financial workflows. Identify practical improvements in QuickBooks, Stripe, Google Sheets, Asana, and related workflows. Define financial requirements and implement, test, and document changes with technical support as needed.Â Maintain controls, data quality, security, and approval boundaries, and own completion and accuracy even when technical colleagues build the solution.Â Â Financial Analysis and Business SupportÂ Analyze profitability by service, SKU, practice area, attorney, labor cost, marketing channel, and client/matter type when data is available.Â Â Support pricing reviews to ensure services produce adequate gross profit.Â Â Evaluate underperforming investments, expense categories, vendors, and initiatives.Â Â Track production labor return, utilization, realization, collection rate, and cost of acquisition where applicable.Â Â Help leadership understand Total Owner Benefit, owner distributions, working capital needs, and firm financial health.Â Â Support centralized KPI reporting and scorecard development.Â Who You Are We're looking for professionals who combine technical competence with genuine passion for our mission. The ideal candidate brings: Required QualificationsÂ Bachelorâs degree in Accounting or Finance Minimum of 5 years of progressive accounting or finance experience, preferably in a law firm, professional services firm, or other service-based business.Â Â Strong understanding of general accounting, financial reporting, budgeting, forecasting, A/R, A/P, payroll, and month-end close.Â Â Experience managing or reviewing trust/IOLTA accounting and reconciliations.Â Â Experience with billing systems, client payment plans, collections, and accounts receivable management.Â Â Strong proficiency with accounting software, legal billing systems, Microsoft Excel, and financial reporting tools. Practical experience using AI tools and automation to improve accounting or finance workflows, with a working understanding of APIs, scripts, and how data moves between systems. Ability to identify improvement opportunities, define clear financial requirements, collaborate with technical colleagues on implementation, and validate the accuracy and reliability of results. Advanced coding skills are not required. Ability to prepare accurate financial reports and explain them clearly to non-financial leaders.Â Â Demonstrated ability to identify financial risks, implement controls, and resolve discrepancies.Â Â Strong organizational, analytical, communication, and problem-solving skills.Â Â High integrity, confidentiality, discretion, and professional judgment.Â Â Ability to manage multiple priorities in a fast-paced law firm environment. Â Â Preferred QualificationsÂ CPA, MBA, advanced finance/accounting credential, or equivalent experience.Â Â 8+ years of accounting, controller, or finance operations experience.Â Â Microsoft Excel Expert Certification preferred. Experience building lightweight scripts or integrations to improve finance workflows.Â Â Prior experience in a law firm or legal services environment.Â Â Experience with systems such as QuickBooks Online, Clio, MyCase, Time Matters, PracticePanther, Smokeball, Lawmatics, Infusionsoft/Keap, or similar platforms.Â Â Experience designing dashboards, centralized KPI reporting, balanced scorecards, or financial performance reports.Â Â Experience supervising bookkeepers, billing specialists, payroll providers, or outsourced accounting vendors.Â Â Advanced experience with complex unstructured data models and analysis, pricing analysis, SKU profitability, labor utilization, realization, collection rate analysis, and cost-of-acquisition reporting.Â Â Experience supporting strategic planning, cash flow planning, debt repayment planning, and owner distribution planning.Â What We Offer This position offers a monthly salary range of USD 3,000 - 3,500 gross, commensurate with experience and qualifications. â Week between Christmas and New Year's â office closed, fully paid â Your country's national public holidays off (paid) - your paid national holidays follow your own country's calendar â Three weeks of paid vacation annually â Comprehensive training program â we invest in bringing you up to speed on our systems, content processes, and best practices â Mentorship and collaboration â learn from experienced team members and contribute your expertise â Career advancement paths â we promote from within and create opportunities â Work from anywhere â this position is open to candidates based in Argentina. â Equipment support â stipend or provided equipment to set up your home office, available after 4 months on the job How to Apply To apply, please submit a resume and a cover letter, both of which must be in English. Your application won't be considered without a cover letter. Your cover letter should explain why you're uniquely qualified for this particular position, and why you would be a great fit for our law firm. Generic, copy/paste cover letters will be discarded. Upload your cover letter and resume, in PDF format, through the software program where you're viewing this announcement. Please do not call or email us about this opening. Please mention the word **WONDERFUL** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-10-22",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 54,
+        "productOpsFit": 100,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Political Asylum Lawyers is hiring for Accounting & Finance Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "505fd166",
+        "title": "Graphic Designer & Video Editor",
+        "company": "BlueTuskr",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-video-editor-bluetuskr-1137507",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-graphic-designer-video-editor-bluetuskr-1137507",
+        "jdText": "Description BlueTuskr is a full-service e-commerce growth agency built exclusively for e-commerce brands. We combine paid media, owned media, creative, and analytics to help our clients scale profitably. Our team is made up of specialists who are deeply invested in their craft â and in the success of the brands they serve. This isn't a \"jack of all trades\" environment. We hire people who are exceptional at what they do, then give them the resources and autonomy to do it well. The Opportunity We're looking for a Graphic Designer and Video Editor who creates with conversion in mind. You know that a beautiful email that doesn't get clicks isn't finished yet, and that a product page is a sales tool first. This is a hands-on role for someone who has spent real time designing for e-commerce brands â emails, landing pages, website sections, and social/ad creative â and can explain exactly why each design choice was made. You'll design across a portfolio of e-commerce clients, working closely with our email, CRO, Shopify development, and paid media teams. You'll also use Claude and other AI tools as a real part of your workflow â to move faster on ideation, variations, and production, without sacrificing quality or brand consistency. This role starts part-time at 15 hours/week, with real room to grow as your client roster and responsibilities expand. What You'll Own Email &amp; Retention Design Design campaign and automated flow emails (newsletters, welcome, abandoned cart, post-purchase, win-back, etc.) that are on-brand and built to drive clicks and revenue Design mobile-first, with clear hierarchy, scannable layouts, and strong calls to action Prepare email-ready files and specs (image slicing, live text vs. image text, alt text, dark mode considerations) for clean builds in Klaviyo and other email platforms Web Creative &amp; CRO Support Design landing pages, homepage, and collection page sections, product page (PDP) modules, banners, and promotional assets for Shopify stores Partner with the CRO team to design test variations based on data, heatmaps, and hypotheses â not just personal taste Hand off dev-ready Figma files to our web developers, with desktop and mobile layouts, organized layers, and clear specs Social &amp; Ad Creative Design static social and paid ad creative for Meta, TikTok, and other channels Create ad variations and iterations to support creative testing Video editing for social and ad use (resizing, trimming, captions, simple motion) where needed Process &amp; Quality Follow each client's brand guidelines closely, and flag gaps or inconsistencies when guidelines are missing or unclear Apply design and e-commerce best practices (accessibility, contrast, legibility, load-friendly assets, platform specs) Present work with a clear rationale â why this layout, this hierarchy, this CTA â to internal teams and, when needed, clients Take feedback well, turn revisions around quickly, and keep work moving across multiple accounts and deadlines Use Claude and other AI tools to speed up concepting, copy-to-layout exploration, asset variations, and repetitive production tasks â while following client confidentiality and our AI use guidelines Who You Are Skills get you in the door. These are the qualities that make you right for this role: An exceptional designer with a strong eye for layout, typography, and color â your portfolio speaks for itself Conversion-minded â you think about what the customer needs to see, feel, and do next, not just what looks good Detail-obsessed â you catch the misaligned element, the off-brand color, and the typo before anyone else does A clear communicator who can explain the reasoning behind design choices and keeps the team updated without being chased Excellent at managing your time â you can juggle multiple clients and deadlines in a remote, async environment without dropping the ball AI-curious and AI-capable â you already use tools like Claude in your workflow and are excited to find new ways to work smarter Adaptable â you can shift between very different brand styles and still make each one feel right. What Success Looks Like In your first 90 days: You've learned the brand guidelines and design systems for your assigned client accounts You're consistently delivering email, web, and social designs on time with minimal revision rounds You've handed off at least one web project or CRO test variation to our Shopify dev team with clean, dev-ready files You've built AI into your workflow in a way that measurably speeds up production Internal teams trust your work and your reasoning, and come to you with ideas, not just requests Must-Have: 2â4 years of e-commerce digital design experience (email, website, social, etc.) A portfolio showing e-commerce work â ideally with context on goals and results Advanced proficiency in Figma Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign) Hands-on experience using Claude and/or other AI tools in a design workflow Experience designing for the web and supporting website creative (landing pages, site sections, PDPs) Strong understanding of conversion-focused design and e-commerce best practices Proven ability to follow and apply brand guidelines across multiple brands Strong written and spoken English for async communication with a U.S.-based team Strong Differentiators: Video editing skills (Premiere Pro, After Effects, CapCut, or similar) Experience designing for Klaviyo or other email platforms Familiarity with Shopify themes and how designs get built Experience designing A/B test variations or working with CRO data Paid social ad creative experience (Meta, TikTok) Agency background preferred This role is fully remote. Time Commitment and Availability Hours: 15 hours/week to start, with the opportunity to scale up as the role and client roster grow Availability: Between 9 a.m. and 6 p.m. EST Compensation $20â25 USD/hour, based on experience and portfolio. This is a part-time, remote contractor role starting at 15 hours/week. Video editing experience is a strong plus and is factored into the rate. Please mention the word **FUTURISTIC** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-13",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "BlueTuskr is hiring for Graphic Designer & Video Editor. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "6507e1cf",
+        "title": "Project and Quality Administrator Work From Home Dayshift",
+        "company": "Twoconnect",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-project-and-quality-administrator-work-from-home-dayshift-twoconnect-1137524",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-project-and-quality-administrator-work-from-home-dayshift-twoconnect-1137524",
+        "jdText": "We are seeking a Project and Quality Administrator (Quality Systems) to provide project administration and data coordination support across multiple active projects. The role will maintain accurate project records, coordinate quality documentation, monitor outstanding tasks, prepare reports, and support audit readiness while working closely with internal teams to ensure project information remains complete, accurate, and up to date. Provide project administration and data coordination support across multiple active projects. Gather, maintain, and update project information, quality records, and supporting documentation. Manage project data and assigned tasks using Deltek, Jira, CRM, and other project management systems. Prepare and distribute reports, dashboards, and project performance information using available data. Monitor outstanding documentation, actions, deadlines, and quality requirements, proactively following up with stakeholders. Maintain accurate, complete, and auditable records to support quality assurance processes and audit readiness. Identify missing or inaccurate information, resolve discrepancies, escalate issues, and support continuous improvement of project workflows. Minimum 3 years of relevant experience in data coordination, project administration, project coordination, quality systems administration, or a similar role. Hands-on experience with Deltek is essential. Proficiency in Microsoft Excel and Microsoft 365, including data management, reporting, and documentation. Strong written and verbal communication skills, with the ability to coordinate with stakeholders and follow up on outstanding information. Excellent attention to detail and accuracy in maintaining project records, reports, and system data. Strong organisational, time-management, and problem-solving skills, with the ability to manage multiple projects, tasks, and deadlines independently. Experience with Jira, CRM, or document management systems is desirable; a relevant bachelor's degree and exposure to construction or project delivery environments are advantageous. We offer more than just a job â we offer a supportive and rewarding career experience.Â HereâsÂ what you can expectÂ fromÂ this opportunity:Â Work from homeÂ Monday to Friday 9:00 AM to 6:00 PM AEST/AEDT (adjustments will be made for daylight saving time) HMOÂ with 2 free dependents and medical reimbursements Government-mandated benefits Opportunities to work with leading companies in Australia and beyond TrainingÂ programmesÂ forÂ career development Engaging company outings, teamÂ activitiesÂ and wellness sessions Supportive, inclusive culture Dedicated managers focused on your growth and successÂ TwoconnectÂ connects highly skilled Filipino professionals with established companies in Australia, New Zealand, the United States, the UnitedÂ KingdomÂ and Europe, providing direct access to global careers and long-term opportunities.Â We offer competitive pay and benefits,Â additionalÂ entitlements and structured career development programs that make employment both financially rewarding and professionally sustainable.â¯Â Our industry-leading retention rateÂ demonstratesÂ our commitment to a people-first culture that prioritizes stability,Â growthÂ and genuine care for every employee.Â TwoconnectÂ is an equal opportunity employer. We value cultural diversity and foster an inclusive workplace where every employee is respected and supported as part of a growing global team.Â Please mention the word **MAJESTIC** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-15",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Twoconnect is hiring for Project and Quality Administrator Work From Home Dayshift. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "540327d9",
+        "title": "Technical Account Manager",
+        "company": "DEUNA",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-deuna-1137482",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-deuna-1137482",
+        "jdText": "About DEUNA &nbsp;ð§¡ &nbsp; DEUNA is a rapidly growing startup revolutionizing global commerce with ATHIA, our AI-powered orchestration and payments platform that helps large enterprises boost approval rates, reduce costs, and unlock new revenue. Built by the team behind DEUNAâthe fastest-growing Commerce OS in Latin AmericaâATHIA combines payment intelligence, checkout optimization, and data orchestration in one powerful solution. &nbsp; With deep integrations across 300+ PSPs and alternative payment methods, and over 20% of Mexicoâs digital economy running through our platform, we simplify global payments through a single integration and centralized reconciliation. We are a rapidly growing startup expanding into the U.S. to meet the urgent needs of large retailers, marketplaces, airlines, and QSRs. Join us to shape the future of payments! ð &nbsp; Visit&nbsp; https://www.deuna.com/ &nbsp;to learn more about us! About the Role As a Technical Account Manager (TAM), you will be the primary technical point of contact for our merchants after their initial go-live. You will help monitor merchant technical health, support incident management, answer ongoing technical questions, and guide merchants through future technical evolutions. For DEUNAâs premium and key accounts, the TAM plays a critical role in making sure merchants feel technically protected, proactively monitored, and confident operating on our platform. Your mission is to help ensure every merchant is operationally stable, technically satisfied, and continuously improving on DEUNA. &nbsp; &nbsp; Responsibilities Proactively monitor merchant technical health Monitor merchant performance, transaction behavior, errors, declines, latency, and anomalies. Identify potential risks before they become merchant-impacting issues. Raise internal flags when technical or operational risks are detected. Help maintain account-specific dashboards, alerts, and health views for key merchants. Be the main technical contact after go-live Act as the primary technical point of contact for merchant questions and doubts after go-live. Help merchants understand technical flows, configurations, integrations, and platform behavior. Coordinate internally with Product, Engineering, Support, Operations, and Account Management when merchant needs require cross-functional support. Support technical incident management Triage merchant-reported and internally detected issues. Escalate issues to the appropriate on-call, Engineering, Product, or Operations teams. Track resolution and ensure timely internal and external follow-up. Help ensure communication with merchants is clear, factual, and timely. Support post-incident follow-up, including impact explanation, corrective actions, and prevention measures when required. Drive merchant technical improvements Identify opportunities to improve merchant performance, stability, acceptance rate, routing behavior, fraud flows, provider configuration, or processing cost. Partner with Account Management to support merchant expansion and long-term account growth. Help merchants adopt new payment methods, providers, features, or technical capabilities after launch. Build merchant health visibility Build and deliver simple Merchant Health Reports periodically to Account Management and/or merchants. Maintain accurate technical documentation for merchant-specific configurations, customizations, providers, integrations, and known risks. Help prioritize and advocate for merchantsâ technical needs internally. &nbsp; &nbsp; Requirements 3+ years in Technical Account Management, Merchant Support, Solutions Engineering, Technical Customer Success, or similar roles. Strong technical understanding of online payment ecosystems, including APIs, SDKs, transaction flows, processors, acquirers, fraud tools, chargebacks, refunds, captures, and 3DS. Experience with incident management, post-launch technical operations, technical troubleshooting, and client-facing support. Ability to analyze logs, dashboards, error patterns, transaction behavior, and operational metrics. Excellent communication skills, with the ability to simplify technical concepts for non-technical stakeholders. Strong organization, ownership, urgency, and follow-up discipline. Fluent in Spanish and English. Experience working with LatAm merchants is a must. Startup environment experience is a plus. &nbsp; &nbsp; What Success Looks Like A successful TAM helps premium merchants feel that DEUNA is actively watching over their payment operation, not simply reacting when something breaks. The TAM should help ensure that: Merchant issues are detected and escalated quickly. Critical incidents are followed through with urgency and ownership. Merchants receive clear and timely technical communication. Account Management has strong technical support to retain and expand key accounts. Merchants continuously improve their technical performance and payment outcomes on DEUNA. \\n \\n What will you find when you join DEUNA? - A multicultural team distributed throughout LATAM - Dynamism, agility and constant innovation - Being part of a high-impact solution for an entire region - The best tools and technology to operate - Being part of the startup culture. - We are in full expansion! &nbsp; Benefits: Vacations and additional PTO ðï¸ Remote work from anywhere&nbsp; ð» Economic support for health insurance, internet and cell phone lineð± ð We all own DEUNA, we offer stock options ð¸ Learning and development platform ð Multidisciplinary, diverse and dynamic team ð§¡ Growth and career path&nbsp; ð &nbsp; Be part of a dynamic team that's creating the next generation payments platform. &nbsp; DEUNA&nbsp;is proud to be an equal opportunity employer. We value and celebrate diversity and inclusion in our workplace. All employment decisions at DEUNA are made without discrimination based on nationality, race, ethnicity, religion, gender, sexual orientation, gender identity or expression, marital status, color, disability, or any other characteristic protected by law. Please mention the word **EXPERTLY** and tag RMy44MC40LjEyMw== when applying to show you read the job post completely (#RMy44MC40LjEyMw==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Ciudad de MÃ©xico, Mexico",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-11",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 45,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [
+          "Language requirement may be outside Mia's current positioning."
+        ],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "DEUNA is hiring for Technical Account Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "Language requirement may be outside Mia's current positioning."
+      ]
+    }
+  ]
+}
