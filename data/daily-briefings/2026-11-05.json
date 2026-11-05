@@ -1,0 +1,571 @@
+{
+  "id": "briefing-2026-11-05",
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T06:59:20.382Z",
+  "windowLabel": "Past 24 hours",
+  "items": [
+    {
+      "job": {
+        "id": "18c1dd38",
+        "title": "Senior Growth Product Manager AI Native",
+        "company": "Magic Eden",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414",
+        "jdText": "About Magic Eden and Dicey Magic Eden reached unicorn status in just 9 months after launch, one of the fastest in history. We built a category-defining NFT marketplace from scratch and proved we know how to move fast. Now we're doing it again. Dicey is our crypto casino and sportsbook platform, targeting the $180B+ iGaming and sports betting markets. We're a small, fully remote team. We ship fast, we're hands-on with our data, and we're rebuilding how a growth team operates around AI from the ground up. The role Most of the iGaming industry competes on acquisition. Almost nobody has figured out personalized retention, knowing who a player is, what they need right now, and what would actually change their behavior this week. That's the problem you'll own. This role focuses on the full post-signup journey: expanding our player segmentation framework, designing and running targeted offers and campaigns, and owning the P&amp;L lever that comes with it. It's explicitly AI-native. You'll build workflows, agents, and pipelines to run lifecycle campaigns that would have taken a whole team two years ago. Half the job is identifying the right problem. The other half is running the experiments to find the answer. What you'll do Own retention and monetization as a growth loop. Set the targets, find the leverage, and drive the numbers for everything that happens after a player signs up Own the player segmentation framework. Today it's value and risk. You decide how it evolves, what signals feed it, and how the rest of the company uses it Build the AI-native growth stack. Analysis, agents, and automated pipelines that surface segments, generate offer candidates, and run campaigns with minimal manual work Design and ship targeted offers for specific segments and moments: reload bonuses, lossback, wager bounties, challenges, win-back sequences. Size them, spec them, ship them, measure them Spend real time in our data warehouse and on-chain data finding patterns and turn them into campaigns before anyone else does Expand the signals we have on players: on-chain activity, status-match programs, social account linking, and whatever else you can think of Run the campaigns. Email, in-app, Telegram, whatever the channel. You're hands-on with it, with AI doing the heavy lifting Partner with engineering and design to ship the product surfaces that make all of this repeatable What we're looking for Strong intuition for player psychology and incentive design. Experience in gambling, gaming, fintech, or consumer marketplaces helps. Genuine curiosity about why people behave the way they do is required Deeply analytical. You can go from a vague question to a clean cohort cut yourself, without waiting on a data scientist AI-native by default. You already use AI to write queries, build analyses, and automate your own work and you want to push that much further High output with good judgment. You generate a lot of ideas and know which ones are worth testing first Bias to do it yourself. You're comfortable sending the email, running the query, and writing the spec, not just briefing others Comfortable with ambiguity. There's no playbook here, you'll be building it Backgrounds that tend to fit Growth PM at a data-heavy consumer company MBB consultant who wants to move into product and own outcomes, not just advise on them Product Minded Data scientist or analyst who wants to ship, not just report Why this is interesting Competitive, top-of-market compensation You're defining what a growth PM looks like in an AI-native company, there's no inherited playbook Personalised retention is where the industry is going and we're building it early Real ownership: a segmentation framework, a product surface, and a P&amp;L lever, with a direct line to the founding team Please mention the word **WINNERS** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Melbourne",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [
+          "crypto",
+          "DeFi",
+          "on-chain",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-09-22",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 84,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 100,
+        "productOpsFit": 52,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Magic Eden is hiring for Senior Growth Product Manager AI Native. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "d77de3ee",
+        "title": "Client Accounting Division Manager",
+        "company": "Burkland Associates",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-client-accounting-division-manager-burkland-associates-1137621",
+        "jdText": "About Us Burkland's core purpose is to Accelerate Dreams. So often, turning dreams into reality helps change the world. We thrive at the forefront of this transformation. Startups desire our professionals as they are the best in the business. Startups seek our content because we are an industry thought leader. Startups trust our expertise, so founders can focus on their companies, products, and value-add. Because of our demonstrated value, our clients have raised more than $17.8B! At Burkland, we lead with our Core Purpose. We do this for both our clients and our employees. We believe that leaning on our Core Values (Fresh Perspectives, Exponential Value, Empathy, Trusted Partner) will lead to happy clients and happy employees. We are a remote-first company with over 185 team members, more than 800 clients, and a culture built on doing meaningful work with people who genuinely care about helping our clients grow. Come build something with us! Role Summary The Client Accounting Division Manager runs their division as a self-contained business unit within Burkland. The role owns the division's P&amp;L and staffing, and is accountable not only for its own scorecard but for the aggregate performance of every KPI held by roles within the division. Success is measured by both business and people outcomes: revenue, margin, utilization, service quality, and client retention, alongside the growth and engagement of the people doing the work. The division supports consumer and product-based startups, so the manager brings deep inventory and cost accounting expertise to guide the teamâs technical work and client advice. This is a hands-on people leadership role. The manager is expected to understand strengths and development needs of each team member in their business unit, set clear expectations, give consistent feedback, address performance issues early, and build a team that can deliver both accounting and proactive advisory work at a high standard. The manager also owns key client relationships and serves as the first-line escalation point for client issues, with a defined handoff path for anything beyond their resolution. This job description outlines the core of the role, but it isn't meant to cover everything you'll do. As Burkland grows, your responsibilities may shift and new projects, tasks, or priorities may be added along the way. We hope you'll see that as a chance to stretch, learn, and broaden your contributions. Essential Duties &amp; Responsibilities Division Performance and KPI Accountability Own the business unit's P&amp;L, including revenue, margin, and utilization targets. Drive aggregate performance across all KPIs assigned to Accounting Associates and Client Accounting Advisors, in addition to the manager's own scorecard. Track division performance regularly, identify gaps early, and take corrective action at the individual and team level. Report on division results to the Director of Accounting Advisory, including risks, trends, and planned actions. Manage capacity and workload distribution across the division as well as assigning clients. Contribute to pricing and fixed-fee scoping, and monitor engagement profitability. Maintain awareness of AR and collections for division clients and address issues with the appropriate teams. People Leadership and Staffing Set clear role expectations and performance goals tied to the KPIs each team member owns. Lead regular, structured 1:1s focused on goals, workload, development, and wellbeing, not only status updates. Use them to give direct, ongoing feedback that recognizes strong work and addresses gaps as they appear, rather than waiting for review cycles. Create clear growth plans and provide ongoing coaching to develop each team member, in partnership with the Director and People Team Conduct performance reviews, manage performance concerns directly, and contribute to compensation and promotion recommendations. Monitor team capacity and engagement to support retention and prevent burnout. Apply company policies consistently, manage time-off and leave requests, and bring performance concerns, employee relations matters, and escalations to the Director and People Team for guidance and resolution. Plan staffing against current and forecasted client demand and build the business case for new headcount. Lead hiring for the division through interviewing and selection, and onboard new team members so they reach full productivity within expected timelines. Inventory Accounting and Technical Oversight Oversee inventory valuation, reconciliation, and physical and cycle count processes across the divisionâs client portfolio, making sure variances are investigated and resolved quickly. Set standards for costing methods (FIFO, LIFO, weighted average) and ensure the team applies them correctly by client and industry. Ensure the team delivers accurate GAAP financial statements, inventory reporting, and COGS and gross margin analysis tailored to each clientâs business model. Guide ERP and inventory software implementations, migrations, and improvements (partnering with ERP specialist where needed), and ensure client records stay audit-ready (as appropriate for the engagement size and scope). Coach the team to help clients reduce shrinkage, obsolescence, overstocking, and stockouts, and to improve working capital through metrics like inventory turnover and days on hand. Strong understanding of supply chain methods such as contract manufacturing and 3PL operations Client Relationships and Service Quality Act as an escalation point for client relationship issues. Oversee quality control to ensure deliverables meet firm standards. Shift the team's work from solely report delivery toward proactive advisory. Growth and Operations Own growth of the division's book of business through business development efforts to expand existing client relationships and identify service-expansion opportunities Maintain accurate, current portfolio information in Knownwell Drive full adoption of firm tools, systems, and processes, including AI-enabled workflows Group and Company Success A One Burkland mindset: Our clients are best served when teams work together, not in silos. Partner closely with Tax, CFO, HR, and other service lines to create consistency, share knowledge, and deliver a seamless client experience across Burkland. Comfort with an increasing pace of change : Today's pace is the slowest we will experience going forward, not a finish line before things settle. As AI and related tools evolve, our processes evolve with them. This allows for more chances to learn, grow, and shape how the work gets done. Genuine enthusiasm for AI-driven efficiency: Proactively look for smarter ways of working as new tools come online. This is about changing how the work gets done, not reducing the need for skilled people to do it. A constructive attitude: Attitude is contagious in both directions, across the team and with clients. Approach change with curiosity and enthusiasm. Help to set that tone for others rather than defaulting to resistance. Full adoption of firm tools and processes: Systems are critical to growth and often fail to be effective when only part of the team uses them well. Delivery and proactive advisory: Build real understanding of where each client's business is headed and advise ahead of it. Clients need the why behind their numbers, not just the numbers. Core Competencies &amp; Skills Financial Acumen â cost management, margin analysis, fixed-fee scope adjustments, and AR/collections awareness. Client Relationships â Client relationship management, escalation handling, and spotting cross-sell and service-expansion opportunities. Advisory mindset â Moving teams from report delivery alone to proactive advisory. Leading Change â Champions of change, including AI-driven efficiency, leading by example in the consistent adoption of firm tools, systems and processes and reinforcing them across the team. AI Fluency â Hands-on comfort using AI tools in accounting and operational work, with sound judgment about where AI adds value, where human review is required, and how to protect client data. Cross-functional collaboration â Build strong working relationships across Service Delivery, partnering with other teams on shared client work and aligning with Growth on new client onboarding and cross-sell opportunities Inventory and Cost Accounting Expertise â Deep knowledge of inventory accounting, costing methods, COGS, and GAAP, with the ability to guide a team through complex inventory work and system implementations. Strong understanding of supply chain methods such as contract manufacturing and 3PL operations as well as eCommerce operations and cash flows through Shopify, Amazon, eBay, and other marketplace solutions. Minimum Requirements / Qualifications Bachelor's degree in business, accounting, finance, or a related field, and 5+ years of progressive professional experience Direct people management experience, including conducting performance reviews, managing underperformance, and developing team members Exceptional client relationship management skills and the ability to understand client needs Strong project management skills, including the ability to prioritize, meet deadlines, and deliver high-quality results Excellent communication and interpersonal skills, with the ability to collaborate effectively with clients, team members, and leadership Curiosity, strong problem-solving skills, and an eagerness to take on new challenges involving emerging technology and industries Strong command of GAAP and cost accounting, including inventory accounting (FIFO, LIFO, landed costs, shrinkage, and valuation adjustments) Preferred Qualifications CPA or CMA credential Experience owning or significantly contributing to a team budget, P&amp;L, or book of business Prior experience leading a team within a professional services or client accounting environment Hands-on ERP and inventory system experience (NetSuite, QuickBooks, Cin7, Fishbowl, or similar) Experience leading or overseeing ERP or inventory software implementations Â Physical &amp; Environmental Demands This is a remote position. Work is primarily performed at a computer for extended periods, requiring the ability to use a keyboard, view a screen, and communicate via video and phone. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. EEO Statement Burkland Associates is committed to a diverse and inclusive workplace. Burkland Associates is an equal opportunity employer and does not discriminate based on race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or another legally protected status. For individuals with disabilities who would like to request an accommodation, please visit our careers page https://burklandassociates.com/careers/ . Pursuant to the San Francisco Fair Chance Ordinance, we will consider employment-qualified applicants with arrest and conviction records. The base pay range target for the role described in this job description is 120,000-140,000. Final offer amounts depend on multiple factors such as candidate experience and expertise, geographic location, total compensation, and market data. In addition, full-time regular positions are eligible for, 401(k), health benefits, and other benefits; some of these benefits may be available for part-time. Â Please mention the word **HEARTWARMING** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-11-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 96,
+        "growthDataFit": 68,
+        "productOpsFit": 88,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Burkland Associates is hiring for Client Accounting Division Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "6baf512d",
+        "title": "Solutions Engineer",
+        "company": "Onebrief",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
+        "jdText": "Consequential Work. Dedicated People. About Onebrief Onebrief builds collaboration and AI-powered workflow software for military planning and operational coordination. Military planning is complex by nature, requiring teams to coordinate information, people, and decisions across systems and locations. Onebrief brings planning, collaboration, simulation, and AI into one connected environment, helping teams test strategies, adapt to changing conditions, and make decisions with greater clarity when the stakes are real. We are a distributed team of builders from military, operational, and technology backgrounds who care deeply about improving how important work gets done. Some team members work remotely, while others work directly alongside customers in operational environments around the world. Founded in 2019, Onebrief is backed by leading investors including General Catalyst, Battery Ventures, Insight Partners, Sapphire Ventures, and Human Capital. Valued at more than $2 billion, we continue to invest in product innovation, AI capabilities, and team growth. Why This Role Exists As a Solutions Engineer at Onebrief, you work where mission, engineering, and compliance meet. You'll own technical solution design and deployment readiness, translating customer requirements into secure, scalable deployment architectures. You'll partner with Platform Engineering, SRE, and our Cybersecurity team to validate infrastructure, configure environments, resolve technical blockers, and successfully transition solutions into production. Youâll work with our go-to-market and customer facing teams to meet with planners, operations officers, and network owners to understand how they work today. Youâll help show them what that work looks like in Onebrief, and then you'll make it real. You connect a staff's planning problem to a live, accredited Onebrief deployment. What You'll Do Core responsibilities: Run technical discovery. With Sales and Engineering, map a staff's current workflow and pain points, specifically focusing on their technical constraints: networks, hosting, identity, and integration requirements, especially in multi-network environments. Lead deployment engineering. Coordinate the technical delivery of new deployments, including infrastructure validation, network configuration checks, and system readiness verification. Write code to configure new deployments and support new environments. Support accreditation. Help create and review security documentation, including STIG checklists and ATO artifacts, alongside our cybersecurity team so deployments are accredited on the customer's timeline. Align stakeholders. Get technical stakeholders on both sides to agree on requirements, constraints, and tradeoffs, so customers see value sooner. Ensure those technical requirements are properly translated into contract deliverables. Scope integrations. Design how Onebrief Connect fits into a command's ecosystem: APIs, data pipelines, Foundry and Maven Smart System, CUOPS tools, and dashboards. Deliver tailored demos. Lead technical demonstrations and solution validation, partnering with Sales and customer-facing teams to demonstrate Onebrief's technical capabilities, deployment architecture, security posture, and integration options. Run pilot deployments. Configure Onebrief in new and untested environments to enable limited uses in support of new sales. Turn field experience into patterns . Convert what you learn in deployments into structured workflows and reusable implementation patterns, and feed clear requirements to Product and Engineering. Travel 30â50% of the time to customer sites and exercises. Minimum Qualifications Top Secret clearance with SCI eligibility. Bachelor's degree in computer science, engineering, or a related field, or equivalent practical experience 4+ years in solutions engineering, infrastructure or deployment engineering, or forward-deployed engineering, working closely with go-to-market and operational teams Experience in DoW environments and their security and compliance requirements (RMF, STIGs, ICD 503) Strong expertise with containers (Docker) and orchestration (Kubernetes) Experience with cloud platforms (AWS, Azure, Google Cloud) and on-premises virtualization (RHEL) Solid understanding of networking concepts and protocols, and of security best practices for highly sensitive environments Strong presence with customers, from action officers to senior leaders, and clear, concise writing Calm under pressure, and focused on forward motion Preferred Qualifications Proficiency in a scripting language (Python, Go, or Bash) Infrastructure as code (Terraform, CloudFormation, Ansible) Monitoring and logging tools (Prometheus, Grafana, ELK, Datadog) and service mesh (Istio, Linkerd) Experience as a military planner or staff officer, or with mission command systems, Foundry, or Maven Smart System Presales experience, including building and delivering demos Notice to Third Party Recruitment Agencies Please note that Onebrief does not accept unsolicited resumes from recruiters or employment agencies. In the absence of an executed Recruitment Services Agreement, there will be no obligation to any referral compensation or recruiter fee. In the event a recruiter or agency submits a resume or candidate without an agreement Onebrief explicitly reserves the right to pursue and hire those candidate(s) without any financial obligation to the recruiter or agency. Any unsolicited resumes, including those submitted to hiring managers, shall be deemed the property of Onebrief. Please mention the word **DESIRING** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "Python",
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-24",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 100,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 63,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Onebrief is hiring for Solutions Engineer. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "2e866a3e",
+        "title": "Technical Customer Support",
+        "company": "QuickMail",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-customer-support-quickmail-1137506",
+        "jdText": "QuickMail is a cold email and LinkedIn outreach platform for markets you can't afford to burn. Our customers can't easily replace leads that land in spam, which is why deliverability matters more to us than anything else. We have been running since 2014, and we pioneered deliverability technology such as Inbox rotationâ¢ and deliverability AIâ¢. The Role We are hiring a technical customer support person with an owner's mentality. You will own support for QuickMail and Mailflow, our deliverability add-on. There is no first or second line. You are the first and last person our customers talk to. Customers count on you to solve their problems and find the real cause when something breaks. You work closely with engineering, and you tell the founder what we need to know to make the product better: where the friction is and where the opportunities are. The role covers the help desk, system health checks, testing new releases before they ship, and leading the weekly team meeting. It takes excellent communication, solid technical understanding and sharp critical thinking. This is not a script-reading job. Most tickets involve deliverability, DNS records, LinkedIn automation or campaign setup. You dig into customer accounts in our Support Dashboard, reproduce the issue, then decide what to do and how to explain it to the customer. We are a remote team spread across time zones. Most routine tasks have a written guide with a checklist, so you know what done looks like. You are expected to refine and improve those processes. When something new comes up, you work out the most efficient way to handle it. If you want a lot of autonomy across many areas, real responsibility and a fast-paced environment, this role is for you. What Work Looks Like You own two things: customers get unstuck fast, and the product stays reliable. Every day Set the day's support priorities and work the Help Scout queue for QuickMail and Mailflow. Triage, resolve, and dig deeper when a ticket needs it. Check the support dashboard: job queue, event-stream latency, blacklist status, newly purchased domains. If something is off, investigate, diagnose, and drive it to resolution. Review fraud alerts and disable accounts that are scams or abusing the platform. Delighting customers Comfortable jumping on calls with customers, building rapport fast, and setting them up for success. Update the changelog and help articles based on what shipped and what customers asked. Share customer feedback with the team, ask happy customers for reviews and case studies, and watch NPS for testimonial candidates. Making support smarter with AI Improve the AI support agent. Review its answers, fix the docs it drew from when it is wrong, and contact the customer when its reply was off. Write and maintain automated tests, built with AI, that try to break staging before customers do. Use the MCP connections we have in place (Helpscout, GitHub, Postmark, and others) to get an accurate picture of support and find the next thing worth improving. Keeping the product solid Gatekeep releases. New fixes and features land on staging every week. Test them, confirm when staging is ready to ship, and think through how existing and new users will be affected. Report bugs as GitHub issues with everything the developer needs: steps to reproduce, screenshots or a Loom, and any GraphQL or console errors. Captain red alerts. When a core feature breaks (emails not sending, login down), confirm it, alert the team on Slack or Telegram, update the status page every 30 minutes, keep affected customers informed, and drive the fix. Then run the retrospective so it does not happen twice. Running the week Lead the weekly team meeting in MonsterOps: issues written up, to-dos done, numbers updated. Keep rock status and KPIs current in MonsterOps. Tools you'll use: Helpscout, our Support Dashboard, Sidekiq, GitHub, Slack, Telegram, MonsterOps, Outline, MxToolbox, Postmark, Bento, TidyCal, Fathom, Visual Code and Claude. Who You Are You build rapport fast. You are warm, positive, and relatable in writing and on calls. You are a good communicator. Externally, you can show warmth, empathy and care. Internally, you are able to communicate clearly and concisely about important things. You can operate with minimal instructions. You understand a short brief without every detail spelled out. You can prioritize well (especially when you have a lot on your plate), and get things done without hand-holding. You are comfortable on video. You are natural on live calls with Zoom and Meet, and on recorded video through tools like Loom. Your teammates can always count on you. You say what you'll do and you do what you said. You act with a constant sense of urgency. You can execute fast and find new ways to improve your productivity. You are resourceful. You use all the tools at your disposal to get great results. You have a low ego. You don't take offense easily and you handle disagreement as a discussion, not a personal attack. Growth mindset. You are positive about new workflow/process/product/tool changes. You love giving and receiving positive and negative feedback without getting defensive. Hours that overlap with East coast US and UK, where most of our customers are. A Plus If You Have Experience with customer facing work, or if you don't have it, tell us why you are perfect for this role. Working knowledge of deliverability and LinkedIn outreach. Warmup, DNS, inbox rotation, DKIM, SPF, Outlook and Gmail technical setup. We can teach this, but a head start helps. Comfort with agency setups. Workspaces, guest seats, inbox purchases and what happens when an agency loses a client. Light data skills. You can pull numbers from Help Scout or our MCP to back up what you report. An eye for happy customers. You notice them and ask for testimonials and case studies at the right moment. How We Work Together You'll work directly with the founder and with our lead developer. Working with the founder can be intense. Here is what that looks like in practice: Replies are short and can come across as harsh. If something written lands badly or isn't clear, ask. Direction can change. The founder may say one thing, then something different a few days later as they learn more. When that happens, check what changed and adapt. Information should be short and to the point. Lead with what matters, then give more details if asked. The founder can stay frustrated about a problem until it's solved. That's something they are aware of and working on. You'll do well here if you can stay calm and focused when the pressure is on. The team often thinks fast and interrupts each other when discussing ideas. If that would bother you, this role probably isn't for you. This role suits someone with high emotional intelligence, who doesn't take things personally, asks when something is unclear, and keeps many things moving at once. Your schedule can be flexible. If you have a martial arts class every Thursday at 3 pm, go and make up the time later. In return, on the rare occasion the team needs your help on a weekend, we ask you to be flexible too. Benefits Contract type: full-time or part-time Compensation: $2,500 to $4,000 USD per month, depending on experience and location. US-based hires will work as independent contractors (1099). Start date: negotiable Please mention the word **TRUMP** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "campaign",
+          "growth",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-12",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 81,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 68,
+        "productOpsFit": 64,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 99,
+        "recommendation": "DM First",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "QuickMail is hiring for Technical Customer Support. Role angle: Growth Data Analyst. Recommendation: DM First.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "add6d714",
+        "title": "Technical Account Manager",
+        "company": "Yuno",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-yuno-1137540",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-yuno-1137540",
+        "jdText": "Remote, Brazil, Full Time, Individual Contributor, +3 years of experience Who We Are At Yuno, we are building the payment infrastructure that allows all companies to participate in the global market. Founded by seasoned experts from the payments and tech industries, our technology provides access to leading payment capabilities, enabling companies to engage customers confidently and maintain global operations through seamless integrations. We empower high-performing teams at brands like InDrive, McDonald's, Rappi, and Viva Aerobus to integrate over 1,000 payment methods via a single API. By leveraging advanced AI and the latest technologies, we orchestrate smart routing and fraud prevention across 80+ countries. &nbsp; About The Role We are orchestrating the best high-performing team! We are looking for a Technical Account Manager to own and elevate Yuno's technical customer relationships across Latin America. This is a leadership position for someone who combines deep technical expertise with the ability to inspire a team, build trust with customers, and drive outcomes that matter. You will be the senior technical voice for our most strategic accounts in the region â and the person who sets the standard for how great technical partnership looks at Yuno. Day to day, you will lead a team of TAMs while staying close to the most complex customer challenges yourself. LATAM is one of the fastest-growing payment ecosystems in the world, with unique local nuances and high-stakes integrations. That environment rewards people who bring both precision and resilience â someone who can stay steady under pressure, push through hard problems, and come out the other side with better solutions and stronger customer relationships than before. This role also sits at the heart of Yuno's cross-functional engine. You will work closely with Product, Development, Sales, and Partnerships teams, making sure customer insights translate into real improvements and that internal teams have the context they need to move fast. You will set best practices, define how the TAM function scales, and ensure every integration your team owns reflects the quality and reliability Yuno's customers expect. If you are technically sharp, and genuinely excited about building something meaningful in one of the most dynamic payment markets in the world â this role is for you. &nbsp; Your contribution will be Serve as the senior technical point of contact for strategic accounts, owning escalations and driving resolution on complex integration challenges Lead high-level discussions with customer leadership around technical strategy, product trade-offs, incident management, and risk mitigation Define and implement best practices for technical onboarding, integration delivery, and ongoing account health monitoring Build deep knowledge of each customer's business model, technical stack, and operational needs to proactively unlock value Partner with developers and senior engineers to provide strategic technical guidance and support solution design Collaborate with Product and Development teams to customize platform capabilities and feed customer insights into the roadmap Work cross-functionally with Sales, Partnerships, and Finance to support account retention and regional growth Monitor integration progress and ramp-up milestones across the team, ensuring consistent and high-quality delivery Champion the LATAM customer base internally, bringing regional intelligence into Yuno's strategic conversations &nbsp; Skills You Need Minimum Qualifications Fluency in English and Portuguese is a plus ; Spanish is a plus 5+ years of experience in technical account management or integration engineering, preferably in fintech or payments Proven track record of leading or mentoring technical teams Strong understanding of RESTful APIs, SOAP, JSON, XML, and API management tools such as Postman, SoapUI, or Swagger Proficiency in web fundamentals: HTML, CSS, JavaScript, RESTful APIs, and modern frameworks Hands-on experience in at least one server-side language: Golang, Python, Node.js, or equivalent Familiarity with server and database technologies including Apache, Nginx, MySQL, Oracle, PostgreSQL, MongoDB, or similar Strong analytical, problem-solving, and project management skills Excellent organizational skills with the ability to manage multiple accounts, team priorities, and concurrent projects Clear and compelling communication with both technical and non-technical stakeholders at all seniority levels Experience with ticketing systems is a plus &nbsp; What We Offer at Yuno Competitive Compensation Remote Work â You can work from everywhere! Home Office Bonus â A one-time allowance to help you create your ideal home office. Work Equipment Stock Options Health Plan wherever you are. Flexible Days Off \\n \\n Please mention the word **PASSIONATELY** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Brazil",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "SQL",
+          "Python",
+          "growth",
+          "operations"
+        ],
+        "preferredSkills": [
+          "DeFi",
+          "fintech"
+        ],
+        "cryptoRequirementLevel": "preferred",
+        "salaryRange": "",
+        "postedAt": "2026-10-17",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 80,
+        "roleFit": 92,
+        "transferableFinanceFit": 100,
+        "growthDataFit": 80,
+        "productOpsFit": 64,
+        "web3Barrier": -5,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Yuno is hiring for Technical Account Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "7233095c",
+        "title": "Paid Media Manager US",
+        "company": "Kyra",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-paid-media-manager-us-kyra-1137675",
+        "jdText": "About Kyra Kyra is an enterprise influencer marketing platform working with brands like SharkNinja, Coach, H&amp;M, Ray-Ban, and Converse. Our platform manages the full lifecycle â creator discovery, campaign management, content review, payments, analytics, and AI-powered intelligence across TikTok, Instagram, and YouTube. The Paid Media Manager will work closely with our Director of Paid Strategy to continually optimise paid campaign performance across different channels for internal and external stakeholders. Youâll be responsible for: Planning, managing and implementing digital campaigns across key paid channels, with a main focus on TikTok and Meta Activating campaigns and analysing results to make optimisations and maximise performance Using a âtest and learnâ approach to continually improve campaign performance against KPIs Building and maintaining strong relationships across departments and with clients Presenting findings to clients regularly and reporting on campaign performance Making data-led recommendations to enhance performance Staying up to date with channel updates and suggesting changes to campaigns where needed What Youâll Need to Thrive Deep understanding of the paid social advertising landscape 3+ years of experience in digital paid media roles (TikTok / Meta / YouTube) Proven track record of improving campaign performance through data analysis Confidence managing paid media budgets of $500k+ High proficiency in Excel Strong numeracy and analytical skills Ownership mindset and high attention to detail on administrative tasks Ability to make and justify decisions that drive client performance Comfort working with clients and teams across multiple countries and time zones Benefits ð Weâre a remote-first team , giving you the flexibility to work from wherever you do your best work ð´ Annual Time Off: 25 days PTO + bank holidays, 4 company-wide days off (Kyra Days), 3 wellness days, and paid sick leave each year ð Growth: Annual Learning &amp; Development budget to invest in your skills. ð° Rewards: Annual bonus scheme to recognise great work ð©º Healthcare coverage for US-based team members AI is core to how we operate. Use it to elevate your work. But everything in your application should reflect your own judgement and experience. ð Support If you have a condition or require an adjustment to our interview process - please let us know so we can make adjustments to support you. Please note that when you submit an application or resume, your data will be processed in line with our privacy policy . Please mention the word **COMPLIMENT** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "US",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "analytics",
+          "campaign",
+          "growth"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-11-03",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 68,
+        "growthDataFit": 82,
+        "productOpsFit": 52,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Strong lifecycle analytics and growth data overlap.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Kyra is hiring for Paid Media Manager US. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Strong lifecycle analytics and growth data overlap."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "a6efc422",
+        "title": "Partner Operations Manager",
+        "company": "Mecka",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-partner-operations-manager-mecka-1137609",
+        "jdText": "About Mecka AI Mecka AI is building the data infrastructure layer for robotics and embodied AI. We design and operate global systems for data capture, data labeling, and hardware-enabled workflows used by leading AI labs and robotics companies to train and validate humanoid and embodied AI systems. We work closely with frontier robotics teams to bridge real-world data, simulation, learning-based systems, and deployed hardware. About the Role Signing a capture partner is the start of the work. Getting that partner to steady, high-quality output takes onboarding, training, hardware, support, and reporting, and every step has to run on time. As Partnership Operations Manager, you will own that path for our regional partnership leads so they can focus on finding and signing partners. This is a new function, so you will set the standards and tooling yourself and make them repeatable across regions. What You Will Do Deal support: Prepare proposals and agreements from approved templates and keep a clean record of every partnerâs rates, volumes, and term dates. Onboarding: Set partners up on the platform, issue devices and accounts, and train their teams on capture standards so they reach full output quickly. Hardware: Manage device allocation, tracking, replacements, and returns with our hardware and logistics teams, and keep inventory records accurate. Partner support: Be the first point of contact for partners, and run the support channel to clear service levels. Resolve problems yourself or route them to product, engineering, or finance before capture is disrupted, and pass on what partners need from the platform and devices. Performance and reporting: Monitor daily performance and quality across partners, including recorded, approved, and deliverable hours, recording counts, and QA rejection rates. Act when numbers slip, and raise anything commercial with the partnerâs regional lead. Keep scorecards, business reviews, and the data behind them current. Payments: Own partner payments and reconciliation, making sure hours are approved correctly and paid accurately and on time. Playbook: Build and improve the processes, checklists, and tools that keep partner operations running as the network grows. What You Bring Experience: 3 to 5+ years in partner or vendor operations, supply or merchant onboarding, business operations, program or project management, or account management, ideally at a high-growth marketplace, delivery, or BPO company. Execution: A record of running many partner launches at once across time zones, with clear process and tight follow-up. Organization: Highly organized and detail-focused, able to manage many partners and tasks at once without letting things slip. AI fluency: You use AI tools in your day-to-day work to pull and analyze data, draft partner communications, and streamline your own processes. Problem solving: A practical problem-solver who stays calm under pressure and sees problems through to resolution. Relationships: Strong interpersonal skills. You work well with both partners and internal teams. Agency: A high degree of initiative and comfort with ambiguity. This is an early and unstructured role, so you will set your own priorities, work without an established playbook, and build processes where none yet exists. Even better if you have Industry: Background in data collection, AI training data, or BPO services. Field deployment: Experience with device deployment and inventory tracking across partner sites. Multi-country: Experience running partner operations across several countries and time zones. Languages: Working fluency in one or more of our regionsâ main business languages, alongside professional English. If you don't check every box above but believe you can do the job, we encourage you to apply â we're looking for capability and trajectory, not a perfect checklist match. We strive to create an inclusive work environment for all; we welcome applicants from all backgrounds and are committed to providing equal opportunities. Should you require any accommodations during the recruitment process, we will partner with you to meet your needs. We may use AI-assisted tools to help evaluate applications against the requirements of this role. These tools support our recruiting team in identifying qualified candidates but do not replace human judgment or limit which applications may be reviewed or considered. Please mention the word **UPLIFTMENT** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-11-01",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 85,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Mecka is hiring for Partner Operations Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "540327d9",
+        "title": "Technical Account Manager",
+        "company": "DEUNA",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-deuna-1137482",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-technical-account-manager-deuna-1137482",
+        "jdText": "About DEUNA &nbsp;ð§¡ &nbsp; DEUNA is a rapidly growing startup revolutionizing global commerce with ATHIA, our AI-powered orchestration and payments platform that helps large enterprises boost approval rates, reduce costs, and unlock new revenue. Built by the team behind DEUNAâthe fastest-growing Commerce OS in Latin AmericaâATHIA combines payment intelligence, checkout optimization, and data orchestration in one powerful solution. &nbsp; With deep integrations across 300+ PSPs and alternative payment methods, and over 20% of Mexicoâs digital economy running through our platform, we simplify global payments through a single integration and centralized reconciliation. We are a rapidly growing startup expanding into the U.S. to meet the urgent needs of large retailers, marketplaces, airlines, and QSRs. Join us to shape the future of payments! ð &nbsp; Visit&nbsp; https://www.deuna.com/ &nbsp;to learn more about us! About the Role As a Technical Account Manager (TAM), you will be the primary technical point of contact for our merchants after their initial go-live. You will help monitor merchant technical health, support incident management, answer ongoing technical questions, and guide merchants through future technical evolutions. For DEUNAâs premium and key accounts, the TAM plays a critical role in making sure merchants feel technically protected, proactively monitored, and confident operating on our platform. Your mission is to help ensure every merchant is operationally stable, technically satisfied, and continuously improving on DEUNA. &nbsp; &nbsp; Responsibilities Proactively monitor merchant technical health Monitor merchant performance, transaction behavior, errors, declines, latency, and anomalies. Identify potential risks before they become merchant-impacting issues. Raise internal flags when technical or operational risks are detected. Help maintain account-specific dashboards, alerts, and health views for key merchants. Be the main technical contact after go-live Act as the primary technical point of contact for merchant questions and doubts after go-live. Help merchants understand technical flows, configurations, integrations, and platform behavior. Coordinate internally with Product, Engineering, Support, Operations, and Account Management when merchant needs require cross-functional support. Support technical incident management Triage merchant-reported and internally detected issues. Escalate issues to the appropriate on-call, Engineering, Product, or Operations teams. Track resolution and ensure timely internal and external follow-up. Help ensure communication with merchants is clear, factual, and timely. Support post-incident follow-up, including impact explanation, corrective actions, and prevention measures when required. Drive merchant technical improvements Identify opportunities to improve merchant performance, stability, acceptance rate, routing behavior, fraud flows, provider configuration, or processing cost. Partner with Account Management to support merchant expansion and long-term account growth. Help merchants adopt new payment methods, providers, features, or technical capabilities after launch. Build merchant health visibility Build and deliver simple Merchant Health Reports periodically to Account Management and/or merchants. Maintain accurate technical documentation for merchant-specific configurations, customizations, providers, integrations, and known risks. Help prioritize and advocate for merchantsâ technical needs internally. &nbsp; &nbsp; Requirements 3+ years in Technical Account Management, Merchant Support, Solutions Engineering, Technical Customer Success, or similar roles. Strong technical understanding of online payment ecosystems, including APIs, SDKs, transaction flows, processors, acquirers, fraud tools, chargebacks, refunds, captures, and 3DS. Experience with incident management, post-launch technical operations, technical troubleshooting, and client-facing support. Ability to analyze logs, dashboards, error patterns, transaction behavior, and operational metrics. Excellent communication skills, with the ability to simplify technical concepts for non-technical stakeholders. Strong organization, ownership, urgency, and follow-up discipline. Fluent in Spanish and English. Experience working with LatAm merchants is a must. Startup environment experience is a plus. &nbsp; &nbsp; What Success Looks Like A successful TAM helps premium merchants feel that DEUNA is actively watching over their payment operation, not simply reacting when something breaks. The TAM should help ensure that: Merchant issues are detected and escalated quickly. Critical incidents are followed through with urgency and ownership. Merchants receive clear and timely technical communication. Account Management has strong technical support to retain and expand key accounts. Merchants continuously improve their technical performance and payment outcomes on DEUNA. \\n \\n What will you find when you join DEUNA? - A multicultural team distributed throughout LATAM - Dynamism, agility and constant innovation - Being part of a high-impact solution for an entire region - The best tools and technology to operate - Being part of the startup culture. - We are in full expansion! &nbsp; Benefits: Vacations and additional PTO ðï¸ Remote work from anywhere&nbsp; ð» Economic support for health insurance, internet and cell phone lineð± ð We all own DEUNA, we offer stock options ð¸ Learning and development platform ð Multidisciplinary, diverse and dynamic team ð§¡ Growth and career path&nbsp; ð &nbsp; Be part of a dynamic team that's creating the next generation payments platform. &nbsp; DEUNA&nbsp;is proud to be an equal opportunity employer. We value and celebrate diversity and inclusion in our workplace. All employment decisions at DEUNA are made without discrimination based on nationality, race, ethnicity, religion, gender, sexual orientation, gender identity or expression, marital status, color, disability, or any other characteristic protected by law. Please mention the word **EXPERTLY** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "Ciudad de MÃ©xico, Mexico",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "operations",
+          "dashboard"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-11",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 78,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 88,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 45,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [
+          "Language requirement may be outside Mia's current positioning."
+        ],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "DEUNA is hiring for Technical Account Manager. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "Language requirement may be outside Mia's current positioning."
+      ]
+    },
+    {
+      "job": {
+        "id": "34e48222",
+        "title": "Academic Dean for MiaPrep Online Academy of Ohio",
+        "company": "Miaplaza",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-academic-dean-for-miaprep-online-academy-of-ohio-miaplaza-1137479",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-academic-dean-for-miaprep-online-academy-of-ohio-miaplaza-1137479",
+        "jdText": "Location : 100% remote (Ohio residency required) Classification : Full-time, exempt Reports to : School Leader Pay Range : $40.00 - $48.00 per hour Welcome to Miaplaza! Our vision is to elevate online learning by applying the most successful approaches in virtual education to create an accessible and inclusive homeschool curriculum platform where all students can be successful! MiaPrep Online Academy of Ohio is our newest offering for Ohio families looking for a flexible public school option. The school will serve grades 7-11 in its first year. The school aims to serve 250 students year one, with plans to grow to over 1,000 students by 2030. ð Role Summary The Academic Dean leads the instructional team and is the school's authority on academic standards at MiaPrep Online Academy of Ohio (MOAO), including student conduct, attendance compliance, and academic integrity. This person is the primary leader for teacher supervision and development, oversees academic data and testing coordination, and works closely with the Student Support team (counselors and advisors), who lead student interventions and support. As a member of the MOAO leadership team, the Academic Dean contributes to schoolwide strategy and helps keep instruction, student culture, and compliance with Ohio requirements working together. The role calls for someone who can coach teachers with warmth and rigor, handle sensitive student and family situations with sound judgment, and use data to make decisions. CORE RESPONSIBILITIES Instructional Staff Management Directly supervise instructional staff, holding weekly 1:1s focused on coaching, support, and goal setting. Lead recruiting, onboarding, and training for new teachers. Observe live instruction and office hours on a bi-weekly basis and provide actionable feedback. Monitor grading practices to ensure students receive timely, high-quality feedback. Complete annual and semi-annual walk-throughs and performance reviews as outlined by the ODEW and manage bi-weekly timecard approvals. Coordinate instructional and grading coverage for teacher absences. Address performance concerns through clear expectations, documentation, and, when needed, formal improvement plans in partnership with People Operations. Student Conduct, Attendance &amp; Academic Integrity Own the school's student conduct process, from initial report through investigation, determination, and documentation, applying policy consistently and fairly and creating policy where needed. Oversee academic integrity cases, including investigating suspected plagiarism, AI misuse, and other violations, and ensuring consistent, well-documented outcomes. Own the school's truancy and attendance compliance process, including required notifications, documentation, and filings under Ohio law. Partner with the Student Support team, which leads outreach, intervention plans, and ongoing student support. Hand off cases and coordinate so that accountability and support work together. Serve as the escalation point for teachers and Student Support on conduct, attendance, and integrity concerns. Communicate with students and families about conduct and integrity decisions in a way that is clear, respectful, and focused on getting students back on track. Maintain accurate records and report on trends in conduct, attendance, and integrity cases to school leadership.Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Keep handbooks, policies, and procedures current in these areas. Academic Data &amp; Testing Coordination Analyze course-, teacher-, and school-level data on performance, engagement, and attendance to identify trends, risks, and opportunities. Turn data into action by recommending and implementing instructional strategies, and share insights with Student Support to inform their interventions. Serve as the school's testing coordinator for Ohio state assessments and other required or school-administered testing, including scheduling, proctoring logistics, test security, accommodations coordination, and make-up testing. Partner with the appropriate teams on state data reporting, ensuring accuracy and timeliness. Prepare clear summaries of academic and testing data for leadership, teachers, and families. Professional Development Design and lead regular PD sessions for instructional staff, informed by teacher feedback, observation, and student data. Build a culture of continuous improvement, reflective practice, and growth for the instructional team. Collaborate with school and company leadership on schoolwide professional learning priorities. Curriculum &amp; Cross-Team Collaboration Serve as the primary point of contact between the instructional team and the Content team on curriculum, checkpoint assignments, and MiaPrep platform issues. Gather teacher and student feedback and make curriculum recommendations. Support consistency in instructional practice and expectations across courses and departments. Lead regular instructional team meetings to align resources, expectations, and practices. Assist teachers in comparing their curriculum to the OST blueprints to identify gaps, and create a plan to fill these gaps in the short and long term.Â What We're Looking For Proven leadership experience managing, coaching, or mentoring teachers Sound judgment and a steady hand with sensitive student, family, and staff situations; knows when to resolve and when to escalate A collaborative approach to working across teams, especially with student support professionals Excellent written and verbal communication, including documentation that holds up to scrutiny A fair, consistent, relationship-first approach to discipline and accountability Comfort with data and the ability to translate it into clear decisions Exceptional organization and follow-through across many concurrent priorities Resilient, adaptable, and committed to continuous improvement in a fast-paced environment Growth mindset with a focus on coaching and constructive feedback THIS POSITION IS FOR A CURRENT VACANCY, AND THE EMPLOYER INTENDS TO FILL THIS POSITION BY DECEMBER 1ST, 2026. Requirements: Bachelor's degree required; master's degree in education, educational leadership, or a related field preferred Valid Ohio teaching license and/or administrator license, or ability to obtain one, to be confirmed against current requirements At least 3 years of teaching experience At least 2 years of experience in a leadership role such as department chair, instructional coach, dean, or assistant principal Experience in virtual school settings or teaching online Experience supervising employees and conducting evaluations or performance reviews Comfort working in online learning environments and with learning management and student information systems The Ideal Candidate Brings: Experience administering or coordinating standardized testing and working with student assessment data Experience as a member of a founding team for a new school Compensation &amp; Benefits The expected starting pay range is $40.00 - $48.00 per hour. An Academic Dean at MiaPrep Online Academy of Ohio works an average of 40 hours per week. When working year-round, this can equate to an annual pay range of $83,000 - $99,800. Miaplazaâs compensation philosophy ensures equity and competitiveness while considering the regional differences in living and labor costs. Specific rates will be provided during the hiring process and are aligned with market data and internal equity. Compensation is evaluated twice per year, based on performance. Full-time employees are eligible for health, dental, and vision insurance, inclusive of specialty care options like fertility benefits, mental health services, and chiropractic care, FSA, HSA, and more. All employees are eligible for a retirement plan with employer match. PTO is all-purpose time off, and combines traditional vacation and paid sick leave plans into one flexible, inclusive policy. Eligible employees can use PTO for all kinds of absences including: vacation, holidays, illness, injury, family leave, and other personal business. Full-time employees receive 16 hours of floating holiday PTO per quarter and accumulate additional PTO at the rate of 1 hour per every 15 hours worked. Annually, this amounts to approximately 200hours per year or 25 eight-hour days on average. Parental leave, and other perks and benefits are also available. We invite your family and friends to join our journey! All employees receive free site memberships and discounted MOHS tuition for the children in their household, plus two additional memberships for other children in their lives. â¡ï¸ You can hear our CEO, Johannes Ziegler, discuss our companyâs values and future here ! â¡ï¸ Learn more by visiting our careers page ! Ready to apply? Join our team at Miaplaza! Start by submitting your application and resume. Our hiring process involves an assessment, followed by two or more interviews and a role-specific assignment. We're building an inclusive workplace where everyone belongs. As an equal-opportunity employer and E-Verify participant, we welcome candidates from all backgrounds and experiences. We consider all qualified applicants regardless of race, color, religion, sex, orientation, gender identity, national origin, disability, veteran status, age, or arrest/conviction records in accordance with applicable laws. Need accommodations during the application process? Simply let us know before your assessment. We'll work with you to provide any necessary adjustments, including alternate versions of the assessment or assignment based on your needs. Links : Miacademy: https://parents.miacademy.co/ Always Icecream: https://parents.always-icecream.com/ Clever Dragons: https://parents.clever-dragons.com/ MiaPrep: https://parents.miaprep.com/ MiaPrep Online High School: https://miaprep.com/online-school/ MiaPrep Online Academy of Ohio: https://miapreponlineacademy.com/ohio/ Hear our CEO, Johannes Ziegler, discuss our company: https://tinyurl.com/miaplaza-CEO-video/ Careers page: https://careers.miaplaza.com/ Individuals only, no recruitment agencies. Please mention the word **EXUBERANTLY** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-10",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Miaplaza is hiring for Academic Dean for MiaPrep Online Academy of Ohio. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    },
+    {
+      "job": {
+        "id": "be837f8a",
+        "title": "Accounting Operations",
+        "company": "Plaid",
+        "source": "Remote OK",
+        "originalUrl": "https://remoteOK.com/remote-jobs/remote-accounting-operations-plaid-1137554",
+        "applyUrl": "https://remoteOK.com/remote-jobs/remote-accounting-operations-plaid-1137554",
+        "jdText": "We believe that the way people interact with their finances will drastically improve in the next few years. Weâre dedicated to empowering this transformation by building the tools and experiences that thousands of developers use to create their own products. Plaid powers the tools millions of people rely on to live a healthier financial life. We work with thousands of companies like Venmo, SoFi, several of the Fortune 500, and many of the largest banks to make it easy for people to connect their financial accounts to the apps and services they want to use. Plaidâs network covers 12,000 financial institutions across the US, Canada, UK and Europe. Founded in 2013, the company is headquartered in San Francisco with offices in New York, Seattle, Washington D.C., Raleigh, London, and Amsterdam. Role Overview You will be a key contributor to Accounting Operations and own the accounting for accruals, investments, leases, intercompany activity, and cost allocations. This includes preparing and reviewing journal entries, reconciling accounts, analyzing balances and trends, and ensuring these areas are complete and accurate each month, quarter, and year-end. You will be the point of contact for your areas during the close and the annual audit. Over time, your responsibilities may expand into other areas of the close as the business and team grow. You will also help build scalable, efficient processes that support Plaidâs growth and public readiness. This includes documenting and strengthening controls in your areas, shortening the close, improving the quality and consistency of supporting documentation, and identifying opportunities to automate manual work. You will partner with the broader Accounting team, FP&amp;A, Strategic Finance, Tax, Treasury, Legal, Marketing, and external auditors along the way. Responsibilities Own the month-end, quarter-end, and year-end close for accruals, investments, leases, intercompany activity and cost allocations, including journal entries, account reconciliations, and variance analysis. Prepare and maintain intercompany and consolidation entries across Plaidâs entities, including cost-plus arrangements and FX revaluation and elimination. Partner with FP&amp;A, Strategic Finance, Tax, Treasury, Legal, Marketing, and vendors to ensure spend is accrued completely and accurately and that balances are well understood. Identify and implement process, automation, and control improvements in your areas to shorten the close and support SOX 404 readiness. Serve as the primary contact for your areas during the annual audit, preparing support and responding to auditor requests. Qualifications 6+ years of progressive accounting experience, including Big 4 public accounting, with a deep understanding of US GAAP; CPA preferred. Experience at a public company or with IPO readiness Familiarity with SOX compliance and the ability to produce audit-ready workpapers; Experience with multi-entity, multi-currency accounting; Proficiency with NetSuite, Zip, T&amp;E and close management platforms is a plus Problem solver and first-principles thinker with a bias for action, creativity, and a willingness to challenge conventional approaches. Curious, fast learner with a growth mindset who thrives in fast-paced, ambiguous environments. Hands-on, can-do attitude , willing to roll up their sleeves, dive into details, and own execution. Proven change agent with a track record of improving processes, leveraging technology, and scaling operations. Strong communicator and collaborator who can effectively engage technical and non-technical stakeholders. Our mission at Plaid is to unlock financial freedom for everyone. To support that mission, we seek to build a diverse team of driven individuals who care deeply about making the financial ecosystem more equitable. We recognize that strong qualifications can come from both prior work experiences and lived experiences. We encourage you to apply to a role even if your experience doesn't fully match the job description. We are always looking for team members that will bring something unique to Plaid! Plaid is proud to be an equal opportunity employer and values diversity at our company. We do not discriminate based on race, color, national origin, ethnicity, religion or religious belief, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, military or veteran status, disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state, and local laws. Plaid is committed to providing reasonable accommodations for candidates with disabilities in our recruiting process. If you need any assistance with your application or interviews due to a disability, please let us know at accommodations@plaid.com. Please review our Candidate Privacy Notice here . Additional compensation in the form(s) of equity and/or commission are dependent on the position offered. Plaid provides a comprehensive benefit plan, including medical, dental, vision, and 401(k). Pay is based on factors such as (but not limited to) scope and responsibilities of the position, candidate's work experience and skillset, and location. Pay and benefits are subject to change at any time, consistent with the terms of any applicable compensation or benefit plans. Please mention the word **STEADFASTLY** and tag RNTQuMTY1LjE4MC4xMzk= when applying to show you read the job post completely (#RNTQuMTY1LjE4MC4xMzk=). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+        "remoteType": "remote",
+        "locationConstraints": "",
+        "roleFamily": "Growth Data Analyst",
+        "seniority": "Unspecified",
+        "requiredSkills": [
+          "growth",
+          "UAT",
+          "operations"
+        ],
+        "preferredSkills": [],
+        "cryptoRequirementLevel": "none",
+        "salaryRange": "",
+        "postedAt": "2026-10-22",
+        "status": "new",
+        "notes": ""
+      },
+      "score": {
+        "overallScore": 77,
+        "roleFit": 92,
+        "transferableFinanceFit": 82,
+        "growthDataFit": 54,
+        "productOpsFit": 76,
+        "web3Barrier": 0,
+        "remoteCompatibility": 95,
+        "languageFit": 75,
+        "portfolioProofStrength": 100,
+        "outreachOpportunity": 45,
+        "recommendation": "Strong Apply",
+        "reasons": [
+          "Role angle: Growth Data Analyst.",
+          "Growth data overlap needs a sharper portfolio angle.",
+          "Finance and fintech background transfers well into this role.",
+          "Remote setup looks compatible."
+        ],
+        "risks": [],
+        "suggestedAngle": "Growth Data Analyst"
+      },
+      "summary": "Plaid is hiring for Accounting Operations. Role angle: Growth Data Analyst. Recommendation: Strong Apply.",
+      "fitReasons": [
+        "Role angle: Growth Data Analyst.",
+        "Growth data overlap needs a sharper portfolio angle."
+      ],
+      "risks": [
+        "No hard blocker detected. Human review still required."
+      ]
+    }
+  ]
+}
